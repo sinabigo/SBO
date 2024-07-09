@@ -338,7 +338,7 @@ function toSingbox ($input) {
     return null;
 }
 
-function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeKhe") {
+function processConvertion ($base64ConfigsList, $configsName = "Created By sinabigo") {
     $configsArray = explode("\n", base64_decode($base64ConfigsList));
     $structure = json_decode(file_get_contents('structure.json'), true);
     foreach ($configsArray as $config) {
