@@ -1,0 +1,229 @@
+mixed-port: 7890
+allow-lan: true
+tcp-concurrent: true
+enable-process: true
+find-process-mode: always
+mode: rule
+log-level: error
+ipv6: true
+external-controller: 127.0.0.1:9090
+experimental:
+  ignore-resolve-fail: true
+  sniff-tls-sni: true
+  tracing: true
+hosts:
+  "localhost": 127.0.0.1
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+sniffer:
+  enable: true
+  sniff:
+    http: { ports: [1-442, 444-8442, 8444-65535], override-destination: true }
+    tls: { ports: [1-79, 81-8079, 8081-65535], override-destination: true }
+  force-domain:
+      - "+.v2ex.com"
+      - www.google.com
+      - google.com
+  skip-domain:
+      - Mijia Cloud
+      - dlg.io.mi.com
+  sniffing:
+    - tls
+    - http
+  port-whitelist:
+    - "80"
+    - "443"
+
+tun:
+  enable: true
+  prefer-h3: true
+  listen: 0.0.0.0:53
+  stack: gvisor
+  dns-hijack:
+     - "any:53"
+     - "tcp://any:53"
+  auto-redir: true
+  auto-route: true
+  auto-detect-interface: true
+
+dns:
+  enable: true
+  ipv6: true
+  default-nameserver:
+    - '1.1.1.1'
+    - '8.8.8.8'
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - '*.lan'
+    - '+.msftncsi.com'
+    - msftconnecttest.com
+    - 'time?.*.com'
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time.*.apple.com'
+    - time-ios.apple.com
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp?.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '+.pool.ntp.org'
+    - '+.ipv6.microsoft.com'
+    - speedtest.cros.wr.pvp.net
+    - network-test.debian.org
+    - detectportal.firefox.com
+    - cable.auth.com
+    - miwifi.com
+    - routerlogin.com
+    - routerlogin.net
+    - tendawifi.com
+    - tendawifi.net
+    - tplinklogin.net
+    - tplinkwifi.net
+    - '*.xiami.com'
+    - tplinkrepeater.net
+    - router.asus.com
+    - '*.*.*.srv.nintendo.net'
+    - '*.*.stun.playstation.net'
+    - '*.openwrt.pool.ntp.org'
+    - resolver1.opendns.com
+    - 'GC._msDCS.*.*'
+    - 'DC._msDCS.*.*'
+    - 'PDC._msDCS.*.*'
+  use-hosts: true
+  nameserver:
+    - '8.8.4.4'
+    - '1.0.0.1'
+    - "https://1.0.0.1/dns-query"
+    - "https://8.8.4.4/dns-query"
+
+proxies:
+  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14","type":"trojan","server":"51.44.39.226","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15","type":"trojan","server":"13.36.114.149","port":22222,"udp":false,"password":"telegram-id-privatevpns","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"15.237.200.244","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"13.50.57.109","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0","type":"vmess","server":"146.59.147.250","port":"29776","cipher":"auto","uuid":"82447abf-dcb9-408a-9ca6-79e0a7698d08","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦CA | 🟢 | vmess | @mftizi | 18","type":"vmess","server":"cfcdn3.sanfencdn9.com","port":"2052","cipher":"auto","uuid":"3c5046b4-1a9c-427c-8a55-e355846a9e4a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/video/Zo98PYfE","headers":{"host":"kvjqqknzjp6.yofnhkfc.xyz"}}}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @mftizi | 19","type":"vmess","server":"183.238.202.173","port":"51193","cipher":"auto","uuid":"418048af-a293-4b99-9b0c-98ca3580dd24","alterId":"64","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3","type":"vmess","server":"23.157.88.35","port":"22324","cipher":"auto","uuid":"04621bae-ab36-11ec-b909-0242ac120002","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18","type":"ss","server":"145.239.6.202","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
+  - {"name":"🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19","type":"ss","server":"149.202.82.172","port":8008,"password":"XKFKl2rULjIp74","cipher":"aes-256-gcm"}
+  - {"name":"🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 15","type":"vmess","server":"194.5.54.164","port":"123","cipher":"auto","uuid":"4b815f44-a062-4d9d-9fe6-1b01304485c0","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇳CN | 🟢 | vmess | @yaney_01 | 4","type":"vmess","server":"ddd47481-0d6f-08b9-7209-b0ddc0c5fa45.oneplus.pub","port":"80","cipher":"auto","uuid":"46cfcfe1-e450-459d-a3ab-9406011ab3eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"tms.dingtalk.com"}}}
+  - {"name":"❔XX | 🟢 | vmess | @Hope_Net | 3","type":"vmess","server":"mci.mosi.mosipro.ml","port":"443","cipher":"auto","uuid":"4c2a6b41-3138-43fe-aaa6-222a3b0600ee","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/speedtest","headers":{"host":"Dusseldorf.kotick.site"}}}
+  - {"name":"🇸🇬SG | 🟢 | vmess | @Hope_Net | 4","type":"vmess","server":"sg-full.privateip.net","port":"443","cipher":"auto","uuid":"ecb90d6e-1bbf-42ec-a742-822fad6936da","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/RACEVPN","headers":{"host":""}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @v2Line | 0","type":"vmess","server":"zula.ir","port":"443","cipher":"auto","uuid":"950db6aa-4926-4616-816e-ec0312dcb87b","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"jahfkjha.cfd"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @v2Line | 1","type":"vmess","server":"172.67.175.56","port":"443","cipher":"auto","uuid":"05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"obdii.cfd"}}}
+  - {"name":"🇦🇪AE | 🟢 | ss | @kingofilter | 14","type":"ss","server":"40.172.1.97","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3","type":"vmess","server":"npmjs.com","port":"443","cipher":"auto","uuid":"6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/QvtvPdDXXIlSdZMqnuxG","headers":{"host":"hdfy1c2.freeairlaines.com"}}}
+  - {"name":"🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4","type":"vmess","server":"172.67.74.4","port":"443","cipher":"auto","uuid":"441da342-ce90-441e-bff9-d2ceb55e68ca","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/ivideos.sbs/linkws","headers":{"host":"mikasa.yaemiko.cloudns.org"}}}
+proxy-groups:
+  - name: MANUAL
+    type: select
+    proxies:
+      - URL-TEST
+      - FALLBACK
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 19'
+      - '🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 15'
+      - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 3'
+      - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 0'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4'
+  - name: URL-TEST
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    tolerance: 50
+    proxies:
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 19'
+      - '🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 15'
+      - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 3'
+      - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 0'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4'
+  - name: FALLBACK
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 60
+    proxies:
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 14'
+      - '🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇫🇷FR | 🟢 | vmess | @v2ray_outlineir | 0'
+      - '🇨🇦CA | 🟢 | vmess | @mftizi | 18'
+      - '🇨🇳CN | 🟢 | vmess | @mftizi | 19'
+      - '🇩🇪DE | 🟢 | vmess | @oneclickvpnkeys | 3'
+      - '🇬🇧GB | 🟢 | ss | @OutlineVpnOfficial | 18'
+      - '🇫🇷FR | 🟢 | ss | @OutlineVpnOfficial | 19'
+      - '🇮🇷IR | 🟢 | vmess | @ConfigsHUB | 15'
+      - '🇨🇳CN | 🟢 | vmess | @yaney_01 | 4'
+      - '❔XX | 🟢 | vmess | @Hope_Net | 3'
+      - '🇸🇬SG | 🟢 | vmess | @Hope_Net | 4'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 0'
+      - '🇺🇸US | 🟢 | vmess | @v2Line | 1'
+      - '🇦🇪AE | 🟢 | ss | @kingofilter | 14'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 3'
+      - '🇺🇸US | 🟢 | vmess | @ROMAX_VPN | 4'
+rules:
+  - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
+  - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
+  - IP-CIDR,28.0.0.1/8,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
+  - DOMAIN-SUFFIX,ip6-loopback,DIRECT
+  - DOMAIN-SUFFIX,lan,DIRECT
+  - DOMAIN-SUFFIX,localhost,DIRECT
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - DOMAIN,clash.razord.top,DIRECT
+  - DOMAIN,yacd.haishan.me,DIRECT
+  - DOMAIN,yacd.metacubex.one,DIRECT
+  - DOMAIN,clash.metacubex.one,DIRECT
+  - MATCH,MANUAL
