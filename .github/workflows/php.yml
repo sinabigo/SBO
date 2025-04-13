@@ -3,7 +3,7 @@ name: "Let's SBO!"
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *' # هر ساعت یک بار اجرا میشه
+    - cron: '0 * * * *' # اجرا هر ساعت یک‌بار
 
 concurrency:
   group: "pages"
@@ -36,6 +36,7 @@ jobs:
           git config --global user.email "sina2941@gmail.com"
           git config --global user.name "sinabigo"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
           git add -A
           git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
@@ -54,7 +55,7 @@ jobs:
 
       - name: Execute PHP Scripts (Lite)
         run: |
-          git pull
+          git pull --rebase
           cd lite
           php get.php
           php duplicate.php
@@ -67,6 +68,7 @@ jobs:
           git config --global user.email "sina2941@gmail.com"
           git config --global user.name "sinabigo"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git pull --rebase
           git add -A
           git commit -m "🚀 Lite Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
