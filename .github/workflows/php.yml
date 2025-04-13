@@ -3,8 +3,8 @@ name: "Let's SBO!"
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/60 * * * *'
-    
+    - cron: '0 * * * *' # هر ساعت یک بار اجرا میشه
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -15,13 +15,13 @@ jobs:
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          
-      - name: Execute PHP script
+
+      - name: Execute PHP Scripts
         run: |
           php get.php
           php channelsAssets.php
@@ -30,26 +30,29 @@ jobs:
           php toSingbox.php
           php toClashSurfboard.php
           php hiddifyWarp.php
+
+      - name: Commit and Push Changes
+        run: |
           git config --global user.email "sina2941@gmail.com"
           git config --global user.name "sinabigo"
-          git config credential.helper store
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
-          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
-          
+
   sbo-lite:
     runs-on: ubuntu-latest
     needs: sbo-full
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
-      
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '7.4'
-          
-      - name: Execute PHP script
+
+      - name: Execute PHP Scripts (Lite)
         run: |
           git pull
           cd lite
@@ -58,74 +61,12 @@ jobs:
           php sort.php
           php toSingbox.php
           php toClashSurfboard.php
-          git config --global user.email "sina2941@gmail.com"
-          git config --global user.name "sinabigo"
-          git config credential.helper store
-          git add -A
-          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
-          git pushname: "Let's SBO!"
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '*/60 * * * *'
-    
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-jobs:
-  sbo-full:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.4'
-          
-      - name: Execute PHP script
+      - name: Commit and Push Changes
         run: |
-          php get.php
-          php channelsAssets.php
-          php duplicate.php
-          php sort.php
-          php toSingbox.php
-          php toClashSurfboard.php
-          php hiddifyWarp.php
           git config --global user.email "sina2941@gmail.com"
           git config --global user.name "sinabigo"
-          git config credential.helper store
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git add -A
-          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
-          git push
-          
-  sbo-lite:
-    runs-on: ubuntu-latest
-    needs: sbo-full
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-      
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '7.4'
-          
-      - name: Execute PHP script
-        run: |
-          git pull
-          cd lite
-          php get.php
-          php duplicate.php
-          php sort.php
-          php toSingbox.php
-          php toClashSurfboard.php
-          git config --global user.email "sina2941@gmail.com"
-          git config --global user.name "sinabigo"
-          git config credential.helper store
-          git add -A
-          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git commit -m "🚀 Lite Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push
