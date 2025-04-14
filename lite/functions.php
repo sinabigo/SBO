@@ -209,7 +209,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "TVC" . getRandomName(),
+                : "@SiNAVM" . getRandomName(),
         ];
 
         if ($configType === "tuic") {
@@ -366,8 +366,8 @@ function hiddifyHeader ($subscriptionName) {
     return "#profile-title: base64:" . base64_encode($subscriptionName) . "
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-#support-url: https://t.me/v2raycollector
-#profile-web-page-url: https://github.com/yebekhe/TelegramV2rayCollector
+#support-url: https://t.me/SiNAVM
+#profile-web-page-url: https://github.com/sinabigo/SBO
 
 ";
 }
