@@ -110,7 +110,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 4",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
@@ -128,7 +128,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 4",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
@@ -265,7 +265,36 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "de.carefreemob2.com",
+            "server_port": 3661,
+            "uuid": "d1b63250-4cfa-4029-8931-df44f2af2c51",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "icloud.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8",
+                    "short_id": "67a1a8bb9ff0ed21"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "ip.hupcloud.com",
             "server_port": 2053,
@@ -292,37 +321,6 @@
                 "path": "\/?ed=2096",
                 "headers": {
                     "Host": "dl2.hupcloud.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "104.26.5.157",
-            "server_port": 2083,
-            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "5-55sfjslf.ifenxiang.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
