@@ -114,7 +114,8 @@
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
-                "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+                "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 10",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 11"
             ]
@@ -131,7 +132,8 @@
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
-                "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0",
+                "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+                "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 10",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 11"
             ],
@@ -234,7 +236,7 @@
             "type": "vless",
             "server": "142.132.185.23",
             "server_port": 12685,
-            "uuid": "67132220-dcd7-4b6b-8a08-1c2db61bfd73",
+            "uuid": "6d560131-d143-4f82-8586-07b5388f3164",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -346,7 +348,41 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0",
+            "tag": "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "e0a71cb0-191d-11f0-b132-205c6d5f5d78",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vtby8xqh@shieldheart-@OpenSSTPVpn-@OpenSSTPVpn",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1",
             "type": "trojan",
             "server": "141.227.160.167",
             "server_port": 1935,
