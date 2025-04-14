@@ -888,7 +888,7 @@ foreach ($directoryOfFiles as $directory) {
     $configsType = explode("/", $directory)[3];
     foreach ($outputTypes as $outputType => $configsTypeArray) {
         if (in_array($configsType, $configsTypeArray)) {
-            $surfboardUrl = $outboundType === "surfboard" ? 'https://raw.githubusercontent.com/yebekhe/TVC/main/subscriptions/surfboard/' . $configsType : "";
+            $surfboardUrl = $outboundType === "surfboard" ? 'https://raw.githubusercontent.com/sinabigo/SBO/main/subscriptions/surfboard/' . $configsType : "";
             file_put_contents(
                 "subscriptions/" .
                     $outputType .
