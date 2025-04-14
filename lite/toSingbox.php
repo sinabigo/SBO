@@ -352,8 +352,8 @@ function processConvertion ($base64ConfigsList, $configsName = "Created By YeBeK
     $headerText = "//profile-title: base64:" . base64_encode($configsName) . "
 //profile-update-interval: 1
 //subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
-//support-url: https://t.me/V2rayCollector
-//profile-web-page-url: https://t.me/V2rayCollectorBot
+//support-url: https://t.me/SiNAVM
+//profile-web-page-url: https://t.me/SiNAVM
 
 ";
     return $headerText . json_encode($structure, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
@@ -370,7 +370,7 @@ $directoryOfFiles = [
 ];
 
 foreach ($directoryOfFiles as $directory) {
-    $configsName = "TVC | " . strtoupper(explode("/", $directory)[3]);
+    $configsName = "@SiNAVM | " . strtoupper(explode("/", $directory)[3]);
     $configsData = file_get_contents($directory);
     $convertionResult = processConvertion($configsData, $configsName);
     file_put_contents("subscriptions/singbox/" . explode("/", $directory)[3] . ".json", $convertionResult);
