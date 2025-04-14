@@ -11,15 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇹🇷TR | 🟢 | trojan | @SiNAVM | 1 = trojan, dried-chow-kite.stark-industries.solutions, 443, password = 8264f515-90b6-4152-9830-7abc0ec215c6, udp-delay = true, skip-cert-verify = false, ws = false
+🇨🇦CA | 🟢 | vmess | @SiNAVM | 1 = vmess, cname.proxystore11.news, 443, username = 45876b67-8a63-4bee-911a-b9c19867949e, ws = true, tls = 1, vmess-aead = true, ws-path = /PjgO08tnfHPy9fx8, ws-headers = Host:"vipcdn.proxystore11.shop", skip-cert-verify = true, tfo = false
 🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0 = vmess, zula.ir, 443, username = e0a71cb0-191d-11f0-b132-205c6d5f5d78, ws = true, tls = 1, vmess-aead = true, ws-path = /vtby8xqh@shieldheart-@OpenSSTPVpn-@OpenSSTPVpn, ws-headers = Host:"eu-2.hihu.net", skip-cert-verify = true, tfo = false
 🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1 = trojan, 141.227.160.167, 1935, password = AXpQXM4vNh, udp-delay = true, skip-cert-verify = false, sni = x2swe-ovh.devefun.net, ws = false
 🇺🇸US | 🔴 | trojan | @redfree8 | 10 = trojan, www.speedtest.net, 80, password = redfree8, udp-delay = true, skip-cert-verify = false, ws = false
 🇺🇸US | 🔴 | trojan | @redfree8 | 11 = trojan, www.speedtest.net, 443, password = redfree8, udp-delay = true, skip-cert-verify = false, sni = redfree8-p1.pooriashop.ir, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
-URL-TEST = url-test,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
-FALLBACK = fallback,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
+URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
+FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @SiNAVM | 1,🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 1,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
