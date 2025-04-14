@@ -120,51 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🔴 | vless | @v2_team | 1","type":"vless","server":"hadi.v2rayngz.com","port":33238,"udp":true,"uuid":"6345dece-0d2c-4bca-8220-446e7c696062","tls":true,"network":"grpc","client-fingerprint":"firefox","servername":"sourceforge.net","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"8CNTnE3Hb8AP9vrlIYdzF_hBG0oklABXD7E8oY-GRDU","short-id":"466a6ae0"}}
-  - {"name":"❔XX | 🔴 | vless | @customv2ray | 7","type":"vless","server":"mehdi24.vact.ir","port":443,"udp":true,"uuid":"ff3a7a67-4e95-48e6-b7cd-82d85c43d2d6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM-PROXY_MTM"},"reality-opts":{"public-key":"AZfJhYHphztYrI4N-RpcZqfNhqV-9PG-qT80ShLpJQ8","short-id":"a473bfc1f4"}}
-  - {"name":"🇫🇮FI | 🟢 | vless | @DailyV2RY | 286","type":"vless","server":"65.109.201.171","port":8443,"udp":true,"uuid":"37025c36-52c3-409c-a158-89cfe09f322d","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"yahoo.com","reality-opts":{"public-key":"xNcZAorXH9rA85fD6A5w3-fC0iWLWYdE3XJc39ckNAc","short-id":"1dafa50a048e3f"}}
-  - {"name":"❔XX | 🔴 | vless | @proxystore11 | 2","type":"vless","server":"ipv6.proxystore11.shop","port":443,"udp":true,"uuid":"45876b67-8a63-4bee-911a-b9c19867949e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.afp.com","grpc-opts":{"grpc-service-name":"L6ocyVFZGNHz4gxKwgJ"},"reality-opts":{"public-key":"qTjnHPhsqfvEpnCP4cTXXvVQI34F2uXhWxl0ddtgpTc","short-id":"b5f32071b5f64f"}}
-  - {"name":"❔XX | 🔴 | vless | @proxystore11 | 3","type":"vless","server":"ipv6.proxystore11.shop","port":443,"udp":true,"uuid":"a4581b69-90d1-49e3-a36a-3aaf9bdf1d1e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.canva.com","grpc-opts":{"grpc-service-name":"L6ocyVFZGNHz4gxKwgJ"},"reality-opts":{"public-key":"qTjnHPhsqfvEpnCP4cTXXvVQI34F2uXhWxl0ddtgpTc","short-id":"b5f32071b5f64f"}}
-  - {"name":"❔XX | 🔴 | vless | @proxy_mtm | 6","type":"vless","server":"me16.zemestanil.ir","port":2087,"udp":true,"uuid":"e2bc7e9d-32e8-4711-babb-b043a2ce98b9","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"MTM-MTM-MTM-MTM-MTM"},"reality-opts":{"public-key":"YKw5x4_zsP6u81Gqwvr2rWrojNM1C_X-9H-3Ib3v0Qg","short-id":"e8ab"}}
-  - {"name":"❔XX | 🔴 | vless | @vpn_go67 | 21","type":"vless","server":"public.alpanel.top","port":1403,"udp":true,"uuid":"4c6451ba-6594-4d67-a8ae-4df79815a4e3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tuyacn.com","grpc-opts":{"grpc-service-name":"@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam,@vmesskhodam"},"reality-opts":{"public-key":"rCdor1DLbQcXbNBD9aiLIoCYHwqTMh8ao9MIPMXo0yA","short-id":"99"}}
+  - {"name":"🇨🇭CH | 🟢 | vless | @meli_proxyy | 15","type":"vless","server":"de.carefreemob2.com","port":3661,"udp":true,"uuid":"af335b42-7cd9-421f-ab04-a40cf106c680","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"icloud.com","reality-opts":{"public-key":"f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8","short-id":"67a1a8bb9ff0ed21"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | vless | @v2_team | 1'
-      - '❔XX | 🔴 | vless | @customv2ray | 7'
-      - '🇫🇮FI | 🟢 | vless | @DailyV2RY | 286'
-      - '❔XX | 🔴 | vless | @proxystore11 | 2'
-      - '❔XX | 🔴 | vless | @proxystore11 | 3'
-      - '❔XX | 🔴 | vless | @proxy_mtm | 6'
-      - '❔XX | 🔴 | vless | @vpn_go67 | 21'
+      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | vless | @v2_team | 1'
-      - '❔XX | 🔴 | vless | @customv2ray | 7'
-      - '🇫🇮FI | 🟢 | vless | @DailyV2RY | 286'
-      - '❔XX | 🔴 | vless | @proxystore11 | 2'
-      - '❔XX | 🔴 | vless | @proxystore11 | 3'
-      - '❔XX | 🔴 | vless | @proxy_mtm | 6'
-      - '❔XX | 🔴 | vless | @vpn_go67 | 21'
+      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | vless | @v2_team | 1'
-      - '❔XX | 🔴 | vless | @customv2ray | 7'
-      - '🇫🇮FI | 🟢 | vless | @DailyV2RY | 286'
-      - '❔XX | 🔴 | vless | @proxystore11 | 2'
-      - '❔XX | 🔴 | vless | @proxystore11 | 3'
-      - '❔XX | 🔴 | vless | @proxy_mtm | 6'
-      - '❔XX | 🔴 | vless | @vpn_go67 | 21'
+      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

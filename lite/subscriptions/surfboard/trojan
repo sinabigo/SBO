@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15 = trojan, 13.36.157.61, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16 = trojan, 35.180.233.144, 22222, password = telegram-id-privatevpns, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇬🇧GB | 🟢 | trojan | @DirectVPN | 15 = trojan, 3.9.89.14, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 16 = trojan, 35.180.235.110, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇹🇷TR | 🟢 | trojan | @SiNAVM | 1 = trojan, dried-chow-kite.stark-industries.solutions, 443, password = 8264f515-90b6-4152-9830-7abc0ec215c6, udp-delay = true, skip-cert-verify = false, ws = false
+🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0 = trojan, 141.227.160.167, 1935, password = AXpQXM4vNh, udp-delay = true, skip-cert-verify = false, sni = x2swe-ovh.devefun.net, ws = false
+🇺🇸US | 🔴 | trojan | @redfree8 | 10 = trojan, www.speedtest.net, 80, password = redfree8, udp-delay = true, skip-cert-verify = false, ws = false
+🇺🇸US | 🔴 | trojan | @redfree8 | 11 = trojan, www.speedtest.net, 443, password = redfree8, udp-delay = true, skip-cert-verify = false, sni = redfree8-p1.pooriashop.ir, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16,🇬🇧GB | 🟢 | trojan | @DirectVPN | 15,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16
-URL-TEST = url-test,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16,🇬🇧GB | 🟢 | trojan | @DirectVPN | 15,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16
-FALLBACK = fallback,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 15,🇫🇷FR | 🟢 | trojan | @PrivateVPNs | 16,🇬🇧GB | 🟢 | trojan | @DirectVPN | 15,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16
+MANUAL = select,URL-TEST,FALLBACK,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
+URL-TEST = url-test,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
+FALLBACK = fallback,🇹🇷TR | 🟢 | trojan | @SiNAVM | 1,🇸🇪SE | 🟢 | trojan | @OpenSSTPVpn | 0,🇺🇸US | 🔴 | trojan | @redfree8 | 10,🇺🇸US | 🔴 | trojan | @redfree8 | 11
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
