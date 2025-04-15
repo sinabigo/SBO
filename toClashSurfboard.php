@@ -90,7 +90,7 @@ function vmessToSurfboard($input)
     $AEAD = $alterId === "0" ? "true" : "false";
     if ($networkType === "ws") {
         $vmessTemplate =
-        urldecode($decodedConfig["ps"]) .
+            urldecode($decodedConfig["ps"]) .
             " = vmess, " .
             $decodedConfig["add"] .
             ", " .
@@ -121,10 +121,10 @@ function trojanToClash($input)
         "udp" => false,
         "password" => $decodedConfig["username"],
         "skip-cert-verify" =>
-            isset($decodedConfig["params"]["allowInsecure"]) &&
+        isset($decodedConfig["params"]["allowInsecure"]) &&
             $decodedConfig["params"]["allowInsecure"] === "1"
-                ? true
-                : false,
+            ? true
+            : false,
         "network" => "tcp",
         "client-fingerprint" => "chrome",
     ];
@@ -140,15 +140,15 @@ function trojanToSurfboard($input)
     $skipCertVerify =
         isset($decodedConfig["params"]["allowInsecure"]) &&
         $decodedConfig["params"]["allowInsecure"] === "1"
-            ? "true"
-            : "false";
+        ? "true"
+        : "false";
     if (isset($decodedConfig["params"]["sni"])) {
         $trojanSni = ", sni = " . $decodedConfig["params"]["sni"];
     } else {
         $trojanSni = "";
     }
     $trojanTemplate =
-    urldecode($decodedConfig["hash"]) .
+        urldecode($decodedConfig["hash"]) .
         " = trojan, " .
         $decodedConfig["hostname"] .
         ", " .
@@ -202,7 +202,7 @@ function ssToSurfboard($input)
         return null;
     }
     $shadowsocksTemplate =
-    urldecode($decodedConfig["name"]) .
+        urldecode($decodedConfig["name"]) .
         " = ss, " .
         $decodedConfig["server_address"] .
         ", " .
@@ -358,7 +358,7 @@ function toClashSurfboard($input, $outboundType)
             "surfboard" => "ssToSurfboard",
         ],
     ];
-    
+
     return $functionsArray[$configType][$outboundType]($input);
 }
 
@@ -639,7 +639,7 @@ function configsProxyGroup($outboundType)
                 "URL-TEST" => [
                     "  - name: URL-TEST",
                     "    type: url-test",
-                    "    url: http://www.gstatic.com/generate_204",
+                    "    url: http://cp.cloudflare.com",
                     "    interval: 60",
                     "    tolerance: 50",
                     "    proxies:",
@@ -647,7 +647,7 @@ function configsProxyGroup($outboundType)
                 "FALLBACK" => [
                     "  - name: FALLBACK",
                     "    type: fallback",
-                    "    url: http://www.gstatic.com/generate_204",
+                    "    url: http://cp.cloudflare.com",
                     "    interval: 60",
                     "    proxies:",
                 ],
@@ -665,7 +665,7 @@ function configsProxyGroup($outboundType)
                 "URL-TEST" => [
                     "  - name: URL-TEST",
                     "    type: url-test",
-                    "    url: http://www.gstatic.com/generate_204",
+                    "    url: http://cp.cloudflare.com/",
                     "    interval: 60",
                     "    tolerance: 50",
                     "    proxies:",
@@ -673,7 +673,7 @@ function configsProxyGroup($outboundType)
                 "FALLBACK" => [
                     "  - name: FALLBACK",
                     "    type: fallback",
-                    "    url: http://www.gstatic.com/generate_204",
+                    "    url: http://cp.cloudflare.com/",
                     "    interval: 60",
                     "    proxies:",
                 ],
