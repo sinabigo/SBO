@@ -244,7 +244,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "TVC" . getRandomName(),
+                : "SiNAVM" . getRandomName(),
         ];
 
         if ($configType === "tuic") {
@@ -264,7 +264,7 @@ function configParse($input)
         );
         $server_address = $url["host"];
         $server_port = $url["port"];
-        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "TVC" . getRandomName();
+        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "SiNAVM" . getRandomName();
         $server = [
             "encryption_method" => $encryption_method,
             "password" => $password,
@@ -405,7 +405,7 @@ function hiddifyHeader($subscriptionName)
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
 #support-url: https://github.com/PacketCipher
-#profile-web-page-url: https://github.com/PacketCipher/TVC
+#profile-web-page-url: https://github.com/PacketCipher/SiNAVM
 
 ";
 }
