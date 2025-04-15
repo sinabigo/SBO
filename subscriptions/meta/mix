@@ -128,13 +128,13 @@ proxy-groups:
       - FALLBACK
   - name: URL-TEST
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
   - name: FALLBACK
     type: fallback
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 60
     proxies:
 rule-providers:

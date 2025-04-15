@@ -198,7 +198,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0'
   - name: URL-TEST
     type: url-test
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
@@ -239,7 +239,7 @@ proxy-groups:
       - '🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 0'
   - name: FALLBACK
     type: fallback
-    url: http://www.gstatic.com/generate_204
+    url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇩🇪DE | 🟢 | vmess | @CUSTOMVPNSERVER | 15'
