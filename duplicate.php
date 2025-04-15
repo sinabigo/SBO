@@ -20,8 +20,6 @@ $configsHash = [
 // Read the config file and split it into an array by newline
 $configsArray = explode("\n", file_get_contents("config.txt"));
 
-$channelsAssets = json_decode(file_get_contents("channelsData/channelsAssets.json"), true);
-
 // Initialize arrays to store deduplicated configs and their names
 $deduplicateArray = [];
 $namesArray = [];
@@ -50,9 +48,6 @@ foreach ($configsArray as $config) {
 // Initialize an array to store the final output
 $finalOutput = [];
 
-// Initialize an array to store the configs Full Data output
-$configsFullData = [];
-
 // Loop through each deduplicated config
 foreach ($deduplicateArray as $key => $deduplicate) {
     // Detect the type of the config
@@ -69,30 +64,18 @@ foreach ($deduplicateArray as $key => $deduplicate) {
     $finalOutput[] = $encodedConfig;
 
     $sourceUsername = str_replace(["%20", "@"], ["", ""], explode("|", $namesArray[$key])[2]);
-
-    $configsFullData[$key]["channel"]["username"]  = $sourceUsername;
-    $configsFullData[$key]["channel"]["title"] = $channelsAssets[$sourceUsername]['title'];
-    $configsFullData[$key]["channel"]["logo"] = $channelsAssets[$sourceUsername]['logo'];
-    $configsFullData[$key]['type'] = $configType === 'vless' && is_reality($encodedConfig) ? 'reality' : $configType;
-    $configsFullData[$key]["config"] = $encodedConfig;
-
 }
 
 // Write the final output to the config file
 file_put_contents("config.txt", implode("\n", $finalOutput));
 
-$tempConfig = hiddifyHeader("@SiNAVM | MIX") . urldecode(implode("\n", $finalOutput));
+$tempConfig = hiddifyHeader("SiNAVM | MIX") . urldecode(implode("\n", $finalOutput));
 $base64TempConfig = base64_encode($tempConfig);
 
 // Write the final output to the subscriptions/xray/normal/mix file
 file_put_contents("subscriptions/xray/normal/mix", $tempConfig);
 // Write the final output to the subscriptions/xray/base64/mix file, encoded in base64
 file_put_contents("subscriptions/xray/base64/mix", $base64TempConfig);
-
-if (!file_exists('api/allConfigs.json')) {
-    mkdir('api');
-}
-file_put_contents("api/allConfigs.json", json_encode($configsFullData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
 // Print "done!" to the console
 echo "Removing Duplicates Done!\n";
