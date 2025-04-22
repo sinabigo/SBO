@@ -1,0 +1,66 @@
+name: "Let's SiNAVM!"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '*/60 * * * *'
+    
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  sinavm-full:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          
+      - name: Execute PHP script
+        run: |
+          php get.php
+          php channelsAssets.php
+          php duplicate.php
+          php sort.php
+          php toSingbox.php
+          php toClashSurfboard.php
+          php hiddifyWarp.php
+          git config --global user.email "T.me/SiNAVM"
+          git config --global user.name "yebekhe"
+          git config credential.helper store
+          git add -A
+          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git push
+          
+  sinavm-lite:
+    runs-on: ubuntu-latest
+    needs: sinavm-full
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+      
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '7.4'
+          
+      - name: Execute PHP script
+        run: |
+          git pull
+          cd lite
+          php get.php
+          php duplicate.php
+          php sort.php
+          php toSingbox.php
+          php toClashSurfboard.php
+          git config --global user.email "T.me/SiNAVM"
+          git config --global user.name "yebekhe"
+          git config credential.helper store
+          git add -A
+          git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
+          git push
