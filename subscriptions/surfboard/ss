@@ -11,14 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇭🇺HU | 🟢 | ss | @kingofilter | 6 = ss, 86.104.75.103, 49264, encrypt-method = chacha20-ietf-poly1305, password = LI4obOEIDLzDjd7xYlhhTJ
-🇬🇧GB | 🟢 | ss | @kingofilter | 14 = ss, admin.c4.havij.co, 443, encrypt-method = chacha20-ietf-poly1305, password = VR9JkPKbufOZQ2lr
-🇺🇸US | 🟢 | ss | @kingofilter | 19 = ss, 45.87.175.10, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
-🇺🇸US | 🟢 | ss | @meli_proxyy | 4 = ss, 77.110.106.77, 36301, encrypt-method = chacha20-ietf-poly1305, password = v0NHlCl2nvVfC8AeZPMffi
+🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0 = ss, 103.104.247.49, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
+🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2 = ss, 89.23.103.21, 51584, encrypt-method = chacha20-ietf-poly1305, password = oYQ8JwEldYn4KT2gfZ6eNl
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇭🇺HU | 🟢 | ss | @kingofilter | 6,🇬🇧GB | 🟢 | ss | @kingofilter | 14,🇺🇸US | 🟢 | ss | @kingofilter | 19,🇺🇸US | 🟢 | ss | @meli_proxyy | 4
-URL-TEST = url-test,🇭🇺HU | 🟢 | ss | @kingofilter | 6,🇬🇧GB | 🟢 | ss | @kingofilter | 14,🇺🇸US | 🟢 | ss | @kingofilter | 19,🇺🇸US | 🟢 | ss | @meli_proxyy | 4
-FALLBACK = fallback,🇭🇺HU | 🟢 | ss | @kingofilter | 6,🇬🇧GB | 🟢 | ss | @kingofilter | 14,🇺🇸US | 🟢 | ss | @kingofilter | 19,🇺🇸US | 🟢 | ss | @meli_proxyy | 4
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
+URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
+FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
