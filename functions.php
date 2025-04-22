@@ -10,8 +10,7 @@ function is_ip($string)
     }
 }
 
-function convertToJson($input)
-{
+function convertToJson($input) {
     // Split the input string by newline
     $lines = explode("\n", $input);
 
@@ -82,7 +81,7 @@ function ip_info($ip)
         $options = [
             "http" => [
                 "header" =>
-                "User-Agent: Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.102011-10-16 20:23:10\r\n", // i.e. An iPad
+                    "User-Agent: Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B334b Safari/531.21.102011-10-16 20:23:10\r\n", // i.e. An iPad
             ],
         ];
 
@@ -129,8 +128,7 @@ function is_cloudflare_ip($ip)
     return false;
 }
 
-function cidr_match($ip, $range)
-{
+function cidr_match($ip, $range) {
     list($subnet, $bits) = explode('/', $range);
     if ($bits === null) {
         $bits = 32;
@@ -150,8 +148,7 @@ function is_valid($input)
     return true;
 }
 
-function isEncrypted($input)
-{
+function isEncrypted($input) {
     $decodedConfig = configParse($input);
     $configType = detect_type($input);
 
@@ -365,21 +362,19 @@ function isBase64($input)
     return false;
 }
 
-function getRandomName()
-{
+function getRandomName() {
     $alphabet = 'abcdefghijklmnopqrstuvwxyz';
     $name = '';
     for ($i = 0; $i < 10; $i++) {
-        // Get a random letter from the alphabet
-        $randomLetter = $alphabet[rand(0, strlen($alphabet) - 1)];
-        // Add the letter to the name string
-        $name .= $randomLetter;
+      // Get a random letter from the alphabet
+      $randomLetter = $alphabet[rand(0, strlen($alphabet) - 1)];
+      // Add the letter to the name string
+      $name .= $randomLetter;
     }
     return $name;
-}
+  }
 
-function deleteFolder($folder)
-{
+function deleteFolder($folder) {
     if (!is_dir($folder)) {
         return;
     }
@@ -399,8 +394,7 @@ function tehran_time()
     return $formatted_time;
 }
 
-function hiddifyHeader($subscriptionName)
-{
+function hiddifyHeader ($subscriptionName) {
     return "#profile-title: base64:" . base64_encode($subscriptionName) . "
 #profile-update-interval: 1
 #subscription-userinfo: upload=0; download=0; total=10737418240000000; expire=2546249531
