@@ -9,66 +9,42 @@ require "functions.php";
 
 // Fetch the JSON data from the API and decode it into an associative array
 $sourcesArray = json_decode(
-    file_get_contents("‏channels.json"),
+    file_get_contents("channels.json"),
     true
 );
 
-// Function to process a batch of sources
-function processBatch($batchSources, $sourcesArray, &$configsList)
-{
-    // Initialize cURL multi handle
-    $multiHandle = curl_multi_init();
-    $curlHandles = [];
-
-    // Add individual cURL handles to the multi handle
-    foreach ($batchSources as $source) {
-        $url = "https://t.me/s/" . $source;
-        $curlHandle = curl_init($url);
-        curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, true);
-        $curlHandles[$source] = $curlHandle;
-        curl_multi_add_handle($multiHandle, $curlHandle);
-    }
-
-    // Execute the multi handle
-    $running = null;
-    do {
-        curl_multi_exec($multiHandle, $running);
-        curl_multi_select($multiHandle);
-    } while ($running);
-
-    // Get the content from the individual cURL handles
-    foreach ($curlHandles as $source => $curlHandle) {
-        $tempData = curl_multi_getcontent($curlHandle);
-        $type = implode("|", $sourcesArray[$source]);
-        $tempExtract = extractLinksByType($tempData, $type);
-        if (!is_null($tempExtract)) {
-            $configsList[$source] = $tempExtract;
-        }
-        curl_multi_remove_handle($multiHandle, $curlHandle);
-        curl_close($curlHandle);
-    }
-
-    // Close the multi handle
-    curl_multi_close($multiHandle);
-}
-
-// Batch size
-$batchSize = 10;
+// Count the total number of sources
 $totalSources = count($sourcesArray);
-$sourceKeys = array_keys($sourcesArray);
+$tempCounter = 1;
+
+// Initialize an empty array to store the configurations
 $configsList = [];
 echo "Fetching Configs\n";
 
-// Process the sources in batches
-for ($i = 0; $i < $totalSources; $i += $batchSize) {
-    $batchSources = array_slice($sourceKeys, $i, min($batchSize, $totalSources - $i));
-    processBatch($batchSources, $sourcesArray, $configsList);
-    echo "\rProgress: " . round(($i + count($batchSources)) / $totalSources * 100) . "% \n";
+// Loop through each source in the sources array
+foreach ($sourcesArray as $source => $types) {
+    // Calculate the percentage complete
+    $percentage = ($tempCounter / $totalSources) * 100;
+
+    // Print the progress bar
+    echo "\rProgress: [";
+    echo str_repeat("=", $tempCounter);
+    echo str_repeat(" ", $totalSources - $tempCounter);
+    echo "] $percentage%";
+    $tempCounter++;
+
+    // Fetch the data from the source
+    $tempData = file_get_contents("https://t.me/s/" . $source);
+    $type = implode("|", $types);
+    $tempExtract = extractLinksByType($tempData, $type);
+    if (!is_null($tempExtract)) {
+        $configsList[$source] = $tempExtract;
+    }
 }
 
-echo "\nProcessing Configs\n";
+// Initialize an empty array to store the final output
 $finalOutput = [];
-// $locationBased = [];
+$locationBased = [];
 $needleArray = ["amp%3B"];
 $replaceArray = [""];
 
@@ -90,6 +66,7 @@ $configsIp = [
     "ss" => "server_address",
 ];
 
+echo "\nProcessing Configs\n";
 $totalSources = count($configsList);
 $tempSource = 1;
 
@@ -118,16 +95,16 @@ foreach ($configsList as $source => $configs) {
             $configHash = $configsHash[$type];
             $configIp = $configsIp[$type];
             $decodedConfig = configParse(explode("<", $config)[0]);
-            // $configLocation =
-            //     ip_info($decodedConfig[$configIp])->country ?? "XX";
-            // $configFlag =
-            //     $configLocation === "XX" ? "❔" : ($configLocation === "CF" ? "🚩" : getFlags($configLocation));
-            $isEncrypted =
-                isEncrypted($config) ? "🔒" : "🔓";
+            $configLocation =
+                ip_info($decodedConfig[$configIp])->country ?? "XX";
+            $configFlag =
+                $configLocation === "XX" ? "❔" : ($configLocation === "CF" ? "🚩" : getFlags($configLocation));
+            $isEncrypted = 
+                isEncrypted($config) ? "🟢" : "🔴";
             $decodedConfig[$configHash] =
-                // $configFlag .
-                // $configLocation .
-                // " | " .
+                $configFlag .
+                $configLocation .
+                " | " . 
                 $isEncrypted .
                 " | " .
                 $type .
@@ -142,42 +119,36 @@ foreach ($configsList as $source => $configs) {
                     $replaceArray,
                     $encodedConfig
                 );
-                // $locationBased[$configLocation][] = str_replace(
-                //     $needleArray,
-                //     $replaceArray,
-                //     $encodedConfig
-                // );
+                $locationBased[$configLocation][] = str_replace(
+                    $needleArray,
+                    $replaceArray,
+                    $encodedConfig
+                );
             }
         }
     }
     $tempSource++;
 }
-
-// deleteFolder("subscriptions/location/normal");
-// deleteFolder("subscriptions/location/base64");
-// mkdir("subscriptions/location/normal");
-// mkdir("subscriptions/location/base64");
+deleteFolder("subscriptions/location/normal");
+deleteFolder("subscriptions/location/base64");
+mkdir("subscriptions/location/normal");
+mkdir("subscriptions/location/base64");
 
 // Loop through each location in the location-based array
-// foreach ($locationBased as $location => $configs) {
-//     $tempConfig = urldecode(implode("\n", $configs));
-//     $base64TempConfig = base64_encode($tempConfig);
-//     file_put_contents(
-//         "subscriptions/location/normal/" . $location,
-//         $tempConfig
-//     );
-//     file_put_contents(
-//         "subscriptions/location/base64/" . $location,
-//         $base64TempConfig
-//     );
-// }
-
-// Write the final output to a file only if it's not empty
-if (!empty($finalOutput)) {
-    file_put_contents("config.txt", implode("\n", $finalOutput));
-    echo "\nConfig file written successfully.\n";
-} else {
-    echo "\nNo valid new configurations found. Config file not written.\n";
+foreach ($locationBased as $location => $configs) {
+    $tempConfig = urldecode(implode("\n", $configs));
+    $base64TempConfig = base64_encode($tempConfig);
+    file_put_contents(
+        "subscriptions/location/normal/" . $location,
+        $tempConfig
+    );
+    file_put_contents(
+        "subscriptions/location/base64/" . $location,
+        $base64TempConfig
+    );
 }
+
+// Write the final output to a file
+file_put_contents("config.txt", implode("\n", $finalOutput));
 
 echo "\nGetting Configs Done!\n";
