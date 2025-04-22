@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '*/60 * * * *'
-    
+
 concurrency:
-  group: "pages"
-  cancel-in-progress: true  
+  group: "sinavm-full"
+  cancel-in-progress: true
 
 jobs:
   sinavm-full:
@@ -39,7 +39,7 @@ jobs:
           git add -A
           git commit -m "🚀 Servers Updated - $(TZ='Asia/Tehran' date '+%Y-%m-%d %H:%M:%S')"
           git push
-          
+
   sinavm-lite:
     runs-on: ubuntu-latest
     needs: sinavm-full 
