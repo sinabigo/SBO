@@ -68,7 +68,7 @@ foreach ($deduplicateArray as $key => $deduplicate) {
 // Write the final output to the config file
 file_put_contents("config.txt", implode("\n", $finalOutput));
 
-$tempConfig = hiddifyHeader("@SiNAVM | MIX") . urldecode(implode("\n", $finalOutput));
+$tempConfig = hiddifyHeader("@SiNAVM |lite |MIX") . urldecode(implode("\n", $finalOutput));
 $base64TempConfig = base64_encode($tempConfig);
 
 // Write the final output to the subscriptions/xray/normal/mix file
