@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"103.104.247.49","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @meli_proxyy | 2","type":"ss","server":"65.109.180.201","port":1080,"password":"dfsJzhxCr4FC_vMy6FY6cA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 13","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @meli_proxyy | 6","type":"ss","server":"65.109.180.201","port":1080,"password":"dfsJzhxCr4FC_vMy6FY6cA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 17","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0","type":"ss","server":"4.158.72.166","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +131,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 2'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 13'
+      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 6'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: URL-TEST
     type: url-test
@@ -141,8 +141,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 2'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 13'
+      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 6'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: FALLBACK
     type: fallback
@@ -150,8 +150,8 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 2'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 13'
+      - '🇫🇮FI | 🟢 | ss | @meli_proxyy | 6'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
