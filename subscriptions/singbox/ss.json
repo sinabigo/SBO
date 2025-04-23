@@ -107,7 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3"
+                "🇫🇮FI | 🟢 | ss | @meli_proxyy | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
+                "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0"
             ]
         },
         {
@@ -115,7 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3"
+                "🇫🇮FI | 🟢 | ss | @meli_proxyy | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
+                "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,12 +152,32 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3",
+            "tag": "🇫🇮FI | 🟢 | ss | @meli_proxyy | 0",
+            "type": "shadowsocks",
+            "server": "65.109.180.201",
+            "server_port": 1080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "dfsJzhxCr4FC_vMy6FY6cA",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
             "type": "shadowsocks",
             "server": "85.210.120.237",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "Bog0ELmMM9DSxDdQ",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
+            "type": "shadowsocks",
+            "server": "4.158.72.166",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
             "plugin": "",
             "plugin_opts": ""
         }

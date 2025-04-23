@@ -108,12 +108,13 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 3",
-                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 10",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 17",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 11",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 16",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 6",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 23"
             ]
         },
         {
@@ -122,12 +123,13 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 3",
-                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 10",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 17",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 11",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 16",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 6",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 23"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -208,7 +210,7 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
+            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
             "type": "vless",
             "server": "ru.maviks.eu",
             "server_port": 443,
@@ -237,7 +239,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 10",
+            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 11",
             "type": "vless",
             "server": "kopa.soskom.ir",
             "server_port": 11045,
@@ -273,7 +275,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 15",
+            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 16",
             "type": "vless",
             "server": "g.soskom.ir",
             "server_port": 11045,
@@ -309,11 +311,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 17",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 6",
             "type": "vless",
-            "server": "info19721.novintecc.org",
-            "server_port": 21332,
-            "uuid": "422899ac-7bfb-441a-89c2-5b9eee312790",
+            "server": "65.109.180.201",
+            "server_port": 2052,
+            "uuid": "55a4360d-d980-438a-9777-6ef236627ba4",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -323,7 +325,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "python.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -332,13 +334,49 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI",
-                    "short_id": "866c9d6a17a0ae44"
+                    "public_key": "KysoAVtkAV4VRhryfZUuAwuVXtbzoMpW1q0QbRzLRwE",
+                    "short_id": "cd95799483c0939b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "2053vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+            "type": "vless",
+            "server": "65.109.180.201",
+            "server_port": 8080,
+            "uuid": "55a4360d-d980-438a-9777-6ef236627ba4",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telewebion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9XjMJbjIJAWXmJItqxN8WmhLKzKjaEtNtu_93Y_7MWc",
+                    "short_id": "33cd3719771665ea"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "mmdv.s8573.ir",
             "server_port": 443,
@@ -367,7 +405,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 23",
             "type": "vless",
             "server": "91.107.167.61",
             "server_port": 59248,
