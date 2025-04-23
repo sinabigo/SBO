@@ -107,14 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 3",
-                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 11",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 16",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 4",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 3",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 12",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 17",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 8",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24"
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25"
             ]
         },
         {
@@ -122,14 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 3",
-                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 11",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 16",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 4",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 3",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 12",
+                "❔XX | 🔴 | vless | @TEHRANARGO | 17",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 8",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24"
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -181,7 +183,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 4",
             "type": "vless",
             "server": "162.55.36.107",
             "server_port": 577,
@@ -210,7 +212,43 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "91.107.161.47",
+            "server_port": 110,
+            "uuid": "38b4dd8c-e4f9-4b13-8124-b7092c2e6045",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdnjs.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gjpZdZmvqNvzY9cgnc0tTF9XXAvvq5Hmp37jJl2lvWY",
+                    "short_id": "ce9fa5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Go4HFJDtQYDNh5HQII31",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 3",
             "type": "vless",
             "server": "ru.maviks.eu",
             "server_port": 443,
@@ -239,7 +277,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 11",
+            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
             "server": "kopa.soskom.ir",
             "server_port": 11045,
@@ -275,7 +313,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 16",
+            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 17",
             "type": "vless",
             "server": "g.soskom.ir",
             "server_port": 11045,
@@ -311,7 +349,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 7",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "65.109.180.201",
             "server_port": 2052,
@@ -347,7 +385,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "65.109.180.201",
             "server_port": 8080,
@@ -376,7 +414,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "mmdv.s8573.ir",
             "server_port": 443,
@@ -405,7 +443,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25",
             "type": "vless",
             "server": "91.107.167.61",
             "server_port": 59248,
