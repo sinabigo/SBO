@@ -209,7 +209,7 @@ function configParse($input)
             "params" => $params,
             "hash" => isset($parsedUrl["fragment"])
                 ? $parsedUrl["fragment"]
-                : "@@SiNAVM-Lite" . getRandomName(),
+                : "@@SiNAVM | lite" . getRandomName(),
         ];
 
         if ($configType === "tuic") {
@@ -229,7 +229,7 @@ function configParse($input)
         );
         $server_address = $url["host"];
         $server_port = $url["port"];
-        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "@SiNAVM-Lite" . getRandomName();
+        $name = isset($url["fragment"]) ? urldecode($url["fragment"]) : "@SiNAVM | lite" . getRandomName();
         $server = [
             "encryption_method" => $encryption_method,
             "password" => $password,
