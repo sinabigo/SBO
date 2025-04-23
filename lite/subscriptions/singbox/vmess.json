@@ -106,6 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇸🇬SG | 🟢 | vmess | @meli_proxyy | 25",
+                "🇩🇪DE | 🟢 | vmess | @meli_proxyy | 26",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -113,6 +115,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇸🇬SG | 🟢 | vmess | @meli_proxyy | 25",
+                "🇩🇪DE | 🟢 | vmess | @meli_proxyy | 26",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +138,40 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | vmess | @meli_proxyy | 25",
+            "type": "vmess",
+            "server": "84.247.149.77",
+            "server_port": 47211,
+            "uuid": "fb674260-1c21-4f99-8bd0-3d1d341c6771",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @meli_proxyy | 26",
+            "type": "vmess",
+            "server": "45.12.138.82",
+            "server_port": 54757,
+            "uuid": "cde9f074-c930-4aa3-a558-46bbc9d0a5a1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1",

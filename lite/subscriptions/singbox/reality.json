@@ -106,18 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 17",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25"
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 17",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25"
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,71 +161,6 @@
                     "enabled": true,
                     "public_key": "K3Qci9i3W2_Pn88RiUGD8cjfuJ0fmFbc7e_YyupZBkM",
                     "short_id": "431c6edc"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 17",
-            "type": "vless",
-            "server": "g.soskom.ir",
-            "server_port": 11045,
-            "uuid": "b1e6e5cb-8295-412c-bd08-b1dc0a211a10",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
-                    "short_id": "20db1be5e1ab118a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Tel : @NT_Safe",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 25",
-            "type": "vless",
-            "server": "91.107.167.61",
-            "server_port": 59248,
-            "uuid": "def6e08c-b9ec-4257-86ef-475efaddd366",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "8Kv7EfgfL25rSlPhosakuzPleZ4wWXN90dlh4Ti6FhA",
-                    "short_id": ""
                 }
             }
         }
