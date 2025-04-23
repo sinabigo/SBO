@@ -114,9 +114,8 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 15",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 16",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇦CA | 🔴 | vless | @ArV2ray | 18",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 13",
                 "🇨🇦CA | 🔴 | vless | @redfree8 | 14"
@@ -134,9 +133,8 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 15",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 16",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇦CA | 🔴 | vless | @ArV2ray | 18",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 13",
                 "🇨🇦CA | 🔴 | vless | @redfree8 | 14"
@@ -375,35 +373,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "144.76.231.24",
-            "server_port": 36231,
-            "uuid": "965c9185-1ff2-44a8-b0d3-579822748c0f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "ip.sitwe.ir",
-            "server_port": 8080,
-            "uuid": "4befd844-b7a9-4992-94ae-fd0f2887fc75",
-            "flow": "",
+            "server": "aSD7953fotD6b2Mktnyo.GUiLDedtoP.ir",
+            "server_port": 443,
+            "uuid": "61435a04-0e16-436f-b81d-552d70145fd9",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "-RAXxRIJwQWrX2sx-N3XvLbj3GgebhYF4XfU9h9Wsm0",
+                    "short_id": ""
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2052,
