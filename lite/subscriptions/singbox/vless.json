@@ -106,38 +106,38 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 20",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 19",
                 "❔XX | 🔴 | vless | @meli_proxyy | 26",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 27",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 13",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 14"
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 20",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 19",
                 "❔XX | 🔴 | vless | @meli_proxyy | 26",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 27",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 13",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 14"
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -160,7 +160,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "fonts.net",
             "server_port": 443,
@@ -191,7 +191,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
             "server": "185.237.95.216",
             "server_port": 443,
@@ -307,17 +307,39 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 20",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 19",
             "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 2086,
-            "uuid": "e1cb8f11-cd57-4729-bf23-d2ff5ca91aaa",
-            "flow": "",
+            "server": "kopa.soskom.ir",
+            "server_port": 11045,
+            "uuid": "024080b0-091d-47df-9d76-aa4db7bd7247",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -444,7 +466,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 14",
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 14",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
