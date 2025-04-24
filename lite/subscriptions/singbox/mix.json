@@ -108,14 +108,14 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 16",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 17",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 26",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -130,14 +130,14 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 16",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 17",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 26",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -226,9 +226,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 16",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
             "type": "trojan",
-            "server": "54.155.66.160",
+            "server": "3.66.134.189",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -248,9 +248,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 17",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 15",
             "type": "trojan",
-            "server": "13.43.154.4",
+            "server": "16.16.148.211",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -371,17 +371,32 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 26",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25",
             "type": "vless",
-            "server": "157.180.30.213",
-            "server_port": 49591,
-            "uuid": "29dc7a46-5bd9-4dac-b3a8-59d83e06dc0a",
-            "flow": "",
+            "server": "mmdv.s8573.ir",
+            "server_port": 443,
+            "uuid": "acb9dedd-fa08-476f-b21a-06f6b7ddde97",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HT5DfZtmmFSHXy__XWc1ukf2zJHRtCWJSc2mhcpptXc",
+                    "short_id": "b6c6a4369cb8"
+                }
             }
         },
         {

@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4"
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4"
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -161,6 +163,35 @@
                     "enabled": true,
                     "public_key": "K3Qci9i3W2_Pn88RiUGD8cjfuJ0fmFbc7e_YyupZBkM",
                     "short_id": "431c6edc"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 25",
+            "type": "vless",
+            "server": "mmdv.s8573.ir",
+            "server_port": 443,
+            "uuid": "acb9dedd-fa08-476f-b21a-06f6b7ddde97",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "eset.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "HT5DfZtmmFSHXy__XWc1ukf2zJHRtCWJSc2mhcpptXc",
+                    "short_id": "b6c6a4369cb8"
                 }
             }
         }
