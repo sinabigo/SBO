@@ -11,13 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | 🟢 | ss | @meli_proxyy | 4 = ss, 85.210.120.237, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
-🇫🇮FI | 🟢 | ss | @meli_proxyy | 14 = ss, 65.109.180.201, 1080, encrypt-method = chacha20-ietf-poly1305, password = dfsJzhxCr4FC_vMy6FY6cA
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 0 = ss, 4.158.95.69, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 1 = ss, 85.210.120.237, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
+🇨🇦CA | 🟢 | ss | @meli_proxyy | 2 = ss, 64.74.163.82, 990, encrypt-method = chacha20-ietf-poly1305, password = f8f7aCzcPKbsF8p3
+🇫🇮FI | 🟢 | ss | @meli_proxyy | 19 = ss, 65.109.180.201, 1080, encrypt-method = chacha20-ietf-poly1305, password = dfsJzhxCr4FC_vMy6FY6cA
 🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0 = ss, 4.158.72.166, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 4,🇫🇮FI | 🟢 | ss | @meli_proxyy | 14,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 4,🇫🇮FI | 🟢 | ss | @meli_proxyy | 14,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 4,🇫🇮FI | 🟢 | ss | @meli_proxyy | 14,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 1,🇨🇦CA | 🟢 | ss | @meli_proxyy | 2,🇫🇮FI | 🟢 | ss | @meli_proxyy | 19,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 1,🇨🇦CA | 🟢 | ss | @meli_proxyy | 2,🇫🇮FI | 🟢 | ss | @meli_proxyy | 19,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 1,🇨🇦CA | 🟢 | ss | @meli_proxyy | 2,🇫🇮FI | 🟢 | ss | @meli_proxyy | 19,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
