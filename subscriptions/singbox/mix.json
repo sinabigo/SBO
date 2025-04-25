@@ -109,20 +109,21 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 5",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 6",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 7",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 7",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 8",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 9",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 9",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 10",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11",
+                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 11",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 2",
                 "🚩CF | 🟢 | vless | @Outline_Vpn | 4",
@@ -207,20 +208,21 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 5",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 6",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 7",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 7",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 8",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 9",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 9",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 10",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11",
+                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 11",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 2",
                 "🚩CF | 🟢 | vless | @Outline_Vpn | 4",
@@ -409,7 +411,29 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "type": "trojan",
+            "server": "52.47.123.108",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
             "type": "trojan",
             "server": "3.78.80.161",
             "server_port": 22222,
@@ -431,7 +455,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
             "type": "trojan",
             "server": "51.44.188.33",
             "server_port": 22222,
@@ -453,7 +477,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3",
             "type": "trojan",
             "server": "13.37.140.32",
             "server_port": 22222,
@@ -475,7 +499,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4",
             "type": "trojan",
             "server": "18.196.84.143",
             "server_port": 22222,
@@ -497,7 +521,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5",
             "type": "trojan",
             "server": "18.199.215.47",
             "server_port": 22222,
@@ -519,7 +543,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 5",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 6",
             "type": "trojan",
             "server": "51.21.163.250",
             "server_port": 22222,
@@ -541,7 +565,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 6",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 7",
             "type": "trojan",
             "server": "13.49.32.184",
             "server_port": 22222,
@@ -563,7 +587,7 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 7",
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 8",
             "type": "trojan",
             "server": "63.34.99.217",
             "server_port": 22222,
@@ -585,7 +609,7 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 8",
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 9",
             "type": "trojan",
             "server": "34.243.149.238",
             "server_port": 22222,
@@ -607,7 +631,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 9",
+            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 10",
             "type": "trojan",
             "server": "52.56.214.173",
             "server_port": 22222,
@@ -629,7 +653,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 10",
+            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 11",
             "type": "trojan",
             "server": "18.133.17.93",
             "server_port": 22222,
@@ -651,7 +675,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
             "type": "trojan",
             "server": "13.39.53.86",
             "server_port": 22222,
@@ -673,7 +697,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 13",
             "type": "trojan",
             "server": "13.39.100.28",
             "server_port": 22222,
@@ -695,7 +719,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
             "type": "trojan",
             "server": "18.199.48.6",
             "server_port": 22222,
