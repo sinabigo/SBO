@@ -215,7 +215,7 @@ function main()
         // Run Hiddify
         runHiddify();
         // Sleep Until Hiddify Loads
-        sleep(120);
+        sleep(30);
 
         // Check Proxies
         $proxies = get_proxies();
