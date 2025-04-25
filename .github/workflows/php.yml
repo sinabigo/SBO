@@ -26,9 +26,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y curl tar
 
+      - name: Run Clash API
+        run: |
+          docker run -d -p 6756:6756 dreamacro/clash --port 6756
+          sleep 10 # Wait for Clash to start
+
       - name: Execute PHP script
         run: |
           set -e
+          git pull --rebase
           php -d display_errors get.php
           php -d display_errors config-test.php || true
           php -d display_errors channelsAssets.php
@@ -62,6 +68,11 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y curl tar
+
+      - name: Run Clash API
+        run: |
+          docker run -d -p 6756:6756 dreamacro/clash --port 6756
+          sleep 10 # Wait for Clash to start
 
       - name: Execute PHP script
         run: |
