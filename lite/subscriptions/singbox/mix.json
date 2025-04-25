@@ -108,15 +108,15 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 12",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 19",
-                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 19",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 20",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -131,15 +131,15 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 3",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 12",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "❔XX | 🔴 | vless | @TEHRANARGO | 19",
-                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 19",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 20",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -228,9 +228,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 12",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
             "type": "trojan",
-            "server": "63.34.99.217",
+            "server": "13.49.32.184",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -252,7 +252,7 @@
         {
             "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
             "type": "trojan",
-            "server": "34.243.149.238",
+            "server": "63.34.99.217",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -378,7 +378,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @TEHRANARGO | 19",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 20",
             "type": "vless",
             "server": "kopa.soskom.ir",
             "server_port": 11045,
@@ -414,55 +414,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @meli_proxyy | 19",
-            "type": "vmess",
-            "server": "v2.lunarmc.ir",
-            "server_port": 2096,
-            "uuid": "cab65486-3b77-46db-abaf-ea7adc01fbf5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "v2.lunarmc.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-226",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2052,
@@ -479,6 +445,27 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
                 }
             }
         },
