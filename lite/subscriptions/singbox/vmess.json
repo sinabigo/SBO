@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 18",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 18",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,33 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @meli_proxyy | 18",
+            "type": "vmess",
+            "server": "v2.lunarmc.ir",
+            "server_port": 2096,
+            "uuid": "cab65486-3b77-46db-abaf-ea7adc01fbf5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "v2.lunarmc.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1",
