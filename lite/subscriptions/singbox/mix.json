@@ -117,7 +117,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
+                "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -141,7 +141,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
+                "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -415,14 +415,25 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
-            "type": "shadowsocks",
-            "server": "85.210.120.237",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "194.182.79.108",
+            "server_port": 50513,
+            "uuid": "62d8756d-6f8b-4ddb-96fc-a97e001642b8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
