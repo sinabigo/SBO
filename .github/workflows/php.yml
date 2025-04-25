@@ -21,10 +21,16 @@ jobs:
         with:
           php-version: '7.4'
 
+      - name: Install Dependencies for HiddifyCli
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl tar
+
       - name: Execute PHP script
         run: |
           set -e
           php -d display_errors get.php
+          php -d display_errors config-test.php || true
           php -d display_errors channelsAssets.php
           php -d display_errors duplicate.php
           php -d display_errors sort.php
@@ -52,12 +58,18 @@ jobs:
         with:
           php-version: '7.4'
 
+      - name: Install Dependencies for HiddifyCli
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl tar
+
       - name: Execute PHP script
         run: |
           set -e  
           git pull
           cd lite
           php -d display_errors get.php
+          php -d display_errors ../config-test.php || true
           php -d display_errors duplicate.php
           php -d display_errors sort.php
           php -d display_errors toSingbox.php
