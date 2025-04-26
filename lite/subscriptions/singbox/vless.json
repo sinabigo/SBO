@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
@@ -115,8 +116,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -129,6 +129,7 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 14",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
@@ -136,8 +137,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 19",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -220,6 +220,37 @@
                     "enabled": true,
                     "public_key": "K3Qci9i3W2_Pn88RiUGD8cjfuJ0fmFbc7e_YyupZBkM",
                     "short_id": "431c6edc"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "172.67.192.183",
+            "server_port": 443,
+            "uuid": "8250d638-45df-41fa-b06f-160d1cb1de0c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "abc.vpneee.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/YnqGMcAt\/",
+                "headers": {
+                    "Host": "abc.vpneee.top"
                 }
             }
         },
@@ -365,46 +396,25 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
             "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-227",
+            "server": "website.acveo.ir",
+            "server_port": 8080,
+            "uuid": "d8357ddc-38da-4163-98be-6f3464604ca9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇨🇿CZ | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "194.182.79.108",
-            "server_port": 50513,
-            "uuid": "62d8756d-6f8b-4ddb-96fc-a97e001642b8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON?ed=2048",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 2052,
-            "uuid": "telegram-ArV2ray",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -416,7 +426,7 @@
                 "type": "ws",
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "151.101.64.155"
                 }
             }
         },
