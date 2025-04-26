@@ -109,14 +109,15 @@
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 5",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6"
             ]
         },
         {
@@ -126,14 +127,15 @@
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 5",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -222,11 +224,25 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
+            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
             "type": "vless",
-            "server": "sourceforge.net",
-            "server_port": 443,
-            "uuid": "ccff34b1-44fd-478d-bc0e-5111cb11f5be",
+            "server": "104.17.147.22",
+            "server_port": 2086,
+            "uuid": "60ed8172-3acc-4276-94a9-fe977108a9cf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 9",
+            "type": "vless",
+            "server": "162.159.10.162",
+            "server_port": 2087,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -236,7 +252,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "d1.medicaldream.ir",
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -246,9 +262,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/sinavm-sinavm\/?ed=2560",
+                "path": "\/net.net?ed=2560",
                 "headers": {
-                    "Host": "d1.medicaldream.ir"
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
@@ -284,11 +300,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 9",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
-            "server": "162.159.10.162",
-            "server_port": 2087,
-            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
+            "server": "sourceforge.net",
+            "server_port": 443,
+            "uuid": "ccff34b1-44fd-478d-bc0e-5111cb11f5be",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -298,7 +314,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "server_name": "d1.medicaldream.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -308,24 +324,10 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/net.net?ed=2560",
+                "path": "\/sinavm-sinavm\/?ed=2560",
                 "headers": {
-                    "Host": "5-55sfjslf.ifenxiang.cfd"
+                    "Host": "d1.medicaldream.ir"
                 }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 2086,
-            "uuid": "60ed8172-3acc-4276-94a9-fe977108a9cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -393,11 +395,11 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
             "type": "vless",
-            "server": "213.142.133.172",
-            "server_port": 7594,
-            "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "97ae82eb-071b-4008-85c2-c7342f6d96f2",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -407,7 +409,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "dash.cloudflare.com",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -416,16 +418,37 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "7594vless",
+                "service_name": "Tel : @NT_Safe",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
+            "type": "vless",
+            "server": "tgju.org",
+            "server_port": 8080,
+            "uuid": "0eb83f3e-7b95-427a-8952-abedfca1869f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
+                }
             }
         }
     ],
