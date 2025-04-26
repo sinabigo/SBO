@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +140,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+            "type": "vless",
+            "server": "Gm.Risvn.iR",
+            "server_port": 443,
+            "uuid": "c842415f-3a7e-4934-be35-5616ca01c759",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
@@ -171,11 +200,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "Gm.Risvn.iR",
+            "server": "a.nl.maviks.eu",
             "server_port": 443,
-            "uuid": "c842415f-3a7e-4934-be35-5616ca01c759",
+            "uuid": "4a73fddb-e8c2-45fe-ad2c-e5bde13e51a6",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -185,7 +214,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "maviks.eu",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -194,8 +223,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
+                    "short_id": "21181028b56c8702"
                 }
             }
         },
@@ -230,42 +259,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "Tel : @NT_Safe",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "213.142.133.172",
-            "server_port": 7594,
-            "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7594vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
