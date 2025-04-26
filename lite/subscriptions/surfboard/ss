@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇨🇦CA | 🟢 | ss | @meli_proxyy | 13 = ss, 64.74.163.82, 990, encrypt-method = chacha20-ietf-poly1305, password = f8f7aCzcPKbsF8p3
 🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0 = ss, 4.158.72.166, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | ss | @meli_proxyy | 13,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
-URL-TEST = url-test,🇨🇦CA | 🟢 | ss | @meli_proxyy | 13,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
-FALLBACK = fallback,🇨🇦CA | 🟢 | ss | @meli_proxyy | 13,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
