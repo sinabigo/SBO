@@ -109,9 +109,9 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 13",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
@@ -120,7 +120,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 17",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -136,9 +136,9 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
-                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 13",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
@@ -147,7 +147,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 17",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -238,7 +238,7 @@
         {
             "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 12",
             "type": "trojan",
-            "server": "16.171.156.16",
+            "server": "51.21.214.138",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -258,9 +258,9 @@
             }
         },
         {
-            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 13",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 13",
             "type": "trojan",
-            "server": "63.32.155.169",
+            "server": "16.171.156.16",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -314,7 +314,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
             "server": "172.67.192.183",
             "server_port": 443,
@@ -488,6 +488,37 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
+            "server": "199.34.228.185",
+            "server_port": 443,
+            "uuid": "15298f41-e80b-463a-b85b-0c903258a1c8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "d5.medicaltreatment.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/sinavm-sinavm\/?ed",
+                "headers": {
+                    "Host": "d5.medicaltreatment.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+            "type": "vless",
             "server": "162.159.10.162",
             "server_port": 2087,
             "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
@@ -515,16 +546,6 @@
                     "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
-            "type": "shadowsocks",
-            "server": "4.158.95.69",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "mps3FwmDjLrWaOVg",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
