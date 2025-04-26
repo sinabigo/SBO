@@ -112,17 +112,17 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇨🇦CA | 🟢 | ss | @meli_proxyy | 6",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 6",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 8",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 5",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2"
             ]
         },
         {
@@ -135,17 +135,17 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇨🇦CA | 🟢 | ss | @meli_proxyy | 6",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 6",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 8",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🟢 | vless | @ShadowProxy66 | 2",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 5",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -325,30 +325,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | ss | @meli_proxyy | 6",
-            "type": "shadowsocks",
-            "server": "64.74.163.82",
-            "server_port": 990,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 2086,
-            "uuid": "60ed8172-3acc-4276-94a9-fe977108a9cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "162.159.10.162",
@@ -380,14 +356,50 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
+            "tag": "🇨🇦CA | 🟢 | ss | @meli_proxyy | 6",
             "type": "shadowsocks",
-            "server": "85.210.120.237",
-            "server_port": 443,
+            "server": "64.74.163.82",
+            "server_port": 990,
             "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
+            "password": "f8f7aCzcPKbsF8p3",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 4",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 2086,
+            "uuid": "60ed8172-3acc-4276-94a9-fe977108a9cf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 6",
+            "type": "trojan",
+            "server": "63.32.155.169",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 8",
@@ -412,6 +424,16 @@
             }
         },
         {
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 0",
+            "type": "shadowsocks",
+            "server": "85.210.120.237",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Bog0ELmMM9DSxDdQ",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -429,6 +451,28 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
+            "type": "trojan",
+            "server": "18.198.158.85",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -491,28 +535,6 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-            "type": "trojan",
-            "server": "51.21.214.138",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "213.142.133.172",
@@ -546,27 +568,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
-            "type": "vless",
-            "server": "tgju.org",
-            "server_port": 8080,
-            "uuid": "0eb83f3e-7b95-427a-8952-abedfca1869f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tgju.org"
-                }
             }
         }
     ],
