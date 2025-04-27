@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -114,7 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -138,13 +138,13 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+            "tag": "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
-            "server": "23.162.200.227",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "112.132.215.12",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -152,23 +152,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": ""
-                }
             }
         },
         {
