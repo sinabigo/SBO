@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 7",
                 "🇨🇭CH | 🟢 | vless | @meli_proxyy | 3",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 4",
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14"
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 7",
                 "🇨🇭CH | 🟢 | vless | @meli_proxyy | 3",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 4",
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14"
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,11 +144,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 7",
             "type": "vless",
-            "server": "64.227.35.202",
-            "server_port": 443,
-            "uuid": "f0f8ae10-e52f-4454-f5ac-55b4e25eeb73",
+            "server": "162.55.36.107",
+            "server_port": 577,
+            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -156,7 +158,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -165,8 +167,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tnDvChtpeNANGe52_QG3Jx6esgMTil1tcg7jlYPmoRY",
-                    "short_id": ""
+                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
+                    "short_id": "9b28132c703433"
                 }
             }
         },
@@ -230,6 +232,35 @@
         },
         {
             "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "64.227.35.202",
+            "server_port": 443,
+            "uuid": "f0f8ae10-e52f-4454-f5ac-55b4e25eeb73",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tnDvChtpeNANGe52_QG3Jx6esgMTil1tcg7jlYPmoRY",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
             "type": "vless",
             "server": "64.227.35.202",
             "server_port": 443,
