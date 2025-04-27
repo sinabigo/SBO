@@ -109,6 +109,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -130,6 +131,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -226,9 +228,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
             "type": "vless",
-            "server": "104.24.13.116",
-            "server_port": 80,
-            "uuid": "d4eddaf9-a660-4905-b835-cad98677b380",
+            "server": "m543.hosseinpool10.workers.dev",
+            "server_port": 2082,
+            "uuid": "5181717e-892b-45a9-a8b7-e6d5fac1c77b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -238,9 +240,30 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "104.24.13.116"
+                    "Host": "m543.hosseinpool10.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "104.21.40.164",
+            "server_port": 8080,
+            "uuid": "636b1684-b26c-4a9c-bc6e-8e1197a36d74",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.21.40.164"
                 }
             }
         },
@@ -427,27 +450,6 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 2052,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
-            "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
             "uuid": "telegram-id-ArV2ray",
@@ -463,6 +465,27 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 2052,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
