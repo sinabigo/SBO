@@ -106,7 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -125,7 +127,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -160,7 +164,67 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+            "type": "vless",
+            "server": "fonts.net",
+            "server_port": 443,
+            "uuid": "15298f41-e80b-463a-b85b-0c903258a1c8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "d5.medicaltreatment.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/sinavm-sinavm\/?ed=2560",
+                "headers": {
+                    "Host": "d5.medicaltreatment.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 4",
+            "type": "vless",
+            "server": "185.237.95.216",
+            "server_port": 443,
+            "uuid": "qGIpSqSIap2ncn",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "onlycats.photos",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "K3Qci9i3W2_Pn88RiUGD8cjfuJ0fmFbc7e_YyupZBkM",
+                    "short_id": "431c6edc"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
             "server": "172.67.192.183",
             "server_port": 443,
