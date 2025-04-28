@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 15",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇸🇬SG | 🔴 | vless | @ShadowProxy66 | 2",
@@ -118,6 +118,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 7",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -130,8 +131,8 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 15",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇸🇬SG | 🔴 | vless | @ShadowProxy66 | 2",
@@ -140,6 +141,7 @@
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 7",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -226,7 +228,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 15",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
             "server": "104.16.194.204",
             "server_port": 80,
@@ -247,7 +249,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "172.67.163.189",
             "server_port": 8880,
@@ -461,6 +463,37 @@
                     "enabled": true,
                     "public_key": "fPSR5GZpxhOV6Rh7VzMtS4AeRN7ipyNX4waG9JzJzxQ",
                     "short_id": "21181028b56c8702"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "104.26.4.157",
+            "server_port": 2083,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
