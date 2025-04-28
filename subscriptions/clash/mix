@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 4","type":"trojan","server":"3.75.144.45","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"35.181.213.0","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 9","type":"trojan","server":"13.51.11.214","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"69.50.93.47","port":6679,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -137,16 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 9'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
