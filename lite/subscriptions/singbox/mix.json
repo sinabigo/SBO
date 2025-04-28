@@ -110,8 +110,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇸🇬SG | 🔴 | vless | @ShadowProxy66 | 2",
@@ -135,8 +135,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 16",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 17",
                 "🇸🇬SG | 🔴 | vless | @ShadowProxy66 | 2",
@@ -276,34 +276,50 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "104.16.194.204",
-            "server_port": 80,
-            "uuid": "6ff4726f-3650-4803-95eb-50b240f6ac75",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jahfkjha.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/linkws",
                 "headers": {
-                    "Host": "104.16.194.204"
+                    "Host": "jahfkjha.cfd"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "172.67.163.189",
-            "server_port": 8880,
-            "uuid": "dc580147-c87c-4527-bf90-192eb1cf62d1",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "198.41.209.70",
+            "server_port": 2086,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -311,9 +327,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/oqisYFWsXbEI2upX\/MC4wLjAuMA==?ed=2560",
+                "path": "\/dabai.in172.64.43.14",
                 "headers": {
-                    "Host": "172.67.163.189"
+                    "Host": "198.41.209.70"
                 }
             }
         },
