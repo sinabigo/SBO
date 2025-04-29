@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3","type":"vless","server":"o.soskom.ir","port":11045,"udp":true,"uuid":"2c834a93-f01b-4a28-8d4c-52b3d01dedf8","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","grpc-opts":{"grpc-service-name":"Tel : @NT_Safe"},"reality-opts":{"public-key":"p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM","short-id":"20db1be5e1ab118a"}}
-  - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 10","type":"vless","server":"V2RayMizban.iranigamepars.ir","port":443,"udp":true,"uuid":"71075f29-256c-430e-93c7-42f432bc8abe","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM","short-id":"ea"}}
   - {"name":"🇩🇪DE | 🔴 | vless | @SiNAVM | 2","type":"vless","server":"direct.psnapptapsi.ir","port":443,"udp":true,"uuid":"ac5ef6ff-4df5-4615-8e8b-3819497f5776","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"direct.psnapptapsi.ir","flow":"xtls-rprx-vision","reality-opts":{"public-key":"15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ","short-id":"ec7d25"}}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 10'
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
   - name: URL-TEST
     type: url-test
@@ -139,7 +137,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 10'
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
   - name: FALLBACK
     type: fallback
@@ -147,7 +144,6 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 10'
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
