@@ -106,13 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇮🇷IR | 🔴 | vless | @Outline_Vpn | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🟢 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -125,13 +125,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇮🇷IR | 🔴 | vless | @Outline_Vpn | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🟢 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -160,6 +160,27 @@
             "type": "dns"
         },
         {
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "direct.psnapptapsi.ir",
@@ -185,37 +206,6 @@
                     "enabled": true,
                     "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
                     "short_id": "ec7d25"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-            "type": "vless",
-            "server": "sourceforge.net",
-            "server_port": 443,
-            "uuid": "ccff34b1-44fd-478d-bc0e-5111cb11f5be",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "d1.medicaldream.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/sinavm-sinavm\/?ed=2560",
-                "headers": {
-                    "Host": "d1.medicaldream.ir"
                 }
             }
         },
@@ -297,7 +287,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 2086,
