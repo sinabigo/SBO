@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 9",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 9",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,35 +140,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 9",
-            "type": "vless",
-            "server": "172.82.67.156",
-            "server_port": 57355,
-            "uuid": "274fc521-1b7a-43ce-a425-2f1a34a7ca6d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "d-G52RaxhX8PN553Oa8wBPu7XG25_6lO-aThcOqNby4",
-                    "short_id": "34548d"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
@@ -207,9 +178,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
             "type": "vless",
-            "server": "direct.psnapptapsi.ir",
+            "server": "V2RayMizban.iranigamepars.ir",
+            "server_port": 443,
+            "uuid": "74ff0b00-aa8d-405e-a9cb-dc55a1966c60",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM",
+                    "short_id": "ea"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "138.199.232.232",
             "server_port": 443,
             "uuid": "ac5ef6ff-4df5-4615-8e8b-3819497f5776",
             "flow": "xtls-rprx-vision",
@@ -236,11 +236,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
-            "server": "V2RayMizban.iranigamepars.ir",
+            "server": "direct.psnapptapsi.ir",
             "server_port": 443,
-            "uuid": "74ff0b00-aa8d-405e-a9cb-dc55a1966c60",
+            "uuid": "ac5ef6ff-4df5-4615-8e8b-3819497f5776",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -250,7 +250,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "direct.psnapptapsi.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -259,8 +259,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM",
-                    "short_id": "ea"
+                    "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
+                    "short_id": "ec7d25"
                 }
             }
         }
