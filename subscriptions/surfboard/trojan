@@ -13,12 +13,12 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @redfree8 | 0 = trojan, www.speedtest.net, 443, password = redfree8, udp-delay = true, skip-cert-verify = false, sni = ipsychO.SUEx12.Ir, ws = false
 🇮🇪IE | 🟢 | trojan | @DirectVPN | 0 = trojan, 18.203.219.19, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇬🇧GB | 🟢 | trojan | @DirectVPN | 1 = trojan, 13.43.40.160, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇫🇷FR | 🟢 | trojan | @DirectVPN | 2 = trojan, 35.181.213.0, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 4 = trojan, 3.75.144.45, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 4
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 4
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 4
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇬🇧GB | 🟢 | trojan | @DirectVPN | 1,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇬🇧GB | 🟢 | trojan | @DirectVPN | 1,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇮🇪IE | 🟢 | trojan | @DirectVPN | 0,🇬🇧GB | 🟢 | trojan | @DirectVPN | 1,🇫🇷FR | 🟢 | trojan | @DirectVPN | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
