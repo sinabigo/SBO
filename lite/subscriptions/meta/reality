@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @SiNAVM | 2","type":"vless","server":"direct.psnapptapsi.ir","port":443,"udp":true,"uuid":"ac5ef6ff-4df5-4615-8e8b-3819497f5776","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"direct.psnapptapsi.ir","flow":"xtls-rprx-vision","reality-opts":{"public-key":"15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ","short-id":"ec7d25"}}
-  - {"name":"🇺🇸US | 🟢 | vless | @meli_proxyy | 20","type":"vless","server":"172.82.67.154","port":58236,"udp":true,"uuid":"73384fd8-2b99-497f-add8-a62e962f518a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"yahoo.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"pL-OG-swF1oA_ogetFCr4zfGUoxFdeUYIu7bhmDZn3s","short-id":"00337819a82d"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
-      - '🇺🇸US | 🟢 | vless | @meli_proxyy | 20'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
-      - '🇺🇸US | 🟢 | vless | @meli_proxyy | 20'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @SiNAVM | 2'
-      - '🇺🇸US | 🟢 | vless | @meli_proxyy | 20'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
