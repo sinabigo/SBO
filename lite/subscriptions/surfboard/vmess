@@ -11,11 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, zula.ir, 443, username = 950db6aa-4926-4616-816e-ec0312dcb87b, ws = true, tls = 1, vmess-aead = true, ws-path = /linkws, ws-headers = Host:"jahfkjha.cfd", skip-cert-verify = true, tfo = false
+🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, 3h-poland1.09vpn.com, 80, username = 9694da60-f759-4db7-9057-6da1d31d33df, ws = true, tls = , vmess-aead = true, ws-path = /vmess/, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 18
+MANUAL = select,URL-TEST,FALLBACK,🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18
+URL-TEST = url-test,🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18
+FALLBACK = fallback,🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
