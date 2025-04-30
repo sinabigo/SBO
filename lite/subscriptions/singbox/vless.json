@@ -106,14 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -126,14 +125,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -162,7 +160,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
             "type": "vless",
             "server": "104.16.246.132",
             "server_port": 443,
@@ -193,7 +191,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -214,7 +212,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
             "type": "vless",
             "server": "104.16.148.244",
             "server_port": 2087,
@@ -330,7 +328,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "104.17.128.1",
             "server_port": 2096,
@@ -357,27 +355,6 @@
                 "path": "\/?ed=2560",
                 "headers": {
                     "Host": "vlee.amclubs.nyc.mn"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "75f66308-eb61-418f-a0f0-3fe8d6158999",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
-                "headers": {
-                    "Host": "speedtest.net"
                 }
             }
         },
