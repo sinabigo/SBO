@@ -108,15 +108,16 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -131,15 +132,16 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
                 "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -220,9 +222,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "18.132.79.94",
+            "server": "52.209.57.149",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -244,7 +246,7 @@
         {
             "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "35.176.132.196",
+            "server": "18.132.79.94",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -288,7 +290,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 15",
             "type": "vless",
             "server": "104.16.148.244",
             "server_port": 2087,
@@ -404,17 +406,55 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "64.227.77.203",
-            "server_port": 443,
-            "uuid": "3ba4559e-7703-4354-ab33-be9d3ed5e637",
+            "server": "104.17.128.1",
+            "server_port": 2096,
+            "uuid": "d6b8011a-c725-435a-9fec-bf6d3530392c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vlee.amclubs.nyc.mn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "vlee.amclubs.nyc.mn"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "75f66308-eb61-418f-a0f0-3fe8d6158999",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
             }
         },
         {
