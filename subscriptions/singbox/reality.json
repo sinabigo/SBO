@@ -107,8 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2"
             ]
         },
         {
@@ -116,8 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -176,11 +178,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
             "type": "vless",
-            "server": "V2RayMizban2.iranigamepars.ir",
-            "server_port": 443,
-            "uuid": "7adcc0f2-e658-41de-a132-b5c66c34b2bc",
+            "server": "162.55.36.107",
+            "server_port": 577,
+            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -190,7 +192,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -199,8 +201,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "ViD5yelmczDvvpxSUuCp1OvDea1zgWvTwvdrkngX7BE",
-                    "short_id": "1242e11f31"
+                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
+                    "short_id": "9b28132c703433"
                 }
             }
         },
@@ -230,6 +232,35 @@
                     "enabled": true,
                     "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
                     "short_id": "ec7d25"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "V2RayMizban2.iranigamepars.ir",
+            "server_port": 443,
+            "uuid": "7adcc0f2-e658-41de-a132-b5c66c34b2bc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ViD5yelmczDvvpxSUuCp1OvDea1zgWvTwvdrkngX7BE",
+                    "short_id": "1242e11f31"
                 }
             }
         }
