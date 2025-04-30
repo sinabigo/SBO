@@ -107,10 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🟢 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ]
         },
@@ -119,10 +117,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🟢 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -175,93 +171,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-            "type": "vless",
-            "server": "162.55.36.107",
-            "server_port": 577,
-            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
-                    "short_id": "9b28132c703433"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-            "type": "vless",
-            "server": "138.199.232.232",
-            "server_port": 443,
-            "uuid": "ac5ef6ff-4df5-4615-8e8b-3819497f5776",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "direct.psnapptapsi.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
-                    "short_id": "ec7d25"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "49.12.243.80",
-            "server_port": 1300,
-            "uuid": "b8243b8a-dece-432f-8b4d-88696594cbf8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "FdMFSpgEwT0nhczf37d-Z8gFgJtwyV4C_pJlnOTScUA",
-                    "short_id": ""
-                }
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "V2RayMizban.iranigamepars.ir",
@@ -287,6 +196,35 @@
                     "enabled": true,
                     "public_key": "MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM",
                     "short_id": "ea"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
+            "type": "vless",
+            "server": "162.55.36.107",
+            "server_port": 577,
+            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
+                    "short_id": "9b28132c703433"
                 }
             }
         },
