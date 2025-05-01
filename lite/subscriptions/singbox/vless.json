@@ -109,7 +109,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
-                "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
@@ -130,7 +130,7 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
-                "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
@@ -218,8 +218,8 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
             "type": "vless",
-            "server": "104.16.148.244",
-            "server_port": 2087,
+            "server": "104.26.12.54",
+            "server_port": 443,
             "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
             "flow": "",
             "packet_encoding": "xudp",
@@ -247,11 +247,11 @@
             }
         },
         {
-            "tag": "🇨🇷CR | 🔴 | vless | @Outline_Vpn | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 16",
             "type": "vless",
-            "server": "190.93.247.56",
-            "server_port": 8080,
-            "uuid": "51331216-24fe-4eda-8bf1-0f03d2c97915",
+            "server": "104.16.148.244",
+            "server_port": 2087,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -259,11 +259,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "190.93.247.56"
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
