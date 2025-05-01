@@ -106,18 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
+                "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -132,18 +133,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
+                "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -174,7 +176,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "104.16.246.132",
             "server_port": 443,
@@ -205,7 +207,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -294,6 +296,37 @@
             }
         },
         {
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 13",
+            "type": "vless",
+            "server": "104.22.56.77",
+            "server_port": 443,
+            "uuid": "c7d543af-1023-4b96-a698-187c190d3f4c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nautica.foolvpn.me",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/47.89.39.186-39251",
+                "headers": {
+                    "Host": "nautica.foolvpn.me"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
             "type": "vless",
             "server": "104.26.12.54",
@@ -325,35 +358,14 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 15",
-            "type": "vless",
-            "server": "104.16.148.244",
-            "server_port": 2087,
-            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "5-55sfjslf.ifenxiang.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "5-55sfjslf.ifenxiang.cfd"
-                }
-            }
+            "tag": "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2",
+            "type": "shadowsocks",
+            "server": "57.128.190.238",
+            "server_port": 18992,
+            "method": "chacha20-ietf-poly1305",
+            "password": "b20ae8db3d278526",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 3",
@@ -401,7 +413,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
             "server": "o.soskom.ir",
             "server_port": 11045,
@@ -437,7 +449,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 12",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
             "type": "vless",
             "server": "165.227.136.108",
             "server_port": 443,
