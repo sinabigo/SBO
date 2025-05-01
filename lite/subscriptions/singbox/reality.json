@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16"
+                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16"
+                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg",
                     "short_id": "7a2b"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "37.156.46.65",
-            "server_port": 31548,
-            "uuid": "37ce86f5-df0c-0384-a4b2-8cedd9a1aedc",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
-                    "short_id": "d6d54c08fbbf895f"
                 }
             }
         }
