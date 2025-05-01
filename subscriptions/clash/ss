@@ -121,7 +121,6 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"23.154.136.51","port":6697,"password":"TEzjfAYq2IjtuoS","cipher":"aes-256-gcm"}
   - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 6","type":"ss","server":"131.145.27.239","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"89.23.103.80","port":443,"password":"0HFzxilXRfoV","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇦UA | 🟢 | ss | @DeamNet_Proxy | 9","type":"ss","server":"176.103.53.105","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
-      - '🇺🇦UA | 🟢 | ss | @DeamNet_Proxy | 9'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -141,7 +139,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
-      - '🇺🇦UA | 🟢 | ss | @DeamNet_Proxy | 9'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -150,7 +147,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
-      - '🇺🇦UA | 🟢 | ss | @DeamNet_Proxy | 9'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
