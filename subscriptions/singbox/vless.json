@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 4",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 0",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 4",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 0",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,6 +148,58 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 4",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ipsychO.SUEx12.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
@@ -179,7 +233,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -196,27 +250,6 @@
                 "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "ipsychO.SUEx12.Ir"
                 }
             }
         },
@@ -252,7 +285,57 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "infocv.novintec99.ir",
+            "server_port": 21332,
+            "uuid": "31a8c021-4614-4f05-b466-fddb7b36826f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI",
+                    "short_id": "866c9d6a17a0ae44"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6",
             "type": "vless",
             "server": "138.199.232.232",
             "server_port": 443,
@@ -277,64 +360,6 @@
                     "enabled": true,
                     "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
                     "short_id": "ec7d25"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 10",
-            "type": "vless",
-            "server": "37.156.46.65",
-            "server_port": 31548,
-            "uuid": "37ce86f5-df0c-0384-a4b2-8cedd9a1aedc",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
-                    "short_id": "d6d54c08fbbf895f"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-            "type": "vless",
-            "server": "162.55.36.107",
-            "server_port": 577,
-            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
-                    "short_id": "9b28132c703433"
                 }
             }
         }
