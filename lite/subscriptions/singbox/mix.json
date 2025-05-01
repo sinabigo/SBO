@@ -110,7 +110,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2",
@@ -118,8 +119,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 12",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -136,7 +136,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
-                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 2",
@@ -144,8 +145,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 12",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -270,11 +270,21 @@
             }
         },
         {
-            "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "38.143.66.87",
+            "server_port": 5600,
+            "method": "aes-256-gcm",
+            "password": "Y6R9pAtvxxzmGC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "3h-poland1.09vpn.com",
-            "server_port": 80,
-            "uuid": "9694da60-f759-4db7-9057-6da1d31d33df",
+            "server": "104.17.213.241",
+            "server_port": 8080,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -287,9 +297,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/vmess\/",
+                "path": "\/dabai.in104.21.151.202",
                 "headers": {
-                    "Host": "3h-poland1.09vpn.com"
+                    "Host": "104.17.213.241"
                 }
             }
         },
@@ -444,22 +454,12 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
             "type": "shadowsocks",
             "server": "45.158.171.60",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
-            "type": "shadowsocks",
-            "server": "131.145.27.239",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "69MUii7VDwMqh7Hz",
             "plugin": "",
             "plugin_opts": ""
         },
