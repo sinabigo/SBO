@@ -107,10 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ]
         },
         {
@@ -118,10 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -171,27 +171,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "MdLoXlYg.rIcKtMoUsE.InFo"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -248,11 +227,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
-            "server": "speedtest.net",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "f4ed5ab6-8c23-43dd-8a74-dc71c7d53008",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -262,10 +241,46 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
-                    "Host": "speedtest.net"
+                    "Host": "www.speedtest.net"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "3babafda-6751-4279-9c7e-c00cb2460504",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
