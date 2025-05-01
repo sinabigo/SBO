@@ -106,18 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 4",
-                "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
+                "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 4",
-                "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
+                "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,36 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @ShadowProxy66 | 0",
-            "type": "vless",
-            "server": "18.171.189.129",
-            "server_port": 443,
-            "uuid": "7f93e196-1b2f-4a42-8051-5815554c05db",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zula.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg",
-                    "short_id": "7a2b"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 4",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
             "type": "vless",
             "server": "138.199.232.232",
             "server_port": 443,
@@ -198,7 +167,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 1",
+            "tag": "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 2",
             "type": "vless",
             "server": "213.142.133.172",
             "server_port": 7594,
