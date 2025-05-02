@@ -11,11 +11,10 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19 = vmess, 104.17.213.241, 8080, username = 4b36625c-b9d9-3ea6-aed5-86d62c70e16d, ws = true, tls = , vmess-aead = true, ws-path = /dabai.in104.21.151.202, ws-headers = Host:"100-213-61-102.s1.db-link02.top", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19
-URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19
-FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19
+MANUAL = select,URL-TEST,FALLBACK
+URL-TEST = url-test
+FALLBACK = fallback
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
