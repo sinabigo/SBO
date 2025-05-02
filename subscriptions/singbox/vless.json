@@ -106,24 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,27 +146,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -184,6 +163,48 @@
                 "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
                     "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "104.18.14.19",
+            "server_port": 8080,
+            "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.18.14.19"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -219,27 +240,6 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "104.18.14.19",
-            "server_port": 8080,
-            "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "104.18.14.19"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -261,17 +261,24 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "website.acveo.ir",
-            "server_port": 8080,
-            "uuid": "d9471598-bdfb-44f4-bc92-6589dac48fb2",
+            "server": "parspack.com",
+            "server_port": 2052,
+            "uuid": "36fec967-0215-44d3-9c3d-3250b60b492b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2?ed=2560",
+                "headers": {
+                    "Host": "parspack.com"
+                }
             }
         }
     ],
