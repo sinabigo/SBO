@@ -11,14 +11,16 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 18 = trojan, 13.36.182.195, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 19 = trojan, 35.180.15.24, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇳🇱NL | 🟢 | ss | @SiNAVM | 1 = ss, 89.23.103.80, 443, encrypt-method = chacha20-ietf-poly1305, password = 0HFzxilXRfoV
+🇬🇧GB | 🟢 | trojan | @DirectVPN | 18 = trojan, 18.175.98.26, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 19 = trojan, 13.36.182.195, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18 = ss, mx2.drawnrisha.one, 55988, encrypt-method = chacha20-ietf-poly1305, password = k7xW6N5SAVpgeqi1wd7s7yxD7S8PxaehUM5W8apHrQi3pSoDRXScoAPk8SVa4mKbvRjrgENU3dUgzTgp9T3rrXinaDe4CXYk
 🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0 = ss, series-a2.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
+🇺🇸US | 🟢 | ss | @meli_proxyy | 16 = ss, 45.87.175.192, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0
-URL-TEST = url-test,🇫🇷FR | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0
-FALLBACK = fallback,🇫🇷FR | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @SiNAVM | 1,🇬🇧GB | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇺🇸US | 🟢 | ss | @meli_proxyy | 16
+URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @SiNAVM | 1,🇬🇧GB | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇺🇸US | 🟢 | ss | @meli_proxyy | 16
+FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @SiNAVM | 1,🇬🇧GB | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇺🇸US | 🟢 | ss | @meli_proxyy | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

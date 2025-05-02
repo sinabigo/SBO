@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+            "type": "vless",
+            "server": "138.199.232.232",
+            "server_port": 443,
+            "uuid": "ac5ef6ff-4df5-4615-8e8b-3819497f5776",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "direct.psnapptapsi.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
+                    "short_id": "ec7d25"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
             "server": "o.soskom.ir",
             "server_port": 11045,

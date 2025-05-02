@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
-                "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 16",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -132,20 +132,20 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
                 "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
-                "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 16",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -172,6 +172,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
+            "type": "shadowsocks",
+            "server": "89.23.103.80",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "0HFzxilXRfoV",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
@@ -205,30 +215,9 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "13.36.182.195",
+            "server": "18.175.98.26",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -250,7 +239,7 @@
         {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "35.180.15.24",
+            "server": "13.36.182.195",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -356,7 +345,7 @@
             }
         },
         {
-            "tag": "🇩🇰DK | 🔴 | vless | @V2FETCH | 0",
+            "tag": "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
             "type": "vless",
             "server": "client.bluwave.ir",
             "server_port": 80,
@@ -377,7 +366,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
+            "type": "vless",
+            "server": "138.199.232.232",
+            "server_port": 443,
+            "uuid": "ac5ef6ff-4df5-4615-8e8b-3819497f5776",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "direct.psnapptapsi.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "15VSj5bGCGemmifDA6IfLCz8deqBcvaI7SRZFd2bUBQ",
+                    "short_id": "ec7d25"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
             "server": "o.soskom.ir",
             "server_port": 11045,
@@ -413,21 +431,17 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
-            "type": "vless",
-            "server": "clientproo.xyz",
-            "server_port": 443,
-            "uuid": "3ba4559e-7703-4354-ab33-be9d3ed5e637",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 16",
+            "type": "shadowsocks",
+            "server": "45.87.175.192",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "4a2rfixophdjffa8KVA4Aa",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "138.128.224.100",
             "server_port": 443,
@@ -454,27 +468,6 @@
                 "path": "\/telegram-mitivpn",
                 "headers": {
                     "Host": "s6.design-mobo.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "dns3.arashiphone.com",
-            "server_port": 80,
-            "uuid": "e7c1b4d1-8c99-432b-9967-ed7946ebc844",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "dns3.arashiphone.com"
                 }
             }
         },
