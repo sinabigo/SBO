@@ -107,13 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -126,13 +125,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -191,7 +189,38 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+            "type": "vless",
+            "server": "104.22.56.77",
+            "server_port": 443,
+            "uuid": "c7d543af-1023-4b96-a698-187c190d3f4c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nautica.foolvpn.me",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/47.89.39.186-39251",
+                "headers": {
+                    "Host": "nautica.foolvpn.me"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
             "type": "vless",
             "server": "104.26.12.54",
             "server_port": 443,
@@ -219,27 +248,6 @@
                 "headers": {
                     "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
-            "type": "vless",
-            "server": "88.218.95.8",
-            "server_port": 8880,
-            "uuid": "9e28dd25-f4e1-4434-a31d-40c8ed0c0f52",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless-grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -340,37 +348,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "138.128.224.100",
-            "server_port": 443,
-            "uuid": "eb5f5964-1b12-457b-b8a6-bca5332e0494",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s6.design-mobo.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-mitivpn",
-                "headers": {
-                    "Host": "s6.design-mobo.ir"
-                }
             }
         },
         {
