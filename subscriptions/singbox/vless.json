@@ -109,11 +109,12 @@
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0"
             ]
         },
         {
@@ -123,11 +124,12 @@
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -223,6 +225,30 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+            "type": "vless",
+            "server": "135.148.14.5",
+            "server_port": 443,
+            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001178.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
             "type": "vless",
             "server": "172.67.204.84",
@@ -254,12 +280,33 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "135.148.14.5",
-            "server_port": 443,
-            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray1",
             "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "da88c983-3e08-4edc-86bc-bd4607958e0d",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -268,13 +315,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135001178.sec22org.com",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -309,32 +368,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "website.acveo.ir",
-            "server_port": 8080,
-            "uuid": "d9471598-bdfb-44f4-bc92-6589dac48fb2",
+            "server": "62.60.194.102",
+            "server_port": 4405,
+            "uuid": "9c1cd140-4770-49b0-9340-16ac9fcfcd35",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
