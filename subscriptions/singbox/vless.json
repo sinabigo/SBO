@@ -106,26 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,11 +146,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
-            "server": "162.159.153.2",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "50e2cab1-c919-434d-a7d4-78dcd42fe963",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -162,9 +160,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE,Telegram,VPNCUSTOMIZE?ed=2560",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
-                    "Host": "162.159.153.2"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -186,27 +184,6 @@
                 "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
                     "Host": "ipsychO.SUEx12.Ir"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -242,6 +219,27 @@
             }
         },
         {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "104.18.14.19",
+            "server_port": 8080,
+            "uuid": "0ff570d3-3452-4990-8144-fd2cb9357e09",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.18.14.19"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -268,20 +266,6 @@
             "server": "website.acveo.ir",
             "server_port": 8080,
             "uuid": "d9471598-bdfb-44f4-bc92-6589dac48fb2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "dl3.xmsd.ir",
-            "server_port": 41019,
-            "uuid": "ab5b3be0-ac1f-4733-b747-4ec45f64b79c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
