@@ -120,10 +120,11 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇨🇦CA | 🔴 | vless | @SiNAVM | 3","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
   - {"name":"🇺🇸US | 🔴 | vless | @redfree8 | 2","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","servername":"ipsychO.SUEx12.Ir","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
   - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"104.18.14.19","port":8080,"udp":false,"uuid":"0ff570d3-3452-4990-8144-fd2cb9357e09","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/?ed=2560","headers":{"host":"925tg.s4ua8zqr.workers.dev"}}}
-  - {"name":"🇨🇦CA | 🔴 | vless | @SiNAVM | 3","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
   - {"name":"🚩CF | 🔴 | vless | @redfree8 | 1","type":"vless","server":"104.21.96.1","port":443,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"iPsyCHO.SUEx12.iR","ws-opts":{"path":"/RiuadVWEiFmFyL3C?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
+  - {"name":"🚩CF | 🔴 | vless | @Outline_Vpn | 1","type":"vless","server":"104.17.148.22","port":8443,"udp":false,"uuid":"838f5273-5d2d-4630-a0f5-9cc8e4aef4d6","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"MdLoXlYg.rIcKtMoUsE.InFo","ws-opts":{"path":"/","headers":{"host":"MdLoXlYg.rIcKtMoUsE.InFo"}}}
   - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"parspack.com","port":2052,"udp":false,"uuid":"36fec967-0215-44d3-9c3d-3250b60b492b","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2--MOSiV2?ed=2560","headers":{"host":"mosiv2.eliii.mosiv2.mosiv2.www.speedtest.net.mosiv2.mosic7.mosic7.info."}}}
 proxy-groups:
   - name: MANUAL
@@ -131,10 +132,11 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
   - name: URL-TEST
     type: url-test
@@ -142,20 +144,22 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
+      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇨🇦CA | 🔴 | vless | @SiNAVM | 3'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
