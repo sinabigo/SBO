@@ -126,7 +126,7 @@ proxies:
   - {"name":"🚩CF | 🔴 | vless | @OpenSSTPVpn | 0","type":"vless","server":"104.21.48.1","port":443,"udp":false,"uuid":"c8d38c10-8973-46d9-bc60-40e9f791d187","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"mEHDiaMA.JAwakI2348.WOrKeRS.DEV","ws-opts":{"path":"/ZPYo6XE9nKhTQnTE?ed=2560","headers":{"host":"mEHDiaMA.JAwakI2348.WOrKeRS.DEV"}}}
   - {"name":"🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1","type":"vless","server":"clientproo.xyz","port":443,"udp":false,"uuid":"f97af38a-5d88-4f69-b5f9-da254ff23b22","tls":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 1","type":"vless","server":"V2RayMizban.iranigamepars.ir","port":443,"udp":true,"uuid":"03ad10fa-39b6-498d-8a2d-5015dd9f572b","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c","short-id":"7e39db0c"}}
-  - {"name":"🚩CF | 🔴 | vless | @Outline_Vpn | 1","type":"vless","server":"104.17.148.22","port":8443,"udp":false,"uuid":"838f5273-5d2d-4630-a0f5-9cc8e4aef4d6","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"MdLoXlYg.rIcKtMoUsE.InFo","ws-opts":{"path":"/","headers":{"host":"MdLoXlYg.rIcKtMoUsE.InFo"}}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9","type":"vless","server":"162.55.36.107","port":577,"udp":true,"uuid":"bf4631cc-27eb-4b8e-ab85-5db1ddab6125","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8","short-id":"9b28132c703433"}}
   - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"website.acveo.ir","port":8080,"udp":false,"uuid":"f7286f11-3b13-4342-a829-a8b1563146c7","tls":false,"network":"httpupgrade","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -140,7 +140,7 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @OpenSSTPVpn | 0'
       - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 1'
-      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
   - name: URL-TEST
     type: url-test
@@ -154,7 +154,7 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @OpenSSTPVpn | 0'
       - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 1'
-      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
   - name: FALLBACK
     type: fallback
@@ -167,7 +167,7 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @OpenSSTPVpn | 0'
       - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 1'
-      - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
