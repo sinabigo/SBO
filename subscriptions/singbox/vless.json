@@ -106,28 +106,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1"
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1"
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,7 +148,7 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "104.16.30.244",
             "server_port": 2053,
@@ -177,27 +175,6 @@
                 "path": "\/?ed=2560fp=random",
                 "headers": {
                     "Host": "ezdriv-server.help"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "ipsychO.SUEx12.Ir"
                 }
             }
         },
@@ -229,6 +206,27 @@
                 "path": "\/RiuadVWEiFmFyL3C?ed=2560",
                 "headers": {
                     "Host": "iPsyCHO.SUEx12.iR"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
                 }
             }
         },
@@ -275,11 +273,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "V2RayMizban.iranigamepars.ir",
-            "server_port": 443,
-            "uuid": "03ad10fa-39b6-498d-8a2d-5015dd9f572b",
+            "server": "37.156.46.65",
+            "server_port": 48740,
+            "uuid": "4b7ddce2-42a2-6435-20b7-6762c63d75f3",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -289,7 +287,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -298,13 +296,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
-                    "short_id": "7e39db0c"
+                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
+                    "short_id": "d6d54c08fbbf895f"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 80,
@@ -321,37 +319,6 @@
                 "path": "\/olem\/ws?ed=1024",
                 "headers": {
                     "Host": "speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-            "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 8443,
-            "uuid": "838f5273-5d2d-4630-a0f5-9cc8e4aef4d6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "MdLoXlYg.rIcKtMoUsE.InFo",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "MdLoXlYg.rIcKtMoUsE.InFo"
                 }
             }
         }
