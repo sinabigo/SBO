@@ -112,8 +112,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 10",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 16",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -131,8 +131,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇹🇷TR | 🔴 | vless | @TEHRANARGO | 10",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 16",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -319,7 +319,43 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "91.151.90.231",
+            "server_port": 443,
+            "uuid": "5bb14abb-58e2-42ad-8214-382b6dcd801a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "feminists4jina.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "gXCdbHLSxlT4DCgtd7oc33EtZrbQyoh8ztm7ELKSfyw",
+                    "short_id": "7d891e2de36c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_gxZKH0Rc9ol(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)(TG:@free_v2ray0)_WwpW3iPFUm5",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "62.60.194.102",
             "server_port": 4405,
@@ -330,35 +366,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "movie.imanfilmdownload.ir",
-            "server_port": 2086,
-            "uuid": "e72d015a-1d5a-4c4a-b23b-ab359c5ed1d7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3bHSMuyPGoNyE14MnDMmQMO-eRTCwoMg2hcPPvwEjEo",
-                    "short_id": "21"
-                }
             }
         },
         {
