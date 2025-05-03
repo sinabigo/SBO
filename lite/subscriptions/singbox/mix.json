@@ -108,17 +108,17 @@
                 "URL-TEST",
                 "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -133,17 +133,17 @@
             "outbounds": [
                 "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -213,9 +213,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "35.179.189.29",
+            "server": "18.200.164.156",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -237,7 +237,7 @@
         {
             "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "18.175.98.26",
+            "server": "35.179.189.29",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -267,6 +267,27 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
+            "type": "vless",
+            "server": "88.218.95.8",
+            "server_port": 8880,
+            "uuid": "9e28dd25-f4e1-4434-a31d-40c8ed0c0f52",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless-grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
             "type": "vless",
             "server": "104.22.56.77",
@@ -294,37 +315,6 @@
                 "path": "\/47.89.39.186-39251",
                 "headers": {
                     "Host": "nautica.foolvpn.me"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 14",
-            "type": "vless",
-            "server": "104.26.12.54",
-            "server_port": 443,
-            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "5-55sfjslf.ifenxiang.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "5-55sfjslf.ifenxiang.cfd"
                 }
             }
         },
@@ -439,11 +429,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "f4ed5ab6-8c23-43dd-8a74-dc71c7d53008",
+            "server": "138.128.224.100",
+            "server_port": 443,
+            "uuid": "eb5f5964-1b12-457b-b8a6-bca5332e0494",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -451,11 +441,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "s6.design-mobo.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
+                "path": "\/telegram-mitivpn",
                 "headers": {
-                    "Host": "speedtest.net"
+                    "Host": "s6.design-mobo.ir"
                 }
             }
         },
