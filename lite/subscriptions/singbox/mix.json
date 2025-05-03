@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
@@ -118,7 +118,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -131,8 +131,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
@@ -143,7 +143,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
+                "🇦🇪AE | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -172,6 +172,16 @@
             "type": "dns"
         },
         {
+            "tag": "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
+            "type": "shadowsocks",
+            "server": "83.217.9.4",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "4lVmq9u1cdLI",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | ss | @SiNAVM | 1",
             "type": "shadowsocks",
             "server": "89.23.103.80",
@@ -180,37 +190,6 @@
             "password": "0HFzxilXRfoV",
             "plugin": "",
             "plugin_opts": ""
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-            "type": "vless",
-            "server": "104.16.246.132",
-            "server_port": 443,
-            "uuid": "c98a16e4-0dc5-42f0-b3db-30f04525c123",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vless10-9sc.pages.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "vless10-9sc.pages.dev"
-                }
-            }
         },
         {
             "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
@@ -429,7 +408,7 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 13",
+            "tag": "🇦🇪AE | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "138.128.224.100",
             "server_port": 443,
