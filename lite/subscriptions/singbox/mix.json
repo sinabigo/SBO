@@ -118,7 +118,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -143,7 +144,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -439,7 +441,28 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "f4ed5ab6-8c23-43dd-8a74-dc71c7d53008",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 15",
             "type": "shadowsocks",
             "server": "45.158.171.132",
             "server_port": 8080,
