@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8","type":"vless","server":"infocv.novintec99.ir","port":21332,"udp":true,"uuid":"31a8c021-4614-4f05-b466-fddb7b36826f","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI","short-id":"866c9d6a17a0ae44"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9","type":"vless","server":"o.soskom.ir","port":11045,"udp":true,"uuid":"3babafda-6751-4279-9c7e-c00cb2460504","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","grpc-opts":{"grpc-service-name":"Tel : @NT_Safe"},"reality-opts":{"public-key":"p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM","short-id":"20db1be5e1ab118a"}}
   - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 14","type":"vless","server":"V2RayMizban.iranigamepars.ir","port":443,"udp":true,"uuid":"03ad10fa-39b6-498d-8a2d-5015dd9f572b","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c","short-id":"7e39db0c"}}
 proxy-groups:
   - name: MANUAL
@@ -129,6 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8'
+      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 14'
   - name: URL-TEST
     type: url-test
@@ -137,6 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8'
+      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 14'
   - name: FALLBACK
     type: fallback
@@ -144,6 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8'
+      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9'
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 14'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}

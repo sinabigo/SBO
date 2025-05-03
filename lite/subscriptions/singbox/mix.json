@@ -118,8 +118,8 @@
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 7",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -146,8 +146,8 @@
                 "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 7",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -369,37 +369,6 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 7",
-            "type": "vless",
-            "server": "138.128.224.100",
-            "server_port": 443,
-            "uuid": "eb5f5964-1b12-457b-b8a6-bca5332e0494",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "s6.design-mobo.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-mitivpn",
-                "headers": {
-                    "Host": "s6.design-mobo.ir"
-                }
-            }
-        },
-        {
             "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "infocv.novintec99.ir",
@@ -426,6 +395,42 @@
                     "public_key": "bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI",
                     "short_id": "866c9d6a17a0ae44"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
+            "type": "vless",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "3babafda-6751-4279-9c7e-c00cb2460504",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
