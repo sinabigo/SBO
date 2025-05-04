@@ -122,10 +122,7 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 9","type":"trojan","server":"99.80.179.36","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇬🇧GB | 🟢 | trojan | @DirectVPN | 11","type":"trojan","server":"35.178.114.243","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"15.237.241.92","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 7","type":"trojan","server":"13.60.151.163","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 1","type":"trojan","server":"18.194.237.232","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,10 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 9'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 11'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -146,10 +140,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 9'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 11'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -157,10 +148,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 9'
-      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 11'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
