@@ -106,16 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,36 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "37.156.46.65",
-            "server_port": 48740,
-            "uuid": "4b7ddce2-42a2-6435-20b7-6762c63d75f3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
-                    "short_id": "d6d54c08fbbf895f"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "V2RayMizban.iranigamepars.ir",
             "server_port": 443,
@@ -192,6 +163,35 @@
                     "enabled": true,
                     "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
                     "short_id": "7e39db0c"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 5",
+            "type": "vless",
+            "server": "37.156.46.65",
+            "server_port": 48740,
+            "uuid": "4b7ddce2-42a2-6435-20b7-6762c63d75f3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
+                    "short_id": "d6d54c08fbbf895f"
                 }
             }
         }
