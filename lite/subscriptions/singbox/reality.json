@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
                 "🇨🇭CH | 🟢 | vless | @meli_proxyy | 15"
             ]
         },
@@ -114,7 +113,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
                 "🇨🇭CH | 🟢 | vless | @meli_proxyy | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,35 +134,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
-            "type": "vless",
-            "server": "infocv.novintec99.ir",
-            "server_port": 21332,
-            "uuid": "31a8c021-4614-4f05-b466-fddb7b36826f",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "bGfBNbN30La6XWb4Cakg4y7kRCiveT2LpWYhK8r3-BI",
-                    "short_id": "866c9d6a17a0ae44"
-                }
-            }
         },
         {
             "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 15",
