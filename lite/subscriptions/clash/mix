@@ -121,9 +121,9 @@ proxies:
   - {"name":"🇳🇱NL | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"91.84.100.42","port":1843,"password":"F6MAAXTSLfz6ZSTk9gGabh","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.203.133.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.200.164.156","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"YZvzh9FMJh6ac6moh8xtkMogmwEZDL5nF99PSFDk7NffhikzuHe3CUUYzudGcaLW5vMzECV29QiH856gj62VnAcgQ2oHY5DV","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"193.46.56.185","port":6683,"password":"DUzhs1KfCZuMKDQos2Nmkw","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"172.67.170.103","port":"443","cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.sbs"}}}
+  - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @meli_proxyy | 13","type":"ss","server":"147.45.70.120","port":7374,"password":"oN4fR25SwOBj6LFh3WMwb7","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -133,9 +133,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
+      - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -145,9 +145,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
+      - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -156,9 +156,9 @@ proxy-groups:
       - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
+      - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

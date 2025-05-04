@@ -118,27 +118,31 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"172.67.170.103","port":"443","cipher":"auto","uuid":"76221bfb-e92f-4e80-81c5-6fe48f50ac0b","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/linkws","headers":{"host":"glweidf.sbs"}}}
+  - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17'
+      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
