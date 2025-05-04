@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇵🇱PL | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇵🇱PL | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,23 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 0",
+            "type": "vmess",
+            "server": "45.12.138.82",
+            "server_port": 54757,
+            "uuid": "cde9f074-c930-4aa3-a558-46bbc9d0a5a1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇵🇱PL | 🟢 | vmess | @OpenSSTPVpn | 1",
