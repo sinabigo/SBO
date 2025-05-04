@@ -106,18 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4"
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4"
+                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 4",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,35 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
-            "type": "vless",
-            "server": "V2RayMizban.iranigamepars.ir",
-            "server_port": 443,
-            "uuid": "03ad10fa-39b6-498d-8a2d-5015dd9f572b",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
-                    "short_id": "7e39db0c"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9",
@@ -223,6 +194,35 @@
                     "enabled": true,
                     "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
                     "short_id": "d6d54c08fbbf895f"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "V2RayMizban.iranigamepars.ir",
+            "server_port": 443,
+            "uuid": "03ad10fa-39b6-498d-8a2d-5015dd9f572b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
+                    "short_id": "7e39db0c"
                 }
             }
         }
