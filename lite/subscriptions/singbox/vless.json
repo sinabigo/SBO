@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
+                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 8",
@@ -124,8 +124,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
+                "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 8",
@@ -158,7 +158,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
+            "type": "vless",
+            "server": "104.26.12.54",
+            "server_port": 443,
+            "uuid": "59860b15-b2d9-47f9-9b92-81bd1639fcc5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "5-55sfjslf.ifenxiang.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "5-55sfjslf.ifenxiang.cfd"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @Outline_Vpn | 13",
             "type": "vless",
             "server": "88.218.95.8",
             "server_port": 8880,
@@ -176,37 +207,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 13",
-            "type": "vless",
-            "server": "104.22.56.77",
-            "server_port": 443,
-            "uuid": "c7d543af-1023-4b96-a698-187c190d3f4c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nautica.foolvpn.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/47.89.39.186-39251",
-                "headers": {
-                    "Host": "nautica.foolvpn.me"
-                }
             }
         },
         {
