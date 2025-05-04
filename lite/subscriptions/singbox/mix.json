@@ -119,8 +119,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 8",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -146,8 +145,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 8",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -417,22 +415,12 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
-            "type": "shadowsocks",
-            "server": "85.210.120.237",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "156.253.234.12",
-            "server_port": 443,
-            "uuid": "f7f284e5-0cc8-4441-b1a0-32b4ace6b280",
-            "flow": "xtls-rprx-vision",
+            "server": "104.16.30.244",
+            "server_port": 2053,
+            "uuid": "af84b164-93b2-4658-89d3-ef9ec44c0d69",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -441,17 +429,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "myket.ir",
+                "server_name": "ezdriv-server.help",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "7Nn2ipA73HTAIvueCOLXTHr1EEREz2lv3g8MkAeiMAc",
-                    "short_id": "2c"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560fp=random",
+                "headers": {
+                    "Host": "ezdriv-server.help"
                 }
             }
         },
