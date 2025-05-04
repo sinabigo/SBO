@@ -121,12 +121,10 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @redfree8 | 2","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","servername":"ipsychO.SUEx12.Ir","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
-  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"104.21.92.162","port":8880,"udp":false,"uuid":"e9b29a36-f8dc-48ee-b5f9-e0e5be701d03","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"falcunargo-bia-zod.8fcd549b6a.workers.Dev"}}}
   - {"name":"🚩CF | 🔴 | vless | @redfree8 | 1","type":"vless","server":"104.21.96.1","port":443,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"iPsyCHO.SUEx12.iR","ws-opts":{"path":"/RiuadVWEiFmFyL3C?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
+  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 10","type":"vless","server":"104.21.92.162","port":8880,"udp":false,"uuid":"e9b29a36-f8dc-48ee-b5f9-e0e5be701d03","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"falcunargo-bia-zod.8fcd549b6a.workers.Dev"}}}
   - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"64.227.77.203","port":443,"udp":false,"uuid":"bc3cb742-5b70-40ec-9d14-b4e3ebe7b0c0","tls":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 4","type":"vless","server":"164.90.180.228","port":443,"udp":true,"uuid":"2c0050c0-9b32-48ee-b46c-16f2844bad6d","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"gr1.tak30zanjan.ir","flow":"xtls-rprx-vision","reality-opts":{"public-key":"9kw-s--kXR8_jKj5J0l2HD502FDzxYN9XefdketMlF8","short-id":"8e5f1d0b"}}
-  - {"name":"🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0","type":"vless","server":"clientproo.xyz","port":443,"udp":false,"uuid":"bc3cb742-5b70-40ec-9d14-b4e3ebe7b0c0","tls":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9","type":"vless","server":"162.55.36.107","port":577,"udp":true,"uuid":"bf4631cc-27eb-4b8e-ab85-5db1ddab6125","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8","short-id":"9b28132c703433"}}
   - {"name":"🚩CF | 🔴 | vless | @Outline_Vpn | 1","type":"vless","server":"104.17.148.22","port":8443,"udp":false,"uuid":"838f5273-5d2d-4630-a0f5-9cc8e4aef4d6","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"MdLoXlYg.rIcKtMoUsE.InFo","ws-opts":{"path":"/","headers":{"host":"MdLoXlYg.rIcKtMoUsE.InFo"}}}
 proxy-groups:
   - name: MANUAL
@@ -135,12 +133,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
-      - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0'
-      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
   - name: URL-TEST
     type: url-test
@@ -149,12 +145,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
-      - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0'
-      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
   - name: FALLBACK
     type: fallback
@@ -162,12 +156,10 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | vless | @redfree8 | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 1'
       - '🚩CF | 🔴 | vless | @redfree8 | 1'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
-      - '🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0'
-      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 9'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
