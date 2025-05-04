@@ -110,9 +110,10 @@
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 3"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7"
             ]
         },
         {
@@ -123,9 +124,10 @@
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 3"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -235,6 +237,58 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 2096,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "164.90.180.228",
@@ -264,11 +318,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
             "type": "vless",
-            "server": "104.17.148.22",
+            "server": "WwW.speedtest.NeT",
             "server_port": 8443,
-            "uuid": "838f5273-5d2d-4630-a0f5-9cc8e4aef4d6",
+            "uuid": "dc28d2e9-e0cb-45ba-a8aa-309ef2b15860",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -278,7 +332,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "MdLoXlYg.rIcKtMoUsE.InFo",
+                "server_name": "cpuhot.boshrachoice.ir.",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -288,38 +342,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=1048",
                 "headers": {
-                    "Host": "MdLoXlYg.rIcKtMoUsE.InFo"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "37.156.46.65",
-            "server_port": 48740,
-            "uuid": "4b7ddce2-42a2-6435-20b7-6762c63d75f3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
-                    "short_id": "d6d54c08fbbf895f"
+                    "Host": "cpuhot.boshrachoice.ir."
                 }
             }
         }
