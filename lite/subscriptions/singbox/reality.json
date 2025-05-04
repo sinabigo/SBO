@@ -106,18 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 15"
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 15"
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,7 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 8",
+            "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
             "type": "vless",
             "server": "infocv.novintec99.ir",
             "server_port": 21332,
@@ -169,43 +167,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 9",
-            "type": "vless",
-            "server": "o.soskom.ir",
-            "server_port": 11045,
-            "uuid": "3babafda-6751-4279-9c7e-c00cb2460504",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
-                    "short_id": "20db1be5e1ab118a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Tel : @NT_Safe",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "156.253.234.12",
             "server_port": 443,
