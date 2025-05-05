@@ -12,13 +12,14 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13 = ss, 45.87.175.164, 8080, encrypt-method = chacha20-ietf-poly1305, password = cvII85TrW6n0OGyfpHVS1u
+🇨🇭CH | 🟢 | ss | @meli_proxyy | 1 = ss, 204.136.10.115, 1866, encrypt-method = chacha20-ietf-poly1305, password = oXGp1+ihlfKg826H
 🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0 = ss, 5.181.21.194, 18660, encrypt-method = chacha20-ietf-poly1305, password = pV5BAzqLZosOfuIrkyoadT
 🇳🇱NL | 🟢 | ss | @SiNAVM | 0 = ss, 91.84.100.42, 1843, encrypt-method = chacha20-ietf-poly1305, password = F6MAAXTSLfz6ZSTk9gGabh
 🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2 = ss, mx2.drawnrisha.one, 55988, encrypt-method = chacha20-ietf-poly1305, password = YLpDMwoLZi9Dvkr7Q6PCfkwCKJt23MkhD1LHDjnKVjS1R9Z4dD9vY5FffuYCtDVcSzHJLdicZbm4Dh6p8Nsd5d88gzAWYrQY
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇨🇭CH | 🟢 | ss | @meli_proxyy | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇨🇭CH | 🟢 | ss | @meli_proxyy | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13,🇨🇭CH | 🟢 | ss | @meli_proxyy | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
