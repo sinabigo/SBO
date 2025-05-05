@@ -106,28 +106,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,6 +152,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "104.22.22.164",
+            "server_port": 443,
+            "uuid": "85b82e66-e9cb-49c7-be5b-81b3ae1bda90",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mehdiama.vpntestvpn794.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "mehdiama.vpntestvpn794.workers.dev"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
@@ -202,24 +237,17 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
             "type": "vless",
-            "server": "104.24.47.130",
-            "server_port": 80,
-            "uuid": "7711fc80-c163-4f35-80c4-d5e61c69659d",
+            "server": "192.3.1.161",
+            "server_port": 30003,
+            "uuid": "c75bf7f7-ed5f-4fb0-8725-62852d25a384",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "104.24.47.130"
-                }
             }
         },
         {
@@ -252,11 +280,25 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "clientproo.xyz",
+            "server_port": 443,
+            "uuid": "62f5a5df-2be8-4b88-a339-5985d7ace84e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray2",
+            "server": "www.speedtest.net",
+            "server_port": 8080,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -268,7 +310,7 @@
                 "type": "ws",
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -340,12 +382,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
-            "server": "black.bitiboot.com",
+            "server": "50.7.85.221",
             "server_port": 443,
-            "uuid": "571b311b-4a34-4792-93f9-a5c0cfa66f66",
-            "flow": "xtls-rprx-vision",
+            "uuid": "3af3a0f3-28ea-407c-a3df-2ae3b33fc174",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -354,17 +396,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "analytics.google.com",
+                "server_name": "salampesarm.sesewov745.workers.dev",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "p2iqEmOs4u682Jz5S-E-s7k8AbsNZbc-mitgU89PRi4",
-                    "short_id": "db06"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Path\/Telegram@proxy_mtm\/",
+                "headers": {
+                    "Host": "salampesarm.sesewov745.workers.dev"
                 }
             }
         }
