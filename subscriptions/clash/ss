@@ -121,8 +121,6 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13","type":"ss","server":"45.87.175.164","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"5.181.21.194","port":18660,"password":"pV5BAzqLZosOfuIrkyoadT","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇭CH | 🟢 | ss | @meli_proxyy | 1","type":"ss","server":"204.136.10.115","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"YLpDMwoLZi9Dvkr7Q6PCfkwCKJt23MkhD1LHDjnKVjS1R9Z4dD9vY5FffuYCtDVcSzHJLdicZbm4Dh6p8Nsd5d88gzAWYrQY","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"91.84.100.42","port":1843,"password":"F6MAAXTSLfz6ZSTk9gGabh","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,8 +130,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 1'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -143,8 +139,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 1'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -153,8 +147,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 13'
       - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 1'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇳🇱NL | 🟢 | ss | @SiNAVM | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
