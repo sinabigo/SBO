@@ -12,11 +12,10 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇳🇱NL | 🟢 | ss | @SiNAVM | 0 = ss, 91.84.100.42, 1843, encrypt-method = chacha20-ietf-poly1305, password = F6MAAXTSLfz6ZSTk9gGabh
-🇩🇪DE | 🟢 | ss | @meli_proxyy | 15 = ss, 147.45.70.120, 7374, encrypt-method = chacha20-ietf-poly1305, password = oN4fR25SwOBj6LFh3WMwb7
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | ss | @meli_proxyy | 15
-URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | ss | @meli_proxyy | 15
-FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | ss | @meli_proxyy | 15
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @SiNAVM | 0
+URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @SiNAVM | 0
+FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @SiNAVM | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
