@@ -120,7 +120,9 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"156.253.222.28","port":443,"udp":true,"uuid":"ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"myket.ir","reality-opts":{"public-key":"328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI","short-id":"2cecca7813d0c575"}}
+  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"156.253.222.28","port":443,"udp":true,"uuid":"ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"myket.ir","reality-opts":{"public-key":"328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI","short-id":"2cecca7813d0c575"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"V2RayMizban2.iranigamepars.ir","port":443,"udp":true,"uuid":"08111b5d-1eb3-4178-b8d1-6c4c22a8fe89","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"oDHdhbvtMCXmEpcRuxDLJsRxzs79FnfwPOgJrdkeOmE","short-id":"4f"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10","type":"vless","server":"162.55.36.107","port":577,"udp":true,"uuid":"bf4631cc-27eb-4b8e-ab85-5db1ddab6125","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8","short-id":"9b28132c703433"}}
   - {"name":"🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1","type":"vless","server":"188.166.194.27","port":7594,"udp":true,"uuid":"2a219df1-a04b-4424-bfd2-cb37aeb10b2c","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"dash.cloudflare.com","grpc-opts":{"grpc-service-name":"7594vless"},"reality-opts":{"public-key":"AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw","short-id":"765e8e700426816c"}}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +130,9 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 0'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1'
   - name: URL-TEST
     type: url-test
@@ -136,14 +140,18 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 0'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 0'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
