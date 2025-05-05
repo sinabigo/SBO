@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
@@ -114,6 +115,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 11",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -125,7 +127,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 12",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
@@ -133,6 +136,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 11",
                 "🇦🇪AE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0",
@@ -160,17 +164,65 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
             "type": "vless",
-            "server": "192.3.1.161",
-            "server_port": 30003,
-            "uuid": "c75bf7f7-ed5f-4fb0-8725-62852d25a384",
+            "server": "50.7.85.221",
+            "server_port": 443,
+            "uuid": "3af3a0f3-28ea-407c-a3df-2ae3b33fc174",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "salampesarm.sesewov745.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Path\/Telegram@proxy_mtm\/",
+                "headers": {
+                    "Host": "salampesarm.sesewov745.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "104.22.22.164",
+            "server_port": 443,
+            "uuid": "85b82e66-e9cb-49c7-be5b-81b3ae1bda90",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mehdiama.vpntestvpn794.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "mehdiama.vpntestvpn794.workers.dev"
+                }
             }
         },
         {
@@ -339,6 +391,20 @@
                 "headers": {
                     "Host": "s6.design-mobo.ir"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "54.37.79.80",
+            "server_port": 2222,
+            "uuid": "7d5a9596-0dea-4ad7-8de5-18605a0cad39",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
