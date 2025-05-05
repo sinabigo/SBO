@@ -106,8 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1"
             ]
         },
@@ -115,8 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -140,36 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-            "type": "vless",
-            "server": "162.55.36.107",
-            "server_port": 577,
-            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
-                    "short_id": "9b28132c703433"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
             "server": "156.253.222.28",
             "server_port": 443,
