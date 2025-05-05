@@ -106,16 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,7 +140,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "156.253.222.28",
             "server_port": 443,
@@ -200,6 +202,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "black.bitiboot.com",
+            "server_port": 443,
+            "uuid": "571b311b-4a34-4792-93f9-a5c0cfa66f66",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "analytics.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "p2iqEmOs4u682Jz5S-E-s7k8AbsNZbc-mitgU89PRi4",
+                    "short_id": "db06"
+                }
             }
         }
     ],
