@@ -12,12 +12,11 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1 = ss, 77.110.102.235, 64864, encrypt-method = chacha20-ietf-poly1305, password = uqtPM6fU4yhAYS1v2cIZKb
-🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2 = ss, 5.181.21.194, 18660, encrypt-method = chacha20-ietf-poly1305, password = pV5BAzqLZosOfuIrkyoadT
 🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0 = ss, 193.124.46.196, 53024, encrypt-method = chacha20-ietf-poly1305, password = oFXVXlG6v4NhGMyxjQqQQg
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
-URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
-FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
+MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
+URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
+FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
