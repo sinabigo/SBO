@@ -121,7 +121,6 @@ proxies:
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.203.133.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.200.164.156","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
-  - {"name":"🇨🇭CH | 🟢 | ss | @meli_proxyy | 18","type":"ss","server":"204.136.10.115","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -141,7 +139,6 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -150,7 +147,6 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 4'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
