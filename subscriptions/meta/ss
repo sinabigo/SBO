@@ -120,39 +120,39 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"5.181.21.194","port":18660,"password":"pV5BAzqLZosOfuIrkyoadT","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"77.110.102.235","port":64864,"password":"uqtPM6fU4yhAYS1v2cIZKb","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"5.181.21.194","port":18660,"password":"pV5BAzqLZosOfuIrkyoadT","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"23.154.136.51","port":5499,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
-  - {"name":"🇨🇭CH | 🟢 | ss | @meli_proxyy | 15","type":"ss","server":"204.136.10.115","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"rU9jurtJ2zHpTf5CeJ5LCAzGoSc7KCYmzuM8qnQzAXUJA8jfreYWPJtLcHC4dJXSSAQ3mLhJdbVPE1MRop37WkganscRnYv4","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 15'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 15'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇨🇭CH | 🟢 | ss | @meli_proxyy | 15'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
