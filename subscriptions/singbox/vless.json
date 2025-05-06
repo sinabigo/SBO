@@ -113,7 +113,9 @@
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 0"
             ]
         },
         {
@@ -127,7 +129,9 @@
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -288,9 +292,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "telegram-id-ArV2ray",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -302,7 +306,7 @@
                 "type": "ws",
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "151.101.64.155"
                 }
             }
         },
@@ -336,11 +340,32 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
             "type": "vless",
-            "server": "whatismyipaddress.com",
-            "server_port": 2053,
-            "uuid": "a685b264-42b6-4ecd-92e2-d8dd402e5f6b",
+            "server": "162.19.228.119",
+            "server_port": 80,
+            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/http",
+                "headers": {
+                    "Host": "162.19.228.119"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 2096,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -350,7 +375,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Frall.sabinhosting.ir",
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -362,7 +387,36 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "Frall.sabinhosting.ir"
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "65.109.212.145",
+            "server_port": 2087,
+            "uuid": "9d5f5880-607c-44f0-8130-0138f7c28ef0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk",
+                    "short_id": "afe96c"
                 }
             }
         }
