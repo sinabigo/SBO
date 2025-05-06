@@ -106,16 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇨🇭CH | 🟢 | ss | @meli_proxyy | 15"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇨🇭CH | 🟢 | ss | @meli_proxyy | 15"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,7 +140,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
             "server": "77.110.102.235",
             "server_port": 64864,
@@ -148,12 +150,22 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇭CH | 🟢 | ss | @meli_proxyy | 15",
+            "tag": "🇦🇹AT | 🟢 | ss | @ShadowProxy66 | 2",
             "type": "shadowsocks",
-            "server": "204.136.10.115",
-            "server_port": 1866,
+            "server": "5.181.21.194",
+            "server_port": 18660,
             "method": "chacha20-ietf-poly1305",
-            "password": "oXGp1+ihlfKg826H",
+            "password": "pV5BAzqLZosOfuIrkyoadT",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "193.124.46.196",
+            "server_port": 53024,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oFXVXlG6v4NhGMyxjQqQQg",
             "plugin": "",
             "plugin_opts": ""
         }
