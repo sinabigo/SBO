@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 7"
             ]
         },
@@ -121,14 +121,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,11 +152,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "172.67.193.39",
+            "server_port": 443,
+            "uuid": "b0e6a2c9-e667-4e42-9cb3-77d7db3e736b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -164,11 +164,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "bypassfilter.cmyyvat.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "path": "\/@bypass_filter\/?ed=100",
                 "headers": {
-                    "Host": "ipsychO.SUEx12.Ir"
+                    "Host": "bypassfilter.cmyyvat.workers.dev"
                 }
             }
         },
@@ -204,6 +214,41 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "clientproo.xyz",
+            "server_port": 443,
+            "uuid": "b8282d52-1c7e-47e1-98f4-7a91c01847e7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
             "type": "vless",
             "server": "15.204.167.6",
@@ -225,20 +270,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "clientproo.xyz",
-            "server_port": 443,
-            "uuid": "b8282d52-1c7e-47e1-98f4-7a91c01847e7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -319,27 +350,6 @@
                     "enabled": true,
                     "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
                     "short_id": "9b28132c703433"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
-            "type": "vless",
-            "server": "162.19.228.119",
-            "server_port": 80,
-            "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/http",
-                "headers": {
-                    "Host": "162.19.228.119"
                 }
             }
         },
