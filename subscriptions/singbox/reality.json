@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -199,6 +201,35 @@
                     "enabled": true,
                     "public_key": "lxmu1b8ExuOnk1tyM-p7hAaGtA6DS6gdS0daUdktjwE",
                     "short_id": "beb4c6"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
+            "type": "vless",
+            "server": "162.55.36.107",
+            "server_port": 577,
+            "uuid": "bf4631cc-27eb-4b8e-ab85-5db1ddab6125",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
+                    "short_id": "9b28132c703433"
                 }
             }
         }
