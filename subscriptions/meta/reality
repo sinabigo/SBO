@@ -120,27 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"146.190.226.24","port":443,"udp":true,"uuid":"63000b22-6e89-456c-b3fc-79aaf8409084","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":"stackoverflow.com"},"reality-opts":{"public-key":"KHFGWEKi_QyG4srp-Mn8XghMjBJOFLZ4Djt9dPpn0TM","short-id":"7ab5a2bb"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10","type":"vless","server":"162.55.36.107","port":577,"udp":true,"uuid":"bf4631cc-27eb-4b8e-ab85-5db1ddab6125","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8","short-id":"9b28132c703433"}}
+  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 3","type":"vless","server":"146.190.226.24","port":443,"udp":true,"uuid":"63000b22-6e89-456c-b3fc-79aaf8409084","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":"stackoverflow.com"},"reality-opts":{"public-key":"KHFGWEKi_QyG4srp-Mn8XghMjBJOFLZ4Djt9dPpn0TM","short-id":"7ab5a2bb"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 3'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 3'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
