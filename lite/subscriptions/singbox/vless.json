@@ -110,7 +110,6 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
@@ -130,7 +129,6 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
@@ -254,42 +252,6 @@
                 "headers": {
                     "Host": "tgju.org"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
-            "type": "vless",
-            "server": "188.166.194.27",
-            "server_port": 7594,
-            "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7594vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {

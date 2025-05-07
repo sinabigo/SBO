@@ -120,7 +120,8 @@ dns:
 proxies:
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.203.133.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.200.164.156","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5","type":"vmess","server":"45.12.138.82","port":"54757","cipher":"auto","uuid":"cde9f074-c930-4aa3-a558-46bbc9d0a5a1","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"193.124.46.196","port":53024,"password":"oFXVXlG6v4NhGMyxjQqQQg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"77.110.102.235","port":64864,"password":"uqtPM6fU4yhAYS1v2cIZKb","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 17","type":"ss","server":"131.145.10.208","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +131,8 @@ proxy-groups:
       - FALLBACK
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5'
+      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
   - name: URL-TEST
     type: url-test
@@ -140,7 +142,8 @@ proxy-groups:
     proxies:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5'
+      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
   - name: FALLBACK
     type: fallback
@@ -149,7 +152,8 @@ proxy-groups:
     proxies:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5'
+      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

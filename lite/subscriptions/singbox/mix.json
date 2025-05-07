@@ -112,8 +112,8 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
@@ -136,8 +136,8 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 11",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
@@ -309,57 +309,24 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 4",
-            "type": "vless",
-            "server": "188.166.194.27",
-            "server_port": 7594,
-            "uuid": "2a219df1-a04b-4424-bfd2-cb37aeb10b2c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
-                    "short_id": "765e8e700426816c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7594vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
+            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "193.124.46.196",
+            "server_port": 53024,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oFXVXlG6v4NhGMyxjQqQQg",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
-            "type": "vmess",
-            "server": "45.12.138.82",
-            "server_port": 54757,
-            "uuid": "cde9f074-c930-4aa3-a558-46bbc9d0a5a1",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
+            "type": "shadowsocks",
+            "server": "77.110.102.235",
+            "server_port": 64864,
+            "method": "chacha20-ietf-poly1305",
+            "password": "uqtPM6fU4yhAYS1v2cIZKb",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
