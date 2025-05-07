@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10"
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10"
+                "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -161,6 +163,35 @@
                     "enabled": true,
                     "public_key": "AU2O1no3apJnMhDrfHwDACAwFDo8-DZkCL66AXSRbh8",
                     "short_id": "9b28132c703433"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "156.253.222.28",
+            "server_port": 443,
+            "uuid": "ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "myket.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI",
+                    "short_id": "2cecca7813d0c575"
                 }
             }
         }

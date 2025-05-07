@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vless | @Outline_Vpn | 9",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
+                "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -130,20 +130,20 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🟢 | vless | @Outline_Vpn | 9",
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
+                "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -170,7 +170,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -350,22 +350,22 @@
             }
         },
         {
+            "tag": "🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "57.128.190.110",
+            "server_port": 11703,
+            "method": "chacha20-ietf-poly1305",
+            "password": "d275849ebcfcec7e",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
             "server": "193.124.46.196",
             "server_port": 53024,
             "method": "chacha20-ietf-poly1305",
             "password": "oFXVXlG6v4NhGMyxjQqQQg",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
-            "type": "shadowsocks",
-            "server": "77.110.102.235",
-            "server_port": 64864,
-            "method": "chacha20-ietf-poly1305",
-            "password": "uqtPM6fU4yhAYS1v2cIZKb",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -443,12 +443,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 18",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "whatismyipaddress.com",
-            "server_port": 2053,
-            "uuid": "a685b264-42b6-4ecd-92e2-d8dd402e5f6b",
-            "flow": "",
+            "server": "156.253.222.28",
+            "server_port": 443,
+            "uuid": "ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -457,19 +457,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Frall.sabinhosting.ir",
+                "server_name": "myket.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "Frall.sabinhosting.ir"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI",
+                    "short_id": "2cecca7813d0c575"
                 }
             }
         },
