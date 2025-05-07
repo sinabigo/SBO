@@ -113,7 +113,8 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 6",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 8",
+                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 9",
                 "🇧🇬BG | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -132,7 +133,8 @@
                 "🇩🇪DE | 🟢 | vless | @Outline_Vpn | 10",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 6",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 8",
+                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 9",
                 "🇧🇬BG | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -331,11 +333,40 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 6",
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 8",
+            "type": "vless",
+            "server": "156.253.222.28",
+            "server_port": 443,
+            "uuid": "ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "myket.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI",
+                    "short_id": "2cecca7813d0c575"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 9",
             "type": "vless",
             "server": "clientproo.xyz",
             "server_port": 443,
-            "uuid": "62f5a5df-2be8-4b88-a339-5985d7ace84e",
+            "uuid": "bc3cb742-5b70-40ec-9d14-b4e3ebe7b0c0",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {

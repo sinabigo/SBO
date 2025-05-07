@@ -13,13 +13,13 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇮🇪IE | 🟢 | trojan | @DirectVPN | 18 = trojan, 18.203.133.90, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇮🇪IE | 🟢 | trojan | @DirectVPN | 19 = trojan, 18.200.164.156, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0 = ss, 57.128.190.110, 11703, encrypt-method = chacha20-ietf-poly1305, password = d275849ebcfcec7e
-🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1 = ss, 193.124.46.196, 53024, encrypt-method = chacha20-ietf-poly1305, password = oFXVXlG6v4NhGMyxjQqQQg
+🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1 = ss, 57.128.190.110, 11703, encrypt-method = chacha20-ietf-poly1305, password = d275849ebcfcec7e
+🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2 = ss, 193.124.46.196, 53024, encrypt-method = chacha20-ietf-poly1305, password = oFXVXlG6v4NhGMyxjQqQQg
 🇦🇹AT | 🟢 | ss | @meli_proxyy | 16 = ss, 5.181.21.194, 18660, encrypt-method = chacha20-ietf-poly1305, password = pV5BAzqLZosOfuIrkyoadT
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
-URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
-FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
+MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
+URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
+FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇮🇪IE | 🟢 | trojan | @DirectVPN | 19,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇦🇹AT | 🟢 | ss | @meli_proxyy | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
