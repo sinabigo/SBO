@@ -121,8 +121,7 @@ proxies:
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.203.133.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.200.164.156","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"62.133.60.60","port":21712,"password":"EjlV2IAtnOzeSzD3p463Un","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"57.128.190.110","port":11703,"password":"d275849ebcfcec7e","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇸🇪SE | 🟢 | trojan | @meli_proxyy | 17","type":"trojan","server":"141.227.160.88","port":1935,"udp":false,"password":"OLq0FfOlp7","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"x1-sweden-ovh-v2.devefun.net"}
+  - {"name":"🇸🇬SG | 🟢 | ss | @meli_proxyy | 16","type":"ss","server":"64.176.85.73","port":1866,"password":"oXGp1+ihlfKg826H","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,8 +131,7 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇸🇪SE | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇸🇬SG | 🟢 | ss | @meli_proxyy | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,8 +141,7 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇸🇪SE | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇸🇬SG | 🟢 | ss | @meli_proxyy | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -153,8 +150,7 @@ proxy-groups:
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 18'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇸🇪SE | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇸🇬SG | 🟢 | ss | @meli_proxyy | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
