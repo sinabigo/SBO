@@ -106,16 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇸🇬SG | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇸🇬SG | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,6 +142,26 @@
             "type": "dns"
         },
         {
+            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "62.133.60.60",
+            "server_port": 21712,
+            "method": "chacha20-ietf-poly1305",
+            "password": "EjlV2IAtnOzeSzD3p463Un",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇸🇬SG | 🟢 | ss | @meli_proxyy | 17",
+            "type": "shadowsocks",
+            "server": "64.176.85.73",
+            "server_port": 1866,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oXGp1+ihlfKg826H",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
             "type": "shadowsocks",
             "server": "23.154.136.51",
@@ -148,12 +172,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 11",
             "type": "shadowsocks",
-            "server": "62.133.60.60",
-            "server_port": 21712,
+            "server": "mx2.drawnrisha.one",
+            "server_port": 55988,
             "method": "chacha20-ietf-poly1305",
-            "password": "EjlV2IAtnOzeSzD3p463Un",
+            "password": "rU9jurtJ2zHpTf5CeJ5LCAzGoSc7KCYmzuM8qnQzAXUJA8jfreYWPJtLcHC4dJXSSAQ3mLhJdbVPE1MRop37WkganscRnYv4",
             "plugin": "",
             "plugin_opts": ""
         }
