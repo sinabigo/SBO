@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,36 +136,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 10",
-            "type": "vless",
-            "server": "156.253.222.28",
-            "server_port": 443,
-            "uuid": "ca75e000-ff1a-4117-a4f1-1d5ebe66e2cf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "myket.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "328tJfiuSwrDEPPIpsiT7C4BUUZNGVxdo2DKam7RmBI",
-                    "short_id": "2cecca7813d0c575"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "146.190.226.24",
             "server_port": 443,
