@@ -105,16 +105,13 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0"
-            ],
+            "outbounds": [],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -134,16 +131,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-            "type": "shadowsocks",
-            "server": "62.133.60.60",
-            "server_port": 21712,
-            "method": "chacha20-ietf-poly1305",
-            "password": "EjlV2IAtnOzeSzD3p463Un",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
