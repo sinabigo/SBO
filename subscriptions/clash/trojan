@@ -120,9 +120,10 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
   - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 10","type":"trojan","server":"99.80.179.36","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"63.176.54.26","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇬🇧GB | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"35.178.114.243","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 1","type":"trojan","server":"15.237.241.92","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 8","type":"trojan","server":"13.60.151.163","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 9","type":"trojan","server":"94.131.20.3","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
+  - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 11","type":"trojan","server":"94.131.20.3","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,9 +132,10 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 10'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
+      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 12'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 1'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 8'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 9'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 11'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -142,9 +144,10 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 10'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
+      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 12'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 1'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 8'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 9'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 11'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -152,9 +155,10 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 10'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
+      - '🇬🇧GB | 🟢 | trojan | @DirectVPN | 12'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 1'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 8'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 9'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 11'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
