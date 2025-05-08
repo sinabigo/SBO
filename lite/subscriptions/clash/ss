@@ -120,7 +120,7 @@ dns:
 proxies:
   - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"57.128.190.110","port":11703,"password":"d275849ebcfcec7e","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"193.124.46.196","port":53024,"password":"oFXVXlG6v4NhGMyxjQqQQg","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇦🇹AT | 🟢 | ss | @meli_proxyy | 16","type":"ss","server":"5.181.21.194","port":18660,"password":"pV5BAzqLZosOfuIrkyoadT","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇦🇹AT | 🟢 | ss | @meli_proxyy | 17","type":"ss","server":"5.181.21.194","port":18660,"password":"pV5BAzqLZosOfuIrkyoadT","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
-      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 16'
+      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +138,7 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
-      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 16'
+      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +146,7 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
-      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 16'
+      - '🇦🇹AT | 🟢 | ss | @meli_proxyy | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
