@@ -118,8 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"51.21.59.141","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇮🇪IE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.203.133.90","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"56.228.72.135","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"51.21.59.141","port":22222,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"100.42.182.30","port":16470,"password":"8a07255382c369ea","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
   - name: URL-TEST
     type: url-test
@@ -137,7 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
   - name: FALLBACK
     type: fallback
@@ -145,7 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
-      - '🇮🇪IE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 19'
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
