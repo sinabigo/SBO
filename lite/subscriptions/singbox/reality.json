@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
+            "type": "vless",
+            "server": "65.109.212.145",
+            "server_port": 2087,
+            "uuid": "9d5f5880-607c-44f0-8130-0138f7c28ef0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk",
+                    "short_id": "afe96c"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",

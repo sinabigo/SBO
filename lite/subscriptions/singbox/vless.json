@@ -113,8 +113,10 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -132,8 +134,10 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -323,6 +327,35 @@
             }
         },
         {
+            "tag": "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
+            "type": "vless",
+            "server": "65.109.212.145",
+            "server_port": 2087,
+            "uuid": "9d5f5880-607c-44f0-8130-0138f7c28ef0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk",
+                    "short_id": "afe96c"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "o.soskom.ir",
@@ -359,7 +392,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-233",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
             "server": "172.67.204.84",
             "server_port": 443,
