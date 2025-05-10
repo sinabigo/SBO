@@ -118,35 +118,47 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0","type":"trojan","server":"154.17.31.167","port":28331,"udp":false,"password":"Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"basket.homeofbrave.net"}
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 3","type":"trojan","server":"52.47.159.179","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 1","type":"trojan","server":"52.29.199.75","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"56.228.75.152","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"23.154.136.51","port":5499,"password":"lGqs95QkFHo2NV","cipher":"aes-256-gcm"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 3","type":"trojan","server":"18.157.170.126","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 3'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 3'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
     interval: 60
     tolerance: 50
     proxies:
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 3'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 3'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 3'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
