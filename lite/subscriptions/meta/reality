@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8","type":"vless","server":"65.109.212.145","port":2087,"udp":true,"uuid":"9d5f5880-607c-44f0-8130-0138f7c28ef0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.cdn77.com","reality-opts":{"public-key":"1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk","short-id":"afe96c"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 19","type":"vless","server":"mercedesmuseum.nyctophilia.ir","port":443,"udp":true,"uuid":"59a97ff0-435c-42e7-ba2c-c17d597c17cd","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":"yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP"},"reality-opts":{"public-key":"Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw","short-id":"05a6d4aa5e314637"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
