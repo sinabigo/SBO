@@ -118,7 +118,7 @@
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
                 "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇦🇱AL | 🔴 | vless | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -141,7 +141,7 @@
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
                 "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇦🇱AL | 🔴 | vless | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -420,6 +420,37 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
+            "server": "172.67.204.84",
+            "server_port": 443,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ipsychO.SUEx12.Ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560flow=-udp443flow=-udp443",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
+            "type": "vless",
             "server": "104.21.95.172",
             "server_port": 443,
             "uuid": "767dfba2-ac34-4507-913d-a70703f81a36",
@@ -446,20 +477,6 @@
                 "headers": {
                     "Host": "mehdiama.mehdiama840.workers.dev"
                 }
-            }
-        },
-        {
-            "tag": "🇦🇱AL | 🔴 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "app.digimobile.top",
-            "server_port": 33120,
-            "uuid": "cb9b1410-a29c-4533-dd58-e2d8de4d0f2d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
