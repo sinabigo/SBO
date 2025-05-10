@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
@@ -118,7 +118,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -131,7 +131,7 @@
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
-                "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
+                "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
@@ -141,7 +141,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -201,7 +201,7 @@
         {
             "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "54.247.127.29",
+            "server": "99.80.179.36",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -221,9 +221,9 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | trojan | @DirectVPN | 19",
+            "tag": "🇮🇪IE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "35.178.114.243",
+            "server": "54.247.127.29",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -450,12 +450,12 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "germany.gamingbazirani.ir",
-            "server_port": 3993,
-            "uuid": "20afb0d4-7879-4f14-9dd8-39d8a026f75e",
-            "flow": "",
+            "server": "mercedesmuseum.nyctophilia.ir",
+            "server_port": 443,
+            "uuid": "59a97ff0-435c-42e7-ba2c-c17d597c17cd",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -464,20 +464,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "marzban.negintel.xyz",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Hng90MObJ5OBtIrfrf6U02WIx36R9srHLBwRsj1r7Dw",
+                    "short_id": "05a6d4aa5e314637"
                 }
             },
             "transport": {
-                "type": "ws",
-                "path": "\/?ed=2084",
-                "headers": {
-                    "Host": "marzban.negintel.xyz"
-                }
+                "type": "grpc",
+                "service_name": "yZ1aB2cC3dD4eE5f6gH7iJ8kL9mNOoP",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
