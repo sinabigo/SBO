@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
@@ -116,8 +116,8 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
-                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -129,7 +129,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
@@ -138,8 +138,8 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
-                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -197,9 +197,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "18.198.134.216",
+            "server": "52.47.110.167",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -221,7 +221,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "3.73.237.33",
+            "server": "18.198.134.216",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -395,6 +395,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
+            "type": "vless",
+            "server": "162.159.153.28",
+            "server_port": 2083,
+            "uuid": "6965e558-73a4-4808-a778-67e8a82d15aa",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "1.659118019.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@MTMVPN\/?ed=2560",
+                "headers": {
+                    "Host": "1.659118019.uk"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
             "type": "vless",
             "server": "clientproo.xyz",
@@ -406,35 +437,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
-            "type": "vless",
-            "server": "65.109.212.145",
-            "server_port": 2087,
-            "uuid": "9d5f5880-607c-44f0-8130-0138f7c28ef0",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk",
-                    "short_id": "afe96c"
-                }
             }
         },
         {
