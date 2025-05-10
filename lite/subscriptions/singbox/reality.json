@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @TEHRANARGO | 8",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
-            "server": "65.109.212.145",
-            "server_port": 2087,
-            "uuid": "9d5f5880-607c-44f0-8130-0138f7c28ef0",
+            "server": "157.173.127.235",
+            "server_port": 443,
+            "uuid": "4a617961-06bb-405d-b1d8-28abaaaf18e7",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cdn77.com",
+                "server_name": "analytics.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,8 +159,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "1U1zqwf4AAdw62b-IWQ2ZCBlaS-FhQvKJBV3jD6gajk",
-                    "short_id": "afe96c"
+                    "public_key": "k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc",
+                    "short_id": "c5a5eca0d8234375"
                 }
             }
         }

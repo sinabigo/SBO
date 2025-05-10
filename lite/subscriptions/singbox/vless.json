@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
-                "🇮🇷IR | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -126,8 +126,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
-                "🇮🇷IR | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -191,12 +191,33 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "15.204.167.6",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "server": "ov-germany2.09vpn.com",
+            "server_port": 80,
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
             "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "ov-germany2.09vpn.com"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "157.173.127.235",
+            "server_port": 443,
+            "uuid": "4a617961-06bb-405d-b1d8-28abaaaf18e7",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -205,27 +226,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135001195.sec22org.com",
+                "server_name": "analytics.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc",
+                    "short_id": "c5a5eca0d8234375"
                 }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "ne2sr.blushop1403.info",
-            "server_port": 45150,
-            "uuid": "20a5527d-8b38-4f11-8bb1-bd125867e37c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
