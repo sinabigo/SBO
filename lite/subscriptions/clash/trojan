@@ -120,7 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.157.170.126","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.185.39.157","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0","type":"trojan","server":"154.17.31.167","port":28331,"udp":false,"password":"Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"basket.homeofbrave.net"}
+  - {"name":"🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1","type":"trojan","server":"154.17.31.167","port":28331,"udp":false,"password":"Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"basket.homeofbrave.net"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0'
+      - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
