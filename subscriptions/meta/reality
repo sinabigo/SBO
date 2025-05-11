@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 1","type":"vless","server":"Tabriz-Website.thorav.ir","port":443,"udp":true,"uuid":"c0f1cac3-5df2-4ee9-8b60-d5f9c58634a9","tls":true,"network":"grpc","client-fingerprint":"qq","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8","short-id":"b1417d"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 15","type":"vless","server":"marz.fastbest.ir","port":7865,"udp":true,"uuid":"8968addd-997f-4ecc-aaa1-99329ca3fb53","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"kletterwelt.org","reality-opts":{"public-key":"kGRN677QKZFajGYfM_X2EoI99k8QPxPUnXQLtN8rxx0","short-id":"3f2580f5e6a92714"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
