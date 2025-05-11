@@ -113,10 +113,9 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 4",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 5",
-                "🇦🇪AE | 🟢 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇦🇪AE | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -134,10 +133,9 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 4",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 5",
-                "🇦🇪AE | 🟢 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇦🇪AE | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -332,11 +330,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
             "type": "vless",
             "server": "clientproo.xyz",
             "server_port": 443,
-            "uuid": "c69ef4ef-0314-4412-9962-ca6f9a6ea64d",
+            "uuid": "6d76c8bd-2a42-4e1e-9601-878260ff04ed",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -346,21 +344,38 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 5",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "3befa0ef-6582-4bf0-a9c4-31d5d6e5e08f",
+            "server": "89.23.103.150",
+            "server_port": 443,
+            "uuid": "588f094b-431b-422c-b80b-007945037072",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nl08.abvpn.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/websocket?\/JOKERRVPNJoin_Bade_Channel@JOKERRVPN",
+                "headers": {
+                    "Host": "nl08.abvpn.ru"
+                }
             }
         },
         {
-            "tag": "🇦🇪AE | 🟢 | vless | @meli_proxyy | 17",
+            "tag": "🇦🇪AE | 🟢 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "93.127.180.140",
             "server_port": 443,
@@ -385,27 +400,6 @@
                     "enabled": true,
                     "public_key": "C_e1XJiabYe1InU1R1gTM2fo1pEDETZZsvWr60PgnQw",
                     "short_id": "164a3b6f05"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
                 }
             }
         },
