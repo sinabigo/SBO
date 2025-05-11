@@ -106,20 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 2",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1"
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 2",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1"
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,16 +140,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 2",
-            "type": "shadowsocks",
-            "server": "45.87.175.164",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 9",
             "type": "shadowsocks",
             "server": "23.154.136.132",
@@ -172,12 +160,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 2",
             "type": "shadowsocks",
-            "server": "mx2.drawnrisha.one",
-            "server_port": 55988,
+            "server": "45.87.175.164",
+            "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "2DvuGfaUJ7oM9E6mHWkZN9dAjPxtpndv4ckpPpyuexJxKLn6SpDQdBBJDFE6Gqj9MXpRHPDwYfNAqKgpBWTCWPrG4eDmnGTZ",
+            "password": "4a2rfixophdjffa8KVA4Aa",
             "plugin": "",
             "plugin_opts": ""
         }
