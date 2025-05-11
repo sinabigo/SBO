@@ -11,13 +11,13 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 18 = trojan, 63.176.54.26, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 19 = trojan, 15.237.241.92, 22222, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇮🇪IE | 🟢 | trojan | @DirectVPN | 18 = trojan, 3.254.246.221, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 19 = trojan, 63.176.54.26, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0 = trojan, 154.17.31.167, 28331, password = Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD, udp-delay = true, skip-cert-verify = false, sni = basket.homeofbrave.net, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇫🇷FR | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
+MANUAL = select,URL-TEST,FALLBACK,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
+URL-TEST = url-test,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
+FALLBACK = fallback,🇮🇪IE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
