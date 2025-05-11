@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vless | @meli_proxyy | 8"
+                "❔XX | 🟢 | vless | @meli_proxyy | 10",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vless | @meli_proxyy | 8"
+                "❔XX | 🟢 | vless | @meli_proxyy | 10",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 10",
             "type": "vless",
             "server": "Tabriz-Website.acveo.ir",
             "server_port": 443,
@@ -166,6 +168,42 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3",
+            "type": "vless",
+            "server": "157.180.93.74",
+            "server_port": 20000,
+            "uuid": "6543593a-f55e-422c-8ffd-b6d930b1808c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ebookiran.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "X2l8AS8XhUKxyskDWHA-gRhvCO3LTGqWEs1GYIpyfEo",
+                    "short_id": "d525279f3c6c0ef5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tok",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
