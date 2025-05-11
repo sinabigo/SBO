@@ -121,7 +121,6 @@ proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 7","type":"trojan","server":"56.228.75.152","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 1","type":"trojan","server":"3.74.122.89","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"15.236.97.249","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -141,7 +139,6 @@ proxy-groups:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -150,7 +147,6 @@ proxy-groups:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
