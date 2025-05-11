@@ -109,7 +109,6 @@
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
@@ -117,8 +116,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -132,7 +131,6 @@
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
@@ -140,8 +138,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -212,28 +210,6 @@
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
             "server": "18.157.170.126",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
-            "type": "trojan",
-            "server": "18.185.39.157",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -405,32 +381,45 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-235",
+            "server": "31.43.179.228",
+            "server_port": 443,
+            "uuid": "4d91916f-a7fd-419b-8b90-640bb8d4b3f2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "myphotograpicpicture.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha",
+                "headers": {
+                    "Host": "myphotograpicpicture.ir"
+                }
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-235",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 17",
+            "type": "shadowsocks",
+            "server": "45.87.175.164",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "4a2rfixophdjffa8KVA4Aa",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
