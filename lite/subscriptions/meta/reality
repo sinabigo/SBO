@@ -121,8 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19","type":"vless","server":"157.173.127.235","port":443,"udp":true,"uuid":"4a617961-06bb-405d-b1d8-28abaaaf18e7","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"analytics.google.com","reality-opts":{"public-key":"k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc","short-id":"c5a5eca0d8234375"}}
-  - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 17","type":"vless","server":"212.6.46.45","port":52441,"udp":true,"uuid":"3ffbeb8a-1fc1-4997-a246-95b563e7421c","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"fafait.net","reality-opts":{"public-key":"MwNvBhzqIPuvGddb0_QN9MxBZ2TdYYfOjBFLcR0y7no","short-id":"6ad9fb1c"}}
-  - {"name":"🇨🇭CH | 🟢 | vless | @meli_proxyy | 18","type":"vless","server":"37.156.46.65","port":59536,"udp":true,"uuid":"d2a6d095-e897-1c16-8fde-b96d5892d515","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A","short-id":"d6d54c08fbbf895f"}}
+  - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 18","type":"vless","server":"212.6.46.45","port":52441,"udp":true,"uuid":"3ffbeb8a-1fc1-4997-a246-95b563e7421c","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"fafait.net","reality-opts":{"public-key":"MwNvBhzqIPuvGddb0_QN9MxBZ2TdYYfOjBFLcR0y7no","short-id":"6ad9fb1c"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 17'
-      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 18'
+      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,16 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 17'
-      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 18'
+      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 17'
-      - '🇨🇭CH | 🟢 | vless | @meli_proxyy | 18'
+      - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
