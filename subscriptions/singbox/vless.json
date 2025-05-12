@@ -107,11 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1"
             ]
@@ -121,11 +119,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1"
             ],
@@ -171,37 +167,6 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "104.21.96.1",
-            "server_port": 443,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "iPsyCHO.SUEx12.iR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RiuadVWEiFmFyL3C?ed=2560",
-                "headers": {
-                    "Host": "iPsyCHO.SUEx12.iR"
-                }
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
             "server": "172.67.157.202",
@@ -233,11 +198,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+            "tag": "🚩CF | 🔴 | vless | @redfree8 | 1",
             "type": "vless",
-            "server": "www.visa.com",
-            "server_port": 8080,
-            "uuid": "26842241-856f-45f2-b33c-b58e66f36fb8",
+            "server": "104.21.96.1",
+            "server_port": 443,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -245,11 +210,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "iPsyCHO.SUEx12.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/RiuadVWEiFmFyL3C?ed=2560",
                 "headers": {
-                    "Host": "www.visa.com"
+                    "Host": "iPsyCHO.SUEx12.iR"
                 }
             }
         },
@@ -281,27 +256,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
