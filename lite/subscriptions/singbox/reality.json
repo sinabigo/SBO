@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17"
             ]
@@ -115,7 +114,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17"
             ],
@@ -138,35 +136,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "157.173.127.235",
-            "server_port": 443,
-            "uuid": "4a617961-06bb-405d-b1d8-28abaaaf18e7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "analytics.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "k9oHeYY0hNmcd6BRZQTX9sp0ZQR7Bx85fPMu0v4uvwc",
-                    "short_id": "c5a5eca0d8234375"
-                }
-            }
         },
         {
             "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
