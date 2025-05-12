@@ -116,8 +116,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
-                "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -138,8 +138,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
-                "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -381,7 +381,43 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "157.180.93.74",
+            "server_port": 20000,
+            "uuid": "6543593a-f55e-422c-8ffd-b6d930b1808c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ebookiran.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "X2l8AS8XhUKxyskDWHA-gRhvCO3LTGqWEs1GYIpyfEo",
+                    "short_id": "d525279f3c6c0ef5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tok",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "marz.fastbest.ir",
             "server_port": 7865,
@@ -406,37 +442,6 @@
                     "enabled": true,
                     "public_key": "kGRN677QKZFajGYfM_X2EoI99k8QPxPUnXQLtN8rxx0",
                     "short_id": "3f2580f5e6a92714"
-                }
-            }
-        },
-        {
-            "tag": "🇰🇿KZ | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "31.43.179.228",
-            "server_port": 443,
-            "uuid": "4d91916f-a7fd-419b-8b90-640bb8d4b3f2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "myphotograpicpicture.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha",
-                "headers": {
-                    "Host": "myphotograpicpicture.ir"
                 }
             }
         },
