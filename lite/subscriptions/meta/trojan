@@ -120,8 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"15.237.238.127","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"18.157.170.126","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"13.51.117.245","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"52.47.159.179","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1","type":"trojan","server":"154.17.31.167","port":28331,"udp":false,"password":"Dea6yR4qDISnzRwj3eSClagCRCyXSZRzaNOYDAyS0NFY8ICzcF3C48RaIDyj4ZOgATuCAR2eFeFOSZD","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"basket.homeofbrave.net"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +129,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
       - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
   - name: URL-TEST
     type: url-test
@@ -138,16 +138,16 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
       - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 18'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 18'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
       - '🇺🇸US | 🟢 | trojan | @ShadowProxy66 | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
