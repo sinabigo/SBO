@@ -106,26 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,11 +146,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
             "type": "vless",
-            "server": "172.67.157.202",
-            "server_port": 443,
-            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -160,21 +158,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
                 "headers": {
-                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
+                    "Host": "ipsychO.SUEx12.Ir"
                 }
             }
         },
@@ -210,11 +198,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "172.67.157.202",
+            "server_port": 443,
+            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -222,11 +210,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "ipsychO.SUEx12.Ir"
+                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
                 }
             }
         },
@@ -252,7 +250,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "Tabriz-Website.thorav.ir",
             "server_port": 443,
@@ -316,20 +314,6 @@
                 "headers": {
                     "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 1",
-            "type": "vless",
-            "server": "clientproo.xyz",
-            "server_port": 443,
-            "uuid": "9b24cb3f-5f60-4881-9c35-ac46ea158b92",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
