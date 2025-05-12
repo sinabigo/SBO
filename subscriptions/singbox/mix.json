@@ -106,15 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 3",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 7",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 3"
             ]
@@ -123,15 +126,18 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 3",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 7",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 3"
             ],
@@ -154,37 +160,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "104.21.96.1",
-            "server_port": 443,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "iPsyCHO.SUEx12.iR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RiuadVWEiFmFyL3C?ed=2560",
-                "headers": {
-                    "Host": "iPsyCHO.SUEx12.iR"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
@@ -237,6 +212,37 @@
             }
         },
         {
+            "tag": "🚩CF | 🔴 | vless | @redfree8 | 1",
+            "type": "vless",
+            "server": "104.21.96.1",
+            "server_port": 443,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "iPsyCHO.SUEx12.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RiuadVWEiFmFyL3C?ed=2560",
+                "headers": {
+                    "Host": "iPsyCHO.SUEx12.iR"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 3",
             "type": "vless",
             "server": "clientproo.xyz",
@@ -257,40 +263,6 @@
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-            "type": "vless",
-            "server": "germany.gamingbazirani.ir",
-            "server_port": 600,
-            "uuid": "a0ebb3dd-f52f-483e-bd1c-0081f5e86518",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "marzban.negintel.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-            "type": "shadowsocks",
-            "server": "85.208.139.69",
-            "server_port": 63861,
-            "method": "chacha20-ietf-poly1305",
-            "password": "PBrts5Au4GM9ar7bTNyZEu",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -322,6 +294,115 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "85.208.139.69",
+            "server_port": 63861,
+            "method": "chacha20-ietf-poly1305",
+            "password": "PBrts5Au4GM9ar7bTNyZEu",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+            "type": "trojan",
+            "server": "35.158.198.205",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "germany.gamingbazirani.ir",
+            "server_port": 600,
+            "uuid": "a0ebb3dd-f52f-483e-bd1c-0081f5e86518",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 2096,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "type": "trojan",
+            "server": "52.47.82.168",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
