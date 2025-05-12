@@ -106,16 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 7"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,6 +138,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "lunavopershian.adas.monster",
+            "server_port": 37828,
+            "uuid": "ef13d0cd-ee08-46e8-8994-4834df9837b5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lunavopershiansni369871.adas.monster",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
+                    "short_id": "e559dd"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
@@ -174,11 +205,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 7",
             "type": "vless",
-            "server": "lunavopershian.adas.monster",
-            "server_port": 37828,
-            "uuid": "ef13d0cd-ee08-46e8-8994-4834df9837b5",
+            "server": "62.60.148.14",
+            "server_port": 25756,
+            "uuid": "b1966903-2fe2-4bce-9de7-64232ed435ce",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -188,7 +219,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
+                "server_name": "google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -197,8 +228,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
+                    "public_key": "QYKUzjbRc3V_-SwJ7DbChBt5nT6miAoFuNCqbflDF2o",
+                    "short_id": "61"
                 }
             }
         }
