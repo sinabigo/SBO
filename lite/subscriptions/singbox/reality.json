@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -174,11 +176,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
-            "server": "38.180.61.83",
-            "server_port": 25529,
-            "uuid": "7e38fa80-6cf3-4013-b576-5b3be737fb43",
+            "server": "Shiraz-Website.acveo.ir",
+            "server_port": 443,
+            "uuid": "09017df7-ddb8-4c21-9e95-f4be1f36daf5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -188,7 +190,43 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vultr.com",
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg",
+                    "short_id": "76"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "65.109.192.110",
+            "server_port": 55953,
+            "uuid": "b5ee8f67-0f25-467b-aca4-01001f00d802",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -197,8 +235,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "0grZUQjpy-Y2iQ_QaKJm2MTgJANaxew0iOSQMBffGiU",
-                    "short_id": "c4bf2058763803b1"
+                    "public_key": "RELg-Z1AXhG9945I_8hN884Z5Txd9ZxI92sl4jHzXWU",
+                    "short_id": "ec01ceda"
                 }
             }
         }

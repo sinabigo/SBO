@@ -109,17 +109,17 @@
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
-                "🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -133,17 +133,17 @@
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
-                "🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -224,24 +224,56 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
-            "type": "shadowsocks",
-            "server": "mx2.drawnrisha.one",
-            "server_port": 55988,
-            "method": "chacha20-ietf-poly1305",
-            "password": "p9UCPSVPxK92Msfi2nSV7rK62WkCJf721N3Zk2e3kh6aYdVhxcLwxq34S1Z4WA4HsHQXBrhhAjkZLSKtBaMVP6hTHF31RMov",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "104.21.48.1",
+            "server_port": 443,
+            "uuid": "2dca1f1c-7b95-441d-8713-36d56b52738e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tasaAT7.JIheTI6088.woRKeRs.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TUTMo8VZQESKxGLX?ed=2560",
+                "headers": {
+                    "Host": "tasaAT7.JIheTI6088.woRKeRs.dev"
+                }
+            }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | ss | @DeamNet_Proxy | 19",
-            "type": "shadowsocks",
-            "server": "91.186.217.246",
-            "server_port": 31764,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Ftc17VH9ZXQON5vslJCYmv",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "104.21.16.1",
+            "server_port": 2052,
+            "uuid": "44a6e3f3-a45b-446c-8c84-4fd753a4f62d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.21.16.1"
+                }
+            }
         },
         {
             "tag": "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
@@ -306,7 +338,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
             "server": "85.208.139.69",
             "server_port": 63861,
@@ -401,11 +433,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
-            "server": "38.180.61.83",
-            "server_port": 25529,
-            "uuid": "7e38fa80-6cf3-4013-b576-5b3be737fb43",
+            "server": "Shiraz-Website.acveo.ir",
+            "server_port": 443,
+            "uuid": "09017df7-ddb8-4c21-9e95-f4be1f36daf5",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -415,7 +447,43 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "vultr.com",
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg",
+                    "short_id": "76"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "65.109.192.110",
+            "server_port": 55953,
+            "uuid": "b5ee8f67-0f25-467b-aca4-01001f00d802",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -424,23 +492,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "0grZUQjpy-Y2iQ_QaKJm2MTgJANaxew0iOSQMBffGiU",
-                    "short_id": "c4bf2058763803b1"
+                    "public_key": "RELg-Z1AXhG9945I_8hN884Z5Txd9ZxI92sl4jHzXWU",
+                    "short_id": "ec01ceda"
                 }
-            }
-        },
-        {
-            "tag": "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-            "type": "vless",
-            "server": "cloudgetservice.mcloudservice.site",
-            "server_port": 443,
-            "uuid": "84630ddd-b04a-4494-aa3a-b831a9873b81",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
