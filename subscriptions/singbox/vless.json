@@ -109,8 +109,9 @@
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7"
             ]
         },
         {
@@ -120,8 +121,9 @@
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -198,9 +200,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
-            "server": "www.visa.com",
-            "server_port": 8080,
-            "uuid": "26842241-856f-45f2-b33c-b58e66f36fb8",
+            "server": "159.112.235.174",
+            "server_port": 2082,
+            "uuid": "47e9a0db-50c6-4522-8819-502c55b06dde",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -210,19 +212,19 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "www.visa.com"
+                    "Host": "159.112.235.174"
                 }
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
             "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 2096,
-            "uuid": "9e769ce1-34be-4e3f-b0a6-823f30eb8f69",
-            "flow": "",
+            "server": "v2raymizban2.iranigamepars.ir",
+            "server_port": 443,
+            "uuid": "68c650dd-c103-4054-9129-78f2e371f90d",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -231,19 +233,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "T864tJqC3b.SoUbLoTiK.iNfO",
+                "server_name": "www.cdn77.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "T864tJqC3b.SoUbLoTiK.iNfO"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "F9jUIC4wltrDQQsaOU-dvEQ3jswfScRTbqhZuYyGjF8",
+                    "short_id": "c85d"
                 }
             }
         },
@@ -276,6 +276,42 @@
                 "headers": {
                     "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+            "type": "vless",
+            "server": "Shiraz-Website.acveo.ir",
+            "server_port": 443,
+            "uuid": "f8ca63e8-4215-4193-bb6d-755c52b01225",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg",
+                    "short_id": "76"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
