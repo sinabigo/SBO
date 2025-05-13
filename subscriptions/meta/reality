@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇳🇱NL | 🟢 | vless | @meli_proxyy | 13","type":"vless","server":"V2RayMizban.iranigamepars.ir","port":443,"udp":true,"uuid":"8b476015-d0c5-48d3-8009-dfaea0d3f565","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.cdn77.com","reality-opts":{"public-key":"TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c","short-id":"7e39db0c"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 6","type":"vless","server":"v2raymizban2.iranigamepars.ir","port":443,"udp":true,"uuid":"68c650dd-c103-4054-9129-78f2e371f90d","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"www.cdn77.com","reality-opts":{"public-key":"F9jUIC4wltrDQQsaOU-dvEQ3jswfScRTbqhZuYyGjF8","short-id":"c85d"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 6'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -135,12 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 6'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇳🇱NL | 🟢 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 6'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
