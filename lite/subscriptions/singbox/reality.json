@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14",
             "type": "vless",
-            "server": "lunavopershian.adas.monster",
-            "server_port": 37828,
-            "uuid": "ef13d0cd-ee08-46e8-8994-4834df9837b5",
+            "server": "Tabriz-Website.thorav.ir",
+            "server_port": 443,
+            "uuid": "4cc8f4a5-89f8-49ff-a0c9-f3000064b7e2",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,18 +150,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
+                "server_name": "www.cdn77.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "qq"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
+                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
+                    "short_id": "b1417d"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
