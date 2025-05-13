@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 7",
-                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -123,13 +124,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 7",
-                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+                "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -154,6 +156,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
+            "type": "vless",
+            "server": "103.160.204.59",
+            "server_port": 443,
+            "uuid": "d6b8011a-c725-435a-9fec-bf6d3530392c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vlee.amclubs.nyc.mn",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "vlee.amclubs.nyc.mn"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
@@ -222,7 +255,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -236,7 +269,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 7",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "o.soskom.ir",
             "server_port": 11045,
@@ -272,7 +305,36 @@
             }
         },
         {
-            "tag": "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "38.180.61.83",
+            "server_port": 25529,
+            "uuid": "7e38fa80-6cf3-4013-b576-5b3be737fb43",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vultr.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0grZUQjpy-Y2iQ_QaKJm2MTgJANaxew0iOSQMBffGiU",
+                    "short_id": "c4bf2058763803b1"
+                }
+            }
+        },
+        {
+            "tag": "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=maxnetvipaP-us4.NetKh3.sItE&type=ws&sni=maxnetvipaP-us4.NetKh3.sItE#🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "cloudgetservice.mcloudservice.site",
             "server_port": 443,
@@ -283,30 +345,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
-            "type": "vless",
-            "server": "germany.gamingbazirani.ir",
-            "server_port": 600,
-            "uuid": "a0ebb3dd-f52f-483e-bd1c-0081f5e86518",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "marzban.negintel.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
