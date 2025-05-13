@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,36 +136,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 5",
-            "type": "vless",
-            "server": "V2RayMizban.iranigamepars.ir",
-            "server_port": 443,
-            "uuid": "8b476015-d0c5-48d3-8009-dfaea0d3f565",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
-                    "short_id": "7e39db0c"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "Shiraz-Website.acveo.ir",
             "server_port": 443,
