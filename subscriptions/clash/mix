@@ -120,8 +120,9 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"15.236.61.44","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"52.29.242.48","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 7","type":"trojan","server":"56.228.73.107","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"85.208.139.69","port":63861,"password":"PBrts5Au4GM9ar7bTNyZEu","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"52.29.242.48","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇹🇷TR | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +132,9 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
   - name: URL-TEST
     type: url-test
@@ -142,8 +144,9 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
   - name: FALLBACK
     type: fallback
@@ -152,8 +155,9 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 7'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
