@@ -12,11 +12,10 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @redfree8 | 0 = trojan, www.speedtest.net, 443, password = redfree8, udp-delay = true, skip-cert-verify = false, sni = ipsychO.SUEx12.Ir, ws = false
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 0 = trojan, 3.79.133.0, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

@@ -119,10 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
-  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 5","type":"ss","server":"45.87.175.199","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15","type":"ss","server":"193.29.139.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"3.79.133.0","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"85.208.139.69","port":63861,"password":"PBrts5Au4GM9ar7bTNyZEu","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"29mQbRJ8ps1x3EnWgAGRCBGrLSP5sxhxpoka6DdCe5cfb1YAvEFZxEXPCWjxsQbSDjFPFqM8KNnDQYfW1s1fsnCuHsGbCxGr","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,10 +129,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -141,20 +139,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
