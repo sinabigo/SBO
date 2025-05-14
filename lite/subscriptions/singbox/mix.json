@@ -118,8 +118,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -142,8 +142,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🟢 | vmess | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 19",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -433,7 +433,36 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @meli_proxyy | 15",
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "V2RayMizban.iranigamepars.ir",
+            "server_port": 443,
+            "uuid": "8b476015-d0c5-48d3-8009-dfaea0d3f565",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
+                    "short_id": "7e39db0c"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vmess | @meli_proxyy | 16",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -454,42 +483,6 @@
                 "headers": {
                     "Host": ""
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "Shiraz-Website.acveo.ir",
-            "server_port": 443,
-            "uuid": "09017df7-ddb8-4c21-9e95-f4be1f36daf5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg",
-                    "short_id": "76"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
