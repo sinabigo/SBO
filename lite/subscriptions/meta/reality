@@ -121,8 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8","type":"vless","server":"o.soskom.ir","port":11045,"udp":true,"uuid":"00ab71c4-1e1c-41d2-a9f2-02f763c12ba9","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","grpc-opts":{"grpc-service-name":"Tel : @NT_Safe"},"reality-opts":{"public-key":"p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM","short-id":"20db1be5e1ab118a"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 15","type":"vless","server":"Shiraz-Website.acveo.ir","port":443,"udp":true,"uuid":"09017df7-ddb8-4c21-9e95-f4be1f36daf5","tls":true,"network":"grpc","client-fingerprint":"qq","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN"},"reality-opts":{"public-key":"pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg","short-id":"76"}}
-  - {"name":"🇫🇮FI | 🔴 | vless | @meli_proxyy | 16","type":"vless","server":"65.109.192.110","port":55953,"udp":true,"uuid":"b5ee8f67-0f25-467b-aca4-01001f00d802","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","reality-opts":{"public-key":"RELg-Z1AXhG9945I_8hN884Z5Txd9ZxI92sl4jHzXWU","short-id":"ec01ceda"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 16","type":"vless","server":"Shiraz-Website.acveo.ir","port":443,"udp":true,"uuid":"09017df7-ddb8-4c21-9e95-f4be1f36daf5","tls":true,"network":"grpc","client-fingerprint":"qq","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN"},"reality-opts":{"public-key":"pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg","short-id":"76"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
-      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 16'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,16 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
-      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 16'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 15'
-      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 16'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 16'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
