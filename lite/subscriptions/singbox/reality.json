@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,43 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "Shiraz-Website.acveo.ir",
+            "server_port": 443,
+            "uuid": "f8ca63e8-4215-4193-bb6d-755c52b01225",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pWvBPhxqJjzAUrKKHI9rQtokKAHGtSLHZ_wrl-ArERg",
+                    "short_id": "76"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "MTMVPN---MTMVPN---MTMVPN---MTMVPN---MTMVPN",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
             "server": "38.180.61.83",
             "server_port": 25529,
