@@ -121,10 +121,12 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"135.148.74.158","port":443,"udp":false,"uuid":"54694a33-a8dc-47dd-bc38-acd3971e0055","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"147135004002.sec20org.com"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15","type":"ss","server":"193.29.139.164","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 13","type":"ss","server":"45.87.175.199","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🚩CF | 🔴 | vless | @Outline_Vpn | 0","type":"vless","server":"104.17.148.22","port":2096,"udp":false,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"LgUoZjGr14.hAmEcHiRuHaVaSt.cOm","ws-opts":{"path":"/","headers":{"host":"LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"}}}
+  - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"13.61.81.132","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 1","type":"trojan","server":"18.157.248.200","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 4","type":"vless","server":"ajbauhduhaefw.alcatelindan.com","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"15.188.113.51","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇷🇺RU | 🔴 | vless | @meli_proxyy | 15","type":"vless","server":"89.23.118.93","port":443,"udp":false,"uuid":"588f094b-431b-422c-b80b-007945037072","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"ru01.abvpn.ru","ws-opts":{"path":"/websocket","headers":{"host":"ru01.abvpn.ru"}}}
   - {"name":"🇹🇷TR | 🟢 | ss | @SiNAVM | 0","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -133,10 +135,12 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 13'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 0'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 4'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇷🇺RU | 🔴 | vless | @meli_proxyy | 15'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
   - name: URL-TEST
     type: url-test
@@ -145,10 +149,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 13'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 0'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 4'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇷🇺RU | 🔴 | vless | @meli_proxyy | 15'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
   - name: FALLBACK
     type: fallback
@@ -156,10 +162,12 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 13'
       - '🚩CF | 🔴 | vless | @Outline_Vpn | 0'
+      - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 1'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 4'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇷🇺RU | 🔴 | vless | @meli_proxyy | 15'
       - '🇹🇷TR | 🟢 | ss | @SiNAVM | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
