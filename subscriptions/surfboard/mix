@@ -11,15 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | 🟢 | ss | @meli_proxyy | 2 = ss, 74.177.174.189, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
-🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15 = ss, 193.29.139.164, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
-🇺🇸US | 🟢 | ss | @meli_proxyy | 4 = ss, 45.87.175.166, 8080, encrypt-method = chacha20-ietf-poly1305, password = cvII85TrW6n0OGyfpHVS1u
-🇹🇷TR | 🟢 | ss | @SiNAVM | 0 = ss, 185.39.204.12, 16297, encrypt-method = chacha20-ietf-poly1305, password = G0o2hE4eLuR2wwyFao0lsJ
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 3 = ss, 74.177.174.189, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
+🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0 = ss, 85.208.139.69, 63861, encrypt-method = chacha20-ietf-poly1305, password = PBrts5Au4GM9ar7bTNyZEu
+🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2 = ss, 185.39.204.12, 16297, encrypt-method = chacha20-ietf-poly1305, password = G0o2hE4eLuR2wwyFao0lsJ
 🇩🇪DE | 🟢 | trojan | @DirectVPN | 1 = trojan, 18.157.248.200, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | ss | @meli_proxyy | 4,🇹🇷TR | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | ss | @meli_proxyy | 4,🇹🇷TR | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15,🇺🇸US | 🟢 | ss | @meli_proxyy | 4,🇹🇷TR | 🟢 | ss | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 3,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 3,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 3,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0,🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2,🇩🇪DE | 🟢 | trojan | @DirectVPN | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
