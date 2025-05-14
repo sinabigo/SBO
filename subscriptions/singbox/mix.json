@@ -110,12 +110,12 @@
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
-                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 9",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 0",
-                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 11"
             ]
         },
         {
@@ -126,12 +126,12 @@
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | trojan | @redfree8 | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
-                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 9",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 0",
-                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -259,21 +259,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15",
-            "type": "shadowsocks",
-            "server": "193.29.139.164",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "104.17.147.22",
+            "server": "104.17.148.22",
             "server_port": 2096,
-            "uuid": "9e769ce1-34be-4e3f-b0a6-823f30eb8f69",
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -283,7 +273,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "T864tJqC3b.SoUbLoTiK.iNfO",
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -295,32 +285,44 @@
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "T864tJqC3b.SoUbLoTiK.iNfO"
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 2",
-            "type": "shadowsocks",
-            "server": "85.208.139.69",
-            "server_port": 63861,
-            "method": "chacha20-ietf-poly1305",
-            "password": "PBrts5Au4GM9ar7bTNyZEu",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
+            "type": "trojan",
+            "server": "13.39.72.138",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 9",
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 15",
             "type": "shadowsocks",
-            "server": "45.87.175.199",
+            "server": "193.29.139.164",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "QCXDxuDlTTMD7jtgHUjIoj",
+            "password": "4a2rfixophdjffa8KVA4Aa",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "ajbauhduhaefw.alcatelindan.com",
             "server_port": 39948,
@@ -334,12 +336,34 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 3",
+            "type": "trojan",
+            "server": "3.64.181.93",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 11",
             "type": "shadowsocks",
-            "server": "185.39.204.12",
-            "server_port": 16297,
+            "server": "45.87.175.199",
+            "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "G0o2hE4eLuR2wwyFao0lsJ",
+            "password": "QCXDxuDlTTMD7jtgHUjIoj",
             "plugin": "",
             "plugin_opts": ""
         }
