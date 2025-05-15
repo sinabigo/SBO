@@ -106,7 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 6",
@@ -120,7 +121,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 6",
@@ -150,11 +152,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
             "type": "vless",
-            "server": "104.16.189.41",
+            "server": "172.67.157.202",
             "server_port": 443,
-            "uuid": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
+            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -164,7 +166,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "d6.medicalhistory.ir",
+                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -174,9 +176,33 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Join_Bade_Channel@JOKERRVPN?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "d6.medicalhistory.ir"
+                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+            "type": "vless",
+            "server": "135.148.74.158",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
