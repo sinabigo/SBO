@@ -107,12 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 6"
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 0",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18"
             ]
         },
         {
@@ -120,12 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 6"
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 0",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -169,27 +165,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "5.253.30.9",
-            "server_port": 8880,
-            "uuid": "dfcf379e-2d92-514e-84ca-77cdb1bd73c6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless-grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -243,6 +218,16 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 0",
+            "type": "shadowsocks",
+            "server": "85.208.139.69",
+            "server_port": 63861,
+            "method": "chacha20-ietf-poly1305",
+            "password": "PBrts5Au4GM9ar7bTNyZEu",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "ajbauhduhaefw.alcatelindan.com",
@@ -255,26 +240,6 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
-            "type": "shadowsocks",
-            "server": "85.208.139.69",
-            "server_port": 63861,
-            "method": "chacha20-ietf-poly1305",
-            "password": "PBrts5Au4GM9ar7bTNyZEu",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 6",
-            "type": "shadowsocks",
-            "server": "45.87.175.166",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {

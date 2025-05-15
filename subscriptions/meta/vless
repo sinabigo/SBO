@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6","type":"vless","server":"135.148.74.158","port":443,"udp":false,"uuid":"54694a33-a8dc-47dd-bc38-acd3971e0055","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"147135004002.sec20org.com"}
-  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 4","type":"vless","server":"5.253.30.9","port":8880,"udp":false,"uuid":"dfcf379e-2d92-514e-84ca-77cdb1bd73c6","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":"vless-grpc"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 3","type":"vless","server":"server.siasia.ir","port":2083,"udp":true,"uuid":"7ec4816b-4f10-47e7-9d7b-d55e1d86ed2c","tls":true,"network":"tcp","client-fingerprint":"randomized","servername":"www.whatsapp.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"a6zyALTLMps9JFOeGiTgdiAwGdO0Qu9buLSwMZ9cpww","short-id":"42e28b4179d2a0df"}}
   - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 18","type":"vless","server":"ajbauhduhaefw.alcatelindan.com","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
@@ -131,7 +130,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 3'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 18'
   - name: URL-TEST
@@ -141,7 +139,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 3'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 18'
   - name: FALLBACK
@@ -150,7 +147,6 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
-      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 3'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 18'
 rule-providers:
