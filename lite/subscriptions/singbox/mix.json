@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
@@ -115,8 +115,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 19",
+                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=lv01.abvpn.ru&type=ws&sni=lv01.abvpn.ru#🇱🇻LV | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -128,7 +128,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇭🇰HK | 🔴 | vless | @Outline_Vpn | 4",
@@ -136,8 +136,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 19",
+                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=lv01.abvpn.ru&type=ws&sni=lv01.abvpn.ru#🇱🇻LV | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -174,9 +174,9 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "35.158.198.205",
+            "server": "52.47.82.168",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -198,7 +198,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "3.66.72.220",
+            "server": "35.158.198.205",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -343,7 +343,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=tls&encryption=none&host=lv01.abvpn.ru&type=ws&sni=lv01.abvpn.ru#🇱🇻LV | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "lv01.abvpn.ru",
+            "server_port": 443,
+            "uuid": "588f094b-431b-422c-b80b-007945037072",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 2096,
@@ -372,16 +386,6 @@
                     "Host": "T864tJqC3b.SoUbLoTiK.iNfO"
                 }
             }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 19",
-            "type": "shadowsocks",
-            "server": "45.87.175.199",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "QCXDxuDlTTMD7jtgHUjIoj",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
