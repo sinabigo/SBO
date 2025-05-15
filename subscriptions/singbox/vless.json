@@ -106,10 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1"
@@ -119,10 +118,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1"
@@ -148,11 +146,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "135.148.74.158",
-            "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "server": "104.17.148.22",
+            "server_port": 2096,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -162,12 +160,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135004002.sec20org.com",
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
                 }
             }
         },
@@ -214,20 +219,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "722309294.web-manage.com.tr",
-            "server_port": 1520,
-            "uuid": "b12624a6-25d0-484d-8725-3eca4544d522",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
