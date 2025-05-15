@@ -106,20 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
+                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
+                "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,16 +140,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
-            "type": "shadowsocks",
-            "server": "85.208.139.69",
-            "server_port": 63861,
-            "method": "chacha20-ietf-poly1305",
-            "password": "PBrts5Au4GM9ar7bTNyZEu",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
             "type": "shadowsocks",
             "server": "45.87.175.166",
@@ -162,7 +150,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇹🇷TR | 🟢 | ss | @SiNAVM | 0",
             "type": "shadowsocks",
             "server": "185.39.204.12",
             "server_port": 16297,
@@ -172,12 +160,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2",
+            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
-            "server": "160.19.78.75",
-            "server_port": 443,
+            "server": "85.208.139.69",
+            "server_port": 63861,
             "method": "chacha20-ietf-poly1305",
-            "password": "Nk9asglDzHzjktVzTkvhaA",
+            "password": "PBrts5Au4GM9ar7bTNyZEu",
             "plugin": "",
             "plugin_opts": ""
         }
