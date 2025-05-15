@@ -107,9 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4"
             ]
         },
         {
@@ -117,9 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -166,11 +166,25 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "V2RAXX-channel.cataba.ir",
-            "server_port": 2053,
-            "uuid": "V2RAXX",
+            "server": "722309294.web-manage.com.tr",
+            "server_port": 1520,
+            "uuid": "b12624a6-25d0-484d-8725-3eca4544d522",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 2096,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -178,16 +192,26 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX",
+                "path": "\/",
                 "headers": {
-                    "Host": "V2RAXX-channel.cataba.ir"
+                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "server.siasia.ir",
             "server_port": 2083,
@@ -213,20 +237,6 @@
                     "public_key": "a6zyALTLMps9JFOeGiTgdiAwGdO0Qu9buLSwMZ9cpww",
                     "short_id": "42e28b4179d2a0df"
                 }
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "ajbauhduhaefw.alcatelindan.com",
-            "server_port": 39948,
-            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
