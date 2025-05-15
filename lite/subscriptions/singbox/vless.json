@@ -110,8 +110,8 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -126,8 +126,8 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -251,11 +251,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
             "type": "vless",
-            "server": "clientproo.xyz",
-            "server_port": 443,
-            "uuid": "9b24cb3f-5f60-4881-9c35-ac46ea158b92",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "ace02497-cfd2-4cac-8617-2037fc2020b3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -265,31 +265,23 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "213.21.245.83",
-            "server_port": 443,
-            "uuid": "6f6adc8f-1dbb-4bde-af84-a30d71032d2f",
-            "flow": "xtls-rprx-vision",
+            "server": "151.101.3.8",
+            "server_port": 80,
+            "uuid": "a6e0280d-5df8-4de7-811a-db42402867a2",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c",
-                    "short_id": "7e39db0c"
+            "transport": {
+                "type": "ws",
+                "path": "\/spdnet?ed=1024\/?Join_Bade_Channel@JOKERRVPN",
+                "headers": {
+                    "Host": "151.101.3.8"
                 }
             }
         },
