@@ -121,8 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"85.208.139.69","port":63861,"password":"PBrts5Au4GM9ar7bTNyZEu","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 5","type":"ss","server":"45.87.175.166","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"5QMZKZoXMsCbhE8GHAg7Lixi7tVMmw3xH2A3biivUTgs3uo9ntbH685jA8pj98n4pJji3yw6ajzn2qzJUa4dFij1upacCtKW","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 6","type":"ss","server":"45.87.175.166","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 6'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
   - name: URL-TEST
     type: url-test
@@ -141,8 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 6'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
   - name: FALLBACK
     type: fallback
@@ -150,8 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 6'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
