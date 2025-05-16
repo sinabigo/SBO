@@ -107,12 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 19"
             ]
         },
         {
@@ -120,12 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -172,28 +168,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "Tabriz-Website.thorav.ir",
             "server_port": 443,
@@ -229,33 +204,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
-            "type": "trojan",
-            "server": "63.178.61.248",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "5.61.35.27",
+            "server": "151.101.64.155",
             "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "uuid": "telegram-id-ArV2ray5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -265,9 +218,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram🇮🇷Channel id: @ShadowProxy66 \/?ed=2560",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "5.61.35.27"
+                    "Host": "151.101.64.155"
                 }
             }
         },
@@ -308,12 +261,12 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 19",
             "type": "shadowsocks",
-            "server": "185.39.204.12",
-            "server_port": 16297,
+            "server": "85.208.139.69",
+            "server_port": 63861,
             "method": "chacha20-ietf-poly1305",
-            "password": "G0o2hE4eLuR2wwyFao0lsJ",
+            "password": "PBrts5Au4GM9ar7bTNyZEu",
             "plugin": "",
             "plugin_opts": ""
         }
