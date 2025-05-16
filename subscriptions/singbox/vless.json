@@ -106,10 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1"
             ]
@@ -118,10 +120,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1"
             ],
@@ -144,6 +148,96 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+            "type": "vless",
+            "server": "172.67.157.202",
+            "server_port": 443,
+            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+            "type": "vless",
+            "server": "135.148.74.158",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "188.245.120.39",
+            "server_port": 1519,
+            "uuid": "b12624a6-25d0-484d-8725-3eca4544d522",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
+            "type": "vless",
+            "server": "5.253.30.9",
+            "server_port": 8880,
+            "uuid": "dfcf379e-2d92-514e-84ca-77cdb1bd73c6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless-grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
@@ -177,52 +271,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
-            "type": "vless",
-            "server": "5.253.30.9",
-            "server_port": 8880,
-            "uuid": "dfcf379e-2d92-514e-84ca-77cdb1bd73c6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless-grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "89.144.25.236",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "Tabriz-Website.thorav.ir",
             "server_port": 443,
