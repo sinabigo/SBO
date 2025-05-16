@@ -106,18 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 20",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 3"
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 20",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 3"
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,65 +140,28 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 20",
+            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
-            "server": "Tabriz-Website.thorav.ir",
-            "server_port": 443,
-            "uuid": "eade0b85-d52f-44df-90e9-bceea0fbb59a",
-            "flow": "xtls-rprx-vision",
+            "server": "5.61.35.27",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "qq"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
-                    "short_id": "b1417d"
-                }
-            },
             "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-            "type": "trojan",
-            "server": "13.48.244.101",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                "type": "ws",
+                "path": "\/Telegram🇮🇷Channel id: @ShadowProxy66 \/?ed=2560",
+                "headers": {
+                    "Host": "5.61.35.27"
                 }
             }
         },
         {
-            "tag": "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 3",
+            "tag": "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
             "type": "vless",
             "server": "88.218.60.136",
             "server_port": 2053,
@@ -232,6 +195,16 @@
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "185.39.204.12",
+            "server_port": 16297,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G0o2hE4eLuR2wwyFao0lsJ",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
