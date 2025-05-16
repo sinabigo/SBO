@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
@@ -115,7 +115,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -126,8 +126,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
@@ -135,7 +135,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -162,9 +162,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "13.37.170.237",
+            "server": "16.171.118.104",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -184,9 +184,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "3.64.181.93",
+            "server": "13.39.72.138",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -348,31 +348,23 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 21",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
             "type": "vless",
-            "server": "server.siasia.ir",
-            "server_port": 2083,
-            "uuid": "7ec4816b-4f10-47e7-9d7b-d55e1d86ed2c",
-            "flow": "xtls-rprx-vision",
+            "server": "V2RAXX-channel.cataba.ir",
+            "server_port": 2053,
+            "uuid": "V2RAXX",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.whatsapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "a6zyALTLMps9JFOeGiTgdiAwGdO0Qu9buLSwMZ9cpww",
-                    "short_id": "42e28b4179d2a0df"
+            "transport": {
+                "type": "ws",
+                "path": "\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX\/@V2RAXX",
+                "headers": {
+                    "Host": "V2RAXX-channel.cataba.ir"
                 }
             }
         },
