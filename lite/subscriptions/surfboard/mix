@@ -11,14 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 18 = trojan, 52.58.144.133, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇸🇪SE | 🟢 | trojan | @DirectVPN | 19 = trojan, 13.49.1.177, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 18 = trojan, 3.77.67.70, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 19 = trojan, 52.58.144.133, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1 = ss, 85.208.139.69, 63861, encrypt-method = chacha20-ietf-poly1305, password = PBrts5Au4GM9ar7bTNyZEu
 🇬🇧GB | 🟢 | ss | @meli_proxyy | 16 = ss, 74.177.174.189, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇸🇪SE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 18,🇩🇪DE | 🟢 | trojan | @DirectVPN | 19,🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
