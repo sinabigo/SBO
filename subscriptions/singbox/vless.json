@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 9"
             ]
         },
         {
@@ -120,10 +120,10 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -201,21 +201,36 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "5.253.30.9",
-            "server_port": 8880,
-            "uuid": "dfcf379e-2d92-514e-84ca-77cdb1bd73c6",
-            "flow": "",
+            "server": "Tabriz-Website.thorav.ir",
+            "server_port": 443,
+            "uuid": "eade0b85-d52f-44df-90e9-bceea0fbb59a",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "qq"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
+                    "short_id": "b1417d"
+                }
+            },
             "transport": {
                 "type": "grpc",
-                "service_name": "vless-grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
@@ -258,21 +273,28 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "176.223.66.8",
-            "server_port": 39948,
-            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "de.sashabike.ir",
             "server_port": 2096,
