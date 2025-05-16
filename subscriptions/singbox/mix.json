@@ -108,13 +108,13 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 11",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 5",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 5",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1",
+                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
             ]
         },
         {
@@ -123,13 +123,13 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 11",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 5",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 5",
-                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1",
+                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -207,6 +207,27 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
+            "type": "vless",
+            "server": "5.253.30.9",
+            "server_port": 8880,
+            "uuid": "dfcf379e-2d92-514e-84ca-77cdb1bd73c6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "vless-grpc",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
             "server": "188.245.120.39",
@@ -219,47 +240,6 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-            "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 2096,
-            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "LgUoZjGr14.hAmEcHiRuHaVaSt.cOm"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 11",
-            "type": "shadowsocks",
-            "server": "45.87.175.166",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
@@ -298,7 +278,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
+            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 5",
             "type": "shadowsocks",
             "server": "85.208.139.69",
             "server_port": 63861,
@@ -330,12 +310,48 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "88.218.60.136",
+            "server_port": 2053,
+            "uuid": "35eaae35-6a9e-4b92-aa9a-1aa0c175fbf3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ssIDty9ZLxCi_Ups8bQ75_apSDC2nJZRljRhfto0jXQ",
+                    "short_id": "8034"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2",
             "type": "shadowsocks",
-            "server": "185.39.204.12",
-            "server_port": 16297,
+            "server": "160.19.78.75",
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
-            "password": "G0o2hE4eLuR2wwyFao0lsJ",
+            "password": "Nk9asglDzHzjktVzTkvhaA",
             "plugin": "",
             "plugin_opts": ""
         }
