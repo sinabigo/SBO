@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8"
             ]
         },
         {
@@ -120,10 +120,10 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -201,7 +201,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 10",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
             "server": "5.253.30.9",
             "server_port": 8880,
@@ -219,35 +219,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "free.hellray-server.fun",
-            "server_port": 56229,
-            "uuid": "7e5c827b-45f3-46df-80cd-c203bc94c267",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "canva.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3VekXWs-HD05zRdqhvpnFt2SeJRGnO7ntV-TkMyevnA",
-                    "short_id": "c403dbc5"
-                }
             }
         },
         {
@@ -287,11 +258,25 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray5",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "de.sashabike.ir",
+            "server_port": 2096,
+            "uuid": "701a7842-79a2-4a48-882b-c563daad99c1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -299,11 +284,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "behesht.mhxpd.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "path": "\/?ed=1024",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "behesht.mhxpd.ir"
                 }
             }
         }
