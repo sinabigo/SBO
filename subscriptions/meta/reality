@@ -120,7 +120,6 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 16","type":"vless","server":"Tabriz-Website.thorav.ir","port":443,"udp":true,"uuid":"eade0b85-d52f-44df-90e9-bceea0fbb59a","tls":true,"network":"grpc","client-fingerprint":"qq","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8","short-id":"b1417d"}}
   - {"name":"🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2","type":"vless","server":"88.218.60.136","port":2053,"udp":true,"uuid":"35eaae35-6a9e-4b92-aa9a-1aa0c175fbf3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"speedtest.net","grpc-opts":{"grpc-service-name":"@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY"},"reality-opts":{"public-key":"ssIDty9ZLxCi_Ups8bQ75_apSDC2nJZRljRhfto0jXQ","short-id":"8034"}}
   - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 3","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"4e98b1fa-60c5-4816-babb-f692c0d1d03b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
 proxy-groups:
@@ -129,7 +128,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 16'
       - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 3'
   - name: URL-TEST
@@ -138,7 +136,6 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 16'
       - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 3'
   - name: FALLBACK
@@ -146,7 +143,6 @@ proxy-groups:
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 16'
       - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 2'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 3'
 rule-providers:

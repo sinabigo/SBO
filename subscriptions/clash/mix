@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🟢 | ss | @meli_proxyy | 19","type":"ss","server":"85.208.139.69","port":63861,"password":"PBrts5Au4GM9ar7bTNyZEu","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"160.19.78.75","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 19'
+      - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -133,12 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 19'
+      - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇩🇪DE | 🟢 | ss | @meli_proxyy | 19'
+      - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
