@@ -107,8 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
-                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13"
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ]
         },
         {
@@ -116,8 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
-                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13"
+                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -161,6 +163,58 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "5.61.35.27",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram🇮🇷Channel id: @ShadowProxy66 \/?ed=2560",
+                "headers": {
+                    "Host": "5.61.35.27"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
+            "type": "vless",
+            "server": "103.231.73.214",
+            "server_port": 443,
+            "uuid": "588f094b-431b-422c-b80b-007945037072",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lv01.abvpn.ru",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/websocket",
+                "headers": {
+                    "Host": "lv01.abvpn.ru"
+                }
+            }
+        },
+        {
             "tag": "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
             "type": "vless",
             "server": "88.218.60.136",
@@ -194,37 +248,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
-            "type": "vless",
-            "server": "103.231.73.214",
-            "server_port": 443,
-            "uuid": "588f094b-431b-422c-b80b-007945037072",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lv01.abvpn.ru",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/websocket",
-                "headers": {
-                    "Host": "lv01.abvpn.ru"
-                }
             }
         }
     ],
