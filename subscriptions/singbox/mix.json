@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
             ]
         },
@@ -117,8 +117,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -152,6 +152,27 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "151.101.64.155",
@@ -171,16 +192,6 @@
                     "Host": "151.101.64.155"
                 }
             }
-        },
-        {
-            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
-            "type": "shadowsocks",
-            "server": "mx2.drawnrisha.one",
-            "server_port": 55988,
-            "method": "chacha20-ietf-poly1305",
-            "password": "5QMZKZoXMsCbhE8GHAg7Lixi7tVMmw3xH2A3biivUTgs3uo9ntbH685jA8pj98n4pJji3yw6ajzn2qzJUa4dFij1upacCtKW",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
