@@ -123,8 +123,8 @@ proxies:
   - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 9","type":"vless","server":"172.67.157.202","port":443,"udp":false,"uuid":"76b3cbba-e6ac-485a-9481-336a0415eab9","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv","ws-opts":{"path":"/","headers":{"host":"OlD-DISK-EFcd.joJaHOF109.WOrKers.dev"}}}
   - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6","type":"vless","server":"135.148.74.158","port":443,"udp":false,"uuid":"54694a33-a8dc-47dd-bc38-acd3971e0055","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"147135004002.sec20org.com"}
   - {"name":"🇫🇮FI | 🔴 | vless | @meli_proxyy | 11","type":"vless","server":"157.180.81.95","port":8880,"udp":false,"uuid":"65343a27-de9d-4b0c-ab0a-562309c94d2b","tls":false,"network":"grpc","client-fingerprint":"chrome"}
-  - {"name":"🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4","type":"vless","server":"88.218.60.136","port":2053,"udp":true,"uuid":"35eaae35-6a9e-4b92-aa9a-1aa0c175fbf3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"speedtest.net","grpc-opts":{"grpc-service-name":"@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY"},"reality-opts":{"public-key":"ssIDty9ZLxCi_Ups8bQ75_apSDC2nJZRljRhfto0jXQ","short-id":"8034"}}
   - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 7","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"4e98b1fa-60c5-4816-babb-f692c0d1d03b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
+  - {"name":"🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4","type":"vless","server":"88.218.60.136","port":2053,"udp":true,"uuid":"35eaae35-6a9e-4b92-aa9a-1aa0c175fbf3","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"speedtest.net","grpc-opts":{"grpc-service-name":"@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY"},"reality-opts":{"public-key":"ssIDty9ZLxCi_Ups8bQ75_apSDC2nJZRljRhfto0jXQ","short-id":"8034"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,8 +134,8 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 9'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 7'
+      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -145,8 +145,8 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 9'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 7'
+      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -155,8 +155,8 @@ proxy-groups:
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 9'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
       - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 7'
+      - '🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
