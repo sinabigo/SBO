@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
@@ -115,8 +115,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -127,7 +127,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
@@ -136,8 +136,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -164,9 +164,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "15.188.113.51",
+            "server": "63.178.76.57",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -188,7 +188,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "18.157.248.200",
+            "server": "18.195.86.160",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -350,7 +350,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+            "type": "vless",
+            "server": "free.hellray-server.fun",
+            "server_port": 56229,
+            "uuid": "7e5c827b-45f3-46df-80cd-c203bc94c267",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "canva.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3VekXWs-HD05zRdqhvpnFt2SeJRGnO7ntV-TkMyevnA",
+                    "short_id": "c403dbc5"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
             "type": "vless",
             "server": "188.245.120.39",
             "server_port": 1519,
@@ -361,30 +390,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
-            "type": "vless",
-            "server": "89.144.25.236",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {

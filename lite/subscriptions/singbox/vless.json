@@ -112,8 +112,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -130,8 +130,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -290,7 +290,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+            "type": "vless",
+            "server": "free.hellray-server.fun",
+            "server_port": 56229,
+            "uuid": "7e5c827b-45f3-46df-80cd-c203bc94c267",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "canva.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3VekXWs-HD05zRdqhvpnFt2SeJRGnO7ntV-TkMyevnA",
+                    "short_id": "c403dbc5"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
             "type": "vless",
             "server": "188.245.120.39",
             "server_port": 1519,
@@ -301,30 +330,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
-            "type": "vless",
-            "server": "89.144.25.236",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
