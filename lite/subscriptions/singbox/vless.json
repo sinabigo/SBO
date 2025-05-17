@@ -108,11 +108,10 @@
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -125,11 +124,10 @@
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -201,7 +199,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 2096,
@@ -267,68 +265,17 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
             "type": "vless",
-            "server": "134.209.205.173",
-            "server_port": 4000,
-            "uuid": "4de73a98-0f31-4d2c-b845-fcb7a2bbe9bb",
-            "flow": "xtls-rprx-vision",
+            "server": "gr-tcp-mci.connectix-d1.info",
+            "server_port": 8081,
+            "uuid": "ab3faf7c-4452-4f34-938f-6dcee3b406a2",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zula.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
-                    "short_id": "d9ed58fe"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "164.90.198.167",
-            "server_port": 7919,
-            "uuid": "e4c7f547-30d0-f8f1-8052-9877c2813e54",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pGqdVploN2ecwM2JhMMw5c4TLliXSl0QBkcCooArEXY",
-                    "short_id": "a1535a37b19ad500"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7919vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
