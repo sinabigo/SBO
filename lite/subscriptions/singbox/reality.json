@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 23"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 23"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 23",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "free.hellray-server.fun",
-            "server_port": 56229,
-            "uuid": "7e5c827b-45f3-46df-80cd-c203bc94c267",
+            "server": "164.90.198.167",
+            "server_port": 7919,
+            "uuid": "e4c7f547-30d0-f8f1-8052-9877c2813e54",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,18 +150,25 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "canva.com",
+                "server_name": "refersion.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "randomized"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "3VekXWs-HD05zRdqhvpnFt2SeJRGnO7ntV-TkMyevnA",
-                    "short_id": "c403dbc5"
+                    "public_key": "pGqdVploN2ecwM2JhMMw5c4TLliXSl0QBkcCooArEXY",
+                    "short_id": "a1535a37b19ad500"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "7919vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
