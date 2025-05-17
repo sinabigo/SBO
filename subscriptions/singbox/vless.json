@@ -108,10 +108,8 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ]
         },
         {
@@ -120,10 +118,8 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -201,42 +197,6 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "164.90.198.167",
-            "server_port": 7919,
-            "uuid": "e4c7f547-30d0-f8f1-8052-9877c2813e54",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "randomized"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "pGqdVploN2ecwM2JhMMw5c4TLliXSl0QBkcCooArEXY",
-                    "short_id": "a1535a37b19ad500"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "7919vless",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -291,27 +251,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
-            "type": "vless",
-            "server": "5.61.35.27",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram🇮🇷Channel id: @ShadowProxy66 \/?ed=2560",
-                "headers": {
-                    "Host": "5.61.35.27"
-                }
             }
         }
     ],
