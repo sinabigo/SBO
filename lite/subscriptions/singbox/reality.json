@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 11",
+            "type": "vless",
+            "server": "134.209.205.173",
+            "server_port": 4000,
+            "uuid": "4de73a98-0f31-4d2c-b845-fcb7a2bbe9bb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
+                    "short_id": "d9ed58fe"
+                }
+            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
