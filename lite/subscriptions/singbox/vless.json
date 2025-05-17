@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 22",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 23",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -124,13 +125,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 22",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 23",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -156,6 +158,20 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
+            "type": "vless",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
@@ -290,7 +306,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 22",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
             "type": "vless",
             "server": "de.sashabike.ir",
             "server_port": 2096,
