@@ -106,6 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
@@ -116,6 +118,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇱🇻LV | 🔴 | vless | @meli_proxyy | 13",
@@ -140,6 +144,61 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
+            "type": "vless",
+            "server": "172.67.157.202",
+            "server_port": 443,
+            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+            "type": "vless",
+            "server": "135.148.74.158",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
