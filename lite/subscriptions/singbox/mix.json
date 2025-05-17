@@ -115,7 +115,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 21",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -136,7 +136,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 21",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -350,7 +350,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 21",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 21",
+            "type": "vless",
+            "server": "de.sashabike.ir",
+            "server_port": 2096,
+            "uuid": "701a7842-79a2-4a48-882b-c563daad99c1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "behesht.mhxpd.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=1024",
+                "headers": {
+                    "Host": "behesht.mhxpd.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
             "type": "vless",
             "server": "free.hellray-server.fun",
             "server_port": 56229,
@@ -376,20 +407,6 @@
                     "public_key": "3VekXWs-HD05zRdqhvpnFt2SeJRGnO7ntV-TkMyevnA",
                     "short_id": "c403dbc5"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 22",
-            "type": "vless",
-            "server": "188.245.120.39",
-            "server_port": 1519,
-            "uuid": "b12624a6-25d0-484d-8725-3eca4544d522",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
