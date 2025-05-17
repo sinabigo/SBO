@@ -120,35 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 17","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"4e98b1fa-60c5-4816-babb-f692c0d1d03b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
   - {"name":"🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0","type":"vless","server":"5.61.35.27","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"Telegram🇮🇷Channel id: @ShadowProxy66 /?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
-  - {"name":"🇹🇷TR | 🔴 | vless | @SiNAVM | 0","type":"vless","server":"176.223.66.8","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 15","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"4e98b1fa-60c5-4816-babb-f692c0d1d03b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 17'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0'
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 15'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 17'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0'
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 15'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 17'
       - '🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 0'
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
