@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
                 "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,42 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "164.90.198.167",
+            "server_port": 7919,
+            "uuid": "e4c7f547-30d0-f8f1-8052-9877c2813e54",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "randomized"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pGqdVploN2ecwM2JhMMw5c4TLliXSl0QBkcCooArEXY",
+                    "short_id": "a1535a37b19ad500"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "7919vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "🇷🇺RU | 🔴 | vless | @TEHRANARGO | 4",
