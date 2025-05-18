@@ -107,13 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 32",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 33",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -125,13 +124,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 32",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 33",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -169,6 +167,30 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
+            "type": "vless",
+            "server": "135.148.152.101",
+            "server_port": 443,
+            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001195.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -295,56 +317,6 @@
                     "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
                     "short_id": "d9ed58fe"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 32",
-            "type": "vless",
-            "server": "152.42.136.175",
-            "server_port": 48582,
-            "uuid": "ce4a39a7-4083-43a1-acd6-97d670d9cc47",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 33",
-            "type": "vless",
-            "server": "o.soskom.ir",
-            "server_port": 39439,
-            "uuid": "e792ea19-00ba-43e0-be65-737b62352896",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "axLa2Yb5VegTFNy2v8chJvX6ShWl5v9jPgyGeFpTMwA",
-                    "short_id": "1f"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "TEL ; @v2ray-store",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
