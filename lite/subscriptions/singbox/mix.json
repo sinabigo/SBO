@@ -115,7 +115,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
-                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 18",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -135,7 +135,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
-                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 18",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -341,14 +341,33 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | ss | @meli_proxyy | 18",
-            "type": "shadowsocks",
-            "server": "62.60.231.81",
-            "server_port": 59945,
-            "method": "chacha20-ietf-poly1305",
-            "password": "VfaEatGj7iXncVpijKFC1e",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "89.208.104.70",
+            "server_port": 443,
+            "uuid": "e2286c5e-d910-405f-9bcb-b0e81188ad53",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xN9xmYjM5o_W7IpLQnKNPd2TZbtCZhGFjtvHg0XP9hU",
+                    "short_id": "67dcdbd6ed95f729"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
