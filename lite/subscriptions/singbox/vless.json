@@ -109,10 +109,10 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -127,10 +127,10 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -174,9 +174,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "104.21.32.1",
-            "server_port": 80,
-            "uuid": "b775ec56-b44d-473a-9e8e-99ef575d832a",
+            "server": "23.227.60.7",
+            "server_port": 443,
+            "uuid": "3fefc100-faed-43ad-b087-d47ddfe75121",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,20 +184,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/Path\/Telegram@freevirgoolnet\/",
                 "headers": {
-                    "Host": "104.21.32.1"
+                    "Host": "s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev"
                 }
             }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "www.epicgames.com",
-            "server_port": 2095,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+            "server": "104.24.132.5",
+            "server_port": 80,
+            "uuid": "946b3994-cbcc-402c-bd93-c7f9df4d1c3b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -209,12 +219,12 @@
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "www.epicgames.com"
+                    "Host": "104.24.132.5"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 2096,
@@ -280,17 +290,32 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 13",
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
-            "server": "gr-tcp-mci.connectix-d1.info",
-            "server_port": 8081,
-            "uuid": "ab3faf7c-4452-4f34-938f-6dcee3b406a2",
-            "flow": "",
+            "server": "134.209.205.173",
+            "server_port": 4000,
+            "uuid": "4de73a98-0f31-4d2c-b845-fcb7a2bbe9bb",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zula.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
+                    "short_id": "d9ed58fe"
+                }
             }
         },
         {
