@@ -108,7 +108,9 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
             ]
         },
         {
@@ -117,7 +119,9 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -195,6 +199,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
             "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "176.223.66.8",
@@ -206,6 +231,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "lnservice.fastly80-2.hosting-ip.com",
+            "server_port": 80,
+            "uuid": "84ce5157-4867-4bea-8ae9-f1d7afe3b0ed",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Pak91jqn-Mehskl.ir.shop.com\/?Join_Bade_Channel@JOKERRVPN",
+                "headers": {
+                    "Host": "lnservice.fastly80-2.hosting-ip.com"
+                }
             }
         }
     ],
