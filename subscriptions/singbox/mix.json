@@ -111,15 +111,14 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 8",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
             ]
         },
         {
@@ -131,15 +130,14 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 8",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-                "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -280,12 +278,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
             "type": "shadowsocks",
-            "server": "45.87.175.164",
-            "server_port": 8080,
+            "server": "103.106.1.92",
+            "server_port": 23492,
             "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -311,22 +309,56 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-            "type": "shadowsocks",
-            "server": "103.106.1.92",
-            "server_port": 23492,
-            "method": "chacha20-ietf-poly1305",
-            "password": "yMX9WGPgUEcRZmlaa0YHHC",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
+            "type": "trojan",
+            "server": "3.120.242.252",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | ss | @meli_proxyy | 1",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
+            "type": "trojan",
+            "server": "56.228.78.101",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 4",
             "type": "shadowsocks",
-            "server": "62.60.231.81",
-            "server_port": 59945,
+            "server": "45.87.175.164",
+            "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "VfaEatGj7iXncVpijKFC1e",
+            "password": "4a2rfixophdjffa8KVA4Aa",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -374,38 +406,6 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
-        },
-        {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 4",
-            "type": "trojan",
-            "server": "56.228.78.101",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 2",
-            "type": "shadowsocks",
-            "server": "160.19.78.75",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Nk9asglDzHzjktVzTkvhaA",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {

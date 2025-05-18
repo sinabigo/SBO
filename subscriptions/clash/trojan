@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"13.36.160.33","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"3.120.242.252","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇸🇪SE | 🟢 | trojan | @DirectVPN | 4","type":"trojan","server":"56.228.78.101","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
@@ -127,6 +128,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 4'
   - name: URL-TEST
     type: url-test
@@ -135,6 +137,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 4'
   - name: FALLBACK
     type: fallback
@@ -142,6 +145,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇸🇪SE | 🟢 | trojan | @DirectVPN | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
