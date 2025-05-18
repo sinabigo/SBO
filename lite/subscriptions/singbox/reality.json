@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12"
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 32"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12"
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 12",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 32"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -162,6 +164,42 @@
                     "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
                     "short_id": "d9ed58fe"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 32",
+            "type": "vless",
+            "server": "o.soskom.ir",
+            "server_port": 39439,
+            "uuid": "e792ea19-00ba-43e0-be65-737b62352896",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "axLa2Yb5VegTFNy2v8chJvX6ShWl5v9jPgyGeFpTMwA",
+                    "short_id": "1f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "TEL ; @v2ray-store",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
