@@ -107,12 +107,14 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 7"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 8"
             ]
         },
         {
@@ -120,12 +122,14 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 14",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 7"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇹🇷TR | 🔴 | vless | @meli_proxyy | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -169,6 +173,41 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "5.180.52.15",
+            "server_port": 2052,
+            "uuid": "670d931b-9d26-5c5b-9ee2-780be46e1cf0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless",
+                "headers": {
+                    "Host": "5.180.52.15"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "167.235.28.81",
+            "server_port": 1717,
+            "uuid": "76e80a6d-9865-4e56-842f-ba62c0fa91c3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -190,38 +229,32 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
-            "server": "5.180.52.15",
-            "server_port": 2052,
-            "uuid": "670d931b-9d26-5c5b-9ee2-780be46e1cf0",
-            "flow": "",
+            "server": "ru.maviks.eu",
+            "server_port": 443,
+            "uuid": "18f06d6d-2e8d-4549-b3a4-cf1bc345348e",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless",
-                "headers": {
-                    "Host": "5.180.52.15"
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ",
+                    "short_id": "0f917152a871e9c0"
                 }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "167.235.28.81",
-            "server_port": 1717,
-            "uuid": "76e80a6d-9865-4e56-842f-ba62c0fa91c3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -249,7 +282,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "151.101.66.228",
             "server_port": 80,
@@ -270,7 +303,21 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+            "type": "vless",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "176.223.66.8",
             "server_port": 39948,

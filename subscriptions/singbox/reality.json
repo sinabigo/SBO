@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 7"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 7"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇹🇷TR | 🟢 | vless | @meli_proxyy | 7",
+            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
-            "server": "79.110.51.52",
-            "server_port": 55555,
-            "uuid": "1799b29e-d587-4ad7-b58e-5ef51c158173",
+            "server": "ru.maviks.eu",
+            "server_port": 443,
+            "uuid": "18f06d6d-2e8d-4549-b3a4-cf1bc345348e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "stackoverflow.com",
+                "server_name": "maviks.eu",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,8 +159,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "1zxVP27bDf_TlHFEbBne26fdhCFPftpB9zt7-nCd8HQ",
-                    "short_id": "867599a1433d8a1e"
+                    "public_key": "cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ",
+                    "short_id": "0f917152a871e9c0"
                 }
             }
         }
