@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14"
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 32"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14"
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 32"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 32",
             "type": "vless",
-            "server": "134.209.205.173",
-            "server_port": 4000,
-            "uuid": "4de73a98-0f31-4d2c-b845-fcb7a2bbe9bb",
+            "server": "32892393.web-manage.com.tr",
+            "server_port": 2172,
+            "uuid": "94b7bd2b-f373-4c5b-9892-5e16fde812bf",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zula.ir",
+                "server_name": "www.chess.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,9 +159,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
-                    "short_id": "d9ed58fe"
+                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
+                    "short_id": ""
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "chessgame",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
