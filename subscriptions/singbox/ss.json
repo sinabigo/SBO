@@ -106,18 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 31",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1"
+                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 29"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 31",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1"
+                "🇸🇪SE | 🟢 | ss | @meli_proxyy | 29"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +140,16 @@
             "type": "dns"
         },
         {
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "103.106.1.92",
+            "server_port": 23492,
+            "method": "chacha20-ietf-poly1305",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2",
             "type": "shadowsocks",
             "server": "69.50.93.113",
@@ -150,22 +160,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 31",
+            "tag": "🇸🇪SE | 🟢 | ss | @meli_proxyy | 29",
             "type": "shadowsocks",
-            "server": "45.87.175.164",
-            "server_port": 8080,
+            "server": "62.60.231.81",
+            "server_port": 59945,
             "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
-            "type": "shadowsocks",
-            "server": "103.106.1.92",
-            "server_port": 23492,
-            "method": "chacha20-ietf-poly1305",
-            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "password": "VfaEatGj7iXncVpijKFC1e",
             "plugin": "",
             "plugin_opts": ""
         }
