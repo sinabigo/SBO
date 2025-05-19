@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
@@ -116,7 +116,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -129,8 +129,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
@@ -138,7 +138,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -180,9 +180,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "3.125.76.226",
+            "server": "56.228.78.101",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -202,9 +202,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "15.236.1.58",
+            "server": "3.125.76.226",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -357,6 +357,20 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
             "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "1f3b2fc8-1656-400a-9fe6-27c2c33ce0ec",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+            "type": "vless",
             "server": "104.16.189.41",
             "server_port": 443,
             "uuid": "d6a1143b-cdf0-41f8-a646-bd8f11663786",
@@ -382,35 +396,6 @@
                 "path": "\/Join_Bade_Channel@JOKERRVPN?ed=2560",
                 "headers": {
                     "Host": "d6.medicalhistory.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
-            "type": "vless",
-            "server": "134.209.205.173",
-            "server_port": 4000,
-            "uuid": "4de73a98-0f31-4d2c-b845-fcb7a2bbe9bb",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zula.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "WvWpvjm0ynTr6YCICH5TmTEKicAq0JNGEZDWZvApgRM",
-                    "short_id": "d9ed58fe"
                 }
             }
         },
