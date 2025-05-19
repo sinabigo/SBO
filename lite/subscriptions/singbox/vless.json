@@ -107,13 +107,14 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 31",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -125,13 +126,14 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 31",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -172,9 +174,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "135.148.152.101",
+            "server": "135.148.152.109",
             "server_port": 443,
             "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
             "flow": "",
@@ -192,6 +194,37 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "170.114.45.159",
+            "server_port": 443,
+            "uuid": "c3708323-48fe-49c2-aaef-84d0a4cd12ff",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "3my2cynahdu6esnujyt3kd0onc3orjj5nuhqvmoqqbd0sj-dyc.15zyyu2.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "3my2cynahdu6esnujyt3kd0onc3orjj5nuhqvmoqqbd0sj-dyc.15zyyu2.workers.Dev"
                 }
             }
         },
@@ -322,32 +355,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 31",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
             "type": "vless",
-            "server": "lnservice.fastly80-2.hosting-ip.com",
+            "server": "151.101.64.155",
             "server_port": 80,
-            "uuid": "84ce5157-4867-4bea-8ae9-f1d7afe3b0ed",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Pak91jqn-Mehskl.ir.shop.com\/?Join_Bade_Channel@JOKERRVPN",
-                "headers": {
-                    "Host": "lnservice.fastly80-2.hosting-ip.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "telegram-id-ArV2ray",
+            "uuid": "telegram-id-ArV2ray6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -359,12 +371,12 @@
                 "type": "ws",
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "151.101.64.155"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
@@ -381,6 +393,27 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8080,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
