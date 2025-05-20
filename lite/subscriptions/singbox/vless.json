@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
@@ -125,6 +126,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
@@ -169,6 +171,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "bypassfilter.cmyyvat.workers.dev",
+            "server_port": 443,
+            "uuid": "b0e6a2c9-e667-4e42-9cb3-77d7db3e736b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bypassfilter.cmyyvat.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@bypass_filter\/?ed=100",
+                "headers": {
+                    "Host": "bypassfilter.cmyyvat.workers.dev"
+                }
             }
         },
         {

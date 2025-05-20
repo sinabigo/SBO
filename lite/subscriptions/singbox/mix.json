@@ -107,9 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 14",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -129,9 +129,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 14",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
-                "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -180,29 +180,7 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 14",
-            "type": "trojan",
-            "server": "13.61.140.186",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
             "server": "18.159.93.88",
             "server_port": 22223,
@@ -224,16 +202,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 19",
-            "type": "vmess",
-            "server": "57.129.24.125",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
+            "type": "trojan",
+            "server": "13.60.153.19",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -241,7 +214,31 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "bypassfilter.cmyyvat.workers.dev",
+            "server_port": 443,
+            "uuid": "b0e6a2c9-e667-4e42-9cb3-77d7db3e736b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bypassfilter.cmyyvat.workers.dev",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -251,9 +248,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/@bypass_filter\/?ed=100",
                 "headers": {
-                    "Host": ""
+                    "Host": "bypassfilter.cmyyvat.workers.dev"
                 }
             }
         },
