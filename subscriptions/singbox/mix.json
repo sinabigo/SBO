@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 8",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇷CR | 🟢 | ss | @DeamNet_Proxy | 12"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ]
         },
         {
@@ -119,11 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 8",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇷CR | 🟢 | ss | @DeamNet_Proxy | 12"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -156,6 +158,16 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 8",
+            "type": "shadowsocks",
+            "server": "81.19.140.31",
+            "server_port": 65305,
+            "method": "chacha20-ietf-poly1305",
+            "password": "nlVqIVyKwWoDsD7dVYT9Y0",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
             "type": "shadowsocks",
             "server": "103.106.1.92",
@@ -164,6 +176,51 @@
             "password": "yMX9WGPgUEcRZmlaa0YHHC",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "germany.gamingbazirani.ir",
+            "server_port": 600,
+            "uuid": "11d0b0d0-28ac-47fb-ab11-5f80e81a26d0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
@@ -197,27 +254,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
             "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
             "type": "vless",
             "server": "176.223.66.8",
@@ -230,16 +266,6 @@
                 "protocol": "smux",
                 "max_streams": 32
             }
-        },
-        {
-            "tag": "🇨🇷CR | 🟢 | ss | @DeamNet_Proxy | 12",
-            "type": "shadowsocks",
-            "server": "145.14.131.37",
-            "server_port": 990,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
