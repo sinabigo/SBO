@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "❔XX | 🟢 | vless | @meli_proxyy | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "❔XX | 🟢 | vless | @meli_proxyy | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +138,40 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "Tabriz-Website.thorav.ir",
+            "server": "91.107.152.74",
+            "server_port": 42262,
+            "uuid": "83d0965d-d983-478b-ba71-1f457b6f3595",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "par30games.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "x80R4CbE1btCxtuqGKzwVN6npsQuumLluSBnj-SedWg",
+                    "short_id": "2390"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "de-vpnmizban.gamingbazirani.ir",
             "server_port": 443,
-            "uuid": "0d53bc23-3e4a-48b3-b94b-271649e29735",
+            "uuid": "e312a92d-fdc7-49be-adfc-94c5f2a282ee",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -155,20 +186,13 @@
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "qq"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "S9lLMRBlLXUp4RhsWgDvTubO0znlS5e7xTARW_9ajB8",
-                    "short_id": "b1417d"
+                    "public_key": "SWA-po18cETv3noGE9OearcQaA6ERQRg31ejuSMpbkI",
+                    "short_id": "e54b5ad736ae4c38"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
