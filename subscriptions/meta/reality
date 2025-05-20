@@ -120,31 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"157.90.117.244","port":50552,"udp":true,"uuid":"19b6fa27-c968-46be-b980-ca371ff5c0f6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","reality-opts":{"public-key":"NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY","short-id":"09"}}
-  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 13","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"e12d8d1f-a9eb-458c-b0ab-3cec7ab4a468","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 4","type":"vless","server":"157.90.117.244","port":50552,"udp":true,"uuid":"19b6fa27-c968-46be-b980-ca371ff5c0f6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","reality-opts":{"public-key":"NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY","short-id":"09"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
