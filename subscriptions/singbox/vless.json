@@ -106,11 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ]
         },
@@ -118,11 +119,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -146,11 +148,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
             "type": "vless",
-            "server": "104.26.12.101",
-            "server_port": 2052,
-            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "server": "104.24.218.13",
+            "server_port": 80,
+            "uuid": "7ee0cedb-1f06-4be9-8444-51f289a4bf12",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -160,9 +162,33 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "104.26.12.101"
+                    "Host": "104.24.218.13"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "135.148.14.15",
+            "server_port": 443,
+            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001178.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
@@ -245,31 +271,23 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
-            "server": "nl-vpnmizban.gamingbazirani.ir",
-            "server_port": 443,
-            "uuid": "d37f3a97-8690-41a8-8ad9-1967239b1b6c",
-            "flow": "xtls-rprx-vision",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SWA-po18cETv3noGE9OearcQaA6ERQRg31ejuSMpbkI",
-                    "short_id": "e54b5ad736ae4c38"
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
