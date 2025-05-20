@@ -110,13 +110,14 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -132,13 +133,14 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -226,9 +228,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "bypassfilter.cmyyvat.workers.dev",
-            "server_port": 443,
-            "uuid": "b0e6a2c9-e667-4e42-9cb3-77d7db3e736b",
+            "server": "104.21.48.1",
+            "server_port": 2052,
+            "uuid": "44a6e3f3-a45b-446c-8c84-4fd753a4f62d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -236,21 +238,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "bypassfilter.cmyyvat.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/x9jPCxJdRuCGA84Y?ed=2560",
+                "headers": {
+                    "Host": "104.21.48.1"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "104.24.172.153",
+            "server_port": 80,
+            "uuid": "818a98bf-e7d0-45d5-800b-24d4058234c6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/@bypass_filter\/?ed=100",
+                "path": "\/",
                 "headers": {
-                    "Host": "bypassfilter.cmyyvat.workers.dev"
+                    "Host": "104.24.172.153"
                 }
             }
         },
@@ -359,11 +372,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "167.235.28.81",
-            "server_port": 1717,
-            "uuid": "76e80a6d-9865-4e56-842f-ba62c0fa91c3",
+            "server": "apple5.mobile-unix.com",
+            "server_port": 26425,
+            "uuid": "30e16ca9-edee-4ce5-8ba4-e53caa10ebae",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -375,22 +388,15 @@
         {
             "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "n1.boutiqueman.shop",
-            "server_port": 80,
-            "uuid": "V2rayvpn_official",
+            "server": "167.235.28.81",
+            "server_port": 1717,
+            "uuid": "76e80a6d-9865-4e56-842f-ba62c0fa91c3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "n1.boutiqueman.shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
