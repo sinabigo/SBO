@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1"
             ],
@@ -136,6 +138,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 16",
+            "type": "shadowsocks",
+            "server": "mx2.drawnrisha.one",
+            "server_port": 55988,
+            "method": "chacha20-ietf-poly1305",
+            "password": "3N72s3TiKcMaJH34m7i7bogM2EsQ1dQBfayVaLKbaXP9LWqePMstAkdQKJP94rg7HP13xfnHBvv68868b1w6XW1AZunxpS4H",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
