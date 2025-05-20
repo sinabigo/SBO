@@ -107,8 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
@@ -127,8 +126,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
@@ -176,11 +174,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "104.26.12.101",
-            "server_port": 2052,
-            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "server": "104.18.26.94",
+            "server_port": 80,
+            "uuid": "bc0a2570-d5fb-4906-b0f0-d47cdcd0a381",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -190,33 +188,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=1080\/telegram@v2ray_alpha",
+                "path": "\/Telegram@proxy_mtm\/?ed=2560",
                 "headers": {
-                    "Host": "104.26.12.101"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "147135001178.sec22org.com",
-            "server_port": 443,
-            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135001178.sec22org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                    "Host": "104.18.26.94"
                 }
             }
         },
