@@ -108,15 +108,15 @@
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 8",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
             ]
         },
@@ -126,15 +126,15 @@
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 8",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -174,9 +174,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "zula.ir",
-            "server_port": 443,
-            "uuid": "ab624dc5-b90a-406d-a63e-e20a2d46f0cc",
+            "server": "172.67.70.123",
+            "server_port": 2052,
+            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -184,26 +184,37 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "vless.sovafok802.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=1080Telegram_V2ray_Alpha",
+                "headers": {
+                    "Host": "172.67.70.123"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "www.visa.com",
+            "server_port": 2095,
+            "uuid": "736e4ed1-63dc-4d63-af14-451c17ac059a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "vless.sovafok802.workers.dev"
+                    "Host": "www.visa.com"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 2096,
@@ -319,20 +330,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "apple5.mobile-unix.com",
-            "server_port": 26425,
-            "uuid": "30e16ca9-edee-4ce5-8ba4-e53caa10ebae",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -375,7 +372,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 8",
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 8",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 443,
