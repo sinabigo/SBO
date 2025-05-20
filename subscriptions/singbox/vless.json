@@ -108,13 +108,14 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 28",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 27",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 19",
-                "🇸🇬SG | 🔴 | vless | @meli_proxyy | 26"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 22",
+                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 20",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ]
         },
         {
@@ -123,13 +124,14 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 28",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 27",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 19",
-                "🇸🇬SG | 🔴 | vless | @meli_proxyy | 26"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 22",
+                "🇱🇻LV | 🔴 | vless | @meli_proxyy | 20",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -207,6 +209,27 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 28",
+            "type": "vless",
+            "server": "5.180.52.15",
+            "server_port": 2052,
+            "uuid": "670d931b-9d26-5c5b-9ee2-780be46e1cf0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless",
+                "headers": {
+                    "Host": "5.180.52.15"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -228,28 +251,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 27",
-            "type": "vless",
-            "server": "5.180.52.15",
-            "server_port": 2052,
-            "uuid": "670d931b-9d26-5c5b-9ee2-780be46e1cf0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless",
-                "headers": {
-                    "Host": "5.180.52.15"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "n1.boutiqueman.shop",
             "server_port": 80,
@@ -270,7 +272,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "Tabriz-Website.thorav.ir",
             "server_port": 443,
@@ -306,7 +308,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "160.153.0.11",
             "server_port": 2083,
@@ -337,7 +339,36 @@
             }
         },
         {
-            "tag": "🇱🇻LV | 🔴 | vless | @meli_proxyy | 19",
+            "tag": "🇹🇷TR | 🟢 | vless | @meli_proxyy | 22",
+            "type": "vless",
+            "server": "79.110.51.52",
+            "server_port": 55555,
+            "uuid": "1799b29e-d587-4ad7-b58e-5ef51c158173",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1zxVP27bDf_TlHFEbBne26fdhCFPftpB9zt7-nCd8HQ",
+                    "short_id": "867599a1433d8a1e"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇻LV | 🔴 | vless | @meli_proxyy | 20",
             "type": "vless",
             "server": "103.231.73.214",
             "server_port": 443,
@@ -368,24 +399,17 @@
             }
         },
         {
-            "tag": "🇸🇬SG | 🔴 | vless | @meli_proxyy | 26",
+            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
             "type": "vless",
-            "server": "41.216.182.162",
-            "server_port": 2052,
-            "uuid": "1ebefa01-716a-5bd4-9ae1-48d6bd8fff13",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless-grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
