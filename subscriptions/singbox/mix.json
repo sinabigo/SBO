@@ -108,10 +108,8 @@
                 "URL-TEST",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇷CR | 🟢 | ss | @DeamNet_Proxy | 12"
             ]
@@ -122,10 +120,8 @@
             "outbounds": [
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇷CR | 🟢 | ss | @DeamNet_Proxy | 12"
             ],
@@ -162,75 +158,15 @@
         {
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
             "type": "shadowsocks",
-            "server": "89.23.103.21",
-            "server_port": 51584,
+            "server": "103.106.1.92",
+            "server_port": 23492,
             "method": "chacha20-ietf-poly1305",
-            "password": "oYQ8JwEldYn4KT2gfZ6eNl",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "91.107.152.74",
-            "server_port": 42262,
-            "uuid": "83d0965d-d983-478b-ba71-1f457b6f3595",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "par30games.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "x80R4CbE1btCxtuqGKzwVN6npsQuumLluSBnj-SedWg",
-                    "short_id": "2390"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 18",
-            "type": "shadowsocks",
-            "server": "45.150.32.13",
-            "server_port": 38707,
-            "method": "chacha20-ietf-poly1305",
-            "password": "NMiJKeh4yMumfyYVvjq0LR",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "140.248.128.69",
             "server_port": 443,
@@ -257,6 +193,27 @@
                 "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
                 "headers": {
                     "Host": "Channel-ELiV2.RAY.neT"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
                 }
             }
         },

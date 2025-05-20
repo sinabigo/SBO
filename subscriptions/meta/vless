@@ -120,9 +120,9 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 3","type":"vless","server":"91.107.152.74","port":42262,"udp":true,"uuid":"83d0965d-d983-478b-ba71-1f457b6f3595","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"par30games.net","reality-opts":{"public-key":"x80R4CbE1btCxtuqGKzwVN6npsQuumLluSBnj-SedWg","short-id":"2390"}}
-  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"140.248.128.69","port":443,"udp":false,"uuid":"bab79193-ab5e-4f23-b5a1-c5f035ea87fd","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Channel-ELiV2.RAY.neT","ws-opts":{"path":"/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY?ed=2048","headers":{"host":"Channel-ELiV2.RAY.neT"}}}
-  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 12","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"e12d8d1f-a9eb-458c-b0ab-3cec7ab4a468","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"157.90.117.244","port":50552,"udp":true,"uuid":"19b6fa27-c968-46be-b980-ca371ff5c0f6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","reality-opts":{"public-key":"NKXHq-QeFgTQWspK15CDrkx3frdLdaXKSIsI-SUl_FY","short-id":"09"}}
+  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"140.248.128.69","port":443,"udp":false,"uuid":"bab79193-ab5e-4f23-b5a1-c5f035ea87fd","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Channel-ELiV2.RAY.neT","ws-opts":{"path":"/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY?ed=2048","headers":{"host":"Channel-ELiV2.RAY.neT"}}}
+  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 13","type":"vless","server":"tr.lunarmc.ir","port":12534,"udp":true,"uuid":"e12d8d1f-a9eb-458c-b0ab-3cec7ab4a468","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"FWFeQEGQMcGNBEFciUbQSVyiAxH88kt4q0VlXKOGX04","short-id":"5355a70761ec07"}}
   - {"name":"🇹🇷TR | 🔴 | vless | @SiNAVM | 1","type":"vless","server":"176.223.66.8","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
 proxy-groups:
   - name: MANUAL
@@ -130,9 +130,9 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
       - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
   - name: URL-TEST
     type: url-test
@@ -140,18 +140,18 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
       - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 13'
       - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
