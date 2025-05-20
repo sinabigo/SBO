@@ -109,7 +109,8 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -131,7 +132,8 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇸🇪SE | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -224,25 +226,24 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "104.18.26.94",
-            "server_port": 80,
-            "uuid": "bc0a2570-d5fb-4906-b0f0-d47cdcd0a381",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@proxy_mtm\/?ed=2560",
-                "headers": {
-                    "Host": "104.18.26.94"
-                }
-            }
+            "tag": "🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "185.123.101.241",
+            "server_port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "f8f7aCzcPKbsF8p3",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "23.154.136.132",
+            "server_port": 5600,
+            "method": "aes-256-gcm",
+            "password": "Y6R9pAtvxxzmGC",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
