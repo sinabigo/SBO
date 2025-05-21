@@ -109,7 +109,8 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
@@ -129,7 +130,8 @@
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
@@ -220,11 +222,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "172.67.15.136",
             "server_port": 2052,
-            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "uuid": "2737560d-1867-47fa-aa80-351c36d771c7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -234,9 +236,40 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=1080.AB_841-.[ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ] - [ @ViP_Fragment_V2ray ]",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "172.67.15.136"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "172.67.147.162",
+            "server_port": 443,
+            "uuid": "3fefc100-faed-43ad-b087-d47ddfe75121",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Path\/Telegram@freevirgoolnet\/",
+                "headers": {
+                    "Host": "s92qb78mnok7yh5ykir1ayugvc49aqclfapp4qmqvixdxyd8crqppthcfpsjmm2.esmpy.workers.Dev"
                 }
             }
         },
