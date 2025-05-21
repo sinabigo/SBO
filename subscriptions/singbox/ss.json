@@ -106,14 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇵🇱PL | 🟢 | ss | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇵🇱PL | 🟢 | ss | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,6 +146,26 @@
             "server_port": 23492,
             "method": "chacha20-ietf-poly1305",
             "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+            "type": "shadowsocks",
+            "server": "45.87.175.65",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇵🇱PL | 🟢 | ss | @meli_proxyy | 17",
+            "type": "shadowsocks",
+            "server": "193.42.36.207",
+            "server_port": 1125,
+            "method": "chacha20-ietf-poly1305",
+            "password": "gqPly6s1BNaMlFnh9Uxcau",
             "plugin": "",
             "plugin_opts": ""
         }
