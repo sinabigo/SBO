@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇹🇷TR | 🔴 | vless | @SiNAVM | 1","type":"vless","server":"176.223.66.8","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇹🇷TR | 🔴 | vless | @SiNAVM | 2","type":"vless","server":"176.223.66.8","port":39948,"udp":false,"uuid":"2558c819-1363-4859-8fb9-f8cb104d49d2","tls":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"13.37.134.199","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"3.126.52.228","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17","type":"vless","server":"172.67.15.136","port":2052,"udp":false,"uuid":"2737560d-1867-47fa-aa80-351c36d771c7","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/?ed=2560","headers":{"host":"0118.kznyoum2.workers.dev"}}}
@@ -140,7 +140,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
+      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 2'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17'
@@ -160,7 +160,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
+      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 2'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17'
@@ -179,7 +179,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 1'
+      - '🇹🇷TR | 🔴 | vless | @SiNAVM | 2'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17'
