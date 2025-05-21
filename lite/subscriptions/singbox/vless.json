@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -123,11 +124,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -165,6 +167,37 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "169221de-6408-4143-9e66-6f77de385e94",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-",
+                "headers": {
+                    "Host": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
+                }
             }
         },
         {
@@ -234,11 +267,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 14",
             "type": "vless",
-            "server": "140.248.128.69",
+            "server": "188.114.97.1",
             "server_port": 443,
-            "uuid": "bab79193-ab5e-4f23-b5a1-c5f035ea87fd",
+            "uuid": "4d91916f-a7fd-419b-8b90-640bb8d4b5f4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -248,7 +281,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Channel-ELiV2.RAY.neT",
+                "server_name": "MYPhoTOgrapICPictURe.IR",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -258,31 +291,24 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "path": "\/E4FqomT5e0mKm2nh\/MTU5LjY5LjE0LjEzOA",
                 "headers": {
-                    "Host": "Channel-ELiV2.RAY.neT"
+                    "Host": "MYPhoTOgrapICPictURe.IR"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
             "type": "vless",
-            "server": "speedtest.net",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "c6ebff0f-7786-4bff-bdfc-d0557bf4b152",
+            "uuid": "9491588f-58bd-4fb8-876e-8501faec4d9e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
-                "headers": {
-                    "Host": "speedtest.net"
-                }
             }
         },
         {
