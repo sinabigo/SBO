@@ -106,24 +106,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 5",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 5",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,11 +148,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 5",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
             "type": "vless",
-            "server": "www.visa.com",
-            "server_port": 2086,
-            "uuid": "9d4f6cfb-c921-4bde-ae0a-61781848d940",
+            "server": "104.18.15.19",
+            "server_port": 2082,
+            "uuid": "b111c17d-c8a4-4d4d-a417-fa40a020bcc8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -160,35 +162,14 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
                 "headers": {
-                    "Host": "www.visa.com"
+                    "Host": "104.18.15.19"
                 }
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "172.67.168.93",
-            "server_port": 80,
-            "uuid": "8169cd18-e824-47a4-a4d4-96433b1a519d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.168.93"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "n1.boutiqueman.shop",
             "server_port": 80,
@@ -209,11 +190,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
+            "server": "45.144.51.195",
+            "server_port": 35036,
+            "uuid": "b9e98405-0454-474e-a5b3-1d6e164ba40d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -222,15 +203,15 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "3982390233.torob.com.tr",
             "server_port": 2182,
@@ -266,6 +247,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
             "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "176.223.66.8",
@@ -277,6 +279,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 11",
+            "type": "vless",
+            "server": "104.26.15.85",
+            "server_port": 8080,
+            "uuid": "690ab90e-3f21-422b-8cb1-bc9845c7af1e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.26.15.85"
+                }
             }
         }
     ],
