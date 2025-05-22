@@ -107,12 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
             ]
         },
         {
@@ -120,12 +119,11 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -169,7 +167,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "104.21.56.44",
             "server_port": 80,
@@ -190,11 +188,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
             "server": "140.248.128.69",
             "server_port": 443,
-            "uuid": "e9d968c7-a840-4cdd-9fb3-44f5daa5c195",
+            "uuid": "f56c315c-a8a6-4f15-b8e0-fcc2afe13b29",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -221,31 +219,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
-            "type": "vless",
-            "server": "france.iranigamebaz.ir",
-            "server_port": 600,
-            "uuid": "3857ea57-a459-45c5-a309-ad2bfa04d676",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "marzban.negintel.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
             "type": "vless",
             "server": "n1.boutiqueman.shop",
             "server_port": 80,
@@ -263,20 +237,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
-            "type": "vless",
-            "server": "176.223.66.8",
-            "server_port": 39948,
-            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -298,6 +258,20 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+            "type": "vless",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
