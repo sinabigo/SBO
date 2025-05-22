@@ -11,15 +11,15 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 16 = trojan, 63.178.35.184, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇸🇪SE | 🟢 | trojan | @DirectVPN | 17 = trojan, 13.49.13.19, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 3.76.52.178, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 15 = trojan, 13.39.249.145, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 45.158.171.151, 8080, encrypt-method = chacha20-ietf-poly1305, password = 1RWwXhwfAB5gAEozU4G2Pg
 🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1 = ss, 103.106.1.92, 23492, encrypt-method = chacha20-ietf-poly1305, password = yMX9WGPgUEcRZmlaa0YHHC
 🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2 = ss, 89.23.103.21, 51584, encrypt-method = chacha20-ietf-poly1305, password = oYQ8JwEldYn4KT2gfZ6eNl
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 17,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 17,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 16,🇸🇪SE | 🟢 | trojan | @DirectVPN | 17,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
