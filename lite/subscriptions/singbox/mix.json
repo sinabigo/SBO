@@ -118,7 +118,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -141,7 +141,7 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -398,14 +398,25 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 19",
-            "type": "shadowsocks",
-            "server": "4.158.66.191",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "69MUii7VDwMqh7Hz",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "104.26.15.85",
+            "server_port": 8080,
+            "uuid": "690ab90e-3f21-422b-8cb1-bc9845c7af1e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.26.15.85"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
