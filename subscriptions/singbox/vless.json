@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 6",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 6",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "104.21.56.44",
             "server_port": 80,
@@ -165,7 +167,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+            "type": "vless",
+            "server": "104.26.12.101",
+            "server_port": 2052,
+            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=1080\/telegram@v2ray\\_alpha",
+                "headers": {
+                    "Host": "104.26.12.101"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "140.248.128.69",
             "server_port": 443,
@@ -196,24 +219,17 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "104.26.12.101",
-            "server_port": 2052,
-            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "server": "1xult.hifromir1.site",
+            "server_port": 2053,
+            "uuid": "7455dc11-4417-49f2-9d99-4269394ec40d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=1080\/telegram@v2ray\\_alpha",
-                "headers": {
-                    "Host": "104.26.12.101"
-                }
             }
         },
         {
@@ -238,17 +254,24 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
             "type": "vless",
-            "server": "176.223.66.8",
-            "server_port": 39948,
-            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "7859c198-d072-4395-92f1-2d400dc5341f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ISVvpn",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
             }
         }
     ],
