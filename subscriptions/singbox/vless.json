@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 4",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "❔XX | 🟢 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @meli_proxyy | 4",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "❔XX | 🟢 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇹🇷TR | 🔴 | vless | @SiNAVM | 2"
+                "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,27 +144,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "104.21.56.44",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TELEGRAM@MARAMBASHI_MARAMBASHI",
-                "headers": {
-                    "Host": "104.21.56.44"
-                }
-            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
@@ -186,7 +167,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+            "type": "vless",
+            "server": "104.21.56.44",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TELEGRAM@MARAMBASHI_MARAMBASHI",
+                "headers": {
+                    "Host": "104.21.56.44"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "140.248.128.69",
             "server_port": 443,
@@ -217,6 +219,35 @@
             }
         },
         {
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 4",
+            "type": "vless",
+            "server": "nl-vpnmizban.gamingbazirani.ir",
+            "server_port": 443,
+            "uuid": "715b3f21-8774-484a-9230-f0a2c187e168",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SWA-po18cETv3noGE9OearcQaA6ERQRg31ejuSMpbkI",
+                    "short_id": "e54b5ad736ae4c38"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -238,7 +269,7 @@
             }
         },
         {
-            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇹🇷TR | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
             "server": "176.223.66.8",
             "server_port": 39948,
