@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 18"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 14",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 18"
+                "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 14",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 18",
+            "tag": "🇷🇺RU | 🟢 | vless | @TEHRANARGO | 14",
+            "type": "vless",
+            "server": "ru.maviks.eu",
+            "server_port": 443,
+            "uuid": "18f06d6d-2e8d-4549-b3a4-cf1bc345348e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maviks.eu",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ",
+                    "short_id": "0f917152a871e9c0"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 19",
             "type": "vless",
             "server": "146.190.237.125",
             "server_port": 21332,
