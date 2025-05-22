@@ -107,16 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
-                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 8"
+                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ]
         },
         {
@@ -124,16 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 2",
-                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 8"
+                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -177,7 +175,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "104.21.56.44",
             "server_port": 80,
@@ -198,7 +196,17 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+            "type": "shadowsocks",
+            "server": "23.154.136.132",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "140.248.128.69",
             "server_port": 443,
@@ -229,37 +237,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-            "type": "shadowsocks",
-            "server": "23.154.136.132",
-            "server_port": 8008,
-            "method": "aes-256-gcm",
-            "password": "XKFKl2rULjIp74",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
-            "type": "vless",
-            "server": "n1.boutiqueman.shop",
-            "server_port": 80,
-            "uuid": "jointelegram@V2rayvpn_official",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "n1.boutiqueman.shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
             "server": "103.106.1.92",
@@ -280,33 +257,31 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-            "type": "shadowsocks",
-            "server": "45.158.171.151",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "1RWwXhwfAB5gAEozU4G2Pg",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
-            "flow": "",
+            "server": "lunavopershian.adas.monster",
+            "server_port": 57065,
+            "uuid": "e8b49992-62a9-4e5e-a6b4-1503a5c4353c",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
+            "tls": {
+                "enabled": true,
+                "server_name": "lunavopershiansni369871.adas.monster",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
+                    "short_id": "e559dd"
                 }
             }
         },
@@ -333,6 +308,27 @@
             "password": "f8f7aCzcPKbsF8p3",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
         }
     ],
     "route": {
