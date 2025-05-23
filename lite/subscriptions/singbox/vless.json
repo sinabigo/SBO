@@ -112,8 +112,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "❔XX | 🔴 | vless | @meli_proxyy | 16",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
@@ -129,8 +129,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "❔XX | 🔴 | vless | @meli_proxyy | 16",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
@@ -271,21 +271,7 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-240",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "185.146.173.39",
             "server_port": 8880,
@@ -296,6 +282,35 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
+            "type": "vless",
+            "server": "89.208.106.238",
+            "server_port": 30113,
+            "uuid": "6ab56172-1454-4039-ab34-6ccb8edbc8ef",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "6DBsXsnRwxCCyiePeRGS6VWaXTWClmK2lflGRy9kb3s",
+                    "short_id": "3cc596d4a13ff1ab"
+                }
             }
         },
         {

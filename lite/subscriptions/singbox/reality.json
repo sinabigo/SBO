@@ -106,18 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 19"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 19"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
-            "server": "o.soskom.ir",
-            "server_port": 11045,
-            "uuid": "72e64fd7-c2a4-47d7-93f7-39f2abc1a5f8",
+            "server": "89.208.106.238",
+            "server_port": 30113,
+            "uuid": "6ab56172-1454-4039-ab34-6ccb8edbc8ef",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -154,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "www.cloudflare.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -163,81 +159,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
-                    "short_id": "20db1be5e1ab118a"
+                    "public_key": "6DBsXsnRwxCCyiePeRGS6VWaXTWClmK2lflGRy9kb3s",
+                    "short_id": "3cc596d4a13ff1ab"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Tel : @NT_Safe",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 15",
-            "type": "vless",
-            "server": "lunavopershian.adas.monster",
-            "server_port": 38290,
-            "uuid": "d4e36d8c-623b-4413-b461-a99d786c4b55",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "3982390233.torob.com.tr",
-            "server_port": 2182,
-            "uuid": "3a6d2cc9-a464-4ebc-9b14-cd53ae8c3e65",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.chess.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "chessgame",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
