@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
             ]
         },
@@ -120,13 +121,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @SiNAVM | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -150,17 +152,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
-            "type": "shadowsocks",
-            "server": "23.154.136.132",
-            "server_port": 8008,
-            "method": "aes-256-gcm",
-            "password": "XKFKl2rULjIp74",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "104.21.56.44",
             "server_port": 80,
@@ -202,50 +194,38 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 2",
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4",
+            "type": "shadowsocks",
+            "server": "23.154.136.132",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "france.iranigamebaz.ir",
-            "server_port": 600,
-            "uuid": "bc6b04f7-951b-4e02-b5e6-83bad04c0acb",
+            "server": "1xult.hifromir1.site",
+            "server_port": 2053,
+            "uuid": "7455dc11-4417-49f2-9d99-4269394ec40d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "marzban.negintel.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-            "type": "trojan",
-            "server": "15.188.249.149",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "103.106.1.92",
+            "server_port": 23492,
+            "method": "chacha20-ietf-poly1305",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 0",
@@ -258,23 +238,41 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
+            "type": "shadowsocks",
+            "server": "45.158.171.151",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1RWwXhwfAB5gAEozU4G2Pg",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
-            "flow": "",
+            "server": "23.88.52.103",
+            "server_port": 443,
+            "uuid": "3558dd78-e965-4c37-816c-9077c1218a7b",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FPLFy7fZyzEZf519e_ExsQlMvhbdaaAWRvryM6eV7SU",
+                    "short_id": "2b"
                 }
             }
         },

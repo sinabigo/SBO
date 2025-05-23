@@ -120,27 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0","type":"vless","server":"116.203.140.209","port":1615,"udp":true,"uuid":"acd71a14-6f45-4451-b150-daa59dcbe36a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","reality-opts":{"public-key":"hGWQLRX3fXhy649AM9QbmRBlDs4DU-trXDal_F5pCjI","short-id":"f387eb8185414508"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"23.88.52.103","port":443,"udp":true,"uuid":"3558dd78-e965-4c37-816c-9077c1218a7b","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","reality-opts":{"public-key":"FPLFy7fZyzEZf519e_ExsQlMvhbdaaAWRvryM6eV7SU","short-id":"2b"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
