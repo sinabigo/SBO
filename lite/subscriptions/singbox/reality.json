@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🟢 | vless | @meli_proxyy | 29"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🟢 | vless | @meli_proxyy | 29"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +138,11 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 29",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
             "type": "vless",
-            "server": "nl-vpnmizban.gamingbazirani.ir",
-            "server_port": 443,
-            "uuid": "715b3f21-8774-484a-9230-f0a2c187e168",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "74720018-cf5d-4f2b-84a4-6b94bb9cf3ef",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +152,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cdn77.com",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,8 +161,44 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SWA-po18cETv3noGE9OearcQaA6ERQRg31ejuSMpbkI",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+            "type": "vless",
+            "server": "lunavopershian.adas.monster",
+            "server_port": 57065,
+            "uuid": "e8b49992-62a9-4e5e-a6b4-1503a5c4353c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lunavopershiansni369871.adas.monster",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
+                    "short_id": "e559dd"
                 }
             }
         }

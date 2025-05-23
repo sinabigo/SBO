@@ -110,10 +110,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "❔XX | 🟢 | vless | @meli_proxyy | 29",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 30",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -128,10 +128,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "❔XX | 🟢 | vless | @meli_proxyy | 29",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 30",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -248,32 +248,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "6c31b5e7-fca5-4f04-a02d-00fa84be4c54",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ISVvpn",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "6c31b5e7-fca5-4f04-a02d-00fa84be4c54",
+            "uuid": "ec0ea606-b8a9-4a33-8cd7-a8b442feb5c8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -283,11 +262,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 29",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
             "type": "vless",
-            "server": "nl-vpnmizban.gamingbazirani.ir",
-            "server_port": 443,
-            "uuid": "715b3f21-8774-484a-9230-f0a2c187e168",
+            "server": "o.soskom.ir",
+            "server_port": 11045,
+            "uuid": "74720018-cf5d-4f2b-84a4-6b94bb9cf3ef",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -297,7 +276,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cdn77.com",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -306,17 +285,53 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SWA-po18cETv3noGE9OearcQaA6ERQRg31ejuSMpbkI",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM",
+                    "short_id": "20db1be5e1ab118a"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Tel : @NT_Safe",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+            "type": "vless",
+            "server": "lunavopershian.adas.monster",
+            "server_port": 57065,
+            "uuid": "e8b49992-62a9-4e5e-a6b4-1503a5c4353c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lunavopershiansni369871.adas.monster",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
+                    "short_id": "e559dd"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 30",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 32",
             "type": "vless",
-            "server": "104.21.56.44",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "140.248.128.69",
+            "server_port": 443,
+            "uuid": "f56c315c-a8a6-4f15-b8e0-fcc2afe13b29",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -324,11 +339,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "Channel-ELiV2.RAY.neT",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/TELEGRAM@MARAMBASHI_MARAMBASHI",
+                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
                 "headers": {
-                    "Host": "104.21.56.44"
+                    "Host": "Channel-ELiV2.RAY.neT"
                 }
             }
         },
