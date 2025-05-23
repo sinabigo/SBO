@@ -106,17 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 29",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 30",
+                "❔XX | 🟢 | vless | @meli_proxyy | 30",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -127,17 +128,18 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 29",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 30",
+                "❔XX | 🟢 | vless | @meli_proxyy | 30",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -164,9 +166,31 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
             "type": "trojan",
-            "server": "15.237.148.165",
+            "server": "18.184.146.156",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
+            "type": "trojan",
+            "server": "35.157.224.206",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -282,7 +306,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -303,7 +327,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -338,7 +362,7 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 30",
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 30",
             "type": "vless",
             "server": "france.iranigamebaz.ir",
             "server_port": 600,
