@@ -109,7 +109,8 @@
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ]
         },
         {
@@ -119,7 +120,8 @@
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -215,11 +217,40 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "151.101.64.155",
+            "server": "23.88.52.103",
+            "server_port": 443,
+            "uuid": "3558dd78-e965-4c37-816c-9077c1218a7b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "FPLFy7fZyzEZf519e_ExsQlMvhbdaaAWRvryM6eV7SU",
+                    "short_id": "2b"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
+            "uuid": "6549c909-af8f-460e-8758-902b2a291d70",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -229,9 +260,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "path": "\/ISVvpn",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "www.speedtest.net"
                 }
             }
         }
