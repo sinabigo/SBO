@@ -120,6 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
+  - {"name":"🇩🇪DE | 🔴 | vless | @SiNAVM | 0","type":"vless","server":"kavir.lnmarketplace.net","port":443,"udp":false,"uuid":"3536e1fa-0850-44d1-b123-925ce12476cf","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"kavir.lnmarketplace.net"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"18.184.146.156","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"35.157.224.206","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16","type":"vless","server":"172.66.45.24","port":443,"udp":false,"uuid":"f744c2dc-1359-494c-9808-d81ce7665d58","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"reAl-madrID9248.pagEs.dEv","ws-opts":{"path":"/LQlBRp7bKt33t0q2?ed=2560","headers":{"host":"real-madrid9248.pages.dev"}}}
@@ -139,6 +140,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | 🔴 | vless | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16'
@@ -158,6 +160,7 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | 🔴 | vless | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16'
@@ -176,6 +179,7 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇩🇪DE | 🔴 | vless | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16'
