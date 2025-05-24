@@ -106,24 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 13",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 14",
+                "🇰🇭KH | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @meli_proxyy | 13",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 14",
+                "🇰🇭KH | 🔴 | vless | @meli_proxyy | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 13",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 14",
             "type": "vless",
             "server": "104.21.48.1",
             "server_port": 2053,
@@ -177,11 +177,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "tag": "🇰🇭KH | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "104.21.64.1",
+            "server": "92.243.74.3",
             "server_port": 443,
-            "uuid": "0836463b-214f-4af6-aa85-85a56a62388e",
+            "uuid": "30f2d443-af46-4dd6-83c9-b5e17299ebd2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -191,7 +191,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "d2127A49-flat-WOod-C4b5.mIliA-aKbarPOoR.WorKERs.DEv",
+                "server_name": "carlotta.shorekeeper.cloudns.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -201,18 +201,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/SWxRubdkWWuq5bau?ed=2560",
+                "path": "\/proxyip=zani.yaemiko.ggff.net\/?Join_Bade_Channel@JOKERRVPN",
                 "headers": {
-                    "Host": "d2127A49-flat-WOod-C4b5.mIliA-aKbarPOoR.WorKERs.DEv"
+                    "Host": "carlotta.shorekeeper.cloudns.org"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
-            "server": "135.148.211.86",
-            "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "server": "104.21.7.193",
+            "server_port": 8880,
+            "uuid": "f3562b04-2f2b-433a-80b4-45f60d659004",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -220,33 +220,16 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135004002.sec20org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.21.7.193"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-            "type": "vless",
-            "server": "94.130.225.156",
-            "server_port": 38795,
-            "uuid": "c7b3d8ea-8c6e-4091-b87e-5876b715b9b3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
             "type": "vless",
             "server": "Mashhad-Website.thorav.ir",
             "server_port": 2087,
@@ -300,6 +283,27 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇵🇱PL | 🔴 | vless | @DeamNet_Proxy | 6",
+            "type": "vless",
+            "server": "45.144.51.195",
+            "server_port": 35036,
+            "uuid": "b9e98405-0454-474e-a5b3-1d6e164ba40d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
