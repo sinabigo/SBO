@@ -109,16 +109,16 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
-                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 30",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+                "❔XX | 🔴 | vless | @meli_proxyy | 30",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 31",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -132,16 +132,16 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 12",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
-                "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 30",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+                "❔XX | 🔴 | vless | @meli_proxyy | 30",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 31",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -236,48 +236,35 @@
             }
         },
         {
-            "tag": "🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16",
-            "type": "shadowsocks",
-            "server": "185.47.253.227",
-            "server_port": 990,
-            "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "172.67.136.233",
-            "server_port": 443,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "104.26.12.101",
+            "server_port": 2052,
+            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "az05.beyondy.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/link",
+                "path": "\/?ed=1080\/telegram@v2ray\\_alpha",
                 "headers": {
-                    "Host": "az05.beyondy.cfd"
+                    "Host": "104.26.12.101"
                 }
             }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
+            "type": "shadowsocks",
+            "server": "23.154.136.132",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
@@ -385,11 +372,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 30",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 30",
             "type": "vless",
-            "server": "1xult.hifromir1.site",
-            "server_port": 2053,
-            "uuid": "7455dc11-4417-49f2-9d99-4269394ec40d",
+            "server": "[2a01:4f8:1c1b:e1d0::1]",
+            "server_port": 8888,
+            "uuid": "Parsashonam-241",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -399,32 +386,17 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 31",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 31",
             "type": "vless",
-            "server": "lunavopershian.adas.monster",
-            "server_port": 38290,
-            "uuid": "7504785f-21b3-4385-bcba-4d8606ed9f9c",
-            "flow": "xtls-rprx-vision",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-241",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
-                }
             }
         },
         {
