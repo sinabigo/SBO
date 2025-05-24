@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17"
+                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17"
+                "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
-            "server": "az05.beyondy.cfd",
-            "server_port": 443,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
+            "server": "45.144.48.128",
+            "server_port": 8443,
+            "uuid": "a4850481-9b95-430f-9b2d-192d2410b4f4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -163,7 +163,7 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/link",
+                "path": "\/vmess\/",
                 "headers": {
                     "Host": ""
                 }
