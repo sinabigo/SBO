@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇰🇭KH | 🔴 | vless | @meli_proxyy | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
@@ -117,8 +117,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇰🇭KH | 🔴 | vless | @meli_proxyy | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -173,35 +173,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
-            "type": "vless",
-            "server": "lunavopershian.adas.monster",
-            "server_port": 38290,
-            "uuid": "e2d82258-fc6b-40e7-a292-d8991d9d2ec0",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lunavopershiansni369871.adas.monster",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM",
-                    "short_id": "e559dd"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "Mashhad-Website.thorav.ir",
@@ -232,6 +203,27 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "fergalvpnmod.sbs",
+            "server_port": 443,
+            "uuid": "2dae986a-04ce-4588-a6e2-652ac921c091",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram:fergalvpnmod",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
