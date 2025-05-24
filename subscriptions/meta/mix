@@ -121,9 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇰🇭KH | 🔴 | vless | @meli_proxyy | 3","type":"vless","server":"92.243.74.3","port":443,"udp":false,"uuid":"30f2d443-af46-4dd6-83c9-b5e17299ebd2","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"carlotta.shorekeeper.cloudns.org","ws-opts":{"path":"/proxyip=zani.yaemiko.ggff.net/?Join_Bade_Channel@JOKERRVPN","headers":{"host":"carlotta.shorekeeper.cloudns.org"}}}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"13.37.71.81","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"lunavopershian.adas.monster","port":38290,"udp":true,"uuid":"e2d82258-fc6b-40e7-a292-d8991d9d2ec0","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"lunavopershiansni369871.adas.monster","reality-opts":{"public-key":"YwovOka4bw_cog0WRI_245U9NC4I26TaGxhAKfGSskM","short-id":"e559dd"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1","type":"vless","server":"fergalvpnmod.sbs","port":443,"udp":false,"uuid":"2dae986a-04ce-4588-a6e2-652ac921c091","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":"telegram:fergalvpnmod"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"Mashhad-Website.thorav.ir","port":2087,"udp":true,"uuid":"df0a7c22-83e7-4580-a123-ce4e1010ba4a","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"yXSBn5-hiNy4K9Lg_w2E0cGXSkcwXtwGn6r46UJ96HU","short-id":"55"}}
 proxy-groups:
   - name: MANUAL
@@ -132,9 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 3'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
   - name: URL-TEST
     type: url-test
@@ -143,9 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 3'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
   - name: FALLBACK
     type: fallback
@@ -153,9 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 3'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
