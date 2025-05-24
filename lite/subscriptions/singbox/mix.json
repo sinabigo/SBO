@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -130,8 +130,8 @@
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -212,45 +212,11 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "az05.beyondy.cfd",
-            "server_port": 443,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/link",
-                "headers": {
-                    "Host": ""
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "135.148.157.112",
+            "server": "135.148.14.5",
             "server_port": 443,
-            "uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f",
+            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -260,7 +226,31 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135010072.sec21org.com",
+                "server_name": "147135001178.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "15.204.151.43",
+            "server_port": 443,
+            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001195.sec22org.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
