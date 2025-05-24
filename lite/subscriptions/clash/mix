@@ -118,8 +118,10 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"18.184.146.156","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"45.158.171.151","port":8080,"password":"1RWwXhwfAB5gAEozU4G2Pg","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"35.181.234.28","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"18.184.146.156","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16","type":"ss","server":"185.47.253.227","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17","type":"vmess","server":"172.67.136.233","port":"443","cipher":"auto","uuid":"3f638f34-8dba-4186-bc43-2716a7ddd4be","alterId":"0","tls":true,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/link","headers":{"host":"az05.beyondy.cfd"}}}
   - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -128,8 +130,10 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
   - name: URL-TEST
@@ -138,8 +142,10 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
   - name: FALLBACK
@@ -147,8 +153,10 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
+      - '🇪🇨EC | 🟢 | ss | @DeamNet_Proxy | 16'
+      - '🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
 rules:
