@@ -107,7 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 3",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
             ]
         },
         {
@@ -115,7 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🟢 | ss | @meli_proxyy | 3",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
+                "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,12 +152,32 @@
             "plugin_opts": ""
         },
         {
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "103.106.1.92",
+            "server_port": 23492,
+            "method": "chacha20-ietf-poly1305",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
             "type": "shadowsocks",
             "server": "45.158.171.132",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "4a2rfixophdjffa8KVA4Aa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "185.39.204.12",
+            "server_port": 16297,
+            "method": "chacha20-ietf-poly1305",
+            "password": "G0o2hE4eLuR2wwyFao0lsJ",
             "plugin": "",
             "plugin_opts": ""
         }
