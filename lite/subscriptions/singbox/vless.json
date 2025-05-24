@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
@@ -125,7 +124,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
@@ -178,27 +176,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "104.26.12.101",
-            "server_port": 2052,
-            "uuid": "dfc1a9ab-6241-4b73-92f7-b299fc6b7751",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=1080\/telegram@v2ray\\_alpha",
-                "headers": {
-                    "Host": "104.26.12.101"
                 }
             }
         },
