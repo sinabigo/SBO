@@ -107,10 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
             ]
         },
         {
@@ -118,10 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,27 +163,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "159.223.28.7",
-            "server_port": 443,
-            "uuid": "91140646-4ee6-40d4-8103-69f79c8aebb5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram:fergalvpnmod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "❔XX | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
             "server": "2.irancella.blog",
@@ -215,37 +192,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "185.143.233.120",
-            "server_port": 443,
-            "uuid": "ec33b404-4be2-4e33-ad79-976a00185082",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mydigipay.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
-                "headers": {
-                    "Host": "mydigipay.com"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -264,6 +210,27 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "159.223.28.7",
+            "server_port": 443,
+            "uuid": "91140646-4ee6-40d4-8103-69f79c8aebb5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram:fergalvpnmod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
