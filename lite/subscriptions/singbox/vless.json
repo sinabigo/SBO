@@ -107,10 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 16",
+                "❔XX | 🔴 | vless | @meli_proxyy | 17",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -122,10 +124,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 16",
+                "❔XX | 🔴 | vless | @meli_proxyy | 17",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -176,7 +180,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -211,7 +215,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -232,11 +236,39 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 16",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
             "uuid": "7859c198-d072-4395-92f1-2d400dc5341f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "[2a01:4f8:1c1b:e1d0::1]",
+            "server_port": 8888,
+            "uuid": "Parsashonam-243",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-243",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
