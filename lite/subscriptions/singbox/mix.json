@@ -109,12 +109,12 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 16",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "❔XX | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -128,12 +128,12 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 16",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "❔XX | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -228,7 +228,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -298,31 +298,58 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-243",
+            "server": "45.194.53.26",
+            "server_port": 443,
+            "uuid": "d4e52293-4a82-404c-ac29-93afc006dcbb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "crolindd.dearcarlotta.cloudns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/proxyip=citlali.shorekeeper.ir",
+                "headers": {
+                    "Host": "crolindd.dearcarlotta.cloudns.org"
+                }
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-243",
+            "server": "france.iranigamebaz.ir",
+            "server_port": 600,
+            "uuid": "666c8b48-72b8-43bb-8482-b7ba47008a1a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
