@@ -121,13 +121,11 @@ dns:
 
 proxies:
   - {"name":"🇰🇭KH | 🔴 | vless | @meli_proxyy | 10","type":"vless","server":"92.243.74.3","port":443,"udp":false,"uuid":"30f2d443-af46-4dd6-83c9-b5e17299ebd2","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"carlotta.shorekeeper.cloudns.org","ws-opts":{"path":"/proxyip=zani.yaemiko.ggff.net/?Join_Bade_Channel@JOKERRVPN","headers":{"host":"carlotta.shorekeeper.cloudns.org"}}}
-  - {"name":"❔XX | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"france.iranigamebaz.ir","port":600,"udp":false,"uuid":"666c8b48-72b8-43bb-8482-b7ba47008a1a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"marzban.negintel.xyz"}
   - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 4","type":"ss","server":"45.87.175.35","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"52.47.56.53","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @meli_proxyy | 3","type":"ss","server":"45.158.171.132","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"❔XX | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"france.iranigamebaz.ir","port":600,"udp":false,"uuid":"666c8b48-72b8-43bb-8482-b7ba47008a1a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"marzban.negintel.xyz"}
   - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1","type":"vless","server":"fergalvpnmod.sbs","port":443,"udp":false,"uuid":"2dae986a-04ce-4588-a6e2-652ac921c091","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":"telegram:fergalvpnmod"}}
-  - {"name":"🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"185.39.204.12","port":16297,"password":"G0o2hE4eLuR2wwyFao0lsJ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @meli_proxyy | 3","type":"ss","server":"45.158.171.132","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -135,13 +133,11 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 10'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -149,26 +145,22 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 10'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇰🇭KH | 🔴 | vless | @meli_proxyy | 10'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '❔XX | 🟢 | vless | @meli_proxyy | 0'
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1'
-      - '🇹🇷TR | 🟢 | ss | @ShadowProxy66 | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 3'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
