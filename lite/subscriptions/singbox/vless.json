@@ -111,8 +111,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "❔XX | 🔴 | vless | @meli_proxyy | 18",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -128,8 +128,8 @@
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "❔XX | 🔴 | vless | @meli_proxyy | 18",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 19",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -250,31 +250,55 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-242",
+            "server": "140.248.180.60",
+            "server_port": 443,
+            "uuid": "5985a6e3-1ed7-48bb-871d-6a432870642a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "JOIN-ELiV2RAY.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "headers": {
+                    "Host": "JOIN-ELiV2RAY.IR"
+                }
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 19",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-242",
+            "server": "188.245.104.160",
+            "server_port": 1717,
+            "uuid": "20cdfe1f-832f-4e81-9be4-38b8f7898a6c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "1717vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
