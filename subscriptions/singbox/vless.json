@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇰🇭KH | 🔴 | vless | @meli_proxyy | 10",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ]
         },
         {
@@ -118,8 +118,8 @@
             "outbounds": [
                 "🇰🇭KH | 🔴 | vless | @meli_proxyy | 10",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -197,27 +197,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-            "type": "vless",
-            "server": "fergalvpnmod.sbs",
-            "server_port": 443,
-            "uuid": "2dae986a-04ce-4588-a6e2-652ac921c091",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram:fergalvpnmod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -236,6 +215,27 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "fergalvpnmod.sbs",
+            "server_port": 443,
+            "uuid": "2dae986a-04ce-4588-a6e2-652ac921c091",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram:fergalvpnmod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],
