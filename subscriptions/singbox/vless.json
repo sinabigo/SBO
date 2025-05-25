@@ -108,8 +108,9 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
         {
@@ -118,8 +119,9 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "❔XX | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -192,11 +194,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray8",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "ec33b404-4be2-4e33-ad79-976a00185082",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -204,11 +206,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "mydigipay.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "mydigipay.com"
                 }
             }
         },
@@ -231,6 +243,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
             }
         }
     ],
