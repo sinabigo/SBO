@@ -107,9 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 8"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
             ]
         },
         {
@@ -117,9 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 8"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,28 +161,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "159.223.28.7",
-            "server_port": 443,
-            "uuid": "91140646-4ee6-40d4-8103-69f79c8aebb5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram:fergalvpnmod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
@@ -205,14 +182,25 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 8",
-            "type": "shadowsocks",
-            "server": "45.158.171.132",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "4a2rfixophdjffa8KVA4Aa",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "159.223.28.7",
+            "server_port": 443,
+            "uuid": "91140646-4ee6-40d4-8103-69f79c8aebb5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram:fergalvpnmod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         }
     ],
     "route": {
