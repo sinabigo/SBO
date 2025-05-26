@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 12",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
@@ -117,6 +118,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 12",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
@@ -159,6 +161,28 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "type": "trojan",
+            "server": "35.181.77.27",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
