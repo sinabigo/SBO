@@ -106,20 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
+                "❔XX | 🔴 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
+                "❔XX | 🔴 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,38 +144,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "140.248.180.60",
-            "server_port": 443,
-            "uuid": "b530bc20-47ec-495f-b19d-a3ae32ab3743",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "JOIN-ELiV2RAY.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "JOIN-ELiV2RAY.IR"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 9",
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 11",
             "type": "shadowsocks",
             "server": "series-a2.varzesh360.co",
             "server_port": 443,
@@ -183,7 +154,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "public.misvn.ir",
             "server_port": 443,
@@ -212,6 +183,37 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "irani.dr-ping.ir",
+            "server_port": 8443,
+            "uuid": "8161b03d-ab2f-45ce-8f15-9b0061044f70",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "iran.dr-ping.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/DoctorPing_Bot",
+                "headers": {
+                    "Host": "iran.dr-ping.ir"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
             "type": "vless",
             "server": "151.101.64.155",
@@ -229,6 +231,37 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+            "type": "vless",
+            "server": "140.248.180.60",
+            "server_port": 443,
+            "uuid": "b530bc20-47ec-495f-b19d-a3ae32ab3743",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "JOIN-ELiV2RAY.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "headers": {
+                    "Host": "JOIN-ELiV2RAY.IR"
                 }
             }
         }
