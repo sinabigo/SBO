@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
@@ -122,8 +123,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
@@ -154,7 +156,21 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "ba1d7673-6f87-44be-8d1b-bbd2b20c2dea",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
             "server": "kavir.lnmarketplace.net",
             "server_port": 443,
@@ -178,7 +194,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
