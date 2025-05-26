@@ -120,15 +120,15 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 2","type":"vless","server":"95.164.16.166","port":3567,"udp":true,"uuid":"9fdef857-437d-40af-82ca-2c76de893eb6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"maps.google.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"3iP1kIE9A4r0dbC6OoERB95RKv6tZmCHUaNq4tf90lo","short-id":"86"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"amirvpn.zibanama.com","port":684,"udp":false,"uuid":"df8b1eef-ece7-4e28-b416-800b9ae88c45","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":"iran.bonyadedocker.ir"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 4","type":"vless","server":"95.164.16.166","port":3567,"udp":true,"uuid":"9fdef857-437d-40af-82ca-2c76de893eb6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"maps.google.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"3iP1kIE9A4r0dbC6OoERB95RKv6tZmCHUaNq4tf90lo","short-id":"86"}}
+  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"89.144.35.100","port":443,"udp":false,"uuid":"3536e1fa-0850-44d1-b123-925ce12476cf","tls":true,"network":"xhttp","client-fingerprint":"chrome","servername":"kavir.lnmarketplace.net"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
   - name: URL-TEST
     type: url-test
@@ -136,14 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 4'
       - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
