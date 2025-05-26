@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -123,11 +123,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -178,7 +178,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -213,32 +213,40 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
             "type": "vless",
-            "server": "172.67.24.121",
-            "server_port": 443,
-            "uuid": "c1d62244-2d63-46ac-975e-234e78dc3f1b",
-            "flow": "",
+            "server": "116.203.140.209",
+            "server_port": 1615,
+            "uuid": "acd71a14-6f45-4451-b150-daa59dcbe36a",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2",
-                "headers": {
-                    "Host": "ir-ddos.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hGWQLRX3fXhy649AM9QbmRBlDs4DU-trXDal_F5pCjI",
+                    "short_id": "f387eb8185414508"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "104.17.148.22",
+            "server": "151.101.64.155",
             "server_port": 80,
-            "uuid": "c1d62244-2d63-46ac-975e-234e78dc3f1b",
+            "uuid": "telegram-id-ArV2ray7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -248,18 +256,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
-                    "Host": "104.17.148.22"
+                    "Host": "151.101.64.155"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "45.194.53.26",
+            "server": "185.143.233.120",
             "server_port": 443,
-            "uuid": "d4e52293-4a82-404c-ac29-93afc006dcbb",
+            "uuid": "ec33b404-4be2-4e33-ad79-976a00185082",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -269,7 +277,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "crolindd.dearcarlotta.cloudns.org",
+                "server_name": "mydigipay.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -279,9 +287,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/proxyip=citlali.shorekeeper.ir",
+                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
                 "headers": {
-                    "Host": "crolindd.dearcarlotta.cloudns.org"
+                    "Host": "mydigipay.com"
                 }
             }
         },
