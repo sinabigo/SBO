@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @meli_proxyy | 5",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @meli_proxyy | 5",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,7 +142,43 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+            "type": "vless",
+            "server": "95.164.16.166",
+            "server_port": 3567,
+            "uuid": "9fdef857-437d-40af-82ca-2c76de893eb6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3iP1kIE9A4r0dbC6OoERB95RKv6tZmCHUaNq4tf90lo",
+                    "short_id": "86"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "public.misvn.ir",
             "server_port": 443,
@@ -171,7 +207,31 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "finland.my-iranparspack.ir",
+            "server_port": 600,
+            "uuid": "9d9e217d-2b32-46eb-8a69-9735f5e1f92e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "irani.dr-ping.ir",
             "server_port": 8443,
@@ -198,58 +258,6 @@
                 "path": "\/DoctorPing_Bot",
                 "headers": {
                     "Host": "iran.dr-ping.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "140.248.180.60",
-            "server_port": 443,
-            "uuid": "b530bc20-47ec-495f-b19d-a3ae32ab3743",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "JOIN-ELiV2RAY.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "JOIN-ELiV2RAY.IR"
                 }
             }
         }
