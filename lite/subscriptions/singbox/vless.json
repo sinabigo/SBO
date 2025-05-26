@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
@@ -123,7 +123,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
                 "🇮🇹IT | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
@@ -178,7 +178,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -244,6 +244,20 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
+            "server": "104.17.148.22",
+            "server_port": 80,
+            "uuid": "5844d627-e5b9-474e-942a-415c95e968f1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
             "server": "tgju.org",
             "server_port": 8080,
             "uuid": "6abbaf96-4b16-48d3-b996-a6067fc6eb2c",
@@ -259,27 +273,6 @@
                 "path": "\/?ed\/Telegram@WedBaZ------",
                 "headers": {
                     "Host": "tgju.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
                 }
             }
         },
