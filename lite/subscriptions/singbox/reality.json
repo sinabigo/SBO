@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
+                "❔XX | 🟢 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ]
         },
@@ -115,6 +116,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
+                "❔XX | 🟢 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -163,6 +165,35 @@
                     "enabled": true,
                     "public_key": "hGWQLRX3fXhy649AM9QbmRBlDs4DU-trXDal_F5pCjI",
                     "short_id": "f387eb8185414508"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "2.irancella.blog",
+            "server_port": 2089,
+            "uuid": "c05d6d23-b67b-4f00-ad57-a754a222ea83",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
+                    "short_id": "e3c5c005cae07eb8"
                 }
             }
         },
