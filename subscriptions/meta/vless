@@ -120,31 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"140.248.180.60","port":443,"udp":false,"uuid":"b530bc20-47ec-495f-b19d-a3ae32ab3743","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"JOIN-ELiV2RAY.IR","ws-opts":{"path":"/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY?ed=2048","headers":{"host":"JOIN-ELiV2RAY.IR"}}}
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 7","type":"vless","server":"95.164.16.166","port":3567,"udp":true,"uuid":"9fdef857-437d-40af-82ca-2c76de893eb6","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"maps.google.com","grpc-opts":{"grpc-service-name":"telegram-ipV2Ry-telegram-ipV2Ry-telegram-ipV2Ry"},"reality-opts":{"public-key":"3iP1kIE9A4r0dbC6OoERB95RKv6tZmCHUaNq4tf90lo","short-id":"86"}}
+  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"140.248.180.60","port":443,"udp":false,"uuid":"b530bc20-47ec-495f-b19d-a3ae32ab3743","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"JOIN-ELiV2RAY.IR","ws-opts":{"path":"/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY?ed=2048","headers":{"host":"JOIN-ELiV2RAY.IR"}}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 7'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 7'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 7'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
