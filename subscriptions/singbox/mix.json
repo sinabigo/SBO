@@ -106,24 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 14"
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 14"
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,7 +140,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 16",
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
             "type": "shadowsocks",
             "server": "series-a2.varzesh360.co",
             "server_port": 443,
@@ -156,29 +150,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-            "type": "trojan",
-            "server": "15.237.207.107",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "95.164.16.166",
             "server_port": 3567,
@@ -214,35 +186,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 10",
-            "type": "vless",
-            "server": "public.misvn.ir",
-            "server_port": 443,
-            "uuid": "SVNTEAM",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
-                    "short_id": ""
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
             "type": "vless",
             "server": "151.101.64.155",
@@ -262,16 +205,6 @@
                     "Host": "151.101.64.155"
                 }
             }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 14",
-            "type": "shadowsocks",
-            "server": "45.87.175.35",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
