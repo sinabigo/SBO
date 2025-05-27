@@ -105,13 +105,18 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 19",
+                "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 19",
+                "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +136,26 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | ss | @meli_proxyy | 19",
+            "type": "shadowsocks",
+            "server": "45.139.24.24",
+            "server_port": 57456,
+            "method": "chacha20-ietf-poly1305",
+            "password": "360e21d21977dc11",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
+            "type": "shadowsocks",
+            "server": "2.56.204.145",
+            "server_port": 8443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "TXeXjltq4y1SYcqgOgeOF0",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
