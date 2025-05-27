@@ -106,20 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 5",
-                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 13"
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 5",
-                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 13"
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,6 +140,28 @@
             "type": "dns"
         },
         {
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "type": "trojan",
+            "server": "35.181.127.254",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
             "type": "vless",
             "server": "151.101.64.155",
@@ -159,37 +179,6 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "87ae4b92.bestttttivpn.pages.dev",
-            "server_port": 8443,
-            "uuid": "0f8691e2-c289-481b-9dcb-7a4578eab343",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "87Ae4B92.BEstTtttIVpN.paGEs.DEV",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/bEKAVD5VfOednxo6?ed=2560",
-                "headers": {
-                    "Host": "87Ae4B92.BEstTtttIVpN.paGEs.DEV"
                 }
             }
         },
@@ -223,16 +212,6 @@
                     "Host": "cdn-nodes.maviks.eu"
                 }
             }
-        },
-        {
-            "tag": "🇷🇺RU | 🟢 | ss | @meli_proxyy | 13",
-            "type": "shadowsocks",
-            "server": "45.139.24.24",
-            "server_port": 57456,
-            "method": "chacha20-ietf-poly1305",
-            "password": "360e21d21977dc11",
-            "plugin": "",
-            "plugin_opts": ""
         }
     ],
     "route": {
