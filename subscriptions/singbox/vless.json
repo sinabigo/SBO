@@ -106,9 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 6",
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ]
         },
@@ -116,9 +115,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 6",
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -140,37 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "irani.dr-ping.ir",
-            "server_port": 8443,
-            "uuid": "8161b03d-ab2f-45ce-8f15-9b0061044f70",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "iran.dr-ping.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/DoctorPing_Bot",
-                "headers": {
-                    "Host": "iran.dr-ping.ir"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
@@ -209,7 +176,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 6",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "public.misvn.ir",
             "server_port": 443,

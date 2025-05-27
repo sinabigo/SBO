@@ -13,11 +13,10 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇬🇧GB | 🟢 | ss | @meli_proxyy | 12 = ss, series-a2.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = mps3FwmDjLrWaOVg
 🇺🇸US | 🟢 | ss | @meli_proxyy | 10 = ss, 45.87.175.35, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 15.188.12.36, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 12,🇺🇸US | 🟢 | ss | @meli_proxyy | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
