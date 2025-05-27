@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 0"
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 0"
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,12 +142,12 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "193.46.81.83",
-            "server_port": 3567,
-            "uuid": "telegram-id-ArV2ray3",
-            "flow": "xtls-rprx-vision",
+            "server": "140.248.75.255",
+            "server_port": 443,
+            "uuid": "71b0a2f6-77eb-457c-b060-13de21b976c9",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -156,33 +156,28 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "maps.google.com",
+                "server_name": "netpie.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
-                    "short_id": "c14b9292de5a8d6f"
                 }
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/Telegram-NetPie",
+                "headers": {
+                    "Host": "netpie.com"
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
-            "server": "hajlab.ucdavis.edu",
-            "server_port": 80,
-            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "server": "87ae4b92.bestttttivpn.pages.dev",
+            "server_port": 8443,
+            "uuid": "0f8691e2-c289-481b-9dcb-7a4578eab343",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -190,11 +185,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "87Ae4B92.BEstTtttIVpN.paGEs.DEV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/bEKAVD5VfOednxo6?ed=2560",
                 "headers": {
-                    "Host": "hajlab.ucdavis.edu"
+                    "Host": "87Ae4B92.BEstTtttIVpN.paGEs.DEV"
                 }
             }
         },
@@ -220,7 +225,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "e.nl.cdn.maviks.eu",
             "server_port": 443,
