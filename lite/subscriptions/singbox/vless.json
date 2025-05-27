@@ -110,10 +110,9 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 19",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 20",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 19",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
@@ -127,10 +126,9 @@
                 "🇩🇪DE | 🔴 | vless | @SiNAVM | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 19",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 20",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 19",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 9"
@@ -229,53 +227,32 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "6549c909-af8f-460e-8758-902b2a291d70",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ISVvpn",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "6549c909-af8f-460e-8758-902b2a291d70",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ISVvpn",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "185.143.233.120",
+            "server": "fergalvpnmod.sbs",
             "server_port": 443,
-            "uuid": "12aa874d-d998-4577-bd3d-e754a90b74d7",
+            "uuid": "2dae986a-04ce-4588-a6e2-652ac921c091",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram:fergalvpnmod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 19",
+            "type": "vless",
+            "server": "irani.dr-ping.ir",
+            "server_port": 8443,
+            "uuid": "8161b03d-ab2f-45ce-8f15-9b0061044f70",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -285,7 +262,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "mydigipay.com",
+                "server_name": "iran.dr-ping.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -295,18 +272,18 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
+                "path": "\/DoctorPing_Bot",
                 "headers": {
-                    "Host": "mydigipay.com"
+                    "Host": "iran.dr-ping.ir"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 20",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 20",
             "type": "vless",
-            "server": "140.248.180.60",
-            "server_port": 443,
-            "uuid": "b530bc20-47ec-495f-b19d-a3ae32ab3743",
+            "server": "62.60.193.221",
+            "server_port": 32774,
+            "uuid": "6603a779-07c9-4bc9-8f61-4a09c238653a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -314,21 +291,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "JOIN-ELiV2RAY.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "path": "\/6603a779",
                 "headers": {
-                    "Host": "JOIN-ELiV2RAY.IR"
+                    "Host": "62.60.193.221"
                 }
             }
         },
