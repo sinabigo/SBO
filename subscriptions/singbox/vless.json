@@ -106,20 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "❔XX | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+                "❔XX | 🔴 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,7 +140,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "public.misvn.ir",
             "server_port": 443,
@@ -225,20 +223,6 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "ns.cloudflare.com",
-            "server_port": 2086,
-            "uuid": "8ed5d5c6-08c6-40ed-8f15-ff724c4ecad9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
