@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0"
             ],
@@ -136,6 +138,16 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "103.106.1.92",
+            "server_port": 23492,
+            "method": "chacha20-ietf-poly1305",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
