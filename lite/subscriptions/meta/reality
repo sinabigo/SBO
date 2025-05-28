@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11","type":"vless","server":"o.soskom.ir","port":11045,"udp":true,"uuid":"1285c746-eff6-47e4-9e7a-bb19b34b19ca","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"yahoo.com","grpc-opts":{"grpc-service-name":"Tel : @NT_Safe"},"reality-opts":{"public-key":"p-FNeH1T5de5nmwI7iT16MQKWspQ0b6C9GGSRwGtlnM","short-id":"20db1be5e1ab118a"}}
-  - {"name":"🇸🇪SE | 🔴 | vless | @meli_proxyy | 20","type":"vless","server":"dl.dllavanddownload.ir","port":2054,"udp":true,"uuid":"4623aa99-dd0d-4c5e-938f-fca76cfb174e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.vo3ai.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"5PbQtunt6PUciV_Yy1ciy_NrzT1cDirAdawlzOOsLjw"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +128,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11'
-      - '🇸🇪SE | 🔴 | vless | @meli_proxyy | 20'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +135,12 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11'
-      - '🇸🇪SE | 🔴 | vless | @meli_proxyy | 20'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11'
-      - '🇸🇪SE | 🔴 | vless | @meli_proxyy | 20'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
