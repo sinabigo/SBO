@@ -106,13 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 20",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ]
         },
@@ -120,13 +120,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 20",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -150,20 +150,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "ns.cloudflare.com",
-            "server_port": 2086,
-            "uuid": "8ed5d5c6-08c6-40ed-8f15-ff724c4ecad9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
             "type": "trojan",
             "server": "35.181.231.189",
@@ -184,16 +170,6 @@
                     "fingerprint": "chrome"
                 }
             }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
-            "type": "shadowsocks",
-            "server": "103.106.1.92",
-            "server_port": 23492,
-            "method": "chacha20-ietf-poly1305",
-            "password": "yMX9WGPgUEcRZmlaa0YHHC",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
@@ -261,6 +237,16 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+            "type": "shadowsocks",
+            "server": "103.106.1.92",
+            "server_port": 23492,
+            "method": "chacha20-ietf-poly1305",
+            "password": "yMX9WGPgUEcRZmlaa0YHHC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -282,7 +268,7 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+            "tag": "🇷🇺RU | 🟢 | ss | @meli_proxyy | 20",
             "type": "shadowsocks",
             "server": "45.139.24.24",
             "server_port": 57456,
@@ -290,6 +276,20 @@
             "password": "360e21d21977dc11",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "ns.cloudflare.com",
+            "server_port": 2086,
+            "uuid": "8ed5d5c6-08c6-40ed-8f15-ff724c4ecad9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
