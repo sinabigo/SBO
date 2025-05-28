@@ -112,8 +112,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇮🇷IR | 🟢 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -130,8 +130,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 11",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇮🇷IR | 🟢 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 8",
@@ -288,7 +288,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇮🇷IR | 🟢 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "6296d808-4cce-4c3b-be64-f79bed4dc939",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mydigipay.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
+                "headers": {
+                    "Host": "mydigipay.com"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "140.248.75.255",
             "server_port": 443,
@@ -315,37 +346,6 @@
                 "path": "\/Telegram-NetPie",
                 "headers": {
                     "Host": "netpie.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "87ae4b92.bestttttivpn.pages.dev",
-            "server_port": 8443,
-            "uuid": "0f8691e2-c289-481b-9dcb-7a4578eab343",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "87Ae4B92.BEstTtttIVpN.paGEs.DEV",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/bEKAVD5VfOednxo6?ed=2560",
-                "headers": {
-                    "Host": "87Ae4B92.BEstTtttIVpN.paGEs.DEV"
                 }
             }
         },
