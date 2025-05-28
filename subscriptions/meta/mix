@@ -120,43 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"www.speedtest.net","port":443,"udp":false,"uuid":"4d91916f-a7fd-419b-8b90-640bb8d4b9f4","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"mypHOtoGRapIcPictURe.ir","ws-opts":{"path":"/CY6EnyeHmgNASXJI/MTU5LjY5LjE0LjEzOA==?ed=2560","headers":{"host":"myphotograpicpicture.ir"}}}
-  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 1","type":"vless","server":"138.199.212.144","port":65531,"udp":true,"uuid":"469e2694-da00-410a-87e9-051d81a741fc","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","reality-opts":{"public-key":"SyFxcn1HOj_g6IK7Pn-VS9tHr7_FGQm55tAGQWwR8Tw","short-id":"843af58709db"}}
-  - {"name":"🇩🇪DE | 🔴 | vless | @meli_proxyy | 6","type":"vless","server":"171.22.120.10","port":3567,"udp":true,"uuid":"182dff0f-53ed-4c89-b74d-e221068f28f4","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"www.cdn77.com","grpc-opts":{"grpc-service-name":""},"reality-opts":{"public-key":"As--7b3xqKlpgs420dAdMeZk7-RVXMeGqLsb6ckgHiQ","short-id":"e966"}}
-  - {"name":"🇹🇷TR | 🔴 | vless | @meli_proxyy | 10","type":"vless","server":"tur2.dataxshop.ir","port":8080,"udp":false,"uuid":"ed29a0e3-5a32-4a7f-8863-277e9f653629","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":""}}
+  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 3","type":"vless","server":"www.speedtest.net","port":443,"udp":false,"uuid":"4d91916f-a7fd-419b-8b90-640bb8d4b9f4","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"mypHOtoGRapIcPictURe.ir","ws-opts":{"path":"/CY6EnyeHmgNASXJI/MTU5LjY5LjE0LjEzOA==?ed=2560","headers":{"host":"myphotograpicpicture.ir"}}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 2","type":"vless","server":"138.199.212.144","port":65531,"udp":true,"uuid":"469e2694-da00-410a-87e9-051d81a741fc","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"stackoverflow.com","reality-opts":{"public-key":"SyFxcn1HOj_g6IK7Pn-VS9tHr7_FGQm55tAGQWwR8Tw","short-id":"843af58709db"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 6'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 10'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 3'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 6'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 10'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 3'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
-      - '🇩🇪DE | 🔴 | vless | @meli_proxyy | 6'
-      - '🇹🇷TR | 🔴 | vless | @meli_proxyy | 10'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 3'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
