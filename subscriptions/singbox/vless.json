@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "❔XX | 🔴 | vless | @meli_proxyy | 12"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
         {
@@ -118,8 +118,8 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "❔XX | 🔴 | vless | @meli_proxyy | 12"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -202,6 +202,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+            "type": "vless",
+            "server": "public.misvn.ir",
+            "server_port": 443,
+            "uuid": "SVNTEAM-2",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -220,20 +249,6 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 12",
-            "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-245",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
