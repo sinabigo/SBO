@@ -116,8 +116,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+                "🇹🇷TR | 🟢 | ss | @meli_proxyy | 15",
+                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -139,8 +139,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+                "🇹🇷TR | 🟢 | ss | @meli_proxyy | 15",
+                "🇹🇷TR | 🟢 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -355,31 +355,42 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
-            "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 80,
-            "uuid": "9c02f303-84ec-462b-af82-aeed303faea7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇹🇷TR | 🟢 | ss | @meli_proxyy | 15",
+            "type": "shadowsocks",
+            "server": "h110vpntr.outlinekeys.net",
+            "server_port": 65262,
+            "method": "chacha20-ietf-poly1305",
+            "password": "31ej3qTJojZPjp2jsljIZD",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇹🇷TR | 🟢 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "dl.dllavanddownload.ir",
-            "server_port": 3053,
-            "uuid": "d8c6ba07-2566-430b-b2a4-e8700347f686",
-            "flow": "",
+            "server": "46.203.248.224",
+            "server_port": 20411,
+            "uuid": "54ffbe99-7aaf-4ceb-9a82-048fb2489757",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc",
+                    "short_id": ""
+                }
             }
         },
         {
