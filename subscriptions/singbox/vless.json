@@ -106,22 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇱🇺LU | 🔴 | vless | @meli_proxyy | 4",
-                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+                "🇱🇺LU | 🔴 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇱🇺LU | 🔴 | vless | @meli_proxyy | 4",
-                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+                "🇱🇺LU | 🔴 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 9",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
+                "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,7 +146,28 @@
             "type": "dns"
         },
         {
-            "tag": "🇱🇺LU | 🔴 | vless | @meli_proxyy | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 8880,
+            "uuid": "f715a99a-3330-468e-8366-068fc2095fd0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "🇱🇺LU | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "188.42.88.201",
             "server_port": 8880,
@@ -165,26 +188,12 @@
             }
         },
         {
-            "tag": "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
-            "server": "hajlab.ucdavis.edu",
-            "server_port": 80,
-            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "185.143.233.120",
+            "server": "vpnmizban.systemgamingirani.ir",
             "server_port": 443,
-            "uuid": "99d0576a-62d3-41fc-b283-831eba1f052d",
-            "flow": "",
+            "uuid": "b27adc11-c7d7-4eef-9ef5-633ee951759b",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -193,24 +202,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "haamim.ir",
+                "server_name": "tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
-                "headers": {
-                    "Host": "haamim.ir"
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "5.75.182.251",
             "server_port": 443,
@@ -257,6 +264,20 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "hajlab.ucdavis.edu",
+            "server_port": 80,
+            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
