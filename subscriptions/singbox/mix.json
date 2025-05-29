@@ -108,13 +108,14 @@
                 "URL-TEST",
                 "🇱🇺LU | 🔴 | vless | @meli_proxyy | 0",
                 "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
                 "❔XX | 🔴 | vless | @meli_proxyy | 13",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇹🇷TR | 🟢 | vless | @meli_proxyy | 8"
             ]
         },
@@ -124,13 +125,14 @@
             "outbounds": [
                 "🇱🇺LU | 🔴 | vless | @meli_proxyy | 0",
                 "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
                 "❔XX | 🔴 | vless | @meli_proxyy | 13",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇹🇷TR | 🟢 | vless | @meli_proxyy | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -186,6 +188,28 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "type": "trojan",
+            "server": "51.44.45.149",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
@@ -322,6 +346,16 @@
             }
         },
         {
+            "tag": "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
+            "type": "shadowsocks",
+            "server": "45.139.24.24",
+            "server_port": 57456,
+            "method": "chacha20-ietf-poly1305",
+            "password": "360e21d21977dc11",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -341,16 +375,6 @@
                     "Host": "151.101.64.155"
                 }
             }
-        },
-        {
-            "tag": "🇷🇺RU | 🟢 | ss | @ShadowProxy66 | 2",
-            "type": "shadowsocks",
-            "server": "45.139.24.24",
-            "server_port": 57456,
-            "method": "chacha20-ietf-poly1305",
-            "password": "360e21d21977dc11",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇹🇷TR | 🟢 | vless | @meli_proxyy | 8",
