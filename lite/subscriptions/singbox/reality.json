@@ -106,16 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @meli_proxyy | 15",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,11 +138,11 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 15",
             "type": "vless",
-            "server": "public.misvn.ir",
-            "server_port": 443,
-            "uuid": "SVNTEAM-2",
+            "server": "138.199.212.144",
+            "server_port": 65531,
+            "uuid": "469e2694-da00-410a-87e9-051d81a741fc",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,7 +152,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -161,13 +161,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
-                    "short_id": ""
+                    "public_key": "SyFxcn1HOj_g6IK7Pn-VS9tHr7_FGQm55tAGQWwR8Tw",
+                    "short_id": "843af58709db"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
+            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 3567,
