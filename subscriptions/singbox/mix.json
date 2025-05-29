@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
                 "🇱🇺LU | 🔴 | vless | @meli_proxyy | 9",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
                 "🇱🇺LU | 🔴 | vless | @meli_proxyy | 9",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇷🇺RU | 🟢 | ss | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,27 +148,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "f715a99a-3330-468e-8366-068fc2095fd0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
-                }
-            }
         },
         {
             "tag": "🇱🇺LU | 🔴 | vless | @meli_proxyy | 9",
@@ -190,7 +171,28 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 1",
             "type": "shadowsocks",
             "server": "103.106.1.92",
             "server_port": 23492,
@@ -200,11 +202,11 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "tr.lunarmc.ir",
-            "server_port": 30561,
-            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
+            "server": "vpnmizban.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "b27adc11-c7d7-4eef-9ef5-633ee951759b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -214,17 +216,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "stackoverflow.com",
+                "server_name": "tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
-                    "short_id": "95ac1a9f19"
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
@@ -258,23 +260,31 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray9",
-            "flow": "",
+            "server": "tr.lunarmc.ir",
+            "server_port": 30561,
+            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
+                    "short_id": "95ac1a9f19"
                 }
             }
         },
@@ -298,6 +308,16 @@
                     "Host": "151.101.64.155"
                 }
             }
+        },
+        {
+            "tag": "🇷🇺RU | 🟢 | ss | @meli_proxyy | 3",
+            "type": "shadowsocks",
+            "server": "45.139.24.24",
+            "server_port": 57456,
+            "method": "chacha20-ietf-poly1305",
+            "password": "360e21d21977dc11",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
