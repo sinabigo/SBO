@@ -106,18 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13"
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13"
+                "❔XX | 🔴 | vless | @meli_proxyy | 6",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,7 +138,7 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "public.misvn.ir",
             "server_port": 443,
@@ -194,35 +192,6 @@
                     "enabled": true,
                     "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
                     "short_id": "95ac1a9f19"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
-            "type": "vless",
-            "server": "5.75.182.251",
-            "server_port": 443,
-            "uuid": "9f74c887-ccfc-44bb-b084-b10f13a3a354",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         }
