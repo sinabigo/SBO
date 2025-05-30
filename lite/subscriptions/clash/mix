@@ -120,8 +120,8 @@ dns:
 proxies:
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"51.44.100.175","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"18.199.45.203","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 15","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇮🇳IN | 🟢 | vmess | @meli_proxyy | 16","type":"vmess","server":"94.136.185.230","port":"10534","cipher":"auto","uuid":"b01c7ef9-33ec-41f6-bfbf-77ddc4d21649","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 16","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇮🇳IN | 🟢 | vmess | @meli_proxyy | 17","type":"vmess","server":"94.136.185.230","port":"10534","cipher":"auto","uuid":"b01c7ef9-33ec-41f6-bfbf-77ddc4d21649","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0","type":"ss","server":"2.56.204.145","port":8443,"password":"TXeXjltq4y1SYcqgOgeOF0","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +131,8 @@ proxy-groups:
       - FALLBACK
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 15'
-      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
+      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 17'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: URL-TEST
     type: url-test
@@ -142,8 +142,8 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 15'
-      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
+      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 17'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: FALLBACK
     type: fallback
@@ -152,8 +152,8 @@ proxy-groups:
     proxies:
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 15'
-      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
+      - '🇮🇳IN | 🟢 | vmess | @meli_proxyy | 17'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
