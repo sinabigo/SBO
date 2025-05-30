@@ -106,18 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @meli_proxyy | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @meli_proxyy | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,11 +140,11 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 12",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3",
             "type": "vless",
-            "server": "public.misvn.ir",
-            "server_port": 443,
-            "uuid": "SVNTEAM-3",
+            "server": "tr.lunarmc.ir",
+            "server_port": 30561,
+            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -154,22 +154,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
-                    "short_id": ""
+                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
+                    "short_id": "95ac1a9f19"
                 }
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "95.164.16.166",
             "server_port": 2087,
@@ -205,11 +205,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "tr.lunarmc.ir",
-            "server_port": 30561,
-            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
+            "server": "uk.accesspoints.cloakify.app",
+            "server_port": 57131,
+            "uuid": "d0478b1f-2a71-4d70-9e97-28e9f1a01e5e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -219,7 +219,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "stackoverflow.com",
+                "server_name": "dl.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -228,8 +228,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
-                    "short_id": "95ac1a9f19"
+                    "public_key": "_qtZVreGusWLD5cZue9TOudi63LwpM809AacOpX4UVw",
+                    "short_id": "083b2c1d405177"
                 }
             }
         }
