@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇮FI | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -126,8 +126,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇮FI | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -162,6 +162,20 @@
             "type": "dns"
         },
         {
+            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 0",
+            "type": "vless",
+            "server": "65.109.198.214",
+            "server_port": 19720,
+            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
             "type": "vless",
             "server": "104.17.147.22",
@@ -173,30 +187,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @SiNAVM | 2",
-            "type": "vless",
-            "server": "kavir.lnmarketplace.net",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
