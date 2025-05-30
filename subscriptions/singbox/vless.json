@@ -106,10 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0"
             ]
         },
@@ -117,10 +118,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -144,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 8880,
@@ -161,6 +163,27 @@
                 "path": "\/Telegram—VPNCUSTOMIZE",
                 "headers": {
                     "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "199.232.123.12",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "199.232.123.12"
                 }
             }
         },
@@ -230,7 +253,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
