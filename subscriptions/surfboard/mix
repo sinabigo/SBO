@@ -11,12 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | 🟢 | ss | @meli_proxyy | 6 = ss, 74.177.212.246, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 35.181.202.67, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 7 = ss, 74.177.212.246, 443, encrypt-method = chacha20-ietf-poly1305, password = 69MUii7VDwMqh7Hz
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 6,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 6,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 6,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
