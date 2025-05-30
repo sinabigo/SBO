@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 6","type":"ss","server":"85.210.120.237","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"35.180.153.64","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇳🇱NL | 🟢 | ss | @meli_proxyy | 13","type":"ss","server":"103.106.1.92","port":23492,"password":"yMX9WGPgUEcRZmlaa0YHHC","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇷🇺RU | 🟢 | ss | @meli_proxyy | 14","type":"ss","server":"45.139.24.24","port":57456,"password":"360e21d21977dc11","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 13'
       - '🇷🇺RU | 🟢 | ss | @meli_proxyy | 14'
   - name: URL-TEST
@@ -137,6 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 13'
       - '🇷🇺RU | 🟢 | ss | @meli_proxyy | 14'
   - name: FALLBACK
@@ -145,6 +148,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 6'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
       - '🇳🇱NL | 🟢 | ss | @meli_proxyy | 13'
       - '🇷🇺RU | 🟢 | ss | @meli_proxyy | 14'
 rules:
