@@ -110,8 +110,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "❔XX | 🟢 | vless | @TEHRANARGO | 12",
-                "🇨🇼CW | 🔴 | vless | @meli_proxyy | 16",
+                "❔XX | 🟢 | vless | @TEHRANARGO | 13",
+                "❔XX | 🔴 | vless | @meli_proxyy | 15",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -126,8 +126,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "❔XX | 🟢 | vless | @TEHRANARGO | 12",
-                "🇨🇼CW | 🔴 | vless | @meli_proxyy | 16",
+                "❔XX | 🟢 | vless | @TEHRANARGO | 13",
+                "❔XX | 🔴 | vless | @meli_proxyy | 15",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -217,7 +217,7 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @TEHRANARGO | 12",
+            "tag": "❔XX | 🟢 | vless | @TEHRANARGO | 13",
             "type": "vless",
             "server": "2.irancella.blog",
             "server_port": 2089,
@@ -246,23 +246,31 @@
             }
         },
         {
-            "tag": "🇨🇼CW | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
-            "server": "5.10.244.220",
-            "server_port": 8880,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
+            "server": "public.misvn.ir",
+            "server_port": 443,
+            "uuid": "SVNTEAM-3",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram🇨🇳",
-                "headers": {
-                    "Host": "reedfree8mahsang2.redorg.ir"
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "O0DFIyOlsDyOPthL8Z27Fna1vuoWB5CYTFXrcUf_jlc",
+                    "short_id": ""
                 }
             }
         },
