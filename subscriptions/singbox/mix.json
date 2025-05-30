@@ -109,11 +109,9 @@
                 "🇨🇼CW | 🔴 | vless | @meli_proxyy | 10",
                 "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 6",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 13",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "❔XX | 🔴 | vless | @meli_proxyy | 8",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
@@ -127,11 +125,9 @@
                 "🇨🇼CW | 🔴 | vless | @meli_proxyy | 10",
                 "TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v06.pronetwork.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 6",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🟢 | ss | @meli_proxyy | 13",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "❔XX | 🔴 | vless | @meli_proxyy | 8",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
@@ -203,28 +199,6 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-            "type": "trojan",
-            "server": "35.180.153.64",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 13",
             "type": "shadowsocks",
             "server": "103.106.1.92",
@@ -235,12 +209,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
             "type": "vless",
-            "server": "mizbangostar.com",
-            "server_port": 2053,
-            "uuid": "624c7048-4c9b-4960-9955-edf87d8ee77a",
-            "flow": "",
+            "server": "tr.lunarmc.ir",
+            "server_port": 30561,
+            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -249,20 +223,18 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "marzban.negintel.xyz",
+                "server_name": "stackoverflow.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
+                    "short_id": "95ac1a9f19"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "wizard",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
@@ -299,35 +271,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
-            "type": "vless",
-            "server": "tr.lunarmc.ir",
-            "server_port": 30561,
-            "uuid": "77fa8a82-4c73-47e6-a518-e4768e7a1e80",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "H1HfMqwks7GIdi-LoswMO4xxR7fJihqN_xLolycIWX8",
-                    "short_id": "95ac1a9f19"
-                }
             }
         },
         {
