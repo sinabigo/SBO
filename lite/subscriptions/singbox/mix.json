@@ -108,14 +108,14 @@
                 "URL-TEST",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 23",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 24",
+                "❔XX | 🟢 | vmess | @meli_proxyy | 22",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 23",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -129,14 +129,14 @@
             "outbounds": [
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 14",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 23",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 24",
+                "❔XX | 🟢 | vmess | @meli_proxyy | 22",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 23",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -192,9 +192,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "52.29.139.19",
+            "server": "18.159.76.1",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -214,9 +214,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "35.156.41.4",
+            "server": "51.44.45.149",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -336,11 +336,35 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 23",
+            "tag": "❔XX | 🟢 | vmess | @meli_proxyy | 22",
+            "type": "vmess",
+            "server": "به صورت روزانه آپدیت بشود ....",
+            "server_port": 2329,
+            "uuid": "86e06324-d8d6-4bdc-93d8-6d96e75118fd",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng",
+                "headers": {
+                    "Host": ""
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 23",
             "type": "vless",
-            "server": "65.109.188.238",
-            "server_port": 2323,
-            "uuid": "7fe748e0-52e6-4112-9e56-ff43e38a5dd7",
+            "server": "no-tel-id-im_soon.tryfreenet24.xyz",
+            "server_port": 52496,
+            "uuid": "683943d7f691351724ac2b86",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -350,38 +374,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "yahoo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "random"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "I_6PSo1ZySfCbOUxZ5wzp4dKywPTZLysUdjUvdNWaHs",
-                    "short_id": "b3"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 24",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "50ee58d2-fc50-4df1-8c64-1fd1fa4a9c7d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                    "public_key": "Tmdubjerl-x6RC2yaINZ6zln3Pjnbzr9oVZ8izzn3Es",
+                    "short_id": "a889244085d63e66"
                 }
             }
         },
