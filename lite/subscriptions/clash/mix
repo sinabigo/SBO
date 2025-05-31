@@ -118,7 +118,8 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"18.159.76.1","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"13.39.228.102","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"18.159.76.1","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"❔XX | 🟢 | vmess | @meli_proxyy | 23","type":"vmess","server":"به صورت روزانه آپدیت بشود ....","port":"2329","cipher":"auto","uuid":"86e06324-d8d6-4bdc-93d8-6d96e75118fd","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng","headers":{"host":"google.com"}}}
   - {"name":"🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0","type":"ss","server":"2.56.204.145","port":8443,"password":"TXeXjltq4y1SYcqgOgeOF0","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -127,7 +128,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
       - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: URL-TEST
@@ -136,7 +138,8 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
       - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: FALLBACK
@@ -144,7 +147,8 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
       - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
       - '🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0'
 rules:

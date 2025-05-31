@@ -108,14 +108,15 @@
                 "URL-TEST",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 22",
                 "❔XX | 🟢 | vmess | @meli_proxyy | 23",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -127,14 +128,15 @@
             "outbounds": [
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 22",
                 "❔XX | 🟢 | vmess | @meli_proxyy | 23",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -188,7 +190,29 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+            "type": "trojan",
+            "server": "13.39.228.102",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
             "server": "18.159.76.1",
             "server_port": 22223,
@@ -314,28 +338,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 3567,
@@ -368,6 +371,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
             }
         },
         {
