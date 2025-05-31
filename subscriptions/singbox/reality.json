@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 8"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 8"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 2",
+            "type": "vless",
+            "server": "173.234.79.240",
+            "server_port": 2020,
+            "uuid": "a229a57d-d1d2-c3d0-73fa-3b1061688ccd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
+                    "short_id": "31e7200536a1ad45"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 14",
             "type": "vless",
             "server": "173.234.79.240",
             "server_port": 2020,
