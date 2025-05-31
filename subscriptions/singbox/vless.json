@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 9",
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 9",
-                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,6 +148,41 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 8880,
+            "uuid": "7d5e5f68-8c6b-4265-9f53-35f1ae8f9167",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8080,
+            "uuid": "0adc4f77-e316-4f51-8e31-fc0b1d809ecb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
@@ -169,23 +206,60 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "7d5e5f68-8c6b-4265-9f53-35f1ae8f9167",
-            "flow": "",
+            "server": "173.234.79.240",
+            "server_port": 2020,
+            "uuid": "a229a57d-d1d2-c3d0-73fa-3b1061688ccd",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
+                    "short_id": "31e7200536a1ad45"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "173.234.79.240",
+            "server_port": 2020,
+            "uuid": "a229a57d-d1d2-c3d0-73fa-3b1061688ccd",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
+                    "short_id": "31e7200536a1ad45"
                 }
             }
         },
@@ -250,35 +324,6 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "173.234.79.240",
-            "server_port": 2020,
-            "uuid": "a229a57d-d1d2-c3d0-73fa-3b1061688ccd",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
-                    "short_id": "31e7200536a1ad45"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
             "type": "vless",
             "server": "151.101.64.155",
@@ -297,20 +342,6 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "0adc4f77-e316-4f51-8e31-fc0b1d809ecb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
