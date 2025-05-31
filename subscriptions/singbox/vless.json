@@ -106,12 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 2"
             ]
         },
@@ -119,12 +120,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 4",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 8",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 3",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -148,7 +150,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 4",
+            "type": "vless",
+            "server": "whatismyipaddress.com",
+            "server_port": 2096,
+            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 80,
@@ -190,7 +223,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "150.241.89.219",
             "server_port": 35352,
@@ -219,31 +252,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "135.148.211.86",
-            "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135004002.sec20org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
             "server": "104.26.5.157",
             "server_port": 2083,
@@ -274,11 +283,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
             "type": "vless",
-            "server": "whatismyipaddress.com",
-            "server_port": 2096,
-            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "server": "135.148.211.86",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -288,20 +297,27 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com",
+                "server_name": "147135004002.sec20org.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com"
-                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "eb193551-b519-4897-b727-5fffb2a9b7cf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
