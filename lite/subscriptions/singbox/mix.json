@@ -113,11 +113,10 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 22",
-                "❔XX | 🟢 | vmess | @meli_proxyy | 23",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 22",
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 23",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
@@ -133,11 +132,10 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "❔XX | 🟢 | vless | @TEHRANARGO | 13",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 22",
-                "❔XX | 🟢 | vmess | @meli_proxyy | 23",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 22",
+                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 23",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
@@ -283,7 +281,28 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 22",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 22",
+            "type": "vless",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 8880,
+            "uuid": "7d5e5f68-8c6b-4265-9f53-35f1ae8f9167",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 23",
             "type": "vless",
             "server": "46.226.162.42",
             "server_port": 443,
@@ -310,30 +329,6 @@
                 "path": "\/websocket",
                 "headers": {
                     "Host": "gbr01.abvpn.ru"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vmess | @meli_proxyy | 23",
-            "type": "vmess",
-            "server": "به صورت روزانه آپدیت بشود ....",
-            "server_port": 2329,
-            "uuid": "86e06324-d8d6-4bdc-93d8-6d96e75118fd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng",
-                "headers": {
-                    "Host": ""
                 }
             }
         },
@@ -393,16 +388,6 @@
                     "Host": "151.101.64.155"
                 }
             }
-        },
-        {
-            "tag": "🇦🇲AM | 🟢 | ss | @OpenSSTPVpn | 0",
-            "type": "shadowsocks",
-            "server": "2.56.204.145",
-            "server_port": 8443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "TXeXjltq4y1SYcqgOgeOF0",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 3",
