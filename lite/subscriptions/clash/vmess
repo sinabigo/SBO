@@ -118,27 +118,27 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"❔XX | 🟢 | vmess | @meli_proxyy | 22","type":"vmess","server":"به صورت روزانه آپدیت بشود ....","port":"2329","cipher":"auto","uuid":"86e06324-d8d6-4bdc-93d8-6d96e75118fd","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng","headers":{"host":"google.com"}}}
+  - {"name":"❔XX | 🟢 | vmess | @meli_proxyy | 23","type":"vmess","server":"به صورت روزانه آپدیت بشود ....","port":"2329","cipher":"auto","uuid":"86e06324-d8d6-4bdc-93d8-6d96e75118fd","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/Mmdv2rayng-V2rayngmmd-telegram-mmd_v2rayng","headers":{"host":"google.com"}}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🟢 | vmess | @meli_proxyy | 22'
+      - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🟢 | vmess | @meli_proxyy | 22'
+      - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🟢 | vmess | @meli_proxyy | 22'
+      - '❔XX | 🟢 | vmess | @meli_proxyy | 23'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
