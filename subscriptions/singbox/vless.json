@@ -106,11 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 7",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 13",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ]
         },
@@ -118,11 +118,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vless | @meli_proxyy | 7",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 13",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -146,11 +146,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 7",
+            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 1",
             "type": "vless",
-            "server": "135.148.152.98",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "server": "whatismyipaddress.com",
+            "server_port": 2096,
+            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -160,38 +160,24 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135001195.sec22org.com",
+                "server_name": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "e6829971-e95c-4858-9f83-3a06466541cb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
+                "path": "\/",
                 "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                    "Host": "wwwspeedtestnetwhiteberinsistomd6625996s29.digikalacomirdivarir.com"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 80,
@@ -233,11 +219,32 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 13",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
-            "server": "a.nl.cdn.maviks.eu",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 8880,
+            "uuid": "e6829971-e95c-4858-9f83-3a06466541cb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "104.17.147.22",
             "server_port": 443,
-            "uuid": "190492bf-0111-451b-aa16-3490dacd1be7",
+            "uuid": "d3541bb4-2cb5-4372-beab-fac34d5b8539",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -247,12 +254,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cdn.maviks.eu",
+                "server_name": "72790032528889957475364702518915.v2line.online",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/netherlands\/amsterdam\/vl\/ws\/tls",
+                "headers": {
+                    "Host": "72790032528889957475364702518915.v2line.online"
                 }
             }
         },
