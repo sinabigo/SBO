@@ -108,7 +108,8 @@
                 "URL-TEST",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
@@ -128,7 +129,8 @@
             "outbounds": [
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 13",
@@ -190,9 +192,31 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
             "type": "trojan",
-            "server": "18.159.76.1",
+            "server": "52.29.139.19",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+            "type": "trojan",
+            "server": "35.156.41.4",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
