@@ -107,11 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 9",
@@ -123,11 +123,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @meli_proxyy | 9",
@@ -175,20 +175,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 8080,
-            "uuid": "0adc4f77-e316-4f51-8e31-fc0b1d809ecb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "45.131.211.98",
@@ -207,6 +193,20 @@
                 "headers": {
                     "Host": "45.131.211.98"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8080,
+            "uuid": "0adc4f77-e316-4f51-8e31-fc0b1d809ecb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
@@ -232,7 +232,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
+            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
             "server": "173.234.79.240",
             "server_port": 2020,
@@ -261,7 +261,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 0",
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
             "server": "173.234.79.240",
             "server_port": 2020,
