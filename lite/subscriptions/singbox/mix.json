@@ -111,7 +111,7 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -134,7 +134,7 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -242,6 +242,37 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
+            "server": "188.114.97.3",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pPal03.jomASEf651.WoRKerS.deV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "pPal03.jomASEf651.WoRKerS.deV"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
             "server": "104.18.26.94",
             "server_port": 80,
             "uuid": "bc0a2570-d5fb-4906-b0f0-d47cdcd0a381",
@@ -259,16 +290,6 @@
                     "Host": "104.18.26.94"
                 }
             }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
-            "type": "shadowsocks",
-            "server": "45.87.175.164",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
