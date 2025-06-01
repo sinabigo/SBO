@@ -110,8 +110,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 6",
-                "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -127,8 +127,8 @@
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 6",
-                "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
@@ -219,7 +219,21 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "7979b82a-a615-4e4e-b4ce-34260f6e8bd6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "o.soskom.ir",
             "server_port": 11045,
@@ -252,37 +266,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-            "type": "vless",
-            "server": "188.114.97.1",
-            "server_port": 8443,
-            "uuid": "ccf75d6a-d32a-47a3-a6fd-aadff59b8ef6",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vip.donghi.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7",
-                "headers": {
-                    "Host": "vip.donghi.ir"
-                }
             }
         },
         {
