@@ -112,12 +112,12 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
+                "🇫🇮FI | 🟢 | vmess | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -134,12 +134,12 @@
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 1",
+                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
+                "🇫🇮FI | 🟢 | vmess | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -258,7 +258,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 1",
+            "tag": "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2",
             "type": "shadowsocks",
             "server": "45.87.175.28",
             "server_port": 8080,
@@ -334,11 +334,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "e486066b-3308-4114-a9a6-5648750b071f",
+            "server": "89.144.25.236",
+            "server_port": 443,
+            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -346,33 +346,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
-                "headers": {
-                    "Host": "speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "kavir.lnmarketplace.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "e6829971-e95c-4858-9f83-3a06466541cb",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇫🇮FI | 🟢 | vmess | @meli_proxyy | 17",
+            "type": "vmess",
+            "server": "157.180.89.239",
+            "server_port": 29301,
+            "uuid": "45a92d77-d948-4df2-b55f-1b05c9d94f7f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
-                }
             }
         },
         {

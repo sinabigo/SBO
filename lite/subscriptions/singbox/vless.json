@@ -111,8 +111,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -128,8 +127,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -250,11 +248,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "e486066b-3308-4114-a9a6-5648750b071f",
+            "server": "89.144.25.236",
+            "server_port": 443,
+            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -262,32 +260,14 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
-                "headers": {
-                    "Host": "speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "e6829971-e95c-4858-9f83-3a06466541cb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "kavir.lnmarketplace.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
