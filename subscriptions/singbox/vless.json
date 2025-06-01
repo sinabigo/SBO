@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,6 +150,27 @@
             "type": "dns"
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 8880,
+            "uuid": "72c0d6c7-5960-4adf-af8b-46d58d462322",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "45.131.211.98",
@@ -166,20 +189,6 @@
                 "headers": {
                     "Host": "45.131.211.98"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "Www.speedtest.net",
-            "server_port": 2052,
-            "uuid": "c6fc5c04-f087-49cc-a3df-2a37ef490467",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -238,7 +247,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 80,
@@ -273,7 +282,7 @@
             }
         },
         {
-            "tag": "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
             "server": "80.211.194.250",
             "server_port": 80,
@@ -291,6 +300,20 @@
                 "headers": {
                     "Host": "80.211.194.250"
                 }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "37.32.42.22",
+            "server_port": 443,
+            "uuid": "eb1920ff-d816-4ca1-b832-4683cddebaa6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
