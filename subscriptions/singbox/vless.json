@@ -106,12 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
             ]
@@ -120,12 +121,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
             ],
@@ -150,7 +152,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 8880,
@@ -192,30 +194,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
-            "type": "vless",
-            "server": "135.148.211.86",
-            "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135004002.sec20org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
             "server": "188.114.97.6",
@@ -247,7 +225,66 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "ad2d0f18-7c2b-43b5-aeb3-dbfa6f501962",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
+            "type": "vless",
+            "server": "135.148.211.86",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "148.135.195.96",
+            "server_port": 443,
+            "uuid": "f9bc4b4f-6cc4-41ee-bcfe-1fe6e3376dcd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 443,
@@ -275,20 +312,6 @@
                 "headers": {
                     "Host": "72790032528889957475364702518915.v2line.online"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "148.135.195.96",
-            "server_port": 443,
-            "uuid": "f9bc4b4f-6cc4-41ee-bcfe-1fe6e3376dcd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
