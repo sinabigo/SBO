@@ -106,30 +106,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -152,27 +152,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "e2a825ec-c679-44c8-885e-8ee6d01ee2e9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
-                }
-            }
-        },
-        {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "45.131.211.98",
@@ -190,6 +169,27 @@
                 "path": "\/Telegram@SiNAVM\/?ed=2560",
                 "headers": {
                     "Host": "45.131.211.98"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "ad2d0f18-7c2b-43b5-aeb3-dbfa6f501962",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -225,27 +225,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "ad2d0f18-7c2b-43b5-aeb3-dbfa6f501962",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
             "server": "135.148.211.86",
@@ -270,21 +249,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "148.135.195.96",
-            "server_port": 443,
-            "uuid": "f9bc4b4f-6cc4-41ee-bcfe-1fe6e3376dcd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 443,
@@ -354,6 +319,51 @@
                 "headers": {
                     "Host": "80.211.194.250"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "mizbangostar.com",
+            "server_port": 3993,
+            "uuid": "804385b5-c39b-4070-9f6d-33ffc6cefda9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2084",
+                "headers": {
+                    "Host": "marzban.negintel.xyz"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "37.32.42.22",
+            "server_port": 443,
+            "uuid": "eb1920ff-d816-4ca1-b832-4683cddebaa6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
