@@ -111,8 +111,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -128,8 +128,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇦CA | 🔴 | vless | @TEHRANARGO | 7",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -250,7 +250,28 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "e486066b-3308-4114-a9a6-5648750b071f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 8880,
@@ -267,27 +288,6 @@
                 "path": "\/Telegram—VPNCUSTOMIZE",
                 "headers": {
                     "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "92.53.189.20",
-            "server_port": 8880,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "92.53.189.20"
                 }
             }
         },
