@@ -12,13 +12,14 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0 = ss, 45.87.175.28, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
-🇳🇱NL | 🟢 | ss | @meli_proxyy | 9 = ss, 45.158.171.132, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 0 = trojan, 3.76.74.74, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8 = ss, 45.87.175.199, 8080, encrypt-method = chacha20-ietf-poly1305, password = 1RWwXhwfAB5gAEozU4G2Pg
 🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2 = trojan, cache-giver-wife.stark-industries.solutions, 443, password = e6a2e741-0fce-440b-910c-b81325e2263a, udp-delay = true, skip-cert-verify = false, sni = cache-giver-wife.stark-industries.solutions, ws = false
+🇳🇱NL | 🟢 | ss | @meli_proxyy | 9 = ss, 45.158.171.132, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9
+URL-TEST = url-test,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9
+FALLBACK = fallback,🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2,🇳🇱NL | 🟢 | ss | @meli_proxyy | 9
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

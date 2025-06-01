@@ -118,6 +118,7 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"3.76.74.74","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2","type":"trojan","server":"cache-giver-wife.stark-industries.solutions","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
 proxy-groups:
   - name: MANUAL
@@ -125,6 +126,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2'
   - name: URL-TEST
     type: url-test
@@ -132,12 +134,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
