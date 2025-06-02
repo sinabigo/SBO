@@ -106,12 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
             ]
         },
@@ -119,12 +118,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -148,7 +146,7 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
             "server": "172.67.157.202",
             "server_port": 443,
@@ -179,28 +177,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "www.zula.ir",
-            "server_port": 8080,
-            "uuid": "d41d2d38-8d13-4458-b9cf-1dfc8b0fe2b7",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "www.zula.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 9",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
             "type": "vless",
             "server": "freedom13.bypasojd.workers.dev",
             "server_port": 443,
@@ -252,6 +229,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "www.zula.ir",
+            "server_port": 8080,
+            "uuid": "d41d2d38-8d13-4458-b9cf-1dfc8b0fe2b7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "headers": {
+                    "Host": "www.zula.ir"
+                }
+            }
+        },
+        {
             "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "104.17.147.22",
@@ -279,27 +277,6 @@
                 "path": "\/netherlands\/amsterdam\/vl\/ws\/tls",
                 "headers": {
                     "Host": "72790032528889957475364702518915.v2line.online"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray10",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
                 }
             }
         },
