@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ]
         },
@@ -115,6 +116,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -163,6 +165,35 @@
                     "enabled": true,
                     "public_key": "qdfo8UQXXsXPViln7MbAIIvVgKrDnuRoFBGVTJDm134",
                     "short_id": "31e7200536a1ad45"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "45.89.244.55",
+            "server_port": 443,
+            "uuid": "769fcf2f-f0a9-4575-8b07-61b74f797d75",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ePfRAoCF-i9c-mMkM8XyB0jO5xIYBtNp7dy-ZzDDWF4",
+                    "short_id": "863be0c21eabf8f9"
                 }
             }
         },
