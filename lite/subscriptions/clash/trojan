@@ -120,7 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"63.178.168.205","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"13.39.37.70","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17","type":"trojan","server":"cache-giver-wife.stark-industries.solutions","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
+  - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 19","type":"trojan","server":"cache-giver-wife.stark-industries.solutions","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
-      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve

@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -174,7 +176,36 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "62.60.148.14",
+            "server_port": 25756,
+            "uuid": "57331f6d-aa7e-4241-8981-ca53ee2dee79",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QYKUzjbRc3V_-SwJ7DbChBt5nT6miAoFuNCqbflDF2o",
+                    "short_id": "61"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 3567,
