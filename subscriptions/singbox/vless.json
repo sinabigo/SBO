@@ -107,12 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 2"
             ]
         },
         {
@@ -120,12 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -179,11 +179,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
-            "server": "www.zula.ir",
-            "server_port": 8080,
-            "uuid": "d41d2d38-8d13-4458-b9cf-1dfc8b0fe2b7",
+            "server": "45.131.211.98",
+            "server_port": 8880,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -193,9 +193,38 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
+                "path": "\/Telegram@SiNAVM\/?ed=2560",
                 "headers": {
-                    "Host": "www.zula.ir"
+                    "Host": "45.131.211.98"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "100.27.16.249",
+            "server_port": 1991,
+            "uuid": "5fa74a60-cee7-460f-a4d2-7f215daaceba",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "weather.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "UhpQj3OeupoXGFfgck61Cm-2a9Xof70QGCQ5RPzziGk",
+                    "short_id": "9055ba97"
                 }
             }
         },
@@ -231,28 +260,7 @@
             }
         },
         {
-            "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-            "type": "vless",
-            "server": "45.131.211.98",
-            "server_port": 8880,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@SiNAVM\/?ed=2560",
-                "headers": {
-                    "Host": "45.131.211.98"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 443,
@@ -304,7 +312,7 @@
             }
         },
         {
-            "tag": "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 1",
+            "tag": "🇨🇿CZ | 🔴 | vless | @ShadowProxy66 | 2",
             "type": "vless",
             "server": "80.211.194.250",
             "server_port": 80,
