@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 35.156.137.154, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇩🇪DE | 🟢 | trojan | @DirectVPN | 15 = trojan, 3.74.181.8, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17 = trojan, cache-giver-wife.stark-industries.solutions, 443, password = e6a2e741-0fce-440b-910c-b81325e2263a, udp-delay = true, skip-cert-verify = false, sni = cache-giver-wife.stark-industries.solutions, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
-URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
-FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
+MANUAL = select,URL-TEST,FALLBACK,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17
+URL-TEST = url-test,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17
+FALLBACK = fallback,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15,🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

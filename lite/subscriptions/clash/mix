@@ -121,6 +121,8 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"35.156.137.154","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"3.74.181.8","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"45.87.175.28","port":8080,"password":"oZIoA69Q8yhcQV8ka3Pa3A","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17","type":"trojan","server":"cache-giver-wife.stark-industries.solutions","port":443,"udp":false,"password":"e6a2e741-0fce-440b-910c-b81325e2263a","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"cache-giver-wife.stark-industries.solutions"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 18","type":"ss","server":"13.87.99.136","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +132,8 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -139,6 +143,8 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -147,6 +153,8 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @ShadowProxy66 | 2'
+      - '🇲🇩MD | 🟢 | trojan | @meli_proxyy | 17'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
