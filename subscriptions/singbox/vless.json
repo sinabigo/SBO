@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2"
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
         {
@@ -118,8 +118,8 @@
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2"
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -194,6 +194,20 @@
             }
         },
         {
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-249",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -212,20 +226,6 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
-            "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-249",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
