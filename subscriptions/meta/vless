@@ -120,31 +120,35 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10","type":"vless","server":"freedom13.bypasojd.workers.dev","port":443,"udp":false,"uuid":"61d93b9b-00d0-4df1-8027-6e036f4c1f11","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"freedom13.bypasojd.workers.dev","ws-opts":{"path":"/","headers":{"host":"freedom13.bypasojd.workers.dev"}}}
   - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 0","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
+  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10","type":"vless","server":"freedom13.bypasojd.workers.dev","port":443,"udp":false,"uuid":"61d93b9b-00d0-4df1-8027-6e036f4c1f11","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"freedom13.bypasojd.workers.dev","ws-opts":{"path":"/","headers":{"host":"freedom13.bypasojd.workers.dev"}}}
+  - {"name":"🇳🇱NL | 🔴 | vless | @TEHRANARGO | 2","type":"vless","server":"148.135.195.96","port":44356,"udp":true,"uuid":"594e62b9-bb88-4264-b3fe-57f66202a96d","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"github.com","reality-opts":{"public-key":"hoyeyIygWaTAIdW2Cw42wBdeXfRkQCWoKq278YyyuU8","short-id":"67dea0af00c9d222"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
+      - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
+      - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10'
+      - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
