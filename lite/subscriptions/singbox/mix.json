@@ -108,15 +108,16 @@
                 "URL-TEST",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
@@ -130,15 +131,16 @@
             "outbounds": [
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
@@ -194,9 +196,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "3.77.119.255",
+            "server": "13.39.252.65",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -218,7 +220,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "3.76.74.74",
+            "server": "3.77.119.255",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -248,7 +250,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 8443,
@@ -330,6 +332,35 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
             "type": "vless",
+            "server": "45.13.226.18",
+            "server_port": 29570,
+            "uuid": "840dc994-d232-4b71-b133-4f36a874c867",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lOuhgB0K7paehmJFBxd0GxSY2Ax00niQGkpH3-8jKz4",
+                    "short_id": "37"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
+            "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
             "uuid": "eb193551-b519-4897-b727-5fffb2a9b7cf",
@@ -342,7 +373,38 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "mizbangostar.com",
+            "server_port": 3993,
+            "uuid": "804385b5-c39b-4070-9f6d-33ffc6cefda9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "marzban.negintel.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2084",
+                "headers": {
+                    "Host": "marzban.negintel.xyz"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -359,27 +421,6 @@
                 "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
-            "server_port": 8880,
-            "uuid": "e2a825ec-c679-44c8-885e-8ee6d01ee2e9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram—VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
                 }
             }
         },
