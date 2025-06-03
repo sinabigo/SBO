@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 2",
+                "🇫🇮FI | 🔴 | vless | @SiNAVM | 3",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
@@ -129,8 +129,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 2",
+                "🇫🇮FI | 🔴 | vless | @SiNAVM | 3",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 17",
@@ -168,25 +168,32 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 1",
+            "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
-            "server": "65.109.198.214",
-            "server_port": 19720,
-            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
+            "server": "45.131.211.98",
+            "server_port": 8880,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@SiNAVM\/?ed=2560",
+                "headers": {
+                    "Host": "45.131.211.98"
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 3",
             "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "ba1d7673-6f87-44be-8d1b-bbd2b20c2dea",
+            "server": "65.109.198.214",
+            "server_port": 19720,
+            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
