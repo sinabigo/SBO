@@ -106,16 +106,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 19",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -125,16 +124,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇮🇷IR | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 19",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -160,25 +158,32 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
+            "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
             "type": "vless",
-            "server": "65.109.198.214",
-            "server_port": 19720,
-            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
+            "server": "45.131.211.98",
+            "server_port": 8880,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@SiNAVM\/?ed=2560",
+                "headers": {
+                    "Host": "45.131.211.98"
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 3",
+            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
             "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "ba1d7673-6f87-44be-8d1b-bbd2b20c2dea",
+            "server": "65.109.198.214",
+            "server_port": 19720,
+            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -311,7 +316,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
             "type": "vless",
             "server": "150.241.89.219",
             "server_port": 35352,
@@ -336,30 +341,6 @@
                     "enabled": true,
                     "public_key": "GRvQgvgbqLP6iEOSPK7RWw4vVhJA4wxo6oO8qgt28jo",
                     "short_id": "2587dec2"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "89.144.25.236",
-            "server_port": 443,
-            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kavir.lnmarketplace.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
