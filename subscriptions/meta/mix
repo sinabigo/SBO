@@ -121,12 +121,13 @@ dns:
 
 proxies:
   - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 1","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
-  - {"name":"🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
   - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"172.67.156.54","port":443,"udp":false,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"pPal03.aBDuLlaH-maverYCk.workeRs.deV"}}}
+  - {"name":"🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"63.178.74.90","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3","type":"vless","server":"148.135.195.96","port":44356,"udp":true,"uuid":"594e62b9-bb88-4264-b3fe-57f66202a96d","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"github.com","reality-opts":{"public-key":"hoyeyIygWaTAIdW2Cw42wBdeXfRkQCWoKq278YyyuU8","short-id":"67dea0af00c9d222"}}
+  - {"name":"🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11","type":"ss","server":"185.126.239.250","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"speedtest.net","port":80,"udp":false,"uuid":"44eb5324-0706-4b60-9dba-31988a9071a8","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"45.158.171.151","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -134,12 +135,13 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
+      - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -147,24 +149,26 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
+      - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
+      - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
