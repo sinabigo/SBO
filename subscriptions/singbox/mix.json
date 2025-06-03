@@ -106,26 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8"
+                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
+                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
-                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8"
+                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
+                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,7 +146,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "172.67.156.54",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13",
             "type": "vless",
             "server": "freedom13.bypasojd.workers.dev",
             "server_port": 443,
@@ -179,37 +208,6 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "172.67.157.202",
-            "server_port": 443,
-            "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
-                }
-            }
-        },
-        {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "45.131.211.98",
@@ -231,7 +229,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
+            "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
             "type": "shadowsocks",
             "server": "142.4.216.225",
             "server_port": 80,
@@ -241,39 +239,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
-            "type": "trojan",
-            "server": "35.180.143.120",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
             "type": "shadowsocks",
-            "server": "23.154.136.132",
-            "server_port": 5004,
-            "method": "aes-256-gcm",
-            "password": "g5MeD6Ft3CWlJId",
+            "server": "45.158.171.151",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8",
+            "tag": "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11",
             "type": "shadowsocks",
             "server": "185.126.239.250",
             "server_port": 990,
