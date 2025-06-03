@@ -108,11 +108,12 @@
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -124,11 +125,12 @@
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -189,7 +191,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 8443,
@@ -284,11 +286,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 20",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "150.241.89.219",
-            "server_port": 35352,
-            "uuid": "23f9220d-6990-47d3-97ff-e8579e6c7334",
+            "server": "100.27.16.249",
+            "server_port": 1991,
+            "uuid": "5fa74a60-cee7-460f-a4d2-7f215daaceba",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -298,7 +300,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.microsoft.com",
+                "server_name": "weather.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -307,9 +309,23 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "GRvQgvgbqLP6iEOSPK7RWw4vVhJA4wxo6oO8qgt28jo",
-                    "short_id": "2587dec2"
+                    "public_key": "UhpQj3OeupoXGFfgck61Cm-2a9Xof70QGCQ5RPzziGk",
+                    "short_id": "9055ba97"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
+            "type": "vless",
+            "server": "WWW.SPEEDTEST.NET",
+            "server_port": 2095,
+            "uuid": "c11446db-adc4-417b-8a8d-e25c37f4f8c5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
