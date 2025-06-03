@@ -108,9 +108,10 @@
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 1",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2"
             ]
         },
         {
@@ -119,9 +120,10 @@
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 1",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -196,7 +198,36 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "84.235.237.246",
+            "server_port": 33001,
+            "uuid": "bfab9a68-5545-5270-bfdd-c9a5476ca066",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr.zran.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 8",
             "type": "vless",
             "server": "185.146.173.39",
             "server_port": 8880,
@@ -231,7 +262,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "speedtest.net",
             "server_port": 80,

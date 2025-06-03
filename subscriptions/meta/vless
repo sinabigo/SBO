@@ -122,8 +122,9 @@ dns:
 proxies:
   - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 1","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
   - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"172.67.156.54","port":443,"udp":false,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"pPal03.aBDuLlaH-maverYCk.workeRs.deV"}}}
+  - {"name":"🇫🇷FR | 🟢 | vless | @meli_proxyy | 1","type":"vless","server":"84.235.237.246","port":33001,"udp":true,"uuid":"bfab9a68-5545-5270-bfdd-c9a5476ca066","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"fr.zran.top","reality-opts":{"public-key":"lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw"}}
+  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"speedtest.net","port":80,"udp":false,"uuid":"44eb5324-0706-4b60-9dba-31988a9071a8","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
   - {"name":"🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3","type":"vless","server":"148.135.195.96","port":44356,"udp":true,"uuid":"594e62b9-bb88-4264-b3fe-57f66202a96d","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"github.com","reality-opts":{"public-key":"hoyeyIygWaTAIdW2Cw42wBdeXfRkQCWoKq278YyyuU8","short-id":"67dea0af00c9d222"}}
-  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"speedtest.net","port":80,"udp":false,"uuid":"44eb5324-0706-4b60-9dba-31988a9071a8","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,8 +133,9 @@ proxy-groups:
       - FALLBACK
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -142,8 +144,9 @@ proxy-groups:
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -151,8 +154,9 @@ proxy-groups:
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
