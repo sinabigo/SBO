@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -161,6 +163,35 @@
                     "enabled": true,
                     "public_key": "lOuhgB0K7paehmJFBxd0GxSY2Ax00niQGkpH3-8jKz4",
                     "short_id": "37"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "150.241.89.219",
+            "server_port": 35352,
+            "uuid": "23f9220d-6990-47d3-97ff-e8579e6c7334",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GRvQgvgbqLP6iEOSPK7RWw4vVhJA4wxo6oO8qgt28jo",
+                    "short_id": "2587dec2"
                 }
             }
         }

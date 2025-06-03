@@ -114,8 +114,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -133,8 +133,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -311,11 +311,40 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "mizbangostar.com",
-            "server_port": 3993,
-            "uuid": "804385b5-c39b-4070-9f6d-33ffc6cefda9",
+            "server": "150.241.89.219",
+            "server_port": 35352,
+            "uuid": "23f9220d-6990-47d3-97ff-e8579e6c7334",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GRvQgvgbqLP6iEOSPK7RWw4vVhJA4wxo6oO8qgt28jo",
+                    "short_id": "2587dec2"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+            "type": "vless",
+            "server": "89.144.25.236",
+            "server_port": 443,
+            "uuid": "3536e1fa-0850-44d1-b123-925ce12476cf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -325,40 +354,12 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "marzban.negintel.xyz",
+                "server_name": "kavir.lnmarketplace.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2084",
-                "headers": {
-                    "Host": "marzban.negintel.xyz"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "ad2d0f18-7c2b-43b5-aeb3-dbfa6f501962",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
