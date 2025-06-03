@@ -106,8 +106,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
@@ -117,8 +117,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
@@ -142,37 +142,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-            "type": "vless",
-            "server": "freedom13.bypasojd.workers.dev",
-            "server_port": 443,
-            "uuid": "61d93b9b-00d0-4df1-8027-6e036f4c1f11",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "freedom13.bypasojd.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "freedom13.bypasojd.workers.dev"
-                }
-            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
@@ -202,6 +171,37 @@
                 "path": "\/",
                 "headers": {
                     "Host": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
+            "type": "vless",
+            "server": "freedom13.bypasojd.workers.dev",
+            "server_port": 443,
+            "uuid": "61d93b9b-00d0-4df1-8027-6e036f4c1f11",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freedom13.bypasojd.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "freedom13.bypasojd.workers.dev"
                 }
             }
         },

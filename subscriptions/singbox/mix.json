@@ -106,30 +106,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0"
+                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 2",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0"
+                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,37 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
-            "type": "vless",
-            "server": "freedom13.bypasojd.workers.dev",
-            "server_port": 443,
-            "uuid": "61d93b9b-00d0-4df1-8027-6e036f4c1f11",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "freedom13.bypasojd.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "freedom13.bypasojd.workers.dev"
-                }
-            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
@@ -214,6 +185,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 10",
+            "type": "vless",
+            "server": "freedom13.bypasojd.workers.dev",
+            "server_port": 443,
+            "uuid": "61d93b9b-00d0-4df1-8027-6e036f4c1f11",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freedom13.bypasojd.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "freedom13.bypasojd.workers.dev"
+                }
+            }
+        },
+        {
             "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 0",
             "type": "vless",
             "server": "45.131.211.98",
@@ -233,6 +235,16 @@
                     "Host": "45.131.211.98"
                 }
             }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "23.154.136.132",
+            "server_port": 5004,
+            "method": "aes-256-gcm",
+            "password": "g5MeD6Ft3CWlJId",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 4",
@@ -281,16 +293,6 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2",
-            "type": "shadowsocks",
-            "server": "45.158.171.151",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -312,12 +314,22 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "tag": "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 8",
             "type": "shadowsocks",
-            "server": "23.154.136.132",
-            "server_port": 5004,
-            "method": "aes-256-gcm",
-            "password": "g5MeD6Ft3CWlJId",
+            "server": "185.126.239.250",
+            "server_port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "f8f7aCzcPKbsF8p3",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 2",
+            "type": "shadowsocks",
+            "server": "45.158.171.151",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
             "plugin": "",
             "plugin_opts": ""
         }
