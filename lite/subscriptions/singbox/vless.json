@@ -114,10 +114,9 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
@@ -134,10 +133,9 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "❔XX | 🔴 | vless | @meli_proxyy | 17",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
-                "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
@@ -305,35 +303,49 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-248",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "185.146.173.39",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 8880,
-            "uuid": "Parsashonam-248",
+            "uuid": "e2a825ec-c679-44c8-885e-8ee6d01ee2e9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram—VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 3567,
@@ -366,27 +378,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
             }
         },
         {
