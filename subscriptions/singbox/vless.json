@@ -107,8 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
             ]
         },
@@ -117,8 +117,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -163,42 +163,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
-            "type": "vless",
-            "server": "84.201.20.248",
-            "server_port": 45868,
-            "uuid": "4d705f5a-6db6-4528-85cf-f7e0da6ccb16",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ",
-                    "short_id": "7f"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -217,6 +181,20 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-250",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {

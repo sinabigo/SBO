@@ -121,7 +121,6 @@ dns:
 
 proxies:
   - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 1","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
-  - {"name":"🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1","type":"vless","server":"84.201.20.248","port":45868,"udp":true,"uuid":"4d705f5a-6db6-4528-85cf-f7e0da6ccb16","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"google.com","grpc-opts":{"grpc-service-name":"@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod"},"reality-opts":{"public-key":"Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ","short-id":"7f"}}
   - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 5","type":"vless","server":"speedtest.net","port":80,"udp":false,"uuid":"44eb5324-0706-4b60-9dba-31988a9071a8","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 5'
   - name: URL-TEST
     type: url-test
@@ -139,7 +137,6 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 5'
   - name: FALLBACK
     type: fallback
@@ -147,7 +144,6 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 1'
-      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 5'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
