@@ -120,9 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13","type":"vless","server":"freedom13.bypasojd.workers.dev","port":443,"udp":false,"uuid":"61d93b9b-00d0-4df1-8027-6e036f4c1f11","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"freedom13.bypasojd.workers.dev","ws-opts":{"path":"/","headers":{"host":"freedom13.bypasojd.workers.dev"}}}
   - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"172.67.156.54","port":443,"udp":false,"uuid":"89b3cbba-e6ac-485a-9481-976a0415eab9","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv","ws-opts":{"path":"/Telegram@V2ray_Alpha/?ed=2560","headers":{"host":"pPal03.aBDuLlaH-maverYCk.workeRs.deV"}}}
-  - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 0","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
+  - {"name":"🇧🇿BZ | 🔴 | vless | @SiNAVM | 2","type":"vless","server":"45.131.211.98","port":8880,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram@SiNAVM/?ed=2560","headers":{"host":"reedfree8mahsang2.redorg.ir"}}}
   - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 0","type":"vless","server":"speedtest.net","port":80,"udp":false,"uuid":"44eb5324-0706-4b60-9dba-31988a9071a8","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/olem/ws?ed=1024","headers":{"host":"foffmelo.com"}}}
   - {"name":"🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3","type":"vless","server":"148.135.195.96","port":44356,"udp":true,"uuid":"594e62b9-bb88-4264-b3fe-57f66202a96d","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"github.com","reality-opts":{"public-key":"hoyeyIygWaTAIdW2Cw42wBdeXfRkQCWoKq278YyyuU8","short-id":"67dea0af00c9d222"}}
 proxy-groups:
@@ -131,9 +130,8 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 2'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
   - name: URL-TEST
@@ -142,9 +140,8 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 2'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
   - name: FALLBACK
@@ -152,9 +149,8 @@ proxy-groups:
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 13'
       - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 0'
+      - '🇧🇿BZ | 🔴 | vless | @SiNAVM | 2'
       - '🇺🇸US | 🔴 | vless | @meli_proxyy | 0'
       - '🇳🇱NL | 🔴 | vless | @TEHRANARGO | 3'
 rule-providers:
