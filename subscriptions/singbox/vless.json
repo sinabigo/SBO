@@ -108,11 +108,12 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 13",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
             ]
         },
         {
@@ -121,11 +122,12 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @meli_proxyy | 13",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -200,21 +202,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "ns.cloudflare.com",
-            "server_port": 2086,
-            "uuid": "b20f8c7c-a47e-43b7-b4a4-bbab7d8014e3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8",
             "type": "vless",
             "server": "104.17.148.22",
             "server_port": 443,
@@ -328,6 +316,51 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "whatismyipaddress.com",
+            "server_port": 2096,
+            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "wwwspeedtestnetwhiteberinsistomd6625996s05.drlimit2.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "wwwspeedtestnetwhiteberinsistomd6625996s05.drlimit2.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
+            "type": "vless",
+            "server": "ns.cloudflare.com",
+            "server_port": 2086,
+            "uuid": "b20f8c7c-a47e-43b7-b4a4-bbab7d8014e3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         }
     ],
