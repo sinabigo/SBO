@@ -108,14 +108,15 @@
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
                 "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
-                "🇨🇦CA | 🔴 | vless | @redfree8 | 4"
+                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
         },
         {
@@ -124,14 +125,15 @@
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
                 "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
-                "🇨🇦CA | 🔴 | vless | @redfree8 | 4"
+                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+                "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -177,9 +179,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "104.18.192.65",
-            "server_port": 8880,
-            "uuid": "a61fc8cb-0012-4c4b-aa5e-d1c623ae8092",
+            "server": "188.114.97.6",
+            "server_port": 443,
+            "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -187,11 +189,52 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "quiet-bread-928e.wadas15468.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "104.18.192.65"
+                    "Host": "quiet-bread-928e.wadas15468.workers.dev"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "104.18.27.94",
+            "server_port": 443,
+            "uuid": "c4929932-34f8-46dd-8cd6-7b1539dc4416",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "esetsecuritylicense.inhkvez.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "esetsecuritylicense.inhkvez.workers.dev"
                 }
             }
         },
@@ -331,7 +374,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 3",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 443,
@@ -362,7 +405,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 4",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
