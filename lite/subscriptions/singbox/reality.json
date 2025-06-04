@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 20"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 20"
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "lOuhgB0K7paehmJFBxd0GxSY2Ax00niQGkpH3-8jKz4",
                     "short_id": "37"
-                }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 20",
-            "type": "vless",
-            "server": "77.91.85.161",
-            "server_port": 443,
-            "uuid": "CHIK_682538",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "whatsapp.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "3oWpho0EjulohjRTwmTeFPDwIg01t8XRpyXmgpw_2T4",
-                    "short_id": "ffffffffff"
                 }
             }
         }
