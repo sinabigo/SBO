@@ -106,20 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3",
-                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11"
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
-                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3",
-                "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11"
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -142,26 +138,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7",
-            "type": "shadowsocks",
-            "server": "142.4.216.225",
-            "server_port": 80,
-            "method": "chacha20-ietf-poly1305",
-            "password": "JIhN6rBKkaEboLNXVSv5rq",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
-            "type": "shadowsocks",
-            "server": "45.158.171.151",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3",
             "type": "shadowsocks",
             "server": "23.154.136.132",
@@ -172,12 +148,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11",
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5",
             "type": "shadowsocks",
-            "server": "185.126.239.250",
-            "server_port": 990,
+            "server": "45.158.171.151",
+            "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "f8f7aCzcPKbsF8p3",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
             "plugin": "",
             "plugin_opts": ""
         }
