@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,7 +136,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "84.235.237.246",
             "server_port": 33001,
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw",
                     "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "3.235.84.76",
-            "server_port": 2083,
-            "uuid": "17cbb923-e800-4a7d-a87f-9311de30a7b9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "PWHU3h4DYzwqnvZWK43K-xJvpUevCDv3qgndc59CjgU",
-                    "short_id": "18"
                 }
             }
         }
