@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0",
                 "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
@@ -136,6 +138,23 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0",
+            "type": "vmess",
+            "server": "188.213.128.211",
+            "server_port": 1010,
+            "uuid": "799775e9-a2df-43dd-9d2d-b362fd60ef07",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",

@@ -113,7 +113,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
@@ -129,7 +130,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
+                "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
@@ -315,11 +317,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
-            "uuid": "telegram-id-ArV2ray8",
+            "uuid": "telegram-id-ArV2ray9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -333,6 +335,42 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
+            "type": "vless",
+            "server": "193.46.81.67",
+            "server_port": 3567,
+            "uuid": "telegram-id-ArV2ray3",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+                    "short_id": "c14b9292de5a8d6f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
