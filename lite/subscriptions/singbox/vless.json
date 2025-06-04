@@ -107,16 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 4"
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 4"
             ]
         },
         {
@@ -124,16 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
-                "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 4"
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -177,47 +175,23 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @SiNAVM | 2",
-            "type": "vless",
-            "server": "65.109.198.214",
-            "server_port": 19720,
-            "uuid": "1821e8ff-ef32-4e22-8b6a-37aaa7760e80",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "freedom13.bypasojd.workers.dev",
-            "server_port": 443,
-            "uuid": "61d93b9b-00d0-4df1-8027-6e036f4c1f11",
+            "server": "104.18.192.65",
+            "server_port": 8880,
+            "uuid": "a61fc8cb-0012-4c4b-aa5e-d1c623ae8092",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "freedom13.bypasojd.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "freedom13.bypasojd.workers.dev"
+                    "Host": "104.18.192.65"
                 }
             }
         },
@@ -286,25 +260,40 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
             "type": "vless",
-            "server": "WWW.SPEEDTEST.NET",
-            "server_port": 2095,
-            "uuid": "c11446db-adc4-417b-8a8d-e25c37f4f8c5",
-            "flow": "",
+            "server": "84.235.237.246",
+            "server_port": 33001,
+            "uuid": "bfab9a68-5545-5270-bfdd-c9a5476ca066",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fr.zran.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw",
+                    "short_id": ""
+                }
             }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
             "type": "vless",
-            "server": "151.101.64.155",
+            "server": "speedtest.net",
             "server_port": 80,
-            "uuid": "telegram-id-ArV2ray10",
+            "uuid": "44eb5324-0706-4b60-9dba-31988a9071a8",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -314,9 +303,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "path": "\/olem\/ws?ed=1024",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "speedtest.net"
                 }
             }
         },
@@ -342,7 +331,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 443,
@@ -373,7 +362,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 4",
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 4",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
