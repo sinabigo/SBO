@@ -120,8 +120,9 @@ dns:
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
   - {"name":"🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7","type":"ss","server":"142.4.216.225","port":80,"password":"JIhN6rBKkaEboLNXVSv5rq","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5","type":"ss","server":"45.158.171.151","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"35.181.213.121","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11","type":"ss","server":"185.126.239.250","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"23.154.136.132","port":5004,"password":"g5MeD6Ft3CWlJId","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +131,9 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -140,8 +142,9 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -149,8 +152,9 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 7'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 5'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 2'
       - '🇷🇺RU | 🟢 | ss | @DeamNet_Proxy | 11'
-      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 3'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
