@@ -109,14 +109,14 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
+                "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -130,14 +130,14 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
+                "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",
+                "🇺🇸US | 🟢 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -216,7 +216,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 14",
             "type": "trojan",
-            "server": "3.124.226.161",
+            "server": "63.178.74.90",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -236,9 +236,9 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
             "type": "trojan",
-            "server": "35.180.143.120",
+            "server": "3.124.226.161",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -289,7 +289,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "104.18.27.94",
             "server_port": 443,
@@ -384,12 +384,29 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+            "tag": "🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18",
+            "type": "vmess",
+            "server": "netherland3.abrha.site",
+            "server_port": 4879,
+            "uuid": "583b1838-cc33-4a7c-b39d-676b7a2a0112",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | vless | @meli_proxyy | 19",
             "type": "vless",
-            "server": "84.235.237.246",
-            "server_port": 33001,
-            "uuid": "bfab9a68-5545-5270-bfdd-c9a5476ca066",
-            "flow": "xtls-rprx-vision",
+            "server": "whatismyipaddress.com",
+            "server_port": 2096,
+            "uuid": "2404f667-5969-4883-a71a-ea2e0db2d25b",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -398,38 +415,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fr.zran.top",
+                "server_name": "wwwspeedtestnetwhiteberinsistomd6625996s05.drlimit2.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw",
-                    "short_id": ""
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "speedtest.net",
-            "server_port": 80,
-            "uuid": "44eb5324-0706-4b60-9dba-31988a9071a8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
+                "path": "\/",
                 "headers": {
-                    "Host": "speedtest.net"
+                    "Host": "wwwspeedtestnetwhiteberinsistomd6625996s05.drlimit2.com"
                 }
             }
         },

@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
                     "short_id": "f203719d3ff9a5f5"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "84.235.237.246",
-            "server_port": 33001,
-            "uuid": "bfab9a68-5545-5270-bfdd-c9a5476ca066",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fr.zran.top",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "lCw-J-VD2RWK0khO3ySjqdsfSV2qnVx8y91WV8AKMkw",
-                    "short_id": ""
                 }
             }
         }

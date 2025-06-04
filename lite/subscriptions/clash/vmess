@@ -118,23 +118,27 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
+  - {"name":"🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18","type":"vmess","server":"netherland3.abrha.site","port":"4879","cipher":"auto","uuid":"583b1838-cc33-4a7c-b39d-676b7a2a0112","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
+      - '🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
+      - '🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
+      - '🇳🇱NL | 🟢 | vmess | @meli_proxyy | 18'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
