@@ -120,7 +120,8 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"23.150.248.50","port":8090,"password":"PCnnH6SQSnfoS27","cipher":"aes-256-gcm"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"67.220.95.102","port":9102,"password":"e4FCWrgpkji3QY","cipher":"aes-256-gcm"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"45.158.171.151","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 8","type":"ss","server":"45.87.175.178","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -129,6 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
   - name: URL-TEST
     type: url-test
@@ -137,6 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
   - name: FALLBACK
     type: fallback
@@ -144,6 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 4'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
