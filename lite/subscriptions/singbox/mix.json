@@ -119,8 +119,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
-                "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -145,8 +145,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 13",
-                "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -452,48 +452,27 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16",
-            "type": "vmess",
-            "server": "185.146.173.25",
-            "server_port": 80,
-            "uuid": "46181c32-8c82-413a-b836-8375e5e513eb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560",
-                "headers": {
-                    "Host": ""
-                }
-            }
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 15",
+            "type": "shadowsocks",
+            "server": "45.87.175.178",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "199.232.13.32",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "ns.cloudflare.com",
+            "server_port": 2086,
+            "uuid": "b20f8c7c-a47e-43b7-b4a4-bbab7d8014e3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "199.232.13.32"
-                }
             }
         },
         {
