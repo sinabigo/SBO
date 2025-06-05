@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
+                "🇸🇬SG | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -125,6 +126,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
+                "🇸🇬SG | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
@@ -175,6 +177,37 @@
                 "path": "\/Telegram@SiNAVM\/?ed=2560",
                 "headers": {
                     "Host": "45.131.211.98"
+                }
+            }
+        },
+        {
+            "tag": "🇸🇬SG | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "52.187.36.104",
+            "server_port": 443,
+            "uuid": "6f995056-7802-4a1d-bff7-61678e626c3f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "werrr.azurewebsites.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "werrr.azurewebsites.net"
                 }
             }
         },
