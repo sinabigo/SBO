@@ -12,12 +12,12 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 63.178.60.16, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 15 = trojan, 35.181.213.121, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 14 = trojan, 35.159.102.83, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇩🇪DE | 🟢 | trojan | @DirectVPN | 15 = trojan, 63.178.60.16, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15
-URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15
-FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇫🇷FR | 🟢 | trojan | @DirectVPN | 15
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 14,🇩🇪DE | 🟢 | trojan | @DirectVPN | 15
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

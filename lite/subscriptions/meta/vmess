@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 1","type":"vmess","server":"188.213.128.211","port":"1010","cipher":"auto","uuid":"799775e9-a2df-43dd-9d2d-b362fd60ef07","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 2","type":"vmess","server":"188.213.128.211","port":"1010","cipher":"auto","uuid":"799775e9-a2df-43dd-9d2d-b362fd60ef07","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
   - {"name":"🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16","type":"vmess","server":"185.146.173.25","port":"80","cipher":"auto","uuid":"46181c32-8c82-413a-b836-8375e5e513eb","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560","headers":{"host":"google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir."}}}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 2'
       - '🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16'
   - name: URL-TEST
     type: url-test
@@ -136,14 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 2'
       - '🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 1'
+      - '🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 2'
       - '🇸🇪SE | 🟢 | vmess | @meli_proxyy | 16'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
