@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 12",
-                "❔XX | 🟢 | vless | @meli_proxyy | 16",
+                "❔XX | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ]
         },
@@ -116,7 +117,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 12",
-                "❔XX | 🟢 | vless | @meli_proxyy | 16",
+                "❔XX | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -169,11 +171,11 @@
             }
         },
         {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 16",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "macedonia.my-iranparspack.ir",
+            "server": "www.speedtest-divar.ir",
             "server_port": 443,
-            "uuid": "963ec3d3-def9-4ae1-825d-00ff2f6da119",
+            "uuid": "0d46bbe1-bfd1-45ad-be2d-03b531a2881b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -183,17 +185,53 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "fauxid.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "random"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc",
+                    "short_id": "eaab9c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "3.235.84.76",
+            "server_port": 2083,
+            "uuid": "17cbb923-e800-4a7d-a87f-9311de30a7b9",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PWHU3h4DYzwqnvZWK43K-xJvpUevCDv3qgndc59CjgU",
+                    "short_id": "18"
                 }
             }
         },
