@@ -35,8 +35,17 @@
       {
         "domain": [
           "japan.com",
+          "client.bluwave.ir",
+          "nodes.maviks.eu",
+          "ns.cloudflare.com",
+          "macedonia.my-iranparspack.ir",
+          "www.speedtest.net",
+          "nufilter.fastly80-2.hosting-ip.com",
           "arvancloud.de.ir.systemgamingirani.ir",
-          "finland.my-iranparspack.ir"
+          "finland.my-iranparspack.ir",
+          "speedtest.net",
+          "www.speedtest-divar.ir",
+          "zula.ir"
         ],
         "server": "dns-direct"
       },
@@ -51,14 +60,14 @@
       "sky.rethinkdns.com": [
         "104.21.69.44",
         "172.67.204.84",
-        "2606:4700:3031::ac43:cc54",
         "2606:4700:3032::6815:452c",
+        "2606:4700:3031::ac43:cc54",
         "104.17.147.22",
         "104.17.148.22",
-        "172.67.214.246",
         "104.21.83.62",
-        "2606:4700:3030::ac43:d6f6",
-        "2606:4700:3030::6815:533e"
+        "172.67.214.246",
+        "2606:4700:3030::6815:533e",
+        "2606:4700:3030::ac43:d6f6"
       ]
     },
     "independent_cache": true
@@ -85,22 +94,93 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 0",
-        "🚩CF | 🔴 | vless | @meli_proxyy | 16 § 1",
-        "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 2",
-        "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 3",
-        "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 4",
-        "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 5",
-        "🇺🇸US | 🔴 | vless | @meli_proxyy | 2 § 6",
-        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10 § 7",
-        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 8",
-        "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0 § 9",
-        "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 10",
-        "🇺🇸US | 🟢 | ss | @meli_proxyy | 5 § 11",
-        "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 12",
-        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1 § 13",
-        "🇱🇹LT | 🔴 | vless | @meli_proxyy | 4 § 14",
-        "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 15"
+        "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 0",
+        "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 1",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0 § 2",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1 § 3",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2 § 4",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3 § 5",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4 § 6",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5 § 7",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 6 § 8",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 7 § 9",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 8 § 10",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 9 § 11",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 10 § 12",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11 § 13",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12 § 14",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13 § 15",
+        "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 0 § 16",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 1 § 17",
+        "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4 § 18",
+        "🇨🇾CY | 🟢 | ss | @DeamNet_Proxy | 5 § 19",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 6 § 20",
+        "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7 § 21",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 22",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9 § 23",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10 § 24",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 11 § 25",
+        "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12 § 26",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13 § 27",
+        "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 28",
+        "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 15 § 29",
+        "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 30",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 17 § 31",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18 § 32",
+        "🇺🇸US | 🔴 | vless | @customv2ray | 0 § 33",
+        "❔XX | 🔴 | vless | @customv2ray | 1 § 34",
+        "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0 § 35",
+        "🇷🇺RU | 🔴 | vless | @V2FETCH | 0 § 36",
+        "🇷🇺RU | 🔴 | vless | @V2FETCH | 1 § 37",
+        "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 0 § 38",
+        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 39",
+        "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3 § 40",
+        "❔XX | 🟢 | vless | @TEHRANARGO | 4 § 41",
+        "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 42",
+        "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10 § 43",
+        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11 § 44",
+        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0 § 45",
+        "🇫🇮FI | 🟢 | vless | @meli_proxyy | 1 § 46",
+        "🇺🇸US | 🟢 | vmess | @meli_proxyy | 2 § 47",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 3 § 48",
+        "🇳🇱NL | 🟢 | ss | @meli_proxyy | 4 § 49",
+        "🇱🇹LT | 🔴 | vless | @meli_proxyy | 5 § 50",
+        "🇺🇸US | 🟢 | ss | @meli_proxyy | 6 § 51",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 7 § 52",
+        "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 8 § 53",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 9 § 54",
+        "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 10 § 55",
+        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11 § 56",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 12 § 57",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 13 § 58",
+        "❔XX | 🔴 | vless | @meli_proxyy | 14 § 59",
+        "❔XX | 🟢 | vless | @meli_proxyy | 16 § 60",
+        "🚩CF | 🔴 | vless | @meli_proxyy | 17 § 61",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 62",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 1 § 63",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 2 § 64",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 3 § 65",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 4 § 66",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 5 § 67",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 6 § 68",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 7 § 69",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 8 § 70",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 9 § 71",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 10 § 72",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 11 § 73",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 12 § 74",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 13 § 75",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 14 § 76",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 15 § 77",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 16 § 78",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 17 § 79",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 18 § 80",
+        "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 81",
+        "🇺🇸US | 🔴 | trojan | @redfree8 | 0 § 82",
+        "🚩CF | 🔴 | vless | @redfree8 | 1 § 83",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 2 § 84",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 3 § 85",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 4 § 86"
       ],
       "default": "auto"
     },
@@ -108,30 +188,480 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 0",
-        "🚩CF | 🔴 | vless | @meli_proxyy | 16 § 1",
-        "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 2",
-        "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 3",
-        "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 4",
-        "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 5",
-        "🇺🇸US | 🔴 | vless | @meli_proxyy | 2 § 6",
-        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10 § 7",
-        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 8",
-        "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0 § 9",
-        "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 10",
-        "🇺🇸US | 🟢 | ss | @meli_proxyy | 5 § 11",
-        "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 12",
-        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1 § 13",
-        "🇱🇹LT | 🔴 | vless | @meli_proxyy | 4 § 14",
-        "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 15"
+        "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 0",
+        "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 1",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0 § 2",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1 § 3",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2 § 4",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3 § 5",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4 § 6",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5 § 7",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 6 § 8",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 7 § 9",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 8 § 10",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 9 § 11",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 10 § 12",
+        "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11 § 13",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12 § 14",
+        "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13 § 15",
+        "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 0 § 16",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 1 § 17",
+        "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4 § 18",
+        "🇨🇾CY | 🟢 | ss | @DeamNet_Proxy | 5 § 19",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 6 § 20",
+        "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7 § 21",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 22",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9 § 23",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10 § 24",
+        "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 11 § 25",
+        "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12 § 26",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13 § 27",
+        "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 28",
+        "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 15 § 29",
+        "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 30",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 17 § 31",
+        "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18 § 32",
+        "🇺🇸US | 🔴 | vless | @customv2ray | 0 § 33",
+        "❔XX | 🔴 | vless | @customv2ray | 1 § 34",
+        "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0 § 35",
+        "🇷🇺RU | 🔴 | vless | @V2FETCH | 0 § 36",
+        "🇷🇺RU | 🔴 | vless | @V2FETCH | 1 § 37",
+        "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 0 § 38",
+        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 39",
+        "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3 § 40",
+        "❔XX | 🟢 | vless | @TEHRANARGO | 4 § 41",
+        "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 42",
+        "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10 § 43",
+        "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11 § 44",
+        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0 § 45",
+        "🇫🇮FI | 🟢 | vless | @meli_proxyy | 1 § 46",
+        "🇺🇸US | 🟢 | vmess | @meli_proxyy | 2 § 47",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 3 § 48",
+        "🇳🇱NL | 🟢 | ss | @meli_proxyy | 4 § 49",
+        "🇱🇹LT | 🔴 | vless | @meli_proxyy | 5 § 50",
+        "🇺🇸US | 🟢 | ss | @meli_proxyy | 6 § 51",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 7 § 52",
+        "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 8 § 53",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 9 § 54",
+        "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 10 § 55",
+        "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11 § 56",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 12 § 57",
+        "🇺🇸US | 🔴 | vless | @meli_proxyy | 13 § 58",
+        "❔XX | 🔴 | vless | @meli_proxyy | 14 § 59",
+        "❔XX | 🟢 | vless | @meli_proxyy | 16 § 60",
+        "🚩CF | 🔴 | vless | @meli_proxyy | 17 § 61",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 62",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 1 § 63",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 2 § 64",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 3 § 65",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 4 § 66",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 5 § 67",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 6 § 68",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 7 § 69",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 8 § 70",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 9 § 71",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 10 § 72",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 11 § 73",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 12 § 74",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 13 § 75",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 14 § 76",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 15 § 77",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 16 § 78",
+        "🇺🇸US | 🔴 | vless | @ArV2ray | 17 § 79",
+        "🇩🇪DE | 🔴 | vless | @ArV2ray | 18 § 80",
+        "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 81",
+        "🇺🇸US | 🔴 | trojan | @redfree8 | 0 § 82",
+        "🚩CF | 🔴 | vless | @redfree8 | 1 § 83",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 2 § 84",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 3 § 85",
+        "🇺🇸US | 🔴 | vless | @redfree8 | 4 § 86"
       ],
       "url": "http://cp.cloudflare.com/",
       "interval": "166h40m0s",
       "idle_timeout": "1666h40m0s"
     },
     {
+      "type": "trojan",
+      "tag": "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 0",
+      "server": "japan.com",
+      "server_port": 443,
+      "password": "bpb-trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "zamim340.ggff.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr",
+        "headers": {
+          "Host": "zamim340.ggff.net"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 0",
+      "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 1",
+      "server": "45.131.211.98",
+      "server_port": 8880,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram@SiNAVM/",
+        "headers": {
+          "Host": "reedfree8mahsang2.redorg.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 0 § 2",
+      "server": "63.178.159.1",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1 § 3",
+      "server": "18.153.129.97",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2 § 4",
+      "server": "13.37.13.220",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 3 § 5",
+      "server": "13.36.72.7",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 4 § 6",
+      "server": "63.177.148.25",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 5 § 7",
+      "server": "63.178.205.172",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 6 § 8",
+      "server": "15.237.7.228",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 7 § 9",
+      "server": "13.36.216.174",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 8 § 10",
+      "server": "35.159.102.83",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 9 § 11",
+      "server": "63.178.60.16",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 10 § 12",
+      "server": "35.181.213.121",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 11 § 13",
+      "server": "13.37.21.54",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12 § 14",
+      "server": "3.78.69.36",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13 § 15",
+      "server": "63.178.128.0",
+      "server_port": 22223,
+      "password": "telegram-id-directvpn",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan.burgerip.co.uk",
+        "alpn": "http/1.1",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱PL | 🟢 | vmess | @DeamNet_Proxy | 0 § 16",
+      "server": "146.59.55.50",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "o.metuji.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 1 § 17",
+      "server": "57.129.25.20",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "alter_id": 1,
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "57.129.25.20",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "57.129.25.20"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 4 § 18",
+      "server": "23.154.136.132",
+      "server_port": 9102,
+      "method": "aes-256-gcm",
+      "password": "e4FCWrgpkji3QY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇾CY | 🟢 | ss | @DeamNet_Proxy | 5 § 19",
+      "server": "134.255.210.49",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "f8f7aCzcPKbsF8p3"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 6 § 20",
+      "server": "57.129.41.216",
+      "server_port": 8443,
+      "uuid": "3967c059-865d-40af-ba3c-8abc9ba5c7f8",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "ov-germany1.09vpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🚩CF | 🟢 | vmess | @DeamNet_Proxy | 7 § 21",
+      "server": "172.67.170.13",
+      "server_port": 443,
+      "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+      "security": "auto",
+      "authenticated_length": true,
+      "tls": {
+        "enabled": true,
+        "server_name": "glweidf.sbs",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkws",
+        "headers": {
+          "Host": "glweidf.sbs"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 8 § 22",
       "server": "104.17.148.22",
       "server_port": 443,
       "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
@@ -156,13 +686,13 @@
     },
     {
       "type": "vless",
-      "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 16 § 1",
-      "server": "104.17.148.22",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 9 § 23",
+      "server": "172.67.156.54",
       "server_port": 443,
       "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
       "tls": {
         "enabled": true,
-        "server_name": "UUHuhyYgESDfgh.UyHjhgvgFCjgujhBuILbVFDXdxM.xYZ",
+        "server_name": "PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv",
         "utls": {
           "enabled": true,
           "fingerprint": "randomized"
@@ -170,25 +700,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/egFIvRfmDaCdL5Uk/ODQuMjM1LjE2OS4yMzQ=?ed=2560/?BIA_CHANEL@JOKERRVPN",
+        "path": "/Telegram@V2ray_Alpha/",
         "headers": {
-          "Host": "UuhUHYygESDfgh.uYhJhGVgfCjgujhbUiLbVFdXDXM.XyZ"
-        },
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1 § 2",
-      "server": "45.131.211.98",
-      "server_port": 8880,
-      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-      "transport": {
-        "type": "ws",
-        "path": "/Telegram@SiNAVM/",
-        "headers": {
-          "Host": "reedfree8mahsang2.redorg.ir"
+          "Host": "pPal03.aBDuLlaH-maverYCk.workeRs.deV"
         },
         "max_early_data": 2560,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -196,14 +710,33 @@
       "packet_encoding": ""
     },
     {
-      "type": "trojan",
-      "tag": "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 § 3",
-      "server": "japan.com",
+      "type": "vless",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10 § 24",
+      "server": "198.41.208.211",
+      "server_port": 8080,
+      "uuid": "d01a40f5-4e6f-4279-b0a9-0f2a268ab03c",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "worker-falling-snow-ffd7.test61.workers.dev"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪DE | 🟢 | vmess | @DeamNet_Proxy | 11 § 25",
+      "server": "57.129.24.124",
       "server_port": 443,
-      "password": "bpb-trojan",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "authenticated_length": true,
       "tls": {
         "enabled": true,
-        "server_name": "zamim340.ggff.net",
+        "server_name": "57.129.24.124",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -211,30 +744,69 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/tr",
-        "headers": {
-          "Host": "zamim340.ggff.net"
-        },
-        "max_early_data": 2560,
+        "path": "/linkvws",
         "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12 § 26",
+      "server": "23.154.136.132",
+      "server_port": 5004,
+      "method": "aes-256-gcm",
+      "password": "g5MeD6Ft3CWlJId"
+    },
+    {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 4",
-      "server": "84.32.131.73",
-      "server_port": 8880,
-      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13 § 27",
+      "server": "172.67.157.202",
+      "server_port": 443,
+      "uuid": "76b3cbba-e6ac-485a-9481-336a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "oLD-DISK-EFcD.jOJahOf109.woRkeRS.dEv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "OlD-DISK-EFcd.joJaHOF109.WOrKers.dev"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "packet_encoding": ""
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 5",
+      "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 28",
+      "server": "45.158.171.151",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "cvII85TrW6n0OGyfpHVS1u"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 15 § 29",
+      "server": "162.19.228.119",
+      "server_port": 80,
+      "uuid": "dc8eccdb-ecfa-435f-9ac1-5dc4882e7b51",
+      "transport": {
+        "type": "ws",
+        "path": "/http#Telegram@proxy_mtm/?ed=2560",
+        "headers": {
+          "Host": "google.com"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦CA | 🟢 | ss | @DeamNet_Proxy | 16 § 30",
       "server": "142.4.216.225",
       "server_port": 80,
       "method": "chacha20-ietf-poly1305",
@@ -242,15 +814,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2 § 6",
-      "server": "199.232.13.32",
-      "server_port": 80,
-      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 17 § 31",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "81191cda-0982-4cbd-8d60-2ef076e08d17",
+      "tls": {
+        "enabled": true,
+        "server_name": "quiet-bread-928e.wadas15468.workers.dev",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/Channel-ELiV2RAY---ELiV2RAY",
+        "path": "/",
         "headers": {
-          "Host": "Telegram----ELiV2ray.ir"
+          "Host": "quiet-bread-928e.wadas15468.workers.dev"
         },
         "max_early_data": 2048,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -259,29 +839,114 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 10 § 7",
-      "server": "arvancloud.de.ir.systemgamingirani.ir",
+      "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18 § 32",
+      "server": "104.18.27.94",
       "server_port": 443,
-      "uuid": "ed4ac7bf-9ec8-4a7a-b45a-72b62f1e18dc",
-      "flow": "xtls-rprx-vision",
+      "uuid": "c4929932-34f8-46dd-8cd6-7b1539dc4416",
       "tls": {
         "enabled": true,
-        "server_name": "tgju.org",
+        "server_name": "esetsecuritylicense.inhkvez.workers.dev",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "esetsecuritylicense.inhkvez.workers.dev"
         },
-        "reality": {
-          "enabled": true,
-          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-          "short_id": "e54b5ad736ae4c38"
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0 § 33",
+      "server": "NUFiLTER.fastly80-2.hosting-ip.com",
+      "server_port": 80,
+      "uuid": "41ec8f30-6cd7-4703-94e1-95913c1626fa",
+      "transport": {
+        "type": "ws",
+        "path": "/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+        "headers": {
+          "Host": "arayeshgaham.com"
+        },
+        "max_early_data": 80,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "❔XX | 🔴 | vless | @customv2ray | 1 § 34",
+      "server": "2a01:4f8:1c1b:e1d0::1",
+      "server_port": 8888,
+      "uuid": "Parsashonam-250",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 0 § 35",
+      "server": "188.213.128.211",
+      "server_port": 1010,
+      "uuid": "799775e9-a2df-43dd-9d2d-b362fd60ef07",
+      "security": "auto",
+      "authenticated_length": true
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺RU | 🔴 | vless | @V2FETCH | 0 § 36",
+      "server": "client.bluwave.ir",
+      "server_port": 80,
+      "uuid": "e3eec9d9-ab70-4617-9e19-60860112c634",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Bluewave.ai"
+        },
+        "max_early_data": 1861,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺RU | 🔴 | vless | @V2FETCH | 1 § 37",
+      "server": "client.bluwave.ir",
+      "server_port": 80,
+      "uuid": "e3eec9d9-ab70-4617-9e19-60860112c634",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "Bluewave.ai"
+        },
+        "max_early_data": 1861,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 0 § 38",
+      "server": "45.12.30.239",
+      "server_port": 80,
+      "uuid": "3f5c268b-ae1f-489d-9b80-8620e460bc48",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps----@Rk_Vps?ed=2048",
+        "headers": {
+          "Host": "joker.ahang-alpha.IR"
         }
       },
       "packet_encoding": ""
     },
     {
       "type": "vless",
-      "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 8",
+      "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1 § 39",
       "server": "84.201.20.248",
       "server_port": 45868,
       "uuid": "4d705f5a-6db6-4528-85cf-f7e0da6ccb16",
@@ -308,82 +973,26 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0 § 9",
-      "server": "finland.my-iranparspack.ir",
+      "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3 § 40",
+      "server": "57.129.93.146",
       "server_port": 443,
-      "uuid": "98a6bc60-f1e3-44c9-8cb6-c238b9e4dc02",
+      "uuid": "0d46bbe1-bfd1-45ad-be2d-03b531a2881b",
       "tls": {
         "enabled": true,
-        "server_name": "tgju.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-          "short_id": "e54b5ad736ae4c38"
-        }
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 14 § 10",
-      "server": "45.158.171.151",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 5 § 11",
-      "server": "45.87.175.178",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "cvII85TrW6n0OGyfpHVS1u"
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 12",
-      "server": "151.101.64.155",
-      "server_port": 80,
-      "uuid": "telegram-id-ArV2ray11",
-      "transport": {
-        "type": "ws",
-        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-        "headers": {
-          "Host": "mard.ankaboti.com."
-        },
-        "max_early_data": 2048,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "packet_encoding": ""
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 1 § 13",
-      "server": "13.37.13.220",
-      "server_port": 22223,
-      "password": "telegram-id-directvpn",
-      "tls": {
-        "enabled": true,
-        "server_name": "trojan.burgerip.co.uk",
-        "alpn": "http/1.1",
+        "server_name": "fauxid.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc",
+          "short_id": "eaab9c"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹LT | 🔴 | vless | @meli_proxyy | 4 § 14",
-      "server": "5.199.173.202",
-      "server_port": 8880,
-      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      },
       "transport": {
         "type": "grpc",
+        "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
         "idle_timeout": "15s",
         "ping_timeout": "15s"
       },
@@ -391,7 +1000,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 15",
+      "tag": "❔XX | 🟢 | vless | @TEHRANARGO | 4 § 41",
+      "server": "2a01:4f8:1c1b:e1d0::1",
+      "server_port": 8888,
+      "uuid": "Parsashonam-249",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7 § 42",
       "server": "148.135.195.96",
       "server_port": 44356,
       "uuid": "594e62b9-bb88-4264-b3fe-57f66202a96d",
@@ -412,6 +1029,851 @@
         "type": "grpc",
         "idle_timeout": "15s",
         "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 10 § 43",
+      "server": "148.135.195.96",
+      "server_port": 443,
+      "uuid": "f9bc4b4f-6cc4-41ee-bcfe-1fe6e3376dcd",
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 11 § 44",
+      "server": "nodes.maviks.eu",
+      "server_port": 8443,
+      "uuid": "f14d0d37-9c0e-4376-9d33-94aba1859e47",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "maviks.eu",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
+          "short_id": "f203719d3ff9a5f5"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0 § 45",
+      "server": "arvancloud.de.ir.systemgamingirani.ir",
+      "server_port": 443,
+      "uuid": "05d83460-c34e-4d1a-9bae-40f60e77cd95",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgju.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+          "short_id": "e54b5ad736ae4c38"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 1 § 46",
+      "server": "finland.my-iranparspack.ir",
+      "server_port": 443,
+      "uuid": "98a6bc60-f1e3-44c9-8cb6-c238b9e4dc02",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgju.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+          "short_id": "e54b5ad736ae4c38"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇺🇸US | 🟢 | vmess | @meli_proxyy | 2 § 47",
+      "server": "142.4.119.72",
+      "server_port": 57118,
+      "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+      "security": "auto",
+      "authenticated_length": true
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3 § 48",
+      "server": "199.232.13.32",
+      "server_port": 80,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "transport": {
+        "type": "ws",
+        "path": "/Channel-ELiV2RAY---ELiV2RAY",
+        "headers": {
+          "Host": "Telegram----ELiV2ray.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 4 § 49",
+      "server": "62.60.247.40",
+      "server_port": 52461,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rtigVwrcq9NNWgXBjjfzjx"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹LT | 🔴 | vless | @meli_proxyy | 5 § 50",
+      "server": "5.199.173.202",
+      "server_port": 8880,
+      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 6 § 51",
+      "server": "45.87.175.178",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "cvII85TrW6n0OGyfpHVS1u"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 7 § 52",
+      "server": "ns.cloudflare.com",
+      "server_port": 2086,
+      "uuid": "b20f8c7c-a47e-43b7-b4a4-bbab7d8014e3",
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/GoodLuck?ed=2560",
+        "headers": {
+          "Host": "rosiassn.digikala.com.snnapfood.ir.varzesh3.com.shobb.ir.kdvhgkri558rvhnfjrdghriuygfkrdhihifjdfjssiedhfgjung.sami0.ir."
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 8 § 53",
+      "server": "185.146.173.25",
+      "server_port": 80,
+      "uuid": "46181c32-8c82-413a-b836-8375e5e513eb",
+      "security": "auto",
+      "authenticated_length": true,
+      "transport": {
+        "type": "ws",
+        "path": "/d3d3LmlyYW5ob3N0LmNvbQ==",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 9 § 54",
+      "server": "199.232.13.32",
+      "server_port": 80,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "transport": {
+        "type": "ws",
+        "path": "/Channel-ELiV2RAY---ELiV2RAY",
+        "headers": {
+          "Host": "Telegram---ELi.V2ray.ir"
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇪SE | 🟢 | vmess | @meli_proxyy | 10 § 55",
+      "server": "185.146.173.25",
+      "server_port": 80,
+      "uuid": "46181c32-8c82-413a-b836-8375e5e513eb",
+      "security": "auto",
+      "authenticated_length": true,
+      "transport": {
+        "type": "ws",
+        "path": "/d3d3LmlyYW5ob3N0LmNvbQ==",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir."
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11 § 56",
+      "server": "arvancloud.de.ir.systemgamingirani.ir",
+      "server_port": 443,
+      "uuid": "ed4ac7bf-9ec8-4a7a-b45a-72b62f1e18dc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgju.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+          "short_id": "e54b5ad736ae4c38"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12 § 57",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray11",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13 § 58",
+      "server": "speedtest.net",
+      "server_port": 80,
+      "uuid": "3f0c9a0f-239d-4fdc-c3bc-3698bae8f2a0",
+      "transport": {
+        "type": "ws",
+        "path": "/olem/ws",
+        "headers": {
+          "Host": "foffmelo.com"
+        },
+        "max_early_data": 1024,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "❔XX | 🔴 | vless | @meli_proxyy | 14 § 59",
+      "server": "www.speedtest-divar.ir",
+      "server_port": 443,
+      "uuid": "0d46bbe1-bfd1-45ad-be2d-03b531a2881b",
+      "tls": {
+        "enabled": true,
+        "server_name": "fauxid.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc",
+          "short_id": "eaab9c"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "❔XX | 🟢 | vless | @meli_proxyy | 16 § 60",
+      "server": "macedonia.my-iranparspack.ir",
+      "server_port": 443,
+      "uuid": "963ec3d3-def9-4ae1-825d-00ff2f6da119",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgju.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+          "short_id": "e54b5ad736ae4c38"
+        }
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 17 § 61",
+      "server": "104.17.148.22",
+      "server_port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": {
+        "enabled": true,
+        "server_name": "UUHuhyYgESDfgh.UyHjhgvgFCjgujhBuILbVFDXdxM.xYZ",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/egFIvRfmDaCdL5Uk/ODQuMjM1LjE2OS4yMzQ=?ed=2560/?BIA_CHANEL@JOKERRVPN",
+        "headers": {
+          "Host": "UuhUHYygESDfgh.uYhJhGVgfCjgujhbUiLbVFdXDXM.XyZ"
+        },
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0 § 62",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray11",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 1 § 63",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray11",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 2 § 64",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray11",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 3 § 65",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 4 § 66",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 5 § 67",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 6 § 68",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 7 § 69",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 8 § 70",
+      "server": "193.46.81.83",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray4",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 9 § 71",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray10",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 10 § 72",
+      "server": "193.46.81.83",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray4",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 11 § 73",
+      "server": "193.46.81.67",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray4",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 12 § 74",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray9",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 13 § 75",
+      "server": "193.46.81.83",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray3",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 14 § 76",
+      "server": "193.46.81.67",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray3",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 15 § 77",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray9",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 16 § 78",
+      "server": "193.46.81.83",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray3",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17 § 79",
+      "server": "151.101.64.155",
+      "server_port": 80,
+      "uuid": "telegram-id-ArV2ray9",
+      "transport": {
+        "type": "ws",
+        "path": "/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+        "headers": {
+          "Host": "mard.ankaboti.com."
+        },
+        "max_early_data": 2048,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪DE | 🔴 | vless | @ArV2ray | 18 § 80",
+      "server": "193.46.81.67",
+      "server_port": 3567,
+      "uuid": "telegram-id-ArV2ray3",
+      "tls": {
+        "enabled": true,
+        "server_name": "maps.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_5Hw5RRcDyCnW7H3Ubmp9UnqNiQUaKfB5rPTDqI_kAA",
+          "short_id": "c14b9292de5a8d6f"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @OpenSSTPVpn | 0 § 81",
+      "server": "84.32.131.73",
+      "server_port": 8880,
+      "uuid": "df0680ca-e43c-498d-ed86-8e196eedd012",
+      "transport": {
+        "type": "grpc",
+        "idle_timeout": "15s",
+        "ping_timeout": "15s"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "trojan",
+      "tag": "🇺🇸US | 🔴 | trojan | @redfree8 | 0 § 82",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "password": "redfree8",
+      "tls": {
+        "enabled": true,
+        "server_name": "ipsychO.SUEx12.Ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/trre5IzbZ9IZZMddtw",
+        "headers": {
+          "Host": "ipsycho.suex12.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🚩CF | 🔴 | vless | @redfree8 | 1 § 83",
+      "server": "104.21.96.1",
+      "server_port": 443,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "tls": {
+        "enabled": true,
+        "server_name": "iPsyCHO.SUEx12.iR",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/RiuadVWEiFmFyL3C",
+        "headers": {
+          "Host": "ipsycho.suex12.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2 § 84",
+      "server": "www.speedtest.net",
+      "server_port": 80,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "transport": {
+        "type": "ws",
+        "path": "/re5IzbZ9IZZMddtw",
+        "headers": {
+          "Host": "ipsycho.suex12.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 3 § 85",
+      "server": "zula.ir",
+      "server_port": 443,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "tls": {
+        "enabled": true,
+        "server_name": "ipsychO.SUEx12.Ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/re5IzbZ9IZZMddtw",
+        "headers": {
+          "Host": "ipsycho.suex12.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "packet_encoding": ""
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 4 § 86",
+      "server": "www.speedtest.net",
+      "server_port": 443,
+      "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+      "tls": {
+        "enabled": true,
+        "server_name": "ipsychO.SUEx12.Ir",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/re5IzbZ9IZZMddtw",
+        "headers": {
+          "Host": "ipsycho.suex12.ir"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       },
       "packet_encoding": ""
     },
