@@ -109,6 +109,7 @@
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 9",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3"
             ]
         },
@@ -119,6 +120,7 @@
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 4",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 9",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -220,6 +222,35 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "finland.my-iranparspack.ir",
+            "server_port": 443,
+            "uuid": "2f99cab3-9044-4e7d-8073-5bfa87c7c1b5",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "random"
                 },
                 "reality": {
                     "enabled": true,
