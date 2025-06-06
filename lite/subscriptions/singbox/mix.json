@@ -109,19 +109,19 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
-                "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 6",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 6",
+                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 7",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 12",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 13",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -136,19 +136,19 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇧🇿BZ | 🔴 | vless | @SiNAVM | 1",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
-                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
-                "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 6",
+                "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 6",
+                "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 7",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 13",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 12",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 13",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 18",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -228,7 +228,7 @@
         {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "13.36.216.174",
+            "server": "15.237.7.228",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -248,9 +248,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "35.159.102.83",
+            "server": "13.36.216.174",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -339,7 +339,17 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 5",
+            "tag": "🇩🇪DE | 🟢 | ss | @ShadowProxy66 | 6",
+            "type": "shadowsocks",
+            "server": "68.183.213.232",
+            "server_port": 8443,
+            "method": "aes-256-gcm",
+            "password": "735fd4f4-bc55-400a-9f1c-2b91089c9200",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vmess | @ShadowProxy66 | 7",
             "type": "vmess",
             "server": "57.129.25.25",
             "server_port": 443,
@@ -370,23 +380,6 @@
                 "headers": {
                     "Host": "f.khilei.com"
                 }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🟢 | vmess | @ShadowProxy66 | 6",
-            "type": "vmess",
-            "server": "188.213.128.211",
-            "server_port": 1010,
-            "uuid": "799775e9-a2df-43dd-9d2d-b362fd60ef07",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -468,7 +461,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 11",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "arvancloud.de.ir.systemgamingirani.ir",
             "server_port": 443,
@@ -497,7 +490,7 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "finland.my-iranparspack.ir",
             "server_port": 443,
