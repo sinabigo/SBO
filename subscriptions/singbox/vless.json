@@ -107,11 +107,12 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
+                "❔XX | 🟢 | vless | @meli_proxyy | 2"
             ]
         },
         {
@@ -119,11 +120,12 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 4",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
+                "❔XX | 🟢 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -175,73 +177,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "185.143.233.120",
-            "server_port": 443,
-            "uuid": "64b48f35-d81e-4227-8075-6337e6ef0b85",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jmu.ac.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
-                "headers": {
-                    "Host": "jmu.ac.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
-            "type": "vless",
-            "server": "84.201.20.248",
-            "server_port": 45868,
-            "uuid": "0549a04c-28ff-4a35-95c7-ed5651f4ee53",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ",
-                    "short_id": "7f"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -259,6 +194,37 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "140.248.129.58",
+            "server_port": 443,
+            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Channel--MOSIV2--MOSIV2.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560",
+                "headers": {
+                    "Host": "Channel--MOSIV2--MOSIV2.IR"
                 }
             }
         },
@@ -299,6 +265,42 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "84.201.20.248",
+            "server_port": 45868,
+            "uuid": "0549a04c-28ff-4a35-95c7-ed5651f4ee53",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ",
+                    "short_id": "7f"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0",
             "type": "vless",
             "server": "NUFiLTER.fastly80-2.hosting-ip.com",
@@ -316,6 +318,35 @@
                 "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80",
                 "headers": {
                     "Host": "NUFiLTER.fastly80-2.hosting-ip.com"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "v07.vxlimir.com",
+            "server_port": 1370,
+            "uuid": "00f8d77b-ba64-4807-8fc0-bb3cbe89b6e6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
+                    "short_id": "e1afb93bfe75a34b"
                 }
             }
         }
