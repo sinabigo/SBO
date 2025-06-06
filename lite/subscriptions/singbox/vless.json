@@ -115,8 +115,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 14",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 13",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 14",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -136,8 +136,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🟢 | vless | @TEHRANARGO | 14",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
                 "🇬🇧GB | 🟢 | vless | @meli_proxyy | 13",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 14",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -336,6 +336,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "0d0782a3-2c62-4936-b893-5790188778ea",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "XbU10cS9vT.gIgA1.oRg",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "XbU10cS9vT.gIgA1.oRg"
+                }
+            }
+        },
+        {
             "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "78.129.155.89",
@@ -361,27 +392,6 @@
                     "enabled": true,
                     "public_key": "zeExWvxwf-KRpC4nulicavAOeMfT8LQ-kaNZAyQoPh8",
                     "short_id": "0817d6"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 14",
-            "type": "vless",
-            "server": "185.16.110.20",
-            "server_port": 8880,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "reedfree8mahsang2.redorg.ir"
                 }
             }
         },
