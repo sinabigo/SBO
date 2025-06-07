@@ -108,6 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
             ]
         },
@@ -117,6 +118,7 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
                 "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -189,6 +191,35 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "random"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+            "type": "vless",
+            "server": "tci.ir.cloud.us.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "05d83460-c34e-4d1a-9bae-40f60e77cd95",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
