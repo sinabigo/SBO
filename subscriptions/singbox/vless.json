@@ -107,10 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
-                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 4"
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ]
         },
         {
@@ -118,10 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
-                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 4"
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,27 +165,6 @@
             }
         },
         {
-            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
-            "type": "vless",
-            "server": "194.76.18.40",
-            "server_port": 80,
-            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "194.76.18.40"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "151.101.64.155",
@@ -207,6 +186,41 @@
             }
         },
         {
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+            "type": "vless",
+            "server": "194.76.18.40",
+            "server_port": 80,
+            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "194.76.18.40"
+                }
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
+            "type": "vless",
+            "server": "[0:0:0:0:0:ffff:bcf5:cee9]",
+            "server_port": 8051,
+            "uuid": "6d483827-7155-4483-b1e6-551e1304e5af",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0",
             "type": "vless",
             "server": "NUFiLTER.fastly80-2.hosting-ip.com",
@@ -225,20 +239,6 @@
                 "headers": {
                     "Host": "NUFiLTER.fastly80-2.hosting-ip.com"
                 }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🔴 | vless | @meli_proxyy | 4",
-            "type": "vless",
-            "server": "84.234.31.140",
-            "server_port": 66,
-            "uuid": "98f6bad3-37ea-4b8e-8892-e759c0c0c67b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         }
     ],
