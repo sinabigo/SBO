@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "❔XX | 🟢 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ]
         },
@@ -121,10 +122,11 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 5",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "❔XX | 🟢 | vless | @meli_proxyy | 3",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -208,33 +210,23 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 5",
             "type": "vless",
-            "server": "140.248.129.58",
-            "server_port": 443,
-            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
-            "flow": "xtls-rprx-vision",
+            "server": "194.76.18.0",
+            "server_port": 80,
+            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "Channel--MOSIV2--MOSIV2.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560",
+                "path": "\/vless\/",
                 "headers": {
-                    "Host": "Channel--MOSIV2--MOSIV2.IR"
+                    "Host": "194.76.18.0"
                 }
             }
         },
@@ -275,23 +267,33 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray11",
-            "flow": "",
+            "server": "140.248.129.58",
+            "server_port": 443,
+            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "Channel--MOSIV2--MOSIV2.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "path": "\/Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560",
                 "headers": {
-                    "Host": "151.101.64.155"
+                    "Host": "Channel--MOSIV2--MOSIV2.IR"
                 }
             }
         },
@@ -321,6 +323,27 @@
                     "enabled": true,
                     "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
                     "short_id": "e1afb93bfe75a34b"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray11",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
                 }
             }
         },
