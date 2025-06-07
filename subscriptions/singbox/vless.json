@@ -107,8 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ]
         },
@@ -117,8 +119,10 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -163,6 +167,41 @@
             }
         },
         {
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+            "type": "vless",
+            "server": "194.76.18.40",
+            "server_port": 80,
+            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "194.76.18.40"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇭CH | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "84.234.31.140",
+            "server_port": 66,
+            "uuid": "98f6bad3-37ea-4b8e-8892-e759c0c0c67b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
             "type": "vless",
             "server": "arvancloud.fn.ir.systemgamingirani.ir",
@@ -192,7 +231,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 8080,
