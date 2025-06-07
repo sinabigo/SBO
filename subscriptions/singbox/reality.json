@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "gerr2.mohammadihadron.ir",
+            "server_port": 2053,
+            "uuid": "539c163c-b710-408f-bda6-29ad5e5cb2ca",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "colorlib.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4PTi0kHTkABFYGzjfKeG2SdXZc5nkmo2WJeojJwf7HI",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
