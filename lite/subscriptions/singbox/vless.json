@@ -112,10 +112,10 @@
                 "❔XX | 🔴 | vless | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+                "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -132,10 +132,10 @@
                 "❔XX | 🔴 | vless | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 14",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+                "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
+                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -270,7 +270,21 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "eb193551-b519-4897-b727-5fffb2a9b7cf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 15",
             "type": "vless",
             "server": "148.135.195.96",
             "server_port": 443,
@@ -284,11 +298,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 15",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "nodes.maviks.eu",
-            "server_port": 8443,
-            "uuid": "f14d0d37-9c0e-4376-9d33-94aba1859e47",
+            "server": "arvancloud.de.ir.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "cf069ba9-3d6d-482f-9982-20fc55d04c9b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -298,7 +312,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "maviks.eu",
+                "server_name": "tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -307,13 +321,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "lyLhdojpACv6B3tHViJvPjNGATedXYRMnpAt4n4Siyo",
-                    "short_id": "f203719d3ff9a5f5"
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
         {
-            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 12",
+            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
             "type": "vless",
             "server": "finland.my-iranparspack.ir",
             "server_port": 443,
@@ -333,35 +347,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "random"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
-            "type": "vless",
-            "server": "tci.ir.cloud.us.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "05d83460-c34e-4d1a-9bae-40f60e77cd95",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
