@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 18",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 18",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17"
             ],
@@ -136,6 +138,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+            "type": "vless",
+            "server": "164.90.223.126",
+            "server_port": 443,
+            "uuid": "afea4855-186d-47ee-a056-016c98f82b0f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5x1UhHN7fsLbdxqkS53cOQXVodWYlKgYaNIv58d_8CY",
+                    "short_id": "5ad6"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 18",

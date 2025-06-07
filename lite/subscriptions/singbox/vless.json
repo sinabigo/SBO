@@ -107,11 +107,14 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
+                "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 0",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
@@ -124,11 +127,14 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "❔XX | 🔴 | vless | @customv2ray | 1",
+                "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 0",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 17",
@@ -187,7 +193,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "www.visa.com",
             "server_port": 2082,
@@ -243,6 +249,34 @@
             }
         },
         {
+            "tag": "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "176.223.66.8",
+            "server_port": 39948,
+            "uuid": "2558c819-1363-4859-8fb9-f8cb104d49d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
+            "type": "vless",
+            "server": "[0:0:0:0:0:ffff:bcf5:cee9]",
+            "server_port": 8051,
+            "uuid": "6d483827-7155-4483-b1e6-551e1304e5af",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
@@ -274,6 +308,35 @@
                 "path": "\/?ed=1861",
                 "headers": {
                     "Host": "client.bluwave.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
+            "type": "vless",
+            "server": "164.90.223.126",
+            "server_port": 443,
+            "uuid": "afea4855-186d-47ee-a056-016c98f82b0f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5x1UhHN7fsLbdxqkS53cOQXVodWYlKgYaNIv58d_8CY",
+                    "short_id": "5ad6"
                 }
             }
         },
