@@ -114,8 +114,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -134,8 +134,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 14",
                 "🇭🇰HK | 🟢 | vless | @TEHRANARGO | 15",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
-                "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 18",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -298,7 +298,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+            "type": "vless",
+            "server": "140.248.129.58",
+            "server_port": 443,
+            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Channel-MOSIV2--MOSIV2.IR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560",
+                "headers": {
+                    "Host": "Channel-MOSIV2--MOSIV2.IR"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 14",
             "type": "vless",
             "server": "arvancloud.de.ir.systemgamingirani.ir",
             "server_port": 443,
@@ -318,35 +349,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🟢 | vless | @meli_proxyy | 14",
-            "type": "vless",
-            "server": "finland.my-iranparspack.ir",
-            "server_port": 443,
-            "uuid": "2f99cab3-9044-4e7d-8073-5bfa87c7c1b5",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "random"
                 },
                 "reality": {
                     "enabled": true,
