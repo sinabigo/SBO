@@ -122,8 +122,8 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | trojan | @SiNAVM | 3","type":"trojan","server":"wispy-crib-net.stark-industries.solutions","port":443,"udp":false,"password":"3482c71a-d01c-4ae5-b454-fa8cb3785f66","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome"}
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 4","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"35.181.245.246","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"15.188.211.251","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"18.195.146.37","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"35.181.245.246","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -132,7 +132,7 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | trojan | @SiNAVM | 3'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
   - name: URL-TEST
     type: url-test
@@ -142,7 +142,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @SiNAVM | 3'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
   - name: FALLBACK
     type: fallback
@@ -151,7 +151,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | trojan | @SiNAVM | 3'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
