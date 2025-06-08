@@ -106,20 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
-                "❔XX | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
-                "❔XX | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,35 +138,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "gerr2.mohammadihadron.ir",
-            "server_port": 2053,
-            "uuid": "539c163c-b710-408f-bda6-29ad5e5cb2ca",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "colorlib.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4PTi0kHTkABFYGzjfKeG2SdXZc5nkmo2WJeojJwf7HI",
-                    "short_id": ""
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
@@ -200,6 +169,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "gerr2.mohammadihadron.ir",
+            "server_port": 2053,
+            "uuid": "539c163c-b710-408f-bda6-29ad5e5cb2ca",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "colorlib.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4PTi0kHTkABFYGzjfKeG2SdXZc5nkmo2WJeojJwf7HI",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
             "server": "arvancloud.fr.ir.systemgamingirani.ir",
@@ -225,35 +223,6 @@
                     "enabled": true,
                     "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
                     "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "v07.vxlimir.com",
-            "server_port": 1370,
-            "uuid": "00f8d77b-ba64-4807-8fc0-bb3cbe89b6e6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
-                    "short_id": "e1afb93bfe75a34b"
                 }
             }
         }
