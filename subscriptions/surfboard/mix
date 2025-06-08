@@ -11,17 +11,17 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10 = ss, 23.154.136.132, 5499, encrypt-method = aes-256-gcm, password = lGqs95QkFHo2NV
 🇨🇦CA | 🔴 | trojan | @SiNAVM | 2 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
+🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10 = ss, 23.154.136.132, 5499, encrypt-method = aes-256-gcm, password = lGqs95QkFHo2NV
 🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 35.180.102.117, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇩🇪DE | 🟢 | trojan | @DirectVPN | 2 = trojan, 35.156.176.104, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16 = ss, 89.23.103.21, 51584, encrypt-method = chacha20-ietf-poly1305, password = oYQ8JwEldYn4KT2gfZ6eNl
 🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 51.195.119.47, 1080, encrypt-method = chacha20-ietf-poly1305, password = qXvO7zYU7KeaB0Md7DQLow
-🇨🇴CO | 🟢 | ss | @DeamNet_Proxy | 6 = ss, 181.119.30.20, 990, encrypt-method = chacha20-ietf-poly1305, password = f8f7aCzcPKbsF8p3
+🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1 = ss, mx2.drawnrisha.one, 55988, encrypt-method = chacha20-ietf-poly1305, password = 2DvuGfaUJ7oM9E6mHWkZN9dAjPxtpndv4ckpPpyuexJxKLn6SpDQdBBJDFE6Gqj9MXpRHPDwYfNAqKgpBWTCWPrG4eDmnGTZ
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇴CO | 🟢 | ss | @DeamNet_Proxy | 6
-URL-TEST = url-test,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇴CO | 🟢 | ss | @DeamNet_Proxy | 6
-FALLBACK = fallback,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇨🇴CO | 🟢 | ss | @DeamNet_Proxy | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 2,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 10,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2,🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 16,🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 17,🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

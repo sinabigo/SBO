@@ -111,12 +111,11 @@
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
                 "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
                 "🇨🇭CH | 🔴 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ]
         },
         {
@@ -128,12 +127,11 @@
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
                 "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
                 "🇨🇭CH | 🔴 | vless | @meli_proxyy | 0",
                 "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3"
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -290,6 +288,27 @@
             }
         },
         {
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
+            "type": "vless",
+            "server": "194.76.18.40",
+            "server_port": 80,
+            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "194.76.18.40"
+                }
+            }
+        },
+        {
             "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 1",
             "type": "vless",
             "server": "arvancloud.fr.ir.systemgamingirani.ir",
@@ -315,27 +334,6 @@
                     "enabled": true,
                     "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
                     "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 3",
-            "type": "vless",
-            "server": "194.76.18.40",
-            "server_port": 80,
-            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "194.76.18.40"
                 }
             }
         },
@@ -385,27 +383,6 @@
                 "path": "\/telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER?ed=80",
                 "headers": {
                     "Host": "NUFiLTER.fastly80-2.hosting-ip.com"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
-            "type": "vless",
-            "server": "199.232.13.32",
-            "server_port": 80,
-            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "199.232.13.32"
                 }
             }
         }
