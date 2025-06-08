@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12","type":"vless","server":"57.129.93.146","port":443,"udp":true,"uuid":"0d46bbe1-bfd1-45ad-be2d-03b531a2881b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"fauxid.com","grpc-opts":{"grpc-service-name":"Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry"},"reality-opts":{"public-key":"BwXeuQqugoDcQvIWNNUJ5iz7DYldgMJq23Gl9y-S-yc","short-id":"eaab9c"}}
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 23","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"8016e3e2-85a9-4e9c-86cc-379a888aa59d","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 24","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"8016e3e2-85a9-4e9c-86cc-379a888aa59d","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 23'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 24'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,14 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 23'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 24'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12'
-      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 23'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 24'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
