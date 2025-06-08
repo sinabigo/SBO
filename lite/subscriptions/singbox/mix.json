@@ -108,8 +108,8 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | trojan | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
@@ -119,8 +119,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 22",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 23",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 23",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -134,8 +134,8 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | trojan | @SiNAVM | 1",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 2",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
@@ -145,8 +145,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 22",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 23",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 23",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24",
                 "🇩🇪DE | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -225,9 +225,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 12",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "63.178.80.159",
+            "server": "63.178.161.58",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -247,9 +247,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 13",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "35.159.252.83",
+            "server": "18.184.137.206",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -448,7 +448,17 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 22",
+            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 23",
+            "type": "shadowsocks",
+            "server": "45.150.32.13",
+            "server_port": 38707,
+            "method": "chacha20-ietf-poly1305",
+            "password": "NMiJKeh4yMumfyYVvjq0LR",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 24",
             "type": "vless",
             "server": "arvancloud.de.ir.systemgamingirani.ir",
             "server_port": 443,
@@ -474,20 +484,6 @@
                     "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
                     "short_id": "e54b5ad736ae4c38"
                 }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 23",
-            "type": "vless",
-            "server": "62.60.148.163",
-            "server_port": 32373,
-            "uuid": "1346af39-3b57-4886-a237-5911f47a6e20",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
