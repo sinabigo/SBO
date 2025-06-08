@@ -106,8 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 10",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
             ]
         },
@@ -115,8 +116,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 10",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -140,9 +142,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "arvancloud.fr.ir.systemgamingirani.ir",
+            "server": "FASTSHOVPNTELEGRAM.bgdragonshop.ir",
+            "server_port": 2053,
+            "uuid": "daa6ed94-d0a5-484f-925d-a6c6f4aaae62",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "eR4J5FtMqaNxy-RvJb6JzcBoREYy7iDGC61J6xtQHkc",
+                    "short_id": "48"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 9",
+            "type": "vless",
+            "server": "arvancloud.nl.ir.systemgamingirani.ir",
             "server_port": 443,
             "uuid": "412edced-249e-4f49-a2f5-aa9546f0a6ba",
             "flow": "xtls-rprx-vision",
@@ -169,9 +200,9 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 8",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 10",
             "type": "vless",
-            "server": "arvancloud.nl.ir.systemgamingirani.ir",
+            "server": "arvancloud.fr.ir.systemgamingirani.ir",
             "server_port": 443,
             "uuid": "412edced-249e-4f49-a2f5-aa9546f0a6ba",
             "flow": "xtls-rprx-vision",
