@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
         },
@@ -114,7 +113,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 19",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,23 +134,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 19",
-            "type": "vmess",
-            "server": "62.146.232.156",
-            "server_port": 33281,
-            "uuid": "24eda0ea-acf0-4538-a001-f746a480237a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
         },
         {
             "tag": "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
