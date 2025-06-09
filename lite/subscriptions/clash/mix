@@ -124,6 +124,7 @@ proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"3.66.181.68","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"67.220.95.102","port":7307,"password":"FoOiGlkAA9yPEGP","cipher":"aes-256-gcm"}
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"89.23.103.125","port":42090,"password":"uQS5ntVqC00sSKkeNzUiD3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 16","type":"ss","server":"api.namasha.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -136,6 +137,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -148,6 +150,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -159,6 +162,7 @@ proxy-groups:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 17'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 18'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 16'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
