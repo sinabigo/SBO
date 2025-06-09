@@ -115,8 +115,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
-                "❔XX | 🔴 | vless | @meli_proxyy | 21",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 22",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
+                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 21",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -135,8 +135,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
-                "❔XX | 🔴 | vless | @meli_proxyy | 21",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 22",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
+                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 21",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -344,25 +344,35 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 21",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 20",
             "type": "vless",
-            "server": "[2a01:4f8:1c1b:e1d0::1]",
-            "server_port": 8888,
-            "uuid": "Parsashonam-251",
+            "server": "asanaf.ir",
+            "server_port": 24572,
+            "uuid": "183d4a1f-6ce9-43e9-d62c-ffe4c0eded47",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "asanaf.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 22",
+            "tag": "🇨🇭CH | 🔴 | vless | @meli_proxyy | 21",
             "type": "vless",
-            "server": "185.146.173.39",
-            "server_port": 8880,
-            "uuid": "Parsashonam-251",
+            "server": "84.234.31.224",
+            "server_port": 55,
+            "uuid": "5f64020c-87d6-4784-bc48-63a55499d173",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
