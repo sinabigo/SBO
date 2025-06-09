@@ -122,6 +122,7 @@ dns:
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 4","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
   - {"name":"🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1","type":"trojan","server":"146.19.106.154","port":443,"udp":false,"password":"3482c71a-d01c-4ae5-b454-fa8cb3785f66","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"both-cramp-banjo.stark-industries.solutions"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"18.198.168.170","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -138,6 +140,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -145,6 +148,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 4'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
