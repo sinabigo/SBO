@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 4",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 4",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 4",
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
             "type": "vless",
-            "server": "arvancloud.fr.ir.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "8016e3e2-85a9-4e9c-86cc-379a888aa59d",
+            "server": "51.89.224.214",
+            "server_port": 1370,
+            "uuid": "92fc3c1b-c409-4610-b1a6-9a8ef4287891",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "refersion.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -161,37 +159,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
-            "type": "vless",
-            "server": "arvancloud.fn.ir.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "8016e3e2-85a9-4e9c-86cc-379a888aa59d",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
+                    "short_id": "e1afb93bfe75a34b"
                 }
             }
         }
