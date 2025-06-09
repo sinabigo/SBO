@@ -121,7 +121,8 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9","type":"vless","server":"51.89.224.214","port":1370,"udp":true,"uuid":"92fc3c1b-c409-4610-b1a6-9a8ef4287891","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"refersion.com","reality-opts":{"public-key":"_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw","short-id":"e1afb93bfe75a34b"}}
-  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 21","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"412edced-249e-4f49-a2f5-aa9546f0a6ba","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 21","type":"vless","server":"arvancloud.fn.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"412edced-249e-4f49-a2f5-aa9546f0a6ba","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 22","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"412edced-249e-4f49-a2f5-aa9546f0a6ba","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 21'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 22'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,6 +140,7 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 21'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 22'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -145,6 +148,7 @@ proxy-groups:
     proxies:
       - '🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9'
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 21'
+      - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 22'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
