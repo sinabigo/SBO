@@ -11,14 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🔴 | trojan | @SiNAVM | 4 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
 🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1 = trojan, 146.19.106.154, 443, password = 3482c71a-d01c-4ae5-b454-fa8cb3785f66, udp-delay = true, skip-cert-verify = false, sni = both-cramp-banjo.stark-industries.solutions, ws = false
-🇨🇦CA | 🔴 | trojan | @SiNAVM | 4 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 13.36.9.255, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇩🇪DE | 🟢 | trojan | @DirectVPN | 2 = trojan, 18.198.168.170, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1,🇨🇦CA | 🔴 | trojan | @SiNAVM | 4,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2
-URL-TEST = url-test,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1,🇨🇦CA | 🔴 | trojan | @SiNAVM | 4,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2
-FALLBACK = fallback,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1,🇨🇦CA | 🔴 | trojan | @SiNAVM | 4,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0,🇩🇪DE | 🟢 | trojan | @DirectVPN | 2
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @SiNAVM | 4,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @SiNAVM | 4,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @SiNAVM | 4,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 1
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
