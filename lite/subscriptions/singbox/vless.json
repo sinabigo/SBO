@@ -106,14 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "❔XX | 🔴 | vless | @ShadowProxy66 | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 21",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -125,14 +124,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "❔XX | 🔴 | vless | @ShadowProxy66 | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 21",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 22",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -158,37 +156,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "188.114.96.3",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "PpAl03.CaS-DaRrEL.woRKers.DeV",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/onE69FbragOJyRlT?ed=2560",
-                "headers": {
-                    "Host": "PpAl03.CaS-DaRrEL.woRKers.DeV"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 4",
@@ -275,6 +242,42 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 7",
+            "type": "vless",
+            "server": "Netherland.mehrdadsadaf.com",
+            "server_port": 7594,
+            "uuid": "5dbd17f8-30af-4bcf-8469-3cc6184b0057",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw",
+                    "short_id": "765e8e700426816c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "7594vless",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "ns.cloudflare.com",
@@ -286,35 +289,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 9",
-            "type": "vless",
-            "server": "51.89.224.214",
-            "server_port": 1370,
-            "uuid": "92fc3c1b-c409-4610-b1a6-9a8ef4287891",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "_N3KecwB9Ck28IIMxIck00ivkq3_ZEUvU3KXELnfvHw",
-                    "short_id": "e1afb93bfe75a34b"
-                }
             }
         },
         {
