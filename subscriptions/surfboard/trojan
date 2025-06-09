@@ -12,11 +12,10 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | 🔴 | trojan | @SiNAVM | 3 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
-🇨🇦CA | 🟢 | trojan | @meli_proxyy | 6 = trojan, 146.19.106.154, 443, password = 3482c71a-d01c-4ae5-b454-fa8cb3785f66, udp-delay = true, skip-cert-verify = false, sni = both-cramp-banjo.stark-industries.solutions, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 6
-URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 6
-FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 6
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 3
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
