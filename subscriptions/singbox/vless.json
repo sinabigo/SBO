@@ -106,15 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 12",
+                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
-                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 3"
             ]
@@ -123,15 +122,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 12",
+                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
                 "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
-                "🇨🇭CH | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇹🇷TR | 🔴 | vless | @ShadowProxy66 | 3"
             ],
@@ -154,27 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
-            "type": "vless",
-            "server": "172.67.215.253",
-            "server_port": 80,
-            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/yeTxGofK7eV9fR3N?ed=2560",
-                "headers": {
-                    "Host": "172.67.215.253"
-                }
-            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 12",
@@ -208,6 +185,27 @@
             }
         },
         {
+            "tag": "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "172.67.215.253",
+            "server_port": 80,
+            "uuid": "7fed5bf9-a1de-41a0-ab89-694265c4895f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/yeTxGofK7eV9fR3N?ed=2560",
+                "headers": {
+                    "Host": "172.67.215.253"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "199.232.13.32",
@@ -225,6 +223,56 @@
                 "path": "\/Channel-ELiV2RAY---ELiV2RAY",
                 "headers": {
                     "Host": "199.232.13.32"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray12",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
+            "type": "vless",
+            "server": "arvancloud.nl.ir.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "412edced-249e-4f49-a2f5-aa9546f0a6ba",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
@@ -258,59 +306,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "151.101.64.155",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray12",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "151.101.64.155"
-                }
-            }
-        },
-        {
             "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "arvancloud.fr.ir.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "412edced-249e-4f49-a2f5-aa9546f0a6ba",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 14",
-            "type": "vless",
-            "server": "arvancloud.nl.ir.systemgamingirani.ir",
             "server_port": 443,
             "uuid": "412edced-249e-4f49-a2f5-aa9546f0a6ba",
             "flow": "xtls-rprx-vision",
@@ -370,20 +368,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🔴 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "84.234.31.224",
-            "server_port": 55,
-            "uuid": "5f64020c-87d6-4784-bc48-63a55499d173",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
