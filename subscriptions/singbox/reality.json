@@ -107,7 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 6"
             ]
         },
         {
@@ -115,7 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,9 +142,9 @@
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "arvancloud.de.ir.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "99e7663b-3c55-46a3-8b84-f174d814cc93",
+            "server": "FASTSHOVPNTELEGRAM.bgdragonshop.ir",
+            "server_port": 2053,
+            "uuid": "10754048-2974-4c78-a325-6e4d43aea471",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,17 +154,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "www.tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "chrome"
+                    "fingerprint": "firefox"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
+                    "public_key": "Bmx2LQOEEVejMfacdMoInvB99Z0TZRWwq6V6oL80f1M",
+                    "short_id": "e9967ba27ece"
                 }
             }
         },
@@ -200,6 +202,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "185.255.112.147",
+            "server_port": 7580,
+            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
+                    "short_id": ""
+                }
             }
         }
     ],
