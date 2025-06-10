@@ -106,14 +106,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -134,6 +138,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+            "type": "vless",
+            "server": "91.107.152.130",
+            "server_port": 443,
+            "uuid": "d53da42f-d4b7-4d80-a9ca-cecf3beaa79a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "kxj-EhIXEgwh66gBVOf3shmmwuMqKgsd0mUJNUN8Gw8",
+                    "short_id": "d62385a8"
+                }
+            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 1",
@@ -169,6 +202,35 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 9",
+            "type": "vless",
+            "server": "185.255.112.147",
+            "server_port": 7580,
+            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
+                    "short_id": ""
+                }
             }
         }
     ],
