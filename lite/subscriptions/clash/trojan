@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"52.47.93.214","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"52.47.60.114","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"35.180.102.117","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"52.47.132.220","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19","type":"trojan","server":"146.19.106.154","port":443,"udp":false,"password":"3482c71a-d01c-4ae5-b454-fa8cb3785f66","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"both-cramp-banjo.stark-industries.solutions"}
 proxy-groups:
   - name: MANUAL
@@ -129,8 +129,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19'
   - name: URL-TEST
     type: url-test
@@ -139,8 +139,8 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19'
   - name: FALLBACK
     type: fallback
@@ -148,8 +148,8 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 12'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 13'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 17'
       - '🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

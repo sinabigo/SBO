@@ -12,13 +12,13 @@ enhanced-mode-by-rule = true
 [Proxy]
 DIRECT = direct
 🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 12 = trojan, 52.47.93.214, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
-🇫🇷FR | 🟢 | trojan | @DirectVPN | 13 = trojan, 52.47.60.114, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 16 = trojan, 35.180.102.117, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 17 = trojan, 52.47.132.220, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19 = trojan, 146.19.106.154, 443, password = 3482c71a-d01c-4ae5-b454-fa8cb3785f66, udp-delay = true, skip-cert-verify = false, sni = both-cramp-banjo.stark-industries.solutions, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 12,🇫🇷FR | 🟢 | trojan | @DirectVPN | 13,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
-URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 12,🇫🇷FR | 🟢 | trojan | @DirectVPN | 13,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
-FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 12,🇫🇷FR | 🟢 | trojan | @DirectVPN | 13,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16,🇫🇷FR | 🟢 | trojan | @DirectVPN | 17,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
+URL-TEST = url-test,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16,🇫🇷FR | 🟢 | trojan | @DirectVPN | 17,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
+FALLBACK = fallback,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 16,🇫🇷FR | 🟢 | trojan | @DirectVPN | 17,🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
