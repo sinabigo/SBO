@@ -118,8 +118,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 19",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 18",
+                "🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -142,8 +142,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 19",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 18",
+                "🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -411,17 +411,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 18",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 19",
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 18",
             "type": "shadowsocks",
             "server": "9.163.232.180",
             "server_port": 1490,
@@ -429,6 +419,28 @@
             "password": "ojcP36n1SouDcnBg9EOZP8",
             "plugin": "",
             "plugin_opts": ""
+        },
+        {
+            "tag": "🇨🇦CA | 🟢 | trojan | @meli_proxyy | 19",
+            "type": "trojan",
+            "server": "146.19.106.154",
+            "server_port": 443,
+            "password": "3482c71a-d01c-4ae5-b454-fa8cb3785f66",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "both-cramp-banjo.stark-industries.solutions",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
