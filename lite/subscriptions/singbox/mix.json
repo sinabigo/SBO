@@ -118,8 +118,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 8",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -143,8 +143,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 8",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1",
@@ -428,7 +428,38 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "185.143.233.120",
+            "server_port": 443,
+            "uuid": "telegram-mitivpn",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "abu.ac.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-mitivpn-telegram-mitivpn-telegram-mitivpn",
+                "headers": {
+                    "Host": "abu.ac.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "128.140.105.111",
             "server_port": 8443,
@@ -453,27 +484,6 @@
                     "enabled": true,
                     "public_key": "wlPxU9P1fUny_aPX8BTv-ujgUlfw4hQ1l1KsK0Pv2kw",
                     "short_id": "db5a"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "199.232.13.32",
-            "server_port": 80,
-            "uuid": "269c963f-6021-4547-8303-cc764085603b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "headers": {
-                    "Host": "199.232.13.32"
                 }
             }
         },
