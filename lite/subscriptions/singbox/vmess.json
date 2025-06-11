@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ]
@@ -114,6 +115,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16",
                 "❔XX | 🟢 | vmess | @OpenSSTPVpn | 1"
             ],
@@ -136,6 +138,30 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "type": "vmess",
+            "server": "5.196.29.123",
+            "server_port": 2082,
+            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "5.196.29.123"
+                }
+            }
         },
         {
             "tag": "🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16",

@@ -11,10 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18 = vmess, 5.196.29.123, 2082, username = 112ac36f-3f53-4e26-8371-d25c028e1b9a, ws = true, tls = , vmess-aead = true, ws-path = /, ws-headers = Host:"", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18
+URL-TEST = url-test,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18
+FALLBACK = fallback,🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
