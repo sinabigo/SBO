@@ -119,11 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 16","type":"trojan","server":"13.39.8.130","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 17","type":"trojan","server":"3.64.245.111","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18","type":"vmess","server":"5.196.29.123","port":"2082","cipher":"auto","uuid":"112ac36f-3f53-4e26-8371-d25c028e1b9a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"ws","ws-opts":{"path":"/","headers":{"host":"5.196.29.123"}}}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"94wmMoMPkmrWhgSg3qoWTTLdyDXToQyL654pMeQq91uMpWY2hUZxg5NRQfKfiVGXvyRnt9fd8oV5RWaCfCj5Yu7VFGrhkixE","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16","type":"vmess","server":"45.89.109.43","port":"51039","cipher":"auto","uuid":"12947e56-ab80-43bf-9145-72fa50e41c9a","alterId":"0","tls":false,"skip-cert-verify":true,"network":"tcp"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"13.36.59.49","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"15.237.225.174","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"23.154.136.132","port":8080,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,11 +129,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
-      - '🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -143,22 +139,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
-      - '🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 16'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 17'
-      - '🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇯🇵JP | 🟢 | vmess | @meli_proxyy | 16'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
