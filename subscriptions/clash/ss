@@ -121,7 +121,6 @@ proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"23.154.136.51","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"45.144.48.63","port":57456,"password":"d3837224ed465f00","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 17","type":"ss","server":"160.19.78.75","port":443,"password":"Nk9asglDzHzjktVzTkvhaA","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"94wmMoMPkmrWhgSg3qoWTTLdyDXToQyL654pMeQq91uMpWY2hUZxg5NRQfKfiVGXvyRnt9fd8oV5RWaCfCj5Yu7VFGrhkixE","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
       - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -141,7 +139,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
       - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -150,7 +147,6 @@ proxy-groups:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
       - '🇻🇳VN | 🟢 | ss | @DeamNet_Proxy | 17'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
