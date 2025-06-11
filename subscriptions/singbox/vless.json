@@ -108,11 +108,13 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 11",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "❔XX | 🔴 | vless | @meli_proxyy | 2",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1"
             ]
         },
         {
@@ -121,11 +123,13 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 11",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
+                "❔XX | 🔴 | vless | @meli_proxyy | 2",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -190,6 +194,35 @@
             }
         },
         {
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 11",
+            "type": "vless",
+            "server": "185.255.112.147",
+            "server_port": 7580,
+            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "5.75.198.111",
@@ -240,44 +273,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "15.204.151.74",
-            "server_port": 443,
-            "uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135010072.sec21org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "zmaoz.faculty.ucdavis.edu",
-            "server_port": 80,
-            "uuid": "ed87c882-17f3-491a-810c-c0000e4b279e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
             "type": "vless",
             "server": "84.201.20.248",
@@ -311,6 +306,73 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "vpntv29293.erfantop.ir",
+            "server_port": 443,
+            "uuid": "ea7eb6ce-404b-4200-aa71-c537fa913df6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "check-host.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "VhLTH3VbBCBpeTJr_wZZwZ4zckHZuC1tR1WFlRyO4ys",
+                    "short_id": "0186f1b99ac86077"
+                }
+            }
+        },
+        {
+            "tag": "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "zmaoz.faculty.ucdavis.edu",
+            "server_port": 80,
+            "uuid": "ed87c882-17f3-491a-810c-c0000e4b279e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "15.204.151.74",
+            "server_port": 443,
+            "uuid": "c4fa89d4-fcb9-48ba-adbc-665181cc817f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135010072.sec21org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         }
     ],
