@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 8",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 8",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -123,14 +123,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 8",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 8",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 9",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 3",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇫🇷FR | 🟢 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -156,7 +156,28 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @customv2ray | 8",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "www.visa.com",
+            "server_port": 8880,
+            "uuid": "9ffa6da8-26dc-435c-884b-32662e7ffe7e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "www.visa.com"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 8",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 2087,
@@ -301,7 +322,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "199.232.13.32",
             "server_port": 80,
@@ -318,35 +339,6 @@
                 "path": "\/Channel-ELiV2RAY---ELiV2RAY",
                 "headers": {
                     "Host": "199.232.13.32"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "185.255.112.147",
-            "server_port": 7580,
-            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
-                    "short_id": ""
                 }
             }
         },
