@@ -120,8 +120,8 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"23.154.136.51","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"18.196.72.95","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"94wmMoMPkmrWhgSg3qoWTTLdyDXToQyL654pMeQq91uMpWY2hUZxg5NRQfKfiVGXvyRnt9fd8oV5RWaCfCj5Yu7VFGrhkixE","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"63.177.144.62","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"45.144.48.63","port":57456,"password":"d3837224ed465f00","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +131,8 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
   - name: URL-TEST
     type: url-test
@@ -142,8 +142,8 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
   - name: FALLBACK
     type: fallback
@@ -152,8 +152,8 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve

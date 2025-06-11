@@ -121,7 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"23.154.136.51","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
-  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"mx2.drawnrisha.one","port":55988,"password":"94wmMoMPkmrWhgSg3qoWTTLdyDXToQyL654pMeQq91uMpWY2hUZxg5NRQfKfiVGXvyRnt9fd8oV5RWaCfCj5Yu7VFGrhkixE","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10","type":"ss","server":"45.144.48.63","port":57456,"password":"d3837224ed465f00","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +130,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
   - name: URL-TEST
     type: url-test
@@ -139,7 +139,7 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
   - name: FALLBACK
     type: fallback
@@ -147,7 +147,7 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
-      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 10'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
