@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇩🇪DE | 🟢 | vless | @meli_proxyy | 1","type":"vless","server":"FASTSHOVPNTELEGRAM.vinamarketcenter.ir","port":2053,"udp":true,"uuid":"a48d508e-1659-4ca0-a29a-5d931b053bf1","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"www.tgju.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"J_hakbFY6qXqGMQr2hSQx686SjqZn4CU4d1BUai7G0Q","short-id":"b5"}}
+  - {"name":"🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0","type":"vless","server":"84.201.20.248","port":45868,"udp":true,"uuid":"cc038b26-d56c-4ea1-8e88-1c9f8e0d676b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"google.com","grpc-opts":{"grpc-service-name":"@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod"},"reality-opts":{"public-key":"Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ","short-id":"7f"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -135,12 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇩🇪DE | 🟢 | vless | @meli_proxyy | 1'
+      - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
