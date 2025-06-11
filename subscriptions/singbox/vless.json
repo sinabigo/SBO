@@ -106,26 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,37 +144,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
-            "type": "vless",
-            "server": "172.67.75.172",
-            "server_port": 443,
-            "uuid": "a6dd00f2-de2a-4c3c-bc0a-0e9818e95dde",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "GErmaNy-exK.pAGEs.DEV",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/n2s3PIHTKeFM2XgA\/MTguMTk4LjE2OC4z?ed=2560",
-                "headers": {
-                    "Host": "GErmaNy-exK.pAGEs.DEV"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0",
@@ -292,11 +259,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
             "type": "vless",
-            "server": "151.101.130.133",
-            "server_port": 80,
-            "uuid": "75ecef77-2050-4250-99f7-936d0188edf2",
+            "server": "135.148.152.107",
+            "server_port": 443,
+            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -304,11 +271,14 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws\/",
-                "headers": {
-                    "Host": "151.101.130.133"
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001195.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         }
