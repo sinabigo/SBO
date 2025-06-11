@@ -108,12 +108,12 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3"
             ]
         },
         {
@@ -122,12 +122,12 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 13",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 9",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2"
+                "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -205,11 +205,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 9",
             "type": "vless",
-            "server": "api-staging.4b3a.com",
-            "server_port": 8880,
-            "uuid": "aeab48ce-c093-47d6-a7f7-3799c15912ff",
+            "server": "arvancloud.de.ir.systemgamingirani.ir",
+            "server_port": 443,
+            "uuid": "99e7663b-3c55-46a3-8b84-f174d814cc93",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -219,7 +219,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "refersion.com",
+                "server_name": "tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -228,37 +228,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "cJydPsZ25g4KQeuu8tGZE-9l6uB6uvdHZxyAfa3NrAQ",
-                    "short_id": "e3bbc3601946f0e4"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 7",
-            "type": "vless",
-            "server": "FASTSHOVPNTELEGRAM.bgdragonshop.ir",
-            "server_port": 2053,
-            "uuid": "10754048-2974-4c78-a325-6e4d43aea471",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Bmx2LQOEEVejMfacdMoInvB99Z0TZRWwq6V6oL80f1M",
-                    "short_id": "e9967ba27ece"
+                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
+                    "short_id": "e54b5ad736ae4c38"
                 }
             }
         },
@@ -313,27 +284,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "140.248.162.12",
-            "server_port": 80,
-            "uuid": "a7d69636-a609-4bde-af6a-18baa6937689",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ws\/",
-                "headers": {
-                    "Host": "140.248.162.12"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 2",
             "type": "vless",
             "server": "84.201.20.248",
@@ -367,6 +317,56 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "140.248.162.12",
+            "server_port": 80,
+            "uuid": "a7d69636-a609-4bde-af6a-18baa6937689",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws\/",
+                "headers": {
+                    "Host": "140.248.162.12"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | vless | @meli_proxyy | 3",
+            "type": "vless",
+            "server": "api-staging.4b3a.com",
+            "server_port": 8880,
+            "uuid": "aeab48ce-c093-47d6-a7f7-3799c15912ff",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cJydPsZ25g4KQeuu8tGZE-9l6uB6uvdHZxyAfa3NrAQ",
+                    "short_id": "e3bbc3601946f0e4"
+                }
             }
         }
     ],
