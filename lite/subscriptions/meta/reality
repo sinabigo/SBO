@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | vless | @customv2ray | 9","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"8a58094b-d8c9-4629-96e5-d29f77f8e0c0","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
   - {"name":"🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9","type":"vless","server":"84.201.20.248","port":45868,"udp":true,"uuid":"baf307cd-8a04-4189-9878-3a750ab8195b","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"google.com","grpc-opts":{"grpc-service-name":"@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod"},"reality-opts":{"public-key":"Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ","short-id":"7f"}}
-  - {"name":"❔XX | 🟢 | vless | @meli_proxyy | 19","type":"vless","server":"FASTSHOVPNTELEGRAM.bgdragonshop.ir","port":2053,"udp":true,"uuid":"10754048-2974-4c78-a325-6e4d43aea471","tls":true,"network":"tcp","client-fingerprint":"firefox","servername":"www.tgju.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"Bmx2LQOEEVejMfacdMoInvB99Z0TZRWwq6V6oL80f1M","short-id":"e9967ba27ece"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 9'
       - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 19'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 9'
       - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 19'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -148,7 +145,6 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | vless | @customv2ray | 9'
       - '🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9'
-      - '❔XX | 🟢 | vless | @meli_proxyy | 19'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

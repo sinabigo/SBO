@@ -114,8 +114,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "❔XX | 🟢 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -133,8 +133,8 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 9",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "❔XX | 🟢 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -350,6 +350,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "type": "vless",
+            "server": "199.232.13.32",
+            "server_port": 80,
+            "uuid": "03517ec0-976e-4cac-b84b-146fc4c7b023",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "headers": {
+                    "Host": "199.232.13.32"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "199.232.13.32",
@@ -367,35 +388,6 @@
                 "path": "\/netherlands\/amsterdam\/vl\/ws\/tls",
                 "headers": {
                     "Host": "199.232.13.32"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🟢 | vless | @meli_proxyy | 19",
-            "type": "vless",
-            "server": "FASTSHOVPNTELEGRAM.bgdragonshop.ir",
-            "server_port": 2053,
-            "uuid": "10754048-2974-4c78-a325-6e4d43aea471",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Bmx2LQOEEVejMfacdMoInvB99Z0TZRWwq6V6oL80f1M",
-                    "short_id": "e9967ba27ece"
                 }
             }
         },
