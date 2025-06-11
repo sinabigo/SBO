@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"18.194.77.103","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"13.36.59.49","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"52.58.37.232","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"18.194.77.103","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +130,7 @@ proxy-groups:
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
   - name: URL-TEST
     type: url-test
@@ -140,7 +140,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
   - name: FALLBACK
     type: fallback
@@ -149,7 +149,7 @@ proxy-groups:
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 14'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
