@@ -109,7 +109,7 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 8",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 9",
@@ -131,7 +131,7 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 8",
                 "🇩🇪DE | 🟢 | vless | @customv2ray | 9",
@@ -239,33 +239,22 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "www.visa.com",
-            "server_port": 8880,
-            "uuid": "9ffa6da8-26dc-435c-884b-32662e7ffe7e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "www.visa.com"
-                }
-            }
+            "tag": "🇵🇱PL | 🟢 | ss | @DeamNet_Proxy | 17",
+            "type": "shadowsocks",
+            "server": "45.144.48.63",
+            "server_port": 57456,
+            "method": "chacha20-ietf-poly1305",
+            "password": "d3837224ed465f00",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 18",
             "type": "shadowsocks",
-            "server": "mx2.drawnrisha.one",
+            "server": "185.5.38.111",
             "server_port": 55988,
             "method": "chacha20-ietf-poly1305",
-            "password": "BpFieMT6SobpqRiKFefvYu7eXk99XfCeWfjpntzSh81FfMx9R7rJW6LTmzH78StTEhCd7w32ZMxbGJZS98gpn1ozr9jAbMoa",
+            "password": "T9VPet1fGhdb4JPmUS6SS5RNZ7NSgBvQNF4rkoQTdFhGWvmGedszfjBTgefmrQYhjhyB867P9RvyBQmtEjLUegm5CNymHC3i",
             "plugin": "",
             "plugin_opts": ""
         },
