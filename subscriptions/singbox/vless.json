@@ -109,8 +109,9 @@
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ]
         },
@@ -121,8 +122,9 @@
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
                 "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -219,6 +221,27 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "n1.cafedorehami.shop",
+            "server_port": 80,
+            "uuid": "v2rayvpn_official",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "n1.cafedorehami.shop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -240,24 +263,32 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 1",
             "type": "vless",
-            "server": "n1.cafedorehami.shop",
-            "server_port": 80,
-            "uuid": "v2rayvpn_official",
-            "flow": "",
+            "server": "webhook-receiver.4b3a.com",
+            "server_port": 8443,
+            "uuid": "acd867f1-a71b-4a17-a473-2b57930d8678",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "grpc",
-                "service_name": "n1.cafedorehami.shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+            "tls": {
+                "enabled": true,
+                "server_name": "cDn.cloUdfLare.com.",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CZWbmrDdvesNCBlbMBuvHsJiR8Hsxmsd8DWDR_2JrjM",
+                    "short_id": "6ba85179e30d4fc2"
+                }
             }
         },
         {
