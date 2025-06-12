@@ -118,35 +118,39 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"67.220.95.102","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
-  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 0","type":"ss","server":"45.87.175.154","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"45.158.171.141","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"185.5.38.111","port":55988,"password":"yCpSJMYkFQepG4o4QNKyo7qotpREJzwS1bbkyHNauphrKgYUhU3BLE1nbAeTqYZh8rM9KRexnYNgEWBmtZH1rjxd2biDqXJM","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
     interval: 60
     tolerance: 50
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
-      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
-      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 0'
+      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
+      - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
