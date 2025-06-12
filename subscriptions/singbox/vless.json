@@ -108,11 +108,9 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
             ]
         },
         {
@@ -121,11 +119,9 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -200,11 +196,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server": "n1.cafedorehami.shop",
             "server_port": 80,
-            "uuid": "9cc0db84-9437-4740-b4a6-da27d37cad7b",
+            "uuid": "v2rayvpn_official",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -213,11 +209,11 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "ws",
-                "path": "\/telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE",
-                "headers": {
-                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
-                }
+                "type": "grpc",
+                "service_name": "n1.cafedorehami.shop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -242,27 +238,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
-            "type": "vless",
-            "server": "n1.cafedorehami.shop",
-            "server_port": 80,
-            "uuid": "v2rayvpn_official",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "n1.cafedorehami.shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -280,35 +255,6 @@
                 "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
-            "type": "vless",
-            "server": "185.255.112.147",
-            "server_port": 7580,
-            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
-                    "short_id": ""
                 }
             }
         }
