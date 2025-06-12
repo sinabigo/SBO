@@ -108,12 +108,15 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 6",
+                "🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19"
             ]
         },
         {
@@ -122,12 +125,15 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 6",
+                "🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -202,27 +208,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "f6532006-dcfc-4f42-ab58-b72a3f4e1fb1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
             "type": "trojan",
             "server": "japan.com",
@@ -252,21 +237,11 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
-            "type": "shadowsocks",
-            "server": "9.163.232.180",
-            "server_port": 1490,
-            "method": "chacha20-ietf-poly1305",
-            "password": "ojcP36n1SouDcnBg9EOZP8",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "n1.cafedorehami.shop",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "v2rayvpn_official",
+            "uuid": "f6532006-dcfc-4f42-ab58-b72a3f4e1fb1",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -275,12 +250,22 @@
                 "max_streams": 32
             },
             "transport": {
-                "type": "grpc",
-                "service_name": "n1.cafedorehami.shop",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
+                "type": "ws",
+                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
             }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3",
+            "type": "shadowsocks",
+            "server": "45.158.171.141",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
@@ -304,12 +289,67 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "n1.cafedorehami.shop",
+            "server_port": 80,
+            "uuid": "v2rayvpn_official",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "n1.cafedorehami.shop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
+            "type": "shadowsocks",
+            "server": "67.220.95.102",
+            "server_port": 8000,
+            "method": "aes-256-gcm",
+            "password": "KixLvKzwjekG00rm",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "84.201.20.248",
+            "server_port": 8763,
+            "uuid": "c7d6121f-82b5-4907-a92b-4eb72504c899",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 6",
             "type": "shadowsocks",
             "server": "45.87.175.154",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "4a2rfixophdjffa8KVA4Aa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19",
+            "type": "shadowsocks",
+            "server": "203.23.128.33",
+            "server_port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "f8f7aCzcPKbsF8p3",
             "plugin": "",
             "plugin_opts": ""
         }
