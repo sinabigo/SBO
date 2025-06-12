@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 14","type":"trojan","server":"15.236.1.158","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 15","type":"trojan","server":"52.58.37.232","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 12","type":"trojan","server":"18.196.72.95","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 13","type":"trojan","server":"63.178.131.4","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -137,16 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 14'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 15'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 12'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 13'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
