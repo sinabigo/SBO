@@ -108,9 +108,11 @@
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15"
             ]
         },
         {
@@ -119,9 +121,11 @@
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 6",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -196,6 +200,27 @@
             }
         },
         {
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 1",
+            "type": "vless",
+            "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
+            "server_port": 80,
+            "uuid": "9cc0db84-9437-4740-b4a6-da27d37cad7b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE,telegram-@VPNCUSTOMIZE",
+                "headers": {
+                    "Host": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -217,32 +242,24 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "arvancloud.de.ir.systemgamingirani.ir",
-            "server_port": 443,
-            "uuid": "341a20b9-045b-4abd-94ab-6871f29ab05a",
-            "flow": "xtls-rprx-vision",
+            "server": "n1.cafedorehami.shop",
+            "server_port": 80,
+            "uuid": "v2rayvpn_official",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
-                    "short_id": "e54b5ad736ae4c38"
-                }
+            "transport": {
+                "type": "grpc",
+                "service_name": "n1.cafedorehami.shop",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
@@ -263,6 +280,35 @@
                 "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "185.255.112.147",
+            "server_port": 7580,
+            "uuid": "f7f95a02-ee99-11e4-d13b-d76c1410e702",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ho00u1CNl0KjJKszyhKju2pKtY74AysLMkR7GNMzKSo",
+                    "short_id": ""
                 }
             }
         }
