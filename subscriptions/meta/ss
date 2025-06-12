@@ -122,8 +122,8 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"67.220.95.102","port":8000,"password":"KixLvKzwjekG00rm","cipher":"aes-256-gcm"}
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"45.158.171.141","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 8","type":"ss","server":"45.87.175.154","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4","type":"ss","server":"185.5.38.111","port":55988,"password":"yCpSJMYkFQepG4o4QNKyo7qotpREJzwS1bbkyHNauphrKgYUhU3BLE1nbAeTqYZh8rM9KRexnYNgEWBmtZH1rjxd2biDqXJM","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -133,8 +133,8 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: URL-TEST
     type: url-test
@@ -144,8 +144,8 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
   - name: FALLBACK
     type: fallback
@@ -154,8 +154,8 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2'
       - '🇺🇸US | 🟢 | ss | @meli_proxyy | 8'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇫🇮FI | 🟢 | ss | @DeamNet_Proxy | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
