@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 17","type":"ss","server":"45.87.175.154","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 17'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -136,6 +138,7 @@ proxy-groups:
     proxies:
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 17'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -143,6 +146,7 @@ proxy-groups:
     proxies:
       - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
       - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 17'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
