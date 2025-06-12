@@ -119,8 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
-  - {"name":"🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19","type":"ss","server":"203.23.128.33","port":990,"password":"f8f7aCzcPKbsF8p3","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3","type":"ss","server":"45.158.171.141","port":8080,"password":"cvII85TrW6n0OGyfpHVS1u","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3","type":"ss","server":"9.163.232.180","port":1490,"password":"ojcP36n1SouDcnBg9EOZP8","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇺🇸US | 🟢 | ss | @meli_proxyy | 5","type":"ss","server":"45.87.175.154","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,8 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -137,16 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
-      - '🇭🇰HK | 🟢 | ss | @DeamNet_Proxy | 19'
-      - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3'
+      - '🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3'
+      - '🇺🇸US | 🟢 | ss | @meli_proxyy | 5'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
