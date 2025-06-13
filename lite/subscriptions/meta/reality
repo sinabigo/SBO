@@ -120,27 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"❔XX | 🔴 | vless | @meli_proxyy | 17","type":"vless","server":"vpntv29293.erfantop.ir","port":443,"udp":true,"uuid":"ea7eb6ce-404b-4200-aa71-c537fa913df6","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"check-host.net","reality-opts":{"public-key":"VhLTH3VbBCBpeTJr_wZZwZ4zckHZuC1tR1WFlRyO4ys","short-id":"0186f1b99ac86077"}}
+  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18","type":"vless","server":"45.82.251.83","port":1001,"udp":true,"uuid":"c7c922da-ab54-433c-8046-1f9bf9d95c23","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"telewebion.com","reality-opts":{"public-key":"8Gunn8hjWbit5yLtTPcvLph0u2ovHLsGoXX4IJS1EQ0","short-id":"5fab0deb"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '❔XX | 🔴 | vless | @meli_proxyy | 17'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '❔XX | 🔴 | vless | @meli_proxyy | 17'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '❔XX | 🔴 | vless | @meli_proxyy | 17'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
