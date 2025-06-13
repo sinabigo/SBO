@@ -106,8 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3"
             ]
         },
@@ -115,8 +113,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
                 "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -138,26 +134,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 0",
-            "type": "shadowsocks",
-            "server": "67.220.95.102",
-            "server_port": 8000,
-            "method": "aes-256-gcm",
-            "password": "KixLvKzwjekG00rm",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 3",
-            "type": "shadowsocks",
-            "server": "9.163.232.180",
-            "server_port": 1490,
-            "method": "chacha20-ietf-poly1305",
-            "password": "ojcP36n1SouDcnBg9EOZP8",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 3",
