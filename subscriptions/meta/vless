@@ -121,8 +121,10 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @customv2ray | 2","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"d78628e8-5b51-4452-b3ce-79f3249b5755","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048","headers":{"host":"www.speedtest.net.1.developsp.ir.gebados.ir."}}}
-  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 3","type":"vless","server":"172.67.73.163","port":8080,"udp":false,"uuid":"6abbaf96-4b16-48d3-b996-a6067fc6eb2c","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"M4.nF9JZ2st7N.zULAiR.ORG."}}}
-  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"hajlab.ucdavis.edu","port":80,"udp":false,"uuid":"a574d389-322f-4820-a713-da96d0ad28af","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"joinshhproxybedeedeeeeee.ir"}}}
+  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"147135001178.sec22org.com","port":443,"udp":false,"uuid":"e20ebe01-1815-4c09-8e77-fb2f168263ce","tls":true,"network":"raw","client-fingerprint":"chrome"}
+  - {"name":"🇺🇸US | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"hajlab.ucdavis.edu","port":80,"udp":false,"uuid":"a574d389-322f-4820-a713-da96d0ad28af","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048","headers":{"host":"joinshhproxybedeedeeeeee.ir"}}}
+  - {"name":"🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"194.76.18.50","port":80,"udp":false,"uuid":"f2a72ad0-d23f-4eed-96cb-7d970b1e784d","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/vless/","headers":{"host":"ov-germany1.09vpn.com"}}}
+  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 7","type":"vless","server":"172.67.73.163","port":8080,"udp":false,"uuid":"6abbaf96-4b16-48d3-b996-a6067fc6eb2c","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"M4.nF9JZ2st7N.zULAiR.ORG."}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +132,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 7'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -139,16 +143,20 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 7'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 3'
-      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @meli_proxyy | 2'
+      - '🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 7'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}

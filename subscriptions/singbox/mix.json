@@ -107,13 +107,15 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7"
             ]
         },
         {
@@ -121,13 +123,15 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 2",
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -171,11 +175,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
-            "server": "172.67.73.163",
-            "server_port": 8080,
-            "uuid": "6abbaf96-4b16-48d3-b996-a6067fc6eb2c",
+            "server": "147135001178.sec22org.com",
+            "server_port": 443,
+            "uuid": "e20ebe01-1815-4c09-8e77-fb2f168263ce",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -183,16 +187,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.73.163"
+            "tls": {
+                "enabled": true,
+                "server_name": "147135001178.sec22org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "hajlab.ucdavis.edu",
             "server_port": 80,
@@ -242,12 +249,12 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 19",
+            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
             "type": "shadowsocks",
-            "server": "series-a2-me.varzesh360.co",
-            "server_port": 443,
+            "server": "9.163.232.180",
+            "server_port": 1490,
             "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
+            "password": "ojcP36n1SouDcnBg9EOZP8",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -273,17 +280,38 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "194.76.18.50",
+            "server_port": 80,
+            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "194.76.18.50"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
             "type": "shadowsocks",
-            "server": "9.163.232.180",
-            "server_port": 1490,
+            "server": "api.namasha.co",
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
-            "password": "ojcP36n1SouDcnBg9EOZP8",
+            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 2",
             "type": "trojan",
             "server": "15.188.191.223",
             "server_port": 22223,
@@ -301,6 +329,27 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
+            "type": "vless",
+            "server": "172.67.73.163",
+            "server_port": 8080,
+            "uuid": "6abbaf96-4b16-48d3-b996-a6067fc6eb2c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.73.163"
                 }
             }
         }
