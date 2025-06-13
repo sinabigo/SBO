@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "91.107.152.130",
+            "server": "vpntv29293.erfantop.ir",
             "server_port": 443,
-            "uuid": "3274c3c5-1a8b-4bb9-bd51-1d6d23edc589",
+            "uuid": "ea7eb6ce-404b-4200-aa71-c537fa913df6",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "speedtest.net",
+                "server_name": "check-host.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -161,37 +159,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "kxj-EhIXEgwh66gBVOf3shmmwuMqKgsd0mUJNUN8Gw8",
-                    "short_id": "d62385a8"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "5.75.198.111",
-            "server_port": 443,
-            "uuid": "40d2439f-30c4-41c1-86b0-98f9ca0f0172",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "-q2RkU3tmpGWRiyUPu4D1BI8IbVvNrVQzOry5Urpak4",
-                    "short_id": "8394ceee"
+                    "public_key": "VhLTH3VbBCBpeTJr_wZZwZ4zckHZuC1tR1WFlRyO4ys",
+                    "short_id": "0186f1b99ac86077"
                 }
             }
         }
