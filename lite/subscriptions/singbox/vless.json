@@ -107,7 +107,6 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
@@ -125,7 +124,6 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
@@ -160,9 +158,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "135.148.162.133",
+            "server": "135.148.182.29",
             "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "uuid": "0a44145f-59dc-4e5b-a233-677b97f5114c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -172,33 +170,12 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135004002.sec20org.com",
+                "server_name": "147135011033.sec21org.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "172.67.73.163",
-            "server_port": 8080,
-            "uuid": "d26f473f-db91-45b2-8c7e-8f38d294b6b5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.73.163"
                 }
             }
         },
@@ -299,9 +276,9 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
             "type": "vless",
-            "server": "astram.abletodothingsorg.com",
+            "server": "172.64.81.38",
             "server_port": 80,
-            "uuid": "57413029-5035-4de8-8681-e74d00d7ee72",
+            "uuid": "c90bf4bc-ad03-4236-9881-c4179175ac93",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -311,9 +288,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "astram.abletodothingsorg.com"
+                    "Host": "172.64.81.38"
                 }
             }
         },
