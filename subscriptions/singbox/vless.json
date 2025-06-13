@@ -107,10 +107,9 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 9",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2"
             ]
         },
         {
@@ -118,10 +117,9 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🚩CF | 🔴 | vless | @customv2ray | 9",
-                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,11 +163,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "astram.abletodothingsorg.com",
             "server_port": 80,
-            "uuid": "f6532006-dcfc-4f42-ab58-b72a3f4e1fb1",
+            "uuid": "57413029-5035-4de8-8681-e74d00d7ee72",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -179,9 +177,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "path": "\/",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "astram.abletodothingsorg.com"
                 }
             }
         },
@@ -207,37 +205,31 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 1",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 2",
             "type": "vless",
-            "server": "84.201.20.248",
-            "server_port": 8763,
-            "uuid": "c7d6121f-82b5-4907-a92b-4eb72504c899",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray2",
-            "flow": "",
+            "server": "webhook-receiver.4b3a.com",
+            "server_port": 8443,
+            "uuid": "acd867f1-a71b-4a17-a473-2b57930d8678",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "cDn.cloUdfLare.com.",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "CZWbmrDdvesNCBlbMBuvHsJiR8Hsxmsd8DWDR_2JrjM",
+                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         }
