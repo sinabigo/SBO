@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 1",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
@@ -126,12 +127,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 1",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
@@ -162,55 +164,21 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "104.31.16.95",
-            "server_port": 2053,
-            "uuid": "39a91eaf-a379-4fff-a9c8-1cb01442b76f",
+            "server": "172.67.73.163",
+            "server_port": 8080,
+            "uuid": "6abbaf96-4b16-48d3-b996-a6067fc6eb2c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ir.akcovufun.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             },
             "transport": {
                 "type": "ws",
                 "path": "\/",
                 "headers": {
-                    "Host": "ir.akcovufun.ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "135.148.182.29",
-            "server_port": 443,
-            "uuid": "0a44145f-59dc-4e5b-a233-677b97f5114c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135011033.sec21org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+                    "Host": "172.67.73.163"
                 }
             }
         },
@@ -306,6 +274,44 @@
                 "headers": {
                     "Host": "client.bluwave.ir"
                 }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "try3.try134.com",
+            "server_port": 15633,
+            "uuid": "e9fd6a4b-f856-4d01-8f78-63c579730af7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "try3.try134.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "shop.fox-13-fox.com",
+            "server_port": 677,
+            "uuid": "51857acb-7f10-2a33-75ac-c47b6ac0bb89",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
