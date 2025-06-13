@@ -106,16 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -138,11 +138,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 5",
+            "tag": "🇩🇪DE | 🔴 | vless | @TEHRANARGO | 3",
             "type": "vless",
-            "server": "84.201.20.248",
-            "server_port": 45868,
-            "uuid": "cc038b26-d56c-4ea1-8e88-1c9f8e0d676b",
+            "server": "91.107.152.130",
+            "server_port": 443,
+            "uuid": "3274c3c5-1a8b-4bb9-bd51-1d6d23edc589",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,7 +152,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "speedtest.net",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -161,24 +161,17 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "Xf_flAxrxjR_kM0e6StsmGy3h5a-PDoYvYJrfP4KUTQ",
-                    "short_id": "7f"
+                    "public_key": "kxj-EhIXEgwh66gBVOf3shmmwuMqKgsd0mUJNUN8Gw8",
+                    "short_id": "d62385a8"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod-@FergalVpnMod",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "FASTSHOVPNTELEGRAM.vinamarketcenter.ir",
-            "server_port": 2053,
-            "uuid": "a48d508e-1659-4ca0-a29a-5d931b053bf1",
+            "server": "5.75.198.111",
+            "server_port": 443,
+            "uuid": "40d2439f-30c4-41c1-86b0-98f9ca0f0172",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -188,17 +181,17 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.tgju.org",
+                "server_name": "tgju.org",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
-                    "fingerprint": "firefox"
+                    "fingerprint": "chrome"
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "J_hakbFY6qXqGMQr2hSQx686SjqZn4CU4d1BUai7G0Q",
-                    "short_id": "b5"
+                    "public_key": "-q2RkU3tmpGWRiyUPu4D1BI8IbVvNrVQzOry5Urpak4",
+                    "short_id": "8394ceee"
                 }
             }
         }
