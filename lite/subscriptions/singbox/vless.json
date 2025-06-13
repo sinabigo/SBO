@@ -106,13 +106,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -123,13 +125,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 6",
                 "\/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512&security=none&encryption=none&host=foffmelo.com&type=ws#🇺🇸US | 🔴 | vless | @customv2ray | 7",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 6",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
+                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -156,7 +160,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "104.31.16.95",
+            "server_port": 2053,
+            "uuid": "39a91eaf-a379-4fff-a9c8-1cb01442b76f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ir.akcovufun.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "ir.akcovufun.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "135.148.182.29",
             "server_port": 443,
@@ -274,24 +309,53 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
-            "server": "172.64.81.38",
-            "server_port": 80,
-            "uuid": "c90bf4bc-ad03-4236-9881-c4179175ac93",
-            "flow": "",
+            "server": "193.46.81.91",
+            "server_port": 2041,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "172.64.81.38"
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0ZELy90Fb5sh7DULwsa14x1B1NY-NO2Ga847T_Z-oXY",
+                    "short_id": "688c"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 6",
+            "type": "vless",
+            "server": "185.146.173.39",
+            "server_port": 8880,
+            "uuid": "Parsashonam-254",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
