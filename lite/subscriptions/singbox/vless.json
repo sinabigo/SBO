@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "❔XX | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -123,13 +124,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "❔XX | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -156,7 +158,31 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "135.148.74.155",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "57.129.41.217",
             "server_port": 80,
@@ -177,7 +203,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 80,
@@ -247,11 +273,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
             "type": "vless",
-            "server": "speedtest.net",
+            "server": "151.101.64.155",
             "server_port": 80,
-            "uuid": "ba3797e0-31a5-4510-ea35-6e409c4953e5",
+            "uuid": "fadebdad-95ba-4f69-a16a-b0f0b7845483",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -261,39 +287,24 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/olem\/ws?ed=1024",
+                "path": "\/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6",
                 "headers": {
-                    "Host": "speedtest.net"
+                    "Host": "151.101.64.155"
                 }
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
+            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "afranlo.alcatelindan.com",
-            "server_port": 45980,
-            "uuid": "c259672d-68a3-4cde-9cc2-87ae10f3b7bf",
-            "flow": "xtls-rprx-vision",
+            "server": "asdjiallfsiublsidnfljsdknfklsbgklsjdcdn28_443.asiatech-server.com",
+            "server_port": 443,
+            "uuid": "bced4af1-e0c0-457b-bf0b-b90e183b8316",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tgju.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Z31NocO-K1znGhLSPi0B91MbEG2e-CY-rMReYWkX4nM",
-                    "short_id": "0d250d4fbce004"
-                }
             }
         },
         {
