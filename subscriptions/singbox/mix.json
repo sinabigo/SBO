@@ -106,30 +106,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 4"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 4"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,6 +146,27 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "d78628e8-5b51-4452-b3ce-79f3249b5755",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
@@ -202,72 +219,12 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "d78628e8-5b51-4452-b3ce-79f3249b5755",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-            "type": "trojan",
-            "server": "japan.com",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zamim340.ggff.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/tr?ed=2560",
-                "headers": {
-                    "Host": "zamim340.ggff.net"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
             "type": "shadowsocks",
             "server": "series-a2-mec.varzesh360.co",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4",
-            "type": "shadowsocks",
-            "server": "series-a2-me.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "Bog0ELmMM9DSxDdQ",
             "plugin": "",
             "plugin_opts": ""
         },
@@ -282,17 +239,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10",
-            "type": "shadowsocks",
-            "server": "45.158.171.132",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "cvII85TrW6n0OGyfpHVS1u",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -311,6 +258,16 @@
                     "Host": "www.speedtest.net"
                 }
             }
+        },
+        {
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 1",
+            "type": "shadowsocks",
+            "server": "45.158.171.146",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "QCXDxuDlTTMD7jtgHUjIoj",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
