@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 3",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 7",
                 "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 14"
             ]
         },
@@ -121,12 +122,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 10",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 3",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 7",
                 "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 14"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -171,6 +173,27 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
+                "headers": {
+                    "Host": "ipsychO.SUEx12.Ir"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
             "server": "135.148.152.108",
@@ -195,28 +218,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/re5IzbZ9IZZMddtw?ed=2560",
-                "headers": {
-                    "Host": "ipsychO.SUEx12.Ir"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -306,6 +308,27 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 7",
+            "type": "vless",
+            "server": "57.129.41.217",
+            "server_port": 80,
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "57.129.41.217"
                 }
             }
         },
