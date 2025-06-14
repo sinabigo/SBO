@@ -107,12 +107,13 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 10",
@@ -128,12 +129,13 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
                 "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 10",
@@ -193,9 +195,9 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
-            "server": "52.59.136.1",
+            "server": "15.188.209.15",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -217,7 +219,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
             "type": "trojan",
-            "server": "3.126.104.194",
+            "server": "52.59.136.1",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -292,7 +294,7 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 80,
@@ -318,6 +320,20 @@
             "server": "[2a01:4f8:1c1b:e1d0::1]",
             "server_port": 8888,
             "uuid": "Parsashonam-253",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
+            "type": "vless",
+            "server": "[2a01:4f9:c013:1627::1]",
+            "server_port": 8087,
+            "uuid": "774f044e-434e-4a2e-9619-4bf3ebb7687f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
