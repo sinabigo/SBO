@@ -118,7 +118,6 @@ dns:
     - "https://8.8.4.4/dns-query"
 
 proxies:
-  - {"name":"🇺🇸US | 🔴 | trojan | @redfree8 | 0","type":"trojan","server":"www.speedtest.net","port":443,"udp":false,"password":"redfree8","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"ipsychO.SUEx12.Ir"}
   - {"name":"🇨🇦CA | 🔴 | trojan | @SiNAVM | 0","type":"trojan","server":"japan.com","port":443,"udp":false,"password":"bpb-trojan","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"zamim340.ggff.net"}
 proxy-groups:
   - name: MANUAL
@@ -126,7 +125,6 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
   - name: URL-TEST
     type: url-test
@@ -134,14 +132,12 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
-      - '🇺🇸US | 🔴 | trojan | @redfree8 | 0'
       - '🇨🇦CA | 🔴 | trojan | @SiNAVM | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
