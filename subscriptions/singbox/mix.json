@@ -106,28 +106,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇨🇦CA | 🟢 | ss | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇨🇦CA | 🟢 | ss | @meli_proxyy | 3",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 9",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇨🇦CA | 🟢 | ss | @meli_proxyy | 1",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
-                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
-                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10"
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇨🇦CA | 🟢 | ss | @meli_proxyy | 3",
+                "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 9",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,27 +150,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "d483e7ab-5223-44bd-b68d-b4f185b1801e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY---ELiV2RAY",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
@@ -192,7 +173,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "fadebdad-95ba-4f69-a16a-b0f0b7845483",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
             "type": "vless",
             "server": "15.204.191.43",
             "server_port": 443,
@@ -216,7 +218,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | ss | @meli_proxyy | 1",
+            "tag": "🇨🇦CA | 🟢 | ss | @meli_proxyy | 3",
             "type": "shadowsocks",
             "server": "142.4.216.225",
             "server_port": 80,
@@ -226,17 +228,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 13",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8",
+            "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 9",
             "type": "shadowsocks",
             "server": "series-a2-me.varzesh360.co",
             "server_port": 443,
@@ -246,24 +238,78 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 15",
             "type": "shadowsocks",
-            "server": "103.104.247.47",
-            "server_port": 8080,
+            "server": "series-a2-mec.varzesh360.co",
+            "server_port": 443,
             "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         },
         {
-            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 10",
-            "type": "shadowsocks",
-            "server": "45.158.171.146",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "QCXDxuDlTTMD7jtgHUjIoj",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
+            "type": "trojan",
+            "server": "18.156.116.190",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 5",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "151.101.64.155",
+            "server_port": 80,
+            "uuid": "fadebdad-95ba-4f69-a16a-b0f0b7845483",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6",
+                "headers": {
+                    "Host": "151.101.64.155"
+                }
+            }
         }
     ],
     "route": {
