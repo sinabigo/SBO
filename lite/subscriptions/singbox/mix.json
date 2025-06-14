@@ -114,9 +114,8 @@
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇦UA | 🔴 | vless | @TEHRANARGO | 1",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -135,9 +134,8 @@
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇦UA | 🔴 | vless | @TEHRANARGO | 1",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -309,21 +307,28 @@
             }
         },
         {
-            "tag": "🇺🇦UA | 🔴 | vless | @TEHRANARGO | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "89.116.180.7",
-            "server_port": 8880,
-            "uuid": "730f02b4-a187-4498-b3fa-9e9f1dccf47c",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "ba3797e0-31a5-4510-ea35-6e409c4953e5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 17",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "afranlo.alcatelindan.com",
             "server_port": 45980,
@@ -348,37 +353,6 @@
                     "enabled": true,
                     "public_key": "Z31NocO-K1znGhLSPi0B91MbEG2e-CY-rMReYWkX4nM",
                     "short_id": "0d250d4fbce004"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "104.16.2.226",
-            "server_port": 443,
-            "uuid": "I_Love_🇵🇸_sshOcean_5068",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "uk.v2vless.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless",
-                "headers": {
-                    "Host": "uk.v2vless.site"
                 }
             }
         },
