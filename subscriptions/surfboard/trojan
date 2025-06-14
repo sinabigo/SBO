@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇺🇸US | 🔴 | trojan | @redfree8 | 0 = trojan, www.speedtest.net, 443, password = redfree8, udp-delay = true, skip-cert-verify = false, sni = ipsychO.SUEx12.Ir, ws = false
 🇨🇦CA | 🔴 | trojan | @SiNAVM | 0 = trojan, japan.com, 443, password = bpb-trojan, udp-delay = true, skip-cert-verify = false, sni = zamim340.ggff.net, ws = false
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 35.181.28.118, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0
-URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0
-FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+URL-TEST = url-test,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+FALLBACK = fallback,🇺🇸US | 🔴 | trojan | @redfree8 | 0,🇨🇦CA | 🔴 | trojan | @SiNAVM | 0,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
