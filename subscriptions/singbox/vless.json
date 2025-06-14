@@ -106,24 +106,24 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 3",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 15"
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 3",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 15"
+                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -144,27 +144,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "104.18.27.94",
-            "server_port": 80,
-            "uuid": "572d1cbe-1c26-4765-8865-7ee3ad737c5a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ProxyIP=ProxyIP.US.fxxk.dedyn.io",
-                "headers": {
-                    "Host": "104.18.27.94"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
@@ -188,7 +167,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -209,11 +188,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
-            "server": "135.148.152.108",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "server": "104.21.32.1",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -221,14 +200,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135001195.sec22org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.21.32.1"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -254,7 +251,7 @@
             }
         },
         {
-            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 15",
+            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "194.76.18.50",
             "server_port": 80,
