@@ -106,19 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @VPNCUSTOMIZE | 0",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇦UA | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -129,19 +126,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @VPNCUSTOMIZE | 0",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇦UA | 🔴 | vless | @TEHRANARGO | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-                "🇨🇭CH | 🟢 | vless | @meli_proxyy | 18",
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -168,43 +162,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @VPNCUSTOMIZE | 0",
-            "type": "vless",
-            "server": "91.99.153.208",
-            "server_port": 3343,
-            "uuid": "787b92f8-05b1-4aef-8f65-b79891f7f8e8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
-            "type": "trojan",
-            "server": "13.39.68.151",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 15",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 16",
             "type": "trojan",
             "server": "35.180.105.199",
             "server_port": 22223,
@@ -226,16 +184,11 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
-            "type": "vmess",
-            "server": "172.67.170.13",
-            "server_port": 443,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
+            "type": "trojan",
+            "server": "35.157.79.233",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -243,28 +196,21 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "glweidf.sbs",
+                "server_name": "trojan.burgerip.co.uk",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkws",
-                "headers": {
-                    "Host": "glweidf.sbs"
-                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "tgju.org",
-            "server_port": 8080,
-            "uuid": "56652249-2e67-4429-b86c-3df8b838ad85",
+            "server": "57.129.41.217",
+            "server_port": 80,
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -274,14 +220,14 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/vless\/",
                 "headers": {
-                    "Host": "tgju.org"
+                    "Host": "57.129.41.217"
                 }
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
+            "tag": "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 80,
@@ -375,54 +321,14 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "d78628e8-5b51-4452-b3ce-79f3249b5755",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇭CH | 🟢 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "customers.tele-shop-too.studio",
-            "server_port": 44,
-            "uuid": "95635fc6-3fe8-40f5-bb7b-a5ed8e83efb2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "R43U2y9vbOzBleKGsApbGCufsiRTTeVIKA7LRpGMrVA",
-                    "short_id": "f289871208"
-                }
-            }
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 17",
+            "type": "shadowsocks",
+            "server": "45.158.171.132",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
