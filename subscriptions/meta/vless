@@ -122,7 +122,6 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @customv2ray | 2","type":"vless","server":"www.speedtest.net","port":80,"udp":false,"uuid":"d78628e8-5b51-4452-b3ce-79f3249b5755","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048","headers":{"host":"www.speedtest.net.1.developsp.ir.gebados.ir."}}}
   - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"45.82.251.83","port":1001,"udp":true,"uuid":"c7c922da-ab54-433c-8046-1f9bf9d95c23","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"telewebion.com","reality-opts":{"public-key":"8Gunn8hjWbit5yLtTPcvLph0u2ovHLsGoXX4IJS1EQ0","short-id":"5fab0deb"}}
-  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 2","type":"vless","server":"104.21.32.1","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/?ed=2560","headers":{"host":"redfree8.redorg1.ir"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +130,6 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -148,7 +145,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | vless | @customv2ray | 2'
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
