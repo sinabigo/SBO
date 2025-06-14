@@ -106,13 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -123,13 +122,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
-                "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -156,9 +154,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
-            "server": "51.81.37.5",
+            "server": "135.148.152.108",
             "server_port": 443,
             "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
             "flow": "",
@@ -180,7 +178,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @customv2ray | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 80,
@@ -250,7 +248,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 1",
             "type": "vless",
             "server": "151.101.130.219",
             "server_port": 80,
@@ -268,42 +266,6 @@
                 "headers": {
                     "Host": "151.101.130.219"
                 }
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "84.32.103.234",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "0ZELy90Fb5sh7DULwsa14x1B1NY-NO2Ga847T_Z-oXY",
-                    "short_id": "688c"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
