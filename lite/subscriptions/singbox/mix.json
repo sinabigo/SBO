@@ -109,13 +109,14 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 9",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 10",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -129,13 +130,14 @@
                 "🇨🇦CA | 🔴 | trojan | @SiNAVM | 0",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 17",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 9",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 10",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -235,11 +237,45 @@
             }
         },
         {
-            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "type": "vmess",
+            "server": "172.67.170.13",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "glweidf.sbs"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "194.76.18.50",
-            "server_port": 80,
-            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "server": "tgju.org",
+            "server_port": 8080,
+            "uuid": "56652249-2e67-4429-b86c-3df8b838ad85",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -249,14 +285,14 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/vless\/",
+                "path": "\/",
                 "headers": {
-                    "Host": "194.76.18.50"
+                    "Host": "tgju.org"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+            "tag": "🇳🇱NL | 🔴 | vless | @customv2ray | 4",
             "type": "vless",
             "server": "Join.VPNCUSTOMIZE.cloud1.hosting-ip.com",
             "server_port": 80,
@@ -326,7 +362,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 8",
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 10",
             "type": "shadowsocks",
             "server": "series-a2-mec.varzesh360.co",
             "server_port": 443,
@@ -336,7 +372,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 9",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
