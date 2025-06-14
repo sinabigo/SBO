@@ -109,12 +109,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
-                "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
@@ -126,12 +126,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "❔XX | 🔴 | vless | @customv2ray | 5",
-                "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
+                "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
@@ -212,11 +212,11 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 2",
+            "tag": "❔XX | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
-            "server": "[2a01:4f9:c013:1627::1]",
+            "server": "[::ffff:b94f:9e93]",
             "server_port": 8087,
-            "uuid": "774f044e-434e-4a2e-9619-4bf3ebb7687f",
+            "uuid": "5b77d2e4-c347-4f15-8082-9383d5f3ff68",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -261,28 +261,36 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "58e596b3-e7e6-43c5-9c03-b1e90db428a9",
-            "flow": "",
+            "server": "de.spirako.com",
+            "server_port": 443,
+            "uuid": "371bba8c-1e17-4a67-aec8-80f594cb565e",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
+            "tls": {
+                "enabled": true,
+                "server_name": "website.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo",
+                    "short_id": ""
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
             "type": "vless",
             "server": "151.101.64.155",
             "server_port": 80,
@@ -303,7 +311,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,

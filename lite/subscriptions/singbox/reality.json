@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "❔XX | 🔴 | vless | @meli_proxyy | 9"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "❔XX | 🔴 | vless | @meli_proxyy | 9"
+                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 9",
+            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 13",
             "type": "vless",
-            "server": "tr.k6n.ir",
-            "server_port": 5468,
-            "uuid": "eb899be2-f306-468e-bb4d-1c43f7d49c00",
+            "server": "de.spirako.com",
+            "server_port": 443,
+            "uuid": "371bba8c-1e17-4a67-aec8-80f594cb565e",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "loo.python.org",
+                "server_name": "website.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,7 +159,7 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "275Tq0hSlelzXW7yV25Y8mEBq51zXsi1IcT2SiTgmFE",
+                    "public_key": "0hH6R90pSxwm7nZPGtJJcJFhwCXU3Rvf-wcEHE7hczo",
                     "short_id": ""
                 }
             }
