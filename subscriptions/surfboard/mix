@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8 = ss, series-a2-me.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 8 = ss, series-a2-mec.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0 = ss, 103.104.247.47, 8080, encrypt-method = chacha20-ietf-poly1305, password = oZIoA69Q8yhcQV8ka3Pa3A
-🇬🇧GB | 🟢 | ss | @meli_proxyy | 7 = ss, series-a2-mec.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
-🇳🇱NL | 🟢 | ss | @meli_proxyy | 4 = ss, 45.158.171.146, 8080, encrypt-method = chacha20-ietf-poly1305, password = QCXDxuDlTTMD7jtgHUjIoj
+🇳🇱NL | 🟢 | ss | @meli_proxyy | 5 = ss, 45.158.171.146, 8080, encrypt-method = chacha20-ietf-poly1305, password = QCXDxuDlTTMD7jtgHUjIoj
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
-URL-TEST = url-test,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
-FALLBACK = fallback,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇬🇧GB | 🟢 | ss | @meli_proxyy | 7,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 5
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 5
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 8,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 0,🇳🇱NL | 🟢 | ss | @meli_proxyy | 5
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
