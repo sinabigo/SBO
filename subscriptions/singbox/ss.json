@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
                 "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2"
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
                 "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
                 "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 5",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2"
+                "🇳🇱NL | 🟢 | ss | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +142,16 @@
             "type": "dns"
         },
         {
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 4",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.varzesh360.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
             "tag": "🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0",
             "type": "shadowsocks",
             "server": "series-a2-me.samanehha.co",
@@ -160,12 +172,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
+            "tag": "🇳🇱NL | 🟢 | ss | @meli_proxyy | 0",
             "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
+            "server": "45.158.171.132",
+            "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
+            "password": "cvII85TrW6n0OGyfpHVS1u",
             "plugin": "",
             "plugin_opts": ""
         }
