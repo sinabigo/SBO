@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
-🇬🇧GB | 🟢 | ss | @meli_proxyy | 8 = ss, series-a2-mec.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
-🇳🇱NL | 🟢 | ss | @meli_proxyy | 4 = ss, 45.158.171.132, 8080, encrypt-method = chacha20-ietf-poly1305, password = cvII85TrW6n0OGyfpHVS1u
+🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4 = ss, series-a2-me.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
+🇬🇧GB | 🟢 | ss | @meli_proxyy | 10 = ss, series-a2-mec.varzesh360.co, 443, encrypt-method = chacha20-ietf-poly1305, password = u17T3BvpYaaiuW2c
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 8,🇳🇱NL | 🟢 | ss | @meli_proxyy | 4
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4,🇬🇧GB | 🟢 | ss | @meli_proxyy | 10
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4,🇬🇧GB | 🟢 | ss | @meli_proxyy | 10
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 4,🇬🇧GB | 🟢 | ss | @meli_proxyy | 10
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
