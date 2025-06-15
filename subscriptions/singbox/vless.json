@@ -108,7 +108,8 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1"
             ]
         },
         {
@@ -117,7 +118,8 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @meli_proxyy | 15",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -209,6 +211,27 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "172.67.73.163",
+            "server_port": 8080,
+            "uuid": "d26f473f-db91-45b2-8c7e-8f38d294b6b5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "172.67.73.163"
                 }
             }
         }
