@@ -121,6 +121,7 @@ dns:
 
 proxies:
   - {"name":"🇫🇷FR | 🟢 | vless | @customv2ray | 1","type":"vless","server":"arvancloud.de.ir.systemgamingirani.ir","port":443,"udp":true,"uuid":"341a20b9-045b-4abd-94ab-6871f29ab05a","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"tgju.org","flow":"xtls-rprx-vision","reality-opts":{"public-key":"tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8","short-id":"e54b5ad736ae4c38"}}
+  - {"name":"🇬🇧GB | 🔴 | vless | @meli_proxyy | 11","type":"vless","server":"zero.keynet.top","port":8080,"udp":true,"uuid":"3dbfefa1-88fb-4bbc-a286-1eb6b220fb8e","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"stackoverflow.com","grpc-opts":{"grpc-service-name":"Keynet"},"reality-opts":{"public-key":"AOjVexvOnY8_MvD63nEb297mjkFDeOZYodhVSbdnnVo","short-id":"7f3d9c"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -128,6 +129,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇫🇷FR | 🟢 | vless | @customv2ray | 1'
+      - '🇬🇧GB | 🔴 | vless | @meli_proxyy | 11'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -135,12 +137,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇫🇷FR | 🟢 | vless | @customv2ray | 1'
+      - '🇬🇧GB | 🔴 | vless | @meli_proxyy | 11'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
       - '🇫🇷FR | 🟢 | vless | @customv2ray | 1'
+      - '🇬🇧GB | 🔴 | vless | @meli_proxyy | 11'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
