@@ -120,27 +120,27 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19","type":"vless","server":"40.233.70.163","port":26113,"udp":true,"uuid":"cfe032e4-1bc3-454f-9d09-301b0aea08ff","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"www.yahoo.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng","short-id":"1fbd20fd"}}
+  - {"name":"🇳🇱NL | 🔴 | vless | @meli_proxyy | 15","type":"vless","server":"151.242.2.43","port":443,"udp":true,"uuid":"252efa02-ea69-4e5e-aae4-43fd0bf19440","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"maps.google.com","grpc-opts":{"grpc-service-name":"telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER"},"reality-opts":{"public-key":"OpCaEP3-NY17XI9quBaqEhjO1XlVQBEFc5iTZEwlOAU"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 15'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 60
     tolerance: 50
     proxies:
-      - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 15'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
     interval: 60
     proxies:
-      - '🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19'
+      - '🇳🇱NL | 🔴 | vless | @meli_proxyy | 15'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
