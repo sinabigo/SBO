@@ -107,12 +107,10 @@
             "outbounds": [
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
                 "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5"
             ]
         },
         {
@@ -120,12 +118,10 @@
             "type": "urltest",
             "outbounds": [
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
-                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
                 "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
+                "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
+                "🇺🇸US | 🟢 | ss | @meli_proxyy | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -179,11 +175,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+            "tag": "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
             "type": "vless",
-            "server": "104.18.15.19",
-            "server_port": 2086,
-            "uuid": "e1d3a347-d380-4ef6-8145-ae76318002d1",
+            "server": "156.238.18.83",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -193,9 +189,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/telegram@V2ray_Alpha\/",
+                "path": "\/Telegram🇨🇳 @MxlShare @WangCai2 \/?ed=2560",
                 "headers": {
-                    "Host": "104.18.15.19"
+                    "Host": "156.238.18.83"
                 }
             }
         },
@@ -203,16 +199,6 @@
             "tag": "🇳🇱NL | 🟢 | ss | @ShadowProxy66 | 2",
             "type": "shadowsocks",
             "server": "103.104.247.47",
-            "server_port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
-            "type": "shadowsocks",
-            "server": "45.87.175.92",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "oZIoA69Q8yhcQV8ka3Pa3A",
@@ -241,39 +227,14 @@
             }
         },
         {
-            "tag": "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
-            "type": "vless",
-            "server": "156.238.18.83",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram🇨🇳 @MxlShare @WangCai2 \/?ed=2560",
-                "headers": {
-                    "Host": "156.238.18.83"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "66.42.118.140",
-            "server_port": 443,
-            "uuid": "19a7a0c0-34c4-476b-80fd-68a28d417c43",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇺🇸US | 🟢 | ss | @meli_proxyy | 5",
+            "type": "shadowsocks",
+            "server": "45.87.175.92",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "plugin": "",
+            "plugin_opts": ""
         }
     ],
     "route": {
