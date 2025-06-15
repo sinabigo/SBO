@@ -106,24 +106,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
+                "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-                "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 6",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5"
+                "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 6"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -146,7 +144,7 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 443,
@@ -173,48 +171,6 @@
                 "path": "\/RklUHeautH5uvnSB\/NTQuMTY5LjIyOS4xODg",
                 "headers": {
                     "Host": "hOZori.iR"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "d78628e8-5b51-4452-b3ce-79f3249b5755",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
-            "type": "vless",
-            "server": "156.238.18.83",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram🇨🇳 @MxlShare @WangCai2 \/?ed=2560",
-                "headers": {
-                    "Host": "156.238.18.83"
                 }
             }
         },
@@ -261,7 +217,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 8",
+            "type": "vless",
+            "server": "156.238.18.83",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram🇨🇳 @MxlShare @WangCai2 \/?ed=2560",
+                "headers": {
+                    "Host": "156.238.18.83"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 6",
             "type": "vless",
             "server": "66.42.118.140",
             "server_port": 443,
