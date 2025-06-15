@@ -106,11 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
@@ -126,11 +126,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
@@ -162,7 +162,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "104.21.42.56",
+            "server_port": 443,
+            "uuid": "a9f5a3d0-e4bf-4146-a2d1-f56aa15883a3",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram channel : @pandavpntc",
+                "headers": {
+                    "Host": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "95.217.206.161",
             "server_port": 443,
@@ -182,27 +213,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Vb2kRpQSrEqsUKCX?ed=2560\/?JOKERRVPNJoin_Bade_Channel@JOKERRVPN",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -235,7 +245,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
             "server": "66.42.118.140",
             "server_port": 443,
