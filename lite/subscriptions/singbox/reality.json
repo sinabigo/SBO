@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @customv2ray | 1",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 11"
+                "🇫🇷FR | 🟢 | vless | @customv2ray | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @customv2ray | 1",
-                "🇫🇷FR | 🔴 | vless | @meli_proxyy | 11"
+                "🇫🇷FR | 🟢 | vless | @customv2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "tw6uAbjXzRSIKChb6pDbHVNjnU9Don4hbv6dHRkmJx8",
                     "short_id": "e54b5ad736ae4c38"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇷FR | 🔴 | vless | @meli_proxyy | 11",
-            "type": "vless",
-            "server": "57.130.19.124",
-            "server_port": 2055,
-            "uuid": "5e236508-63e4-45b3-a7d7-f9cd81af89df",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kifpool.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "HdhATsM5cYDWfhAt0LyrttGBoscuoT4M3fOSvYN8sEQ",
-                    "short_id": "54994c92a0"
                 }
             }
         }
