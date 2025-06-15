@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 3"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🔴 | vless | @meli_proxyy | 3"
+                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @meli_proxyy | 3",
+            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "zero.keynet.top",
-            "server_port": 8080,
-            "uuid": "3dbfefa1-88fb-4bbc-a286-1eb6b220fb8e",
+            "server": "51.44.208.42",
+            "server_port": 443,
+            "uuid": "7f93e196-1b2f-4a42-8051-5815554c05db",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "stackoverflow.com",
+                "server_name": "zula.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,16 +159,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "AOjVexvOnY8_MvD63nEb297mjkFDeOZYodhVSbdnnVo",
-                    "short_id": "7f3d9c"
+                    "public_key": "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg",
+                    "short_id": "7a2b"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Keynet",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
