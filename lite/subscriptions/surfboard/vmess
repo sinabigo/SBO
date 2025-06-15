@@ -11,10 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16 = vmess, orvps2.horsenma.net, 8443, username = 57e595e6-ef54-4e0d-b8df-e96db9612b99, ws = true, tls = 1, vmess-aead = true, ws-path = /horsen, ws-headers = Host:"orvps2.horsenma.net", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16
+URL-TEST = url-test,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16
+FALLBACK = fallback,🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
