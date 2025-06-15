@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇬🇧GB | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -124,14 +124,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇬🇧GB | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -158,32 +158,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "tgju.org",
-            "server_port": 8080,
-            "uuid": "56652249-2e67-4429-b86c-3df8b838ad85",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tgju.org"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "o2.sigmamessenger.com",
-            "server_port": 443,
-            "uuid": "c3e86d0c-bfe5-4bb5-a051-5e143df2024d",
+            "server": "95.164.4.88",
+            "server_port": 8443,
+            "uuid": "1a7a39e4-8c9b-4052-b8b2-c0929536bba5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -193,12 +172,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "o2.sigmamessenger.com",
+                "server_name": "pq-brazil1.09vpn.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "pq-brazil1.09vpn.com"
                 }
             }
         },
@@ -266,7 +252,28 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "ZuLa.ir",
+            "server_port": 80,
+            "uuid": "72ad4918-47cb-4ccc-ab21-e52b869547a0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "headers": {
+                    "Host": "ZuLa.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 443,
@@ -297,7 +304,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "fl.afteam.ir",
             "server_port": 38889,

@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16"
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16"
+                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @DeamNet_Proxy | 16",
+            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
             "type": "vmess",
-            "server": "orvps2.horsenma.net",
-            "server_port": 8443,
-            "uuid": "57e595e6-ef54-4e0d-b8df-e96db9612b99",
+            "server": "43.153.104.62",
+            "server_port": 45113,
+            "uuid": "97cc0323-de53-4a75-d69d-c6acdac5fdc7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -151,21 +151,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "orvps2.horsenma.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/horsen",
+                "path": "\/97cc0323",
                 "headers": {
-                    "Host": "orvps2.horsenma.net"
+                    "Host": "43.153.104.62"
                 }
             }
         }
