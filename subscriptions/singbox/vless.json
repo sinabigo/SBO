@@ -106,20 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 14",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
-                "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 14",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
-                "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,6 +140,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "zula.ir",
+            "server_port": 443,
+            "uuid": "169221de-6408-4143-9e66-6f77de385e94",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-",
+                "headers": {
+                    "Host": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
+                }
+            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 14",
@@ -173,11 +204,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 2",
             "type": "vless",
-            "server": "104.17.148.22",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "104.21.42.56",
+            "server_port": 443,
+            "uuid": "a9f5a3d0-e4bf-4146-a2d1-f56aa15883a3",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -185,11 +216,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/Telegram channel : @pandavpntc",
                 "headers": {
-                    "Host": "104.17.148.22"
+                    "Host": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev"
                 }
             }
         },
@@ -211,37 +252,6 @@
                 "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "95.164.4.88",
-            "server_port": 8443,
-            "uuid": "1a7a39e4-8c9b-4052-b8b2-c0929536bba5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pq-brazil1.09vpn.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "pq-brazil1.09vpn.com"
                 }
             }
         }
