@@ -121,8 +121,8 @@ dns:
 
 proxies:
   - {"name":"🚩CF | 🔴 | vless | @meli_proxyy | 14","type":"vless","server":"104.17.147.22","port":443,"udp":false,"uuid":"3058e698-61fd-4d12-95bc-f1fe4c071713","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"hOZori.iR","ws-opts":{"path":"/RklUHeautH5uvnSB/NTQuMTY5LjIyOS4xODg","headers":{"host":"hOZori.iR"}}}
-  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 14","type":"vless","server":"104.17.148.22","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"?ed=2560","headers":{"host":"redfree8mahsang6.redfree8.ir"}}}
-  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3","type":"vless","server":"tgju.org","port":8080,"udp":false,"uuid":"56652249-2e67-4429-b86c-3df8b838ad85","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"4j.QBAo1g5z6k.ZulaIR.org."}}}
+  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 18","type":"vless","server":"104.17.148.22","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"?ed=2560","headers":{"host":"redfree8mahsang6.redfree8.ir"}}}
+  - {"name":"🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"95.164.4.88","port":8443,"udp":false,"uuid":"1a7a39e4-8c9b-4052-b8b2-c0929536bba5","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"pq-brazil1.09vpn.com","ws-opts":{"path":"/vless/"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +130,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🚩CF | 🔴 | vless | @meli_proxyy | 14'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 14'
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 18'
+      - '🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -139,16 +139,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🚩CF | 🔴 | vless | @meli_proxyy | 14'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 14'
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 18'
+      - '🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
       - '🚩CF | 🔴 | vless | @meli_proxyy | 14'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 14'
-      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 18'
+      - '🇧🇷BR | 🔴 | vless | @DeamNet_Proxy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
