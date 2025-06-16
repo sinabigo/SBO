@@ -107,11 +107,8 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 14",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 13",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 11"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 15"
             ]
         },
         {
@@ -119,11 +116,8 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 2",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 14",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 13",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 11"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 15"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -177,30 +171,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "135.148.74.159",
-            "server_port": 443,
-            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135004002.sec20org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "104.17.147.22",
@@ -232,69 +202,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 14",
-            "type": "vless",
-            "server": "malaysia.com",
-            "server_port": 443,
-            "uuid": "c4587bda-09fc-4b3b-8221-4450fccc33d1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yx.yushan.dpdns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "yx.yushan.dpdns.org"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @meli_proxyy | 13",
-            "type": "vless",
-            "server": "tasteatlas.com",
-            "server_port": 443,
-            "uuid": "06e4425e-a8cb-4b63-929f-2105604ab0a9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yz.ylka.dpdns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "yz.ylka.dpdns.org"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 11",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 15",
             "type": "vless",
             "server": "172.67.73.163",
             "server_port": 8080,
