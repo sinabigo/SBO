@@ -120,8 +120,6 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2","type":"ss","server":"23.154.136.51","port":8888,"password":"Y6R9pAtvxxzmGC","cipher":"aes-256-gcm"}
   - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 4","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"15.236.243.30","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"18.199.36.179","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -130,8 +128,6 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -140,8 +136,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
@@ -149,8 +143,6 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 2'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 4'
-      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
-      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
