@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16"
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "151.242.2.43",
+            "server": "vpn_proxy_channel_vpn_proxy_channel.hohod.ir",
             "server_port": 443,
-            "uuid": "252efa02-ea69-4e5e-aae4-43fd0bf19440",
+            "uuid": "33707040-edcf-4185-94e4-2a071315c602",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "maps.google.com",
+                "server_name": "vpn_proxy_channel_vpn_proxy_channel.hohod.ir",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,16 +159,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "OpCaEP3-NY17XI9quBaqEhjO1XlVQBEFc5iTZEwlOAU",
-                    "short_id": ""
+                    "public_key": "GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ",
+                    "short_id": "7def4dde"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],

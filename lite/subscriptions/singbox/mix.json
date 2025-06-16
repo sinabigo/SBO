@@ -108,15 +108,15 @@
                 "URL-TEST",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 16",
+                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -129,15 +129,15 @@
             "outbounds": [
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 14",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 15",
-                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
-                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 18",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
+                "🇩🇪DE | 🟢 | ss | @meli_proxyy | 16",
+                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -208,7 +208,36 @@
             }
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "vpn_proxy_channel_vpn_proxy_channel.hohod.ir",
+            "server_port": 443,
+            "uuid": "33707040-edcf-4185-94e4-2a071315c602",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn_proxy_channel_vpn_proxy_channel.hohod.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GpgfsA-U8Y8M3LRcTfsaBViDtp2VlN5riSLLZ2kxEiQ",
+                    "short_id": "7def4dde"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -240,16 +269,6 @@
                     "Host": "beyonddsz.cfd"
                 }
             }
-        },
-        {
-            "tag": "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 18",
-            "type": "shadowsocks",
-            "server": "64.227.144.190",
-            "server_port": 50690,
-            "method": "chacha20-ietf-poly1305",
-            "password": "3PiNbHH0gSHsiXw7Qh4VYV",
-            "plugin": "",
-            "plugin_opts": ""
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
@@ -346,7 +365,17 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇩🇪DE | 🟢 | ss | @meli_proxyy | 16",
+            "type": "shadowsocks",
+            "server": "45.150.32.13",
+            "server_port": 38707,
+            "method": "chacha20-ietf-poly1305",
+            "password": "NMiJKeh4yMumfyYVvjq0LR",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "99.199.73.57",
             "server_port": 18716,
@@ -357,42 +386,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "151.242.2.43",
-            "server_port": 443,
-            "uuid": "252efa02-ea69-4e5e-aae4-43fd0bf19440",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maps.google.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "OpCaEP3-NY17XI9quBaqEhjO1XlVQBEFc5iTZEwlOAU",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
