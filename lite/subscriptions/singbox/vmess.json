@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18"
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18"
+                "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18",
+            "tag": "🇫🇷FR | 🟢 | vmess | @DeamNet_Proxy | 17",
             "type": "vmess",
-            "server": "47.116.166.178",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "server": "beyonddsz.cfd",
+            "server_port": 443,
+            "uuid": "9b456c2a-f2c1-45e1-87a9-b7628b04bb24",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -150,6 +150,23 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "beyonddsz.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkws",
+                "headers": {
+                    "Host": "beyonddsz.cfd"
+                }
             }
         }
     ],
