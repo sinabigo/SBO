@@ -106,15 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 14",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -125,15 +124,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 14",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -160,7 +158,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "104.21.42.56",
             "server_port": 443,
@@ -187,30 +185,6 @@
                 "path": "\/Telegram channel : @pandavpntc",
                 "headers": {
                     "Host": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev"
-                }
-            }
-        },
-        {
-            "tag": "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "95.217.206.161",
-            "server_port": 443,
-            "uuid": "01d68a9b-be48-4c7b-b4f9-71b29c4cfaca",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "api.chandplus.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
@@ -292,20 +266,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @meli_proxyy | 14",
-            "type": "vless",
-            "server": "99.199.73.57",
-            "server_port": 18716,
-            "uuid": "a6804343-1318-41e9-c76d-bb75b61e0347",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
             "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
             "type": "vless",
             "server": "151.242.2.43",
@@ -339,6 +299,37 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 443,
+            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hOZori.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/RklUHeautH5uvnSB\/NTQuMTY5LjIyOS4xODg",
+                "headers": {
+                    "Host": "hOZori.iR"
+                }
             }
         },
         {

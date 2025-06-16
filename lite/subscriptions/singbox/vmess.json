@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19"
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19"
+                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🟢 | vmess | @DeamNet_Proxy | 19",
+            "tag": "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "43.153.104.62",
-            "server_port": 45113,
-            "uuid": "97cc0323-de53-4a75-d69d-c6acdac5fdc7",
+            "server": "47.116.166.178",
+            "server_port": 50002,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -150,13 +150,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/97cc0323",
-                "headers": {
-                    "Host": "43.153.104.62"
-                }
             }
         }
     ],
