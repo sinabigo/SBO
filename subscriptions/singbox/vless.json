@@ -109,8 +109,8 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
             ]
         },
         {
@@ -120,8 +120,8 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5"
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -210,27 +210,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "telegram-id-ArV2ray2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 5",
             "type": "vless",
             "server": "172.67.73.163",
@@ -248,6 +227,27 @@
                 "path": "\/",
                 "headers": {
                     "Host": "172.67.73.163"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 7",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "telegram-id-ArV2ray2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-ArV2ry@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL-@ArV2ry-TEL--@ArV2ry-JOIN-@ArV2ry-TEL--@ArV2ry",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         }
