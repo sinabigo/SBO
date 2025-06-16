@@ -108,16 +108,16 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -130,16 +130,16 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 16",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 17",
-                "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -210,28 +210,32 @@
             }
         },
         {
-            "tag": "🇨🇳CN | 🟢 | vmess | @DeamNet_Proxy | 18",
-            "type": "vmess",
-            "server": "47.116.166.178",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "104.26.15.85",
+            "server_port": 8080,
+            "uuid": "56652249-2e67-4429-b86c-3df8b838ad85",
+            "flow": "",
+            "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.26.15.85"
+                }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "104.21.42.56",
+            "server": "zula.ir",
             "server_port": 443,
-            "uuid": "a9f5a3d0-e4bf-4146-a2d1-f56aa15883a3",
+            "uuid": "169221de-6408-4143-9e66-6f77de385e94",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -241,7 +245,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev",
+                "server_name": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -251,9 +255,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram channel : @pandavpntc",
+                "path": "\/@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-",
                 "headers": {
-                    "Host": "q5awsv46csbhhzfhhmrws9nz9bm2ovqvhnvvtctvbtzeivswv97tbtefdgddjhg.bzrglygf.workers.Dev"
+                    "Host": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
                 }
             }
         },
@@ -366,7 +370,21 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 15",
+            "tag": "🇨🇦CA | 🔴 | vless | @meli_proxyy | 15",
+            "type": "vless",
+            "server": "99.199.73.57",
+            "server_port": 18716,
+            "uuid": "a6804343-1318-41e9-c76d-bb75b61e0347",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
             "server": "151.242.2.43",
             "server_port": 443,
@@ -399,37 +417,6 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 443,
-            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hOZori.iR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/RklUHeautH5uvnSB\/NTQuMTY5LjIyOS4xODg",
-                "headers": {
-                    "Host": "hOZori.iR"
-                }
             }
         },
         {
