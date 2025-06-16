@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
@@ -125,7 +124,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 3",
@@ -160,7 +158,7 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "104.26.15.85",
             "server_port": 8080,
@@ -177,37 +175,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "104.26.15.85"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "zula.ir",
-            "server_port": 443,
-            "uuid": "169221de-6408-4143-9e66-6f77de385e94",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-@Cassiusvpn-",
-                "headers": {
-                    "Host": "cassiusvpn-cassiusvpn-000.stat-4.workers.dev"
                 }
             }
         },
