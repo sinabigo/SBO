@@ -121,8 +121,10 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @Outline_Vpn | 0","type":"vless","server":"www.speedtest.net","port":443,"udp":false,"uuid":"3058e698-61fd-4d12-95bc-f1fe4c071713","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"hOZori.iR","ws-opts":{"path":"/RklUHeautH5uvnSB/NTQuMTY5LjIyOS4xODg","headers":{"host":"hozori.ir"}}}
-  - {"name":"🚩CF | 🔴 | vless | @meli_proxyy | 2","type":"vless","server":"104.17.147.22","port":443,"udp":false,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Wv2NhB0hVh.SoLiJoNiTo.CoM","ws-opts":{"path":"/","headers":{"host":"Wv2NhB0hVh.SoLiJoNiTo.CoM"}}}
-  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 2","type":"vless","server":"104.17.147.22","port":80,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512","headers":{"host":"redfree8mahsang6.redfree8.ir"}}}
+  - {"name":"🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 1","type":"vless","server":"156.238.18.214","port":8880,"udp":false,"uuid":"fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560","headers":{"host":"yd.laoyoutiao.link"}}}
+  - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2","type":"vless","server":"66.81.247.20","port":8880,"udp":false,"uuid":"fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/Telegram🇨🇳 @MxlShare @WangCai2 /?ed=2560","headers":{"host":"us.laoyoutiao.link"}}}
+  - {"name":"🚩CF | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"172.67.73.163","port":8080,"udp":false,"uuid":"6abbaf96-4b16-48d3-b996-a6067fc6eb2c","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/","headers":{"host":"M4.nF9JZ2st7N.zULAiR.ORG."}}}
+  - {"name":"🚩CF | 🔴 | vless | @meli_proxyy | 4","type":"vless","server":"104.17.147.22","port":443,"udp":false,"uuid":"96a1b724-68d2-4f4d-ab25-38ecd83577bc","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"Wv2NhB0hVh.SoLiJoNiTo.CoM","ws-opts":{"path":"/","headers":{"host":"Wv2NhB0hVh.SoLiJoNiTo.CoM"}}}
   - {"name":"🇺🇸US | 🔴 | vless | @TEHRANARGO | 0","type":"vless","server":"151.101.64.155","port":80,"udp":false,"uuid":"6699901d-20d8-4d2f-ade3-35641f40093f","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/-LiV2ry@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL-@LIGHTNING6-TEL--@LIGHTNING6-JOIN-@LIGHTNING6-TEL--@LIGHTNING6?ed=2048","headers":{"host":"Lightning6.ir"}}}
 proxy-groups:
   - name: MANUAL
@@ -131,8 +133,10 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @Outline_Vpn | 0'
-      - '🚩CF | 🔴 | vless | @meli_proxyy | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @meli_proxyy | 4'
       - '🇺🇸US | 🔴 | vless | @TEHRANARGO | 0'
   - name: URL-TEST
     type: url-test
@@ -141,8 +145,10 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🔴 | vless | @Outline_Vpn | 0'
-      - '🚩CF | 🔴 | vless | @meli_proxyy | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @meli_proxyy | 4'
       - '🇺🇸US | 🔴 | vless | @TEHRANARGO | 0'
   - name: FALLBACK
     type: fallback
@@ -150,8 +156,10 @@ proxy-groups:
     interval: 60
     proxies:
       - '🇺🇸US | 🔴 | vless | @Outline_Vpn | 0'
-      - '🚩CF | 🔴 | vless | @meli_proxyy | 2'
-      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🇯🇵JP | 🔴 | vless | @DeamNet_Proxy | 1'
+      - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 2'
+      - '🚩CF | 🔴 | vless | @DeamNet_Proxy | 0'
+      - '🚩CF | 🔴 | vless | @meli_proxyy | 4'
       - '🇺🇸US | 🔴 | vless | @TEHRANARGO | 0'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
