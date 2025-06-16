@@ -106,18 +106,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -140,11 +142,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "172.67.11.138",
-            "server_port": 80,
-            "uuid": "b55ec078-3b17-4ed1-a697-71f464cdcaaa",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -152,16 +154,57 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "hOZori.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/RklUHeautH5uvnSB\/NTQuMTY5LjIyOS4xODg",
                 "headers": {
-                    "Host": "172.67.11.138"
+                    "Host": "hOZori.iR"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 443,
+            "uuid": "96a1b724-68d2-4f4d-ab25-38ecd83577bc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Wv2NhB0hVh.SoLiJoNiTo.CoM",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "Wv2NhB0hVh.SoLiJoNiTo.CoM"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
             "server": "135.148.74.159",
             "server_port": 443,
@@ -185,7 +228,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 7",
             "type": "vless",
             "server": "172.67.73.163",
             "server_port": 8080,
