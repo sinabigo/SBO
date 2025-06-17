@@ -106,14 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -124,14 +123,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -158,7 +156,38 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 16",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "type": "vless",
+            "server": "188.114.97.3",
+            "server_port": 443,
+            "uuid": "9beab830-b45b-43bb-b1b2-02e3bf3fc106",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "2ksnanegepxqhe9w8cx2un2zkzwhxcarbzfygujvq9qhkgcm9dwfboegddddddd.y1skl4ab.workers.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "2ksnanegepxqhe9w8cx2un2zkzwhxcarbzfygujvq9qhkgcm9dwfboegddddddd.y1skl4ab.workers.Dev"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
             "server": "cdn.chandplus.com",
             "server_port": 443,
@@ -178,27 +207,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Join_Bade_Channel@JOKERRVPN",
-                "headers": {
-                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -301,20 +309,6 @@
                 "headers": {
                     "Host": "151.101.64.155"
                 }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "germany1.fiogoir-germany1.site",
-            "server_port": 8080,
-            "uuid": "098f4eac-39fd-4c91-9bf3-dfe55e47e1ee",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
