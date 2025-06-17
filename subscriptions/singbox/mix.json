@@ -106,16 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
                 "🇨🇿CZ | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 1"
             ]
@@ -124,16 +124,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 5",
                 "🇨🇿CZ | 🔴 | vless | @DeamNet_Proxy | 9",
+                "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 1"
             ],
@@ -158,11 +158,11 @@
             "type": "dns"
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
-            "server": "172.66.208.89",
-            "server_port": 80,
-            "uuid": "26bc13af-e442-4956-afd4-b8f85744d26f",
+            "server": "104.21.11.28",
+            "server_port": 443,
+            "uuid": "c92856da-9532-49ec-bb71-d981a623f5c9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -170,11 +170,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "freedom6.mamav81785.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/TELEGRAM-MARAMBASHI\/",
                 "headers": {
-                    "Host": "172.66.208.89"
+                    "Host": "freedom6.mamav81785.workers.dev"
                 }
             }
         },
@@ -210,11 +220,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
-            "server": "104.21.11.28",
-            "server_port": 443,
-            "uuid": "c92856da-9532-49ec-bb71-d981a623f5c9",
+            "server": "bdok.ir",
+            "server_port": 8880,
+            "uuid": "51d3d249-9095-4cbd-8fd2-3e6c1039cab4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -222,21 +232,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "freedom6.mamav81785.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/TELEGRAM-MARAMBASHI\/",
+                "path": "\/",
                 "headers": {
-                    "Host": "freedom6.mamav81785.workers.dev"
+                    "Host": "bdok.ir"
                 }
             }
         },
@@ -272,27 +272,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "bdok.ir",
-            "server_port": 8880,
-            "uuid": "51d3d249-9095-4cbd-8fd2-3e6c1039cab4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "bdok.ir"
-                }
-            }
-        },
-        {
             "tag": "🇨🇿CZ | 🔴 | vless | @DeamNet_Proxy | 9",
             "type": "vless",
             "server": "195.85.23.20",
@@ -314,6 +293,27 @@
             }
         },
         {
+            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 2",
+            "type": "vless",
+            "server": "172.66.208.89",
+            "server_port": 80,
+            "uuid": "26bc13af-e442-4956-afd4-b8f85744d26f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "172.66.208.89"
+                }
+            }
+        },
+        {
             "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
             "type": "shadowsocks",
             "server": "series-a2-me.varzesh360.co",
@@ -322,28 +322,6 @@
             "password": "Bog0ELmMM9DSxDdQ",
             "plugin": "",
             "plugin_opts": ""
-        },
-        {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-            "type": "trojan",
-            "server": "13.38.226.121",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
@@ -384,6 +362,28 @@
                 "path": "\/-Arfilter@Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter",
                 "headers": {
                     "Host": "www.speedtest.net"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
+            "type": "trojan",
+            "server": "18.156.138.162",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
