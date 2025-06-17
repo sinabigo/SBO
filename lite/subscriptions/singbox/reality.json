@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16"
+                "🇮🇷IR | 🟢 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16"
+                "🇮🇷IR | 🟢 | vless | @meli_proxyy | 16",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇮🇷IR | 🟢 | vless | @meli_proxyy | 16",
+            "type": "vless",
+            "server": "b.aiteamplus.ir",
+            "server_port": 6012,
+            "uuid": "5d19d8d8-d0c8-4ea0-b86e-082030397ebc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "traffic-tile.maps.snapp.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "safari"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OCW4VToUh_2gtej7iO30chCKwUWDmmmpW01kHE4BDwU",
+                    "short_id": "7fcf499c88f80777"
+                }
+            }
+        },
+        {
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
             "server": "84.32.103.234",
             "server_port": 443,
