@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,7 +138,36 @@
             "type": "dns"
         },
         {
-            "tag": "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "5.181.171.10",
+            "server_port": 443,
+            "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
             "server": "77.91.74.189",
             "server_port": 28495,
