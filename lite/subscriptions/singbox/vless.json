@@ -113,8 +113,7 @@
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 3",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -134,8 +133,7 @@
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 2",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 3",
+                "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 16",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -300,45 +298,39 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 2",
+            "tag": "🇳🇱NL | 🔴 | vless | @TEHRANARGO | 0",
             "type": "vless",
-            "server": "172.66.208.89",
-            "server_port": 80,
-            "uuid": "26bc13af-e442-4956-afd4-b8f85744d26f",
-            "flow": "",
+            "server": "84.32.101.93",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray3",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "172.66.208.89"
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0ZELy90Fb5sh7DULwsa14x1B1NY-NO2Ga847T_Z-oXY",
+                    "short_id": "688c"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 3",
-            "type": "vless",
-            "server": "104.25.138.53",
-            "server_port": 80,
-            "uuid": "948f6596-66f9-4707-aa92-3107a214ce53",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
             "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560\/?BIA_CHANEL@JOKERRVPN",
-                "headers": {
-                    "Host": "104.25.138.53"
-                }
+                "type": "grpc",
+                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
