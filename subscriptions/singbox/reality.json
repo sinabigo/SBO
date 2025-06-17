@@ -106,14 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0"
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0"
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +138,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | vless | @meli_proxyy | 0",
+            "tag": "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
-            "server": "51.44.208.42",
-            "server_port": 443,
-            "uuid": "7f93e196-1b2f-4a42-8051-5815554c05db",
+            "server": "77.91.74.189",
+            "server_port": 28495,
+            "uuid": "7e296434-2d17-48d3-928d-19eaa34aecb1",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +152,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zula.ir",
+                "server_name": "dl.google.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,9 +161,45 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg",
-                    "short_id": "7a2b"
+                    "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
+                    "short_id": "0ecc2c1392"
                 }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "65.109.203.8",
+            "server_port": 14787,
+            "uuid": "29b198d6-25e1-4c15-9b53-feacf78ac3d0",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "---rivmiDN3OHmQHOpowqKDVft8FWrl4BqZ_gyImCR4",
+                    "short_id": "be31134d"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "digikala.ir",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         }
     ],

@@ -120,27 +120,31 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇫🇷FR | 🟢 | vless | @meli_proxyy | 0","type":"vless","server":"51.44.208.42","port":443,"udp":true,"uuid":"7f93e196-1b2f-4a42-8051-5815554c05db","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"zula.ir","flow":"xtls-rprx-vision","reality-opts":{"public-key":"GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg","short-id":"7a2b"}}
+  - {"name":"🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0","type":"vless","server":"77.91.74.189","port":28495,"udp":true,"uuid":"7e296434-2d17-48d3-928d-19eaa34aecb1","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"dl.google.com","reality-opts":{"public-key":"KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ","short-id":"0ecc2c1392"}}
+  - {"name":"🇫🇮FI | 🔴 | vless | @meli_proxyy | 1","type":"vless","server":"65.109.203.8","port":14787,"udp":true,"uuid":"29b198d6-25e1-4c15-9b53-feacf78ac3d0","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tgju.org","grpc-opts":{"grpc-service-name":"digikala.ir"},"reality-opts":{"public-key":"---rivmiDN3OHmQHOpowqKDVft8FWrl4BqZ_gyImCR4","short-id":"be31134d"}}
 proxy-groups:
   - name: MANUAL
     type: select
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 0'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0'
+      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 1'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
     interval: 60
     tolerance: 50
     proxies:
-      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 0'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0'
+      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 1'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇫🇷FR | 🟢 | vless | @meli_proxyy | 0'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 0'
+      - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 1'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
