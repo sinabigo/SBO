@@ -110,7 +110,8 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1"
             ]
         },
         {
@@ -121,7 +122,8 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1"
+                "🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -281,6 +283,37 @@
                     "enabled": true,
                     "public_key": "KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ",
                     "short_id": "0ecc2c1392"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "172.67.30.213",
+            "server_port": 2053,
+            "uuid": "53bea386-912e-4fe3-9eff-59c2285a176c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "9.neshaan.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/admins?ed=2560",
+                "headers": {
+                    "Host": "9.neshaan.org"
                 }
             }
         }
