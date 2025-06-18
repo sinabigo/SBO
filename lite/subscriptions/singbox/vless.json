@@ -114,9 +114,9 @@
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 6",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -134,9 +134,9 @@
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 6",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -349,11 +349,32 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
             "type": "vless",
-            "server": "jojo.mysupport.monster",
-            "server_port": 5261,
-            "uuid": "5e2d1a2a-9570-4fd7-9d17-12d10bebd62d",
+            "server": "104.17.209.145",
+            "server_port": 80,
+            "uuid": "92f481b6-ad92-43e4-a683-2bb0aeaa9846",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "dw.alibichareh.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
+            "type": "vless",
+            "server": "178.239.150.221",
+            "server_port": 8821,
+            "uuid": "176d590c-6cb2-46e4-a3db-c63f18a1e3ab",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -368,20 +389,6 @@
             "server": "188.121.107.234",
             "server_port": 3456,
             "uuid": "eb249902-f5ca-47d2-8d6f-5335ae967d4a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
-            "type": "vless",
-            "server": "85.9.100.153",
-            "server_port": 8080,
-            "uuid": "a0db1c74-7a03-4bad-9b4b-ced8d1d22315",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
