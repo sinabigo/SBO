@@ -129,9 +129,9 @@ proxies:
   - {"name":"🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 5","type":"vless","server":"pic2.zarashop0.ir","port":2087,"udp":false,"uuid":"5d71b518-9f52-414a-abf2-b806684233be","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"pic2.zarashop0.ir"}
   - {"name":"🇷🇺RU | 🔴 | vless | @V2FETCH | 0","type":"vless","server":"client.bluwave.ir","port":80,"udp":false,"uuid":"e3eec9d9-ab70-4617-9e19-60860112c634","tls":false,"network":"ws","client-fingerprint":"chrome","ws-opts":{"path":"/?ed=1861","headers":{"host":"Bluewave.ai"}}}
   - {"name":"🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2","type":"vless","server":"jojo.mysupport.monster","port":5261,"udp":false,"uuid":"5e2d1a2a-9570-4fd7-9d17-12d10bebd62d","tls":false,"network":"tcp","client-fingerprint":"chrome"}
-  - {"name":"🇮🇷IR | 🔴 | vless | @meli_proxyy | 12","type":"vless","server":"178.239.146.109","port":25054,"udp":false,"uuid":"b4b0f8de-4526-4b3a-98dc-09884b7a12c6","tls":false,"network":"tcp","client-fingerprint":"chrome"}
+  - {"name":"🇮🇷IR | 🔴 | vless | @meli_proxyy | 10","type":"vless","server":"85.133.215.24","port":1717,"udp":false,"uuid":"0fdc2aac-e3bd-48c2-b2d5-32c52faea9e0","tls":true,"network":"grpc","client-fingerprint":"chrome","grpc-opts":{"grpc-service-name":"1717vless"}}
   - {"name":"🇺🇸US | 🔴 | vless | @redfree8 | 3","type":"vless","server":"zula.ir","port":443,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"ipsychO.SUEx12.Ir","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
-  - {"name":"🇺🇸US | 🔴 | vless | @redfree8 | 4","type":"vless","server":"www.speedtest.net","port":443,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"ipsychO.SUEx12.Ir","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
+  - {"name":"🇨🇦CA | 🔴 | vless | @redfree8 | 4","type":"vless","server":"www.speedtest.net","port":443,"udp":false,"uuid":"53fa8faf-ba4b-4322-9c69-a3e5b1555049","tls":true,"network":"ws","client-fingerprint":"chrome","servername":"ipsychO.SUEx12.Ir","ws-opts":{"path":"/re5IzbZ9IZZMddtw?ed=2560","headers":{"host":"ipsycho.suex12.ir"}}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -147,9 +147,9 @@ proxy-groups:
       - '🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 5'
       - '🇷🇺RU | 🔴 | vless | @V2FETCH | 0'
       - '🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2'
-      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 10'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 3'
-      - '🇺🇸US | 🔴 | vless | @redfree8 | 4'
+      - '🇨🇦CA | 🔴 | vless | @redfree8 | 4'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -165,9 +165,9 @@ proxy-groups:
       - '🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 5'
       - '🇷🇺RU | 🔴 | vless | @V2FETCH | 0'
       - '🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2'
-      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 10'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 3'
-      - '🇺🇸US | 🔴 | vless | @redfree8 | 4'
+      - '🇨🇦CA | 🔴 | vless | @redfree8 | 4'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -182,9 +182,9 @@ proxy-groups:
       - '🇫🇮FI | 🔴 | vless | @ShadowProxy66 | 5'
       - '🇷🇺RU | 🔴 | vless | @V2FETCH | 0'
       - '🇮🇷IR | 🔴 | vless | @TEHRANARGO | 2'
-      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 12'
+      - '🇮🇷IR | 🔴 | vless | @meli_proxyy | 10'
       - '🇺🇸US | 🔴 | vless | @redfree8 | 3'
-      - '🇺🇸US | 🔴 | vless | @redfree8 | 4'
+      - '🇨🇦CA | 🔴 | vless | @redfree8 | 4'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
