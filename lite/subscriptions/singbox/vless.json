@@ -109,11 +109,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 6",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 11",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -126,11 +127,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 6",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 11",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -249,17 +251,38 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 3",
             "type": "vless",
-            "server": "Speedtest.net",
+            "server": "gigaportal.pl.gigaportal.pl",
             "server_port": 80,
-            "uuid": "db0c7d99-3760-4fcd-84b9-da6ac844e18c",
+            "uuid": "efd27b02-358a-4c5f-866e-180f9b762706",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "7c9e3c1d-a360-4429-9189-e45a98de7fde",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                }
             }
         },
         {
@@ -298,7 +321,38 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 11",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8443,
+            "uuid": "b1addf1e-6c1d-4410-bfa5-cf26328319d9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/CmxkS1704Zcx8p3M?ed=2560",
+                "headers": {
+                    "Host": "0HvsNO270bvRxG6EKbY8uMsQn-6941Fa.paGeS.dEV"
+                }
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "65.109.203.8",
             "server_port": 14787,
@@ -328,27 +382,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "digikala.ir",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 12",
-            "type": "vless",
-            "server": "62.60.193.123",
-            "server_port": 2025,
-            "uuid": "35d6e6de-aca1-4434-8f59-9faba7e33dc1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
