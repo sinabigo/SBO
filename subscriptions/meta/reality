@@ -122,7 +122,7 @@ dns:
 proxies:
   - {"name":"🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0","type":"vless","server":"5.181.171.10","port":443,"udp":true,"uuid":"49ed01ad-3bb4-204f-b0ff-a58f658fd618","tls":true,"network":"raw","client-fingerprint":"chrome","servername":"speed.cloudflare.com","flow":"xtls-rprx-vision","reality-opts":{"public-key":"YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y"}}
   - {"name":"🇫🇮FI | 🔴 | vless | @meli_proxyy | 11","type":"vless","server":"65.109.203.8","port":14787,"udp":true,"uuid":"29b198d6-25e1-4c15-9b53-feacf78ac3d0","tls":true,"network":"grpc","client-fingerprint":"chrome","servername":"tgju.org","grpc-opts":{"grpc-service-name":"digikala.ir"},"reality-opts":{"public-key":"---rivmiDN3OHmQHOpowqKDVft8FWrl4BqZ_gyImCR4","short-id":"be31134d"}}
-  - {"name":"🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1","type":"vless","server":"77.91.74.189","port":28495,"udp":true,"uuid":"7e296434-2d17-48d3-928d-19eaa34aecb1","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"dl.google.com","reality-opts":{"public-key":"KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ","short-id":"0ecc2c1392"}}
+  - {"name":"🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 2","type":"vless","server":"77.91.74.189","port":28495,"udp":true,"uuid":"7e296434-2d17-48d3-928d-19eaa34aecb1","tls":true,"network":"tcp","client-fingerprint":"chrome","servername":"dl.google.com","reality-opts":{"public-key":"KXMH8QzaRa66F6GxOR1CanBunO2uHdJvri2zCbar2RQ","short-id":"0ecc2c1392"}}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -131,7 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 2'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com/
@@ -140,7 +140,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 2'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
@@ -148,7 +148,7 @@ proxy-groups:
     proxies:
       - '🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0'
       - '🇫🇮FI | 🔴 | vless | @meli_proxyy | 11'
-      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 1'
+      - '🇮🇱IL | 🔴 | vless | @ShadowProxy66 | 2'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
   ads: {type: http, format: text, behavior: domain, path: ./ruleset/ads.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ads.txt, interval: 86400}
