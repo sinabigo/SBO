@@ -120,7 +120,6 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.156.138.162","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"3.124.169.204","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 7","type":"ss","server":"74.177.208.211","port":443,"password":"WstuSnlu4ieA9M0L","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0","type":"ss","server":"4.158.118.226","port":443,"password":"1xO2cqPazqjGfCfd","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -130,7 +129,6 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 7'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: URL-TEST
     type: url-test
@@ -140,7 +138,6 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 7'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
   - name: FALLBACK
     type: fallback
@@ -149,7 +146,6 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 19'
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 7'
       - '🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
