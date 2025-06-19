@@ -108,10 +108,11 @@
                 "URL-TEST",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ]
         },
@@ -121,10 +122,11 @@
             "outbounds": [
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -200,6 +202,35 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "5.181.171.10",
+            "server_port": 443,
+            "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speed.cloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
+                    "short_id": ""
+                }
+            }
+        },
+        {
             "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
             "type": "vless",
             "server": "104.17.209.145",
@@ -245,35 +276,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "5.181.171.10",
-            "server_port": 443,
-            "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "speed.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
-                    "short_id": ""
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 1",
             "type": "vless",
             "server": "91.99.144.165",
@@ -307,6 +309,27 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
+            "type": "vless",
+            "server": "57.129.41.217",
+            "server_port": 80,
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "57.129.41.217"
+                }
             }
         },
         {
