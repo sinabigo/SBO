@@ -115,8 +115,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 6",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -135,8 +134,7 @@
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 6",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -370,31 +368,24 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
-            "server": "178.239.150.221",
-            "server_port": 8821,
-            "uuid": "176d590c-6cb2-46e4-a3db-c63f18a1e3ab",
+            "server": "speedtest.net",
+            "server_port": 80,
+            "uuid": "53503fd1-275c-4623-d426-601a652ca3fc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 6",
-            "type": "vless",
-            "server": "188.121.107.234",
-            "server_port": 3456,
-            "uuid": "eb249902-f5ca-47d2-8d6f-5335ae967d4a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/olem\/ws?ed=1024",
+                "headers": {
+                    "Host": "speedtest.net"
+                }
             }
         },
         {
