@@ -109,15 +109,16 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "❔XX | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -130,15 +131,16 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "❔XX | 🔴 | vless | @meli_proxyy | 2",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
+                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -247,7 +249,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -316,7 +318,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
             "type": "vless",
             "server": "81.12.30.51",
             "server_port": 58045,
@@ -414,17 +416,63 @@
             }
         },
         {
-            "tag": "❔XX | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "irNt.Nisvn.ir",
-            "server_port": 500,
-            "uuid": "26f59655-5ac1-4bc0-bb2d-a042ab8e6388",
+            "server": "91.99.144.165",
+            "server_port": 3184,
+            "uuid": "2e655095-7f4e-428d-9c7e-eb2278e153a8",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.chess.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "chessgame",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "ssl2.komanserver.ir",
+            "server_port": 443,
+            "uuid": "7b6503eb-a641-4eb4-9620-9b219a51e3ab",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "am.komanserver.ir.",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
