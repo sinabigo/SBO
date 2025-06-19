@@ -109,9 +109,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
@@ -128,9 +129,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
@@ -243,7 +245,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -308,6 +310,27 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
+            "type": "vless",
+            "server": "172.67.193.239",
+            "server_port": 8080,
+            "uuid": "23d240b9-c5ec-43d1-ec3d-5066556537f4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/search",
+                "headers": {
+                    "Host": "172.67.193.239"
                 }
             }
         },
