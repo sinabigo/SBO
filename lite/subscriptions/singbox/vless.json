@@ -112,15 +112,14 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ]
         },
@@ -134,15 +133,14 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇫🇮FI | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
-                "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+                "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -318,37 +316,6 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
-            "type": "vless",
-            "server": "ts.fgsm.ir",
-            "server_port": 443,
-            "uuid": "c20b38bd-fa5e-47a7-8f28-8d7b728cdeb9",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ts.fgsm.ir",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "ts.fgsm.ir"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
             "type": "vless",
             "server": "172.67.193.239",
@@ -426,6 +393,20 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 3",
+            "type": "vless",
+            "server": "2.144.5.102",
+            "server_port": 2053,
+            "uuid": "bceda5dd-d61a-41cf-94e8-59745be56625",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
             "type": "vless",
             "server": "91.99.144.165",
@@ -462,30 +443,6 @@
             }
         },
         {
-            "tag": "🇫🇮FI | 🔴 | vless | @meli_proxyy | 5",
-            "type": "vless",
-            "server": "ssl2.komanserver.ir",
-            "server_port": 443,
-            "uuid": "7b6503eb-a641-4eb4-9620-9b219a51e3ab",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "am.komanserver.ir.",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
             "type": "vless",
             "server": "151.101.64.155",
@@ -507,7 +464,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @redfree8 | 3",
+            "tag": "🇨🇦CA | 🔴 | vless | @redfree8 | 3",
             "type": "vless",
             "server": "zula.ir",
             "server_port": 443,
