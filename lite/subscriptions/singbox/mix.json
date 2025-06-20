@@ -106,20 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -131,20 +130,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
                 "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -172,30 +170,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
-            "type": "vless",
-            "server": "102.177.176.213",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "102.177.176.213"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "63.178.113.40",
+            "server": "15.236.82.47",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -217,7 +194,7 @@
         {
             "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "3.72.117.224",
+            "server": "63.178.113.40",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -299,7 +276,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -438,25 +415,35 @@
             }
         },
         {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
+            "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
-            "server": "direct.gladservices.ir",
-            "server_port": 1001,
-            "uuid": "0f68499d-d0d2-4cff-bae5-3082fc2a0aaa",
+            "server": "xen1.web.net-pardaze-iranian.ir",
+            "server_port": 2095,
+            "uuid": "cf8b42e6-d9dd-4599-9cb7-a6d27e1ea03b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "xen1.web.net-pardaze-iranian.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 11",
+            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
             "type": "vless",
-            "server": "102.215.228.122",
-            "server_port": 24161,
-            "uuid": "c1201f65-7290-4857-b552-08d5add4b362",
+            "server": "direct.gladservices.ir",
+            "server_port": 1001,
+            "uuid": "0f68499d-d0d2-4cff-bae5-3082fc2a0aaa",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
