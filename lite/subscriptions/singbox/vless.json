@@ -115,8 +115,8 @@
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -136,8 +136,8 @@
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
                 "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
-                "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
@@ -365,6 +365,35 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "142.93.168.151",
+            "server_port": 8443,
+            "uuid": "0636501b-7caa-4e85-92d6-d69f00184b3b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jmJIrcH1e8ZRuWLVxngatpieUfew6vs_UrBl5gKkOxA",
+                    "short_id": "9e0ef855491cb004"
+                }
+            }
+        },
+        {
             "tag": "🇳🇱NL | 🔴 | vless | @meli_proxyy | 9",
             "type": "vless",
             "server": "xen1.web.net-pardaze-iranian.ir",
@@ -386,20 +415,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "🇸🇪SE | 🔴 | vless | @meli_proxyy | 10",
-            "type": "vless",
-            "server": "direct.gladservices.ir",
-            "server_port": 1001,
-            "uuid": "0f68499d-d0d2-4cff-bae5-3082fc2a0aaa",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {

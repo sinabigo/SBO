@@ -105,13 +105,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [],
+            "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
             "tolerance": 50
@@ -131,6 +134,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8",
+            "type": "vless",
+            "server": "142.93.168.151",
+            "server_port": 8443,
+            "uuid": "0636501b-7caa-4e85-92d6-d69f00184b3b",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jmJIrcH1e8ZRuWLVxngatpieUfew6vs_UrBl5gKkOxA",
+                    "short_id": "9e0ef855491cb004"
+                }
+            }
         }
     ],
     "route": {
