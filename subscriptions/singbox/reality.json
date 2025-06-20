@@ -107,7 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0"
             ]
         },
         {
@@ -115,7 +115,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2"
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -167,11 +167,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "91.99.144.165",
-            "server_port": 3184,
-            "uuid": "2e655095-7f4e-428d-9c7e-eb2278e153a8",
+            "server": "142.93.168.151",
+            "server_port": 8443,
+            "uuid": "0636501b-7caa-4e85-92d6-d69f00184b3b",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -181,7 +181,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.chess.com",
+                "server_name": "journalofbigdata.springeropen.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -190,16 +190,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
-                    "short_id": ""
+                    "public_key": "jmJIrcH1e8ZRuWLVxngatpieUfew6vs_UrBl5gKkOxA",
+                    "short_id": "9e0ef855491cb004"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "chessgame",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         }
     ],
