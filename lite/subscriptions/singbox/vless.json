@@ -112,12 +112,10 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -133,12 +131,10 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🟢 | vless | @customv2ray | 1",
-                "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 15",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 3",
                 "🇺🇸US | 🔴 | vless | @redfree8 | 4"
@@ -316,42 +312,6 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @ShadowProxy66 | 2",
-            "type": "vless",
-            "server": "91.99.144.165",
-            "server_port": 3184,
-            "uuid": "2e655095-7f4e-428d-9c7e-eb2278e153a8",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.chess.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "chessgame",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
@@ -408,25 +368,11 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 4",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "91.99.150.156",
             "server_port": 1517,
             "uuid": "33d0980e-4054-474b-8f7c-05bf426963f1",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 5",
-            "type": "vless",
-            "server": "elmoji.blackraven.ir",
-            "server_port": 1313,
-            "uuid": "73669515-a872-4f63-9087-edf132fb89df",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
