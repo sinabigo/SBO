@@ -106,13 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8"
             ]
         },
@@ -120,13 +121,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇺🇸US | 🟢 | vless | @customv2ray | 1",
                 "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇩🇪DE | 🔴 | vless | @meli_proxyy | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -148,6 +150,27 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
+            "type": "vless",
+            "server": "102.177.176.213",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "102.177.176.213"
+                }
+            }
         },
         {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
@@ -202,11 +225,35 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @azadi_az_inja_migzare | 0",
+            "tag": "🇺🇸US | 🟢 | vless | @customv2ray | 1",
             "type": "vless",
-            "server": "102.177.176.213",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "server": "147.135.4.2",
+            "server_port": 443,
+            "uuid": "54694a33-a8dc-47dd-bc38-acd3971e0055",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "147135004002.sec20org.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+            "type": "vless",
+            "server": "104.17.209.145",
+            "server_port": 80,
+            "uuid": "92f481b6-ad92-43e4-a683-2bb0aeaa9846",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -216,9 +263,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "102.177.176.213"
+                    "Host": "dw.alibichareh.dpdns.org"
                 }
             }
         },
@@ -252,11 +299,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
-            "server": "104.17.209.145",
+            "server": "57.129.41.217",
             "server_port": 80,
-            "uuid": "92f481b6-ad92-43e4-a683-2bb0aeaa9846",
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -266,9 +313,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/vless\/",
                 "headers": {
-                    "Host": "dw.alibichareh.dpdns.org"
+                    "Host": "57.129.41.217"
                 }
             }
         },
@@ -290,27 +337,6 @@
                 "path": "\/-Arfilter@Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "57.129.41.217",
-            "server_port": 80,
-            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "57.129.41.217"
                 }
             }
         },
