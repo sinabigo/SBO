@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 10",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8"
             ]
         },
@@ -114,7 +113,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 10",
                 "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -136,35 +134,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇮🇷IR | 🟢 | vless | @TEHRANARGO | 10",
-            "type": "vless",
-            "server": "Blue9.webjob7.eu",
-            "server_port": 48486,
-            "uuid": "b11c33a0-2f8b-41c9-a833-ffc6c49bd788",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "I2bozyAqYo5CxnJZ_WtX5uP_BcaujVBfXnYu85sU2FM",
-                    "short_id": "a629f128"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 8",
