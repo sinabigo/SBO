@@ -106,10 +106,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4"
@@ -119,10 +119,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4"
@@ -148,27 +148,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
-            "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
-                "headers": {
-                    "Host": "hk.laoyoutiao.link"
-                }
-            }
-        },
-        {
             "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
             "type": "vless",
             "server": "102.177.189.29",
@@ -186,6 +165,27 @@
                 "path": "\/TelegramU0001F1E8U0001F1F3",
                 "headers": {
                     "Host": "102.177.189.29"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @TEHRANARGO | 6",
+            "type": "vless",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
+                "headers": {
+                    "Host": "hk.laoyoutiao.link"
                 }
             }
         },
@@ -211,7 +211,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 3",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
