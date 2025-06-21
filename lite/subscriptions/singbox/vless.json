@@ -110,14 +110,14 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
-                "❔XX | 🔴 | vless | @vmessorg | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 4",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 6",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -132,14 +132,14 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
-                "❔XX | 🔴 | vless | @vmessorg | 4",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 4",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
+                "🇬🇧GB | 🟢 | vless | @meli_proxyy | 6",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
-                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 8",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -280,6 +280,20 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
+            "type": "vless",
+            "server": "cdn.goferi.top",
+            "server_port": 443,
+            "uuid": "129146bf-83ca-41c7-a819-e562c06e8699",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
             "type": "vless",
             "server": "snapp.ir",
@@ -297,27 +311,6 @@
                 "path": "\/op\/TOP\/Shopy",
                 "headers": {
                     "Host": "snapp.ir"
-                }
-            }
-        },
-        {
-            "tag": "❔XX | 🔴 | vless | @vmessorg | 4",
-            "type": "vless",
-            "server": "ccad1.vipsell-one.ir",
-            "server_port": 443,
-            "uuid": "8214a3c7-23d5-4168-8754-c1ad8c9ad71d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/ALB\/VIPSell\/",
-                "headers": {
-                    "Host": "ccad1.vipsell-one.ir"
                 }
             }
         },
@@ -385,21 +378,36 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
+            "tag": "🇬🇧GB | 🟢 | vless | @meli_proxyy | 6",
             "type": "vless",
-            "server": "base.apkfa.com",
-            "server_port": 8880,
-            "uuid": "ab03275b-1cb1-44ab-b72b-2ca563aac81f",
-            "flow": "",
+            "server": "a1.graphapp.ir",
+            "server_port": 2121,
+            "uuid": "c0897efd-edb8-432a-bbbe-e5d2daff948e",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "8C0SElSc2U3jqim6AFkqwy2trWXhIAuh_5W1KOrSRF4",
+                    "short_id": ""
+                }
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 8",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 7",
             "type": "vless",
             "server": "base.apkfa.com",
             "server_port": 8880,
