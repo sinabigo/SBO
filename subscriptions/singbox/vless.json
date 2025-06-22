@@ -106,12 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
@@ -121,12 +121,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
                 "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
@@ -152,11 +152,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 443,
-            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -164,21 +164,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "hOZori.iR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
                 "headers": {
-                    "Host": "hOZori.iR"
+                    "Host": "102.177.189.29"
                 }
             }
         },
@@ -200,27 +190,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "102.177.176.213"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
-                "headers": {
-                    "Host": "102.177.189.29"
                 }
             }
         },
@@ -277,7 +246,38 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hOZori.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha",
+                "headers": {
+                    "Host": "hOZori.iR"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 80,
