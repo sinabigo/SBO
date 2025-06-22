@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
@@ -114,8 +113,8 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 4",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
+                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 6",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -128,7 +127,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
@@ -136,8 +134,8 @@
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 4",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
+                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 6",
                 "🇮🇷IR | 🔴 | vless | @meli_proxyy | 4",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
@@ -164,27 +162,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "tgju.org",
-            "server_port": 80,
-            "uuid": "2a11c595-935d-4e1b-81d4-ab8dd1e10bff",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "tgju.org"
-                }
-            }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
@@ -241,23 +218,40 @@
         {
             "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
             "type": "vless",
-            "server": "netorg.nightwolf.shop",
-            "server_port": 53769,
-            "uuid": "cb5c067b-322b-4794-92ee-3a8f0b18dbfb",
+            "server": "nv139.momdping.com",
+            "server_port": 443,
+            "uuid": "c7a480bc-579c-424d-a1f9-8f773458d4a7",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nv139.momdping.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "nv139.momdping.com"
+                }
             }
         },
         {
             "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
             "type": "vless",
-            "server": "cdn.goferi.top",
-            "server_port": 443,
-            "uuid": "129146bf-83ca-41c7-a819-e562c06e8699",
+            "server": "netorg.nightwolf.shop",
+            "server_port": 53769,
+            "uuid": "cb5c067b-322b-4794-92ee-3a8f0b18dbfb",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -323,7 +317,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 4",
+            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
             "type": "vless",
             "server": "z4.magicnetwork.info",
             "server_port": 443,
@@ -337,7 +331,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
+            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 6",
             "type": "vless",
             "server": "lu1vip.vnetplus.click",
             "server_port": 18009,
