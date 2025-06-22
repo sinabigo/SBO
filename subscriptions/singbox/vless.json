@@ -106,30 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 4",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 1",
-                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,48 +148,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-            "type": "vless",
-            "server": "102.177.176.213",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "102.177.176.213"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
         },
         {
             "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
@@ -246,6 +202,27 @@
             }
         },
         {
+            "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+            "type": "vless",
+            "server": "102.177.176.213",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "102.177.176.213"
+                }
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -273,6 +250,27 @@
                 "path": "\/Telegram@V2ray_Alpha",
                 "headers": {
                     "Host": "hOZori.iR"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -306,7 +304,7 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 1",
+            "tag": "🚩CF | 🔴 | vless | @ShadowProxy66 | 0",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 80,
@@ -344,27 +342,6 @@
                 "path": "\/-Arfilter@Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter",
                 "headers": {
                     "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "57.129.41.217",
-            "server_port": 80,
-            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "57.129.41.217"
                 }
             }
         }
