@@ -112,8 +112,8 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -138,8 +138,8 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -332,7 +332,21 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+            "type": "vless",
+            "server": "netorg.nightwolf.shop",
+            "server_port": 53769,
+            "uuid": "cb5c067b-322b-4794-92ee-3a8f0b18dbfb",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
             "type": "vless",
             "server": "cdn.goferi.top",
             "server_port": 443,
@@ -343,27 +357,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
-            "type": "vless",
-            "server": "snapp.ir",
-            "server_port": 80,
-            "uuid": "e3c249a9-0105-41ed-f8ec-cc26a75a85b0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/op\/TOP\/Shopy",
-                "headers": {
-                    "Host": "snapp.ir"
-                }
             }
         },
         {
