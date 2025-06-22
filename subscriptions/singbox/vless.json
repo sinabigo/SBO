@@ -106,28 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 5",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -150,27 +150,6 @@
             "type": "dns"
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
-                "headers": {
-                    "Host": "102.177.189.29"
-                }
-            }
-        },
-        {
             "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
             "type": "vless",
             "server": "102.177.176.213",
@@ -188,6 +167,27 @@
                 "path": "\/",
                 "headers": {
                     "Host": "102.177.176.213"
+                }
+            }
+        },
+        {
+            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+            "type": "vless",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
+                "headers": {
+                    "Host": "102.177.189.29"
                 }
             }
         },
@@ -244,32 +244,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 1",
             "type": "vless",
-            "server": "104.21.96.1",
-            "server_port": 8080,
-            "uuid": "44a6e3f3-a45b-446c-8c84-4fd753a4f62d",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/WVo2e8UiU2GEzLvl?ed=2560",
-                "headers": {
-                    "Host": "104.21.96.1"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 1",
-            "type": "vless",
-            "server": "135.148.152.101",
+            "server": "104.18.26.94",
             "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "uuid": "d4769aab-99d9-4491-a3e3-a58867915bdf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -279,12 +258,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "147135001195.sec22org.com",
+                "server_name": "esetsecuritylicense.cfmglpqb.workers.dev",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "esetsecuritylicense.cfmglpqb.workers.dev"
                 }
             }
         },
@@ -310,17 +296,45 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
-            "server": "tn.pingtools.net",
-            "server_port": 2087,
-            "uuid": "9084b11c-da3f-4c3f-af79-226a119c880d",
+            "server": "tgju.org",
+            "server_port": 8080,
+            "uuid": "51fda508-20aa-419e-b4c3-3a6202411412",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
+                }
+            }
+        },
+        {
+            "tag": "🇩🇪DE | 🔴 | vless | @DeamNet_Proxy | 10",
+            "type": "vless",
+            "server": "57.129.41.217",
+            "server_port": 80,
+            "uuid": "4004b4f2-d973-432f-8376-043a52cec187",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/vless\/",
+                "headers": {
+                    "Host": "57.129.41.217"
+                }
             }
         }
     ],
