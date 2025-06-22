@@ -109,9 +109,9 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 7",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -132,9 +132,9 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 7",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -170,6 +170,27 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
+            "server": "tgju.org",
+            "server_port": 8080,
+            "uuid": "51fda508-20aa-419e-b4c3-3a6202411412",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "tgju.org"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
             "server": "104.18.26.94",
             "server_port": 443,
             "uuid": "d4769aab-99d9-4491-a3e3-a58867915bdf",
@@ -199,37 +220,6 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "104.16.184.194",
-            "server_port": 443,
-            "uuid": "a1311ab3-0498-4cfd-b2c9-b5a4ba7d2999",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rapid-mountain-e6a9-ppal03.rahog30057.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560",
-                "headers": {
-                    "Host": "rapid-mountain-e6a9-ppal03.rahog30057.workers.dev"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
             "server": "www.speedtest.net",
@@ -251,7 +241,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -282,11 +272,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
             "type": "vless",
-            "server": "55cpezwl8e.the-dark-night.top",
-            "server_port": 5149,
-            "uuid": "f6f6693f-365c-4ec0-bd1e-ebe9406ba595",
+            "server": "7ul9o6broc.the-hot-and-dry-desert-of-my-body.top",
+            "server_port": 5118,
+            "uuid": "ed6fb549-d962-4e32-bb16-544c58b7b31f",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -296,11 +286,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 7",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
             "type": "vless",
-            "server": "dl2.meneteam.org",
-            "server_port": 20118,
-            "uuid": "142dd8b5-0b9e-4018-a961-2370d50cc435",
+            "server": "55cpezwl8e.the-dark-night.top",
+            "server_port": 5149,
+            "uuid": "f6f6693f-365c-4ec0-bd1e-ebe9406ba595",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
