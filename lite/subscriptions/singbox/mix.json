@@ -111,10 +111,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
+                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇦🇲AM | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
@@ -137,10 +137,10 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
+                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇦🇲AM | 🟢 | vmess | @ShadowProxy66 | 1",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 5",
@@ -291,7 +291,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -336,6 +336,27 @@
             }
         },
         {
+            "tag": "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "102.177.189.248",
+            "server_port": 2082,
+            "uuid": "b111f8c5-1244-4ec8-8d74-79c13ef9037e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "102.177.189.248"
+                }
+            }
+        },
+        {
             "tag": "🇦🇲AM | 🟢 | vmess | @ShadowProxy66 | 1",
             "type": "vmess",
             "server": "92.223.2.46",
@@ -350,27 +371,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "104.17.147.22"
-                }
             }
         },
         {
