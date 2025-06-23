@@ -109,11 +109,11 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
-                "🇮🇹IT | 🔴 | vless | @vmessorg | 3",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 2",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 3",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
@@ -132,11 +132,11 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
-                "🇮🇹IT | 🔴 | vless | @vmessorg | 3",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 2",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 3",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
@@ -241,7 +241,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -272,25 +272,40 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
+            "tag": "🇳🇱NL | 🔴 | vless | @vmessorg | 1",
             "type": "vless",
-            "server": "p2.xQFire.iR",
-            "server_port": 218,
-            "uuid": "9589e208-de8f-4835-8e5c-aacf48bcc528",
-            "flow": "",
+            "server": "s1.donyayedigitali.pics",
+            "server_port": 2323,
+            "uuid": "08052317-7036-4906-b7da-19934f8fe6e6",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "firefox"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E",
+                    "short_id": ""
+                }
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @vmessorg | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 2",
             "type": "vless",
-            "server": "food1.hamrahconfig.com",
+            "server": "food4.hamrahconfig.com",
             "server_port": 80,
-            "uuid": "b4914fd2-31b8-4bba-91f2-8af8c2633fbc",
+            "uuid": "13aab6b3-d6a8-4592-9bf8-e792b3a9fa3a",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -302,7 +317,7 @@
                 "type": "ws",
                 "path": "\/download",
                 "headers": {
-                    "Host": "food1.hamrahconfig.com"
+                    "Host": "food4.hamrahconfig.com"
                 }
             }
         },
@@ -328,7 +343,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
