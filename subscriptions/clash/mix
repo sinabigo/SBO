@@ -119,6 +119,7 @@ dns:
 
 proxies:
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"45.87.175.178","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 0","type":"trojan","server":"13.38.159.113","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +127,7 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -133,12 +135,14 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1'
+      - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
