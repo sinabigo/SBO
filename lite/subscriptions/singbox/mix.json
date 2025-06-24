@@ -112,15 +112,15 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 1",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 2",
+                "🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 4",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -138,15 +138,15 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 1",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 2",
+                "🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 4",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -322,7 +322,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
             "type": "vless",
             "server": "ir3.tunneled.site",
             "server_port": 5050,
@@ -336,7 +336,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 1",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 2",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -357,28 +357,29 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
-            "type": "vless",
-            "server": "102.177.189.248",
-            "server_port": 2082,
-            "uuid": "b111f8c5-1244-4ec8-8d74-79c13ef9037e",
-            "flow": "",
-            "packet_encoding": "xudp",
+            "tag": "🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 4",
+            "type": "trojan",
+            "server": "92.53.190.161",
+            "server_port": 2087,
+            "password": "Aimer",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "102.177.189.248"
+            "tls": {
+                "enabled": true,
+                "server_name": "epmo.ambercc.filegear-sg.me",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -469,7 +470,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 2",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,
