@@ -109,14 +109,14 @@
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 4"
+                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 5"
             ]
         },
         {
@@ -126,14 +126,14 @@
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 1",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 4"
+                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 5"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -222,11 +222,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "193.33.87.247",
+            "server_port": 8880,
+            "uuid": "d60fc3c5-9f07-4cdb-b81f-70af27936bdc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -236,9 +236,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/Telegram@V2ray_Alpha",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "ex.sue.x10.mx"
                 }
             }
         },
@@ -264,21 +264,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
-            "type": "shadowsocks",
-            "server": "198.211.104.229",
-            "server_port": 60573,
-            "method": "chacha20-ietf-poly1305",
-            "password": "akcHVt9bPh8DCk6jMKz62j",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "193.33.87.247",
-            "server_port": 8880,
-            "uuid": "d60fc3c5-9f07-4cdb-b81f-70af27936bdc",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -288,11 +278,21 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "ex.sue.x10.mx"
+                    "Host": "www.speedtest.net"
                 }
             }
+        },
+        {
+            "tag": "🇺🇸US | 🟢 | ss | @ShadowProxy66 | 0",
+            "type": "shadowsocks",
+            "server": "198.211.104.229",
+            "server_port": 60573,
+            "method": "chacha20-ietf-poly1305",
+            "password": "akcHVt9bPh8DCk6jMKz62j",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
@@ -349,7 +349,7 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 4",
+            "tag": "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 5",
             "type": "vless",
             "server": "102.177.189.248",
             "server_port": 2082,
