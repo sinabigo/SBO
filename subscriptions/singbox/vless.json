@@ -107,12 +107,11 @@
             "outbounds": [
                 "URL-TEST",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6"
+                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9"
             ]
         },
         {
@@ -120,12 +119,11 @@
             "type": "urltest",
             "outbounds": [
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6"
+                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -165,6 +163,27 @@
                 "path": "\/",
                 "headers": {
                     "Host": "102.177.176.213"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -214,48 +233,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
-            "type": "vless",
-            "server": "193.33.87.247",
-            "server_port": 8880,
-            "uuid": "d60fc3c5-9f07-4cdb-b81f-70af27936bdc",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha",
-                "headers": {
-                    "Host": "ex.sue.x10.mx"
-                }
-            }
-        },
-        {
             "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
             "type": "vless",
             "server": "104.16.116.22",
@@ -277,11 +254,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
+            "tag": "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
             "type": "vless",
-            "server": "102.177.189.248",
-            "server_port": 2082,
-            "uuid": "b111f8c5-1244-4ec8-8d74-79c13ef9037e",
+            "server": "193.33.87.247",
+            "server_port": 8880,
+            "uuid": "d60fc3c5-9f07-4cdb-b81f-70af27936bdc",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -291,9 +268,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/Telegram@V2ray_Alpha",
                 "headers": {
-                    "Host": "102.177.189.248"
+                    "Host": "ex.sue.x10.mx"
                 }
             }
         }
