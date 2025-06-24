@@ -110,13 +110,15 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -131,13 +133,15 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 1",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 9",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 10",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -268,6 +272,20 @@
             }
         },
         {
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 0",
+            "type": "vless",
+            "server": "ir3.tunneled.site",
+            "server_port": 5050,
+            "uuid": "fa220dbd-8223-4ab5-a574-239885fead2b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
             "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 1",
             "type": "vless",
             "server": "151.101.3.8",
@@ -286,20 +304,6 @@
                 "headers": {
                     "Host": "151.101.3.8"
                 }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 2",
-            "type": "vless",
-            "server": "turbo.ncop.ir",
-            "server_port": 2086,
-            "uuid": "7be8f9f4-d39d-43da-b50d-a2c5411cf8d3",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -324,7 +328,7 @@
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -391,6 +395,48 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 1",
+            "type": "vless",
+            "server": "151.101.3.8",
+            "server_port": 80,
+            "uuid": "b60ca649-7b11-43b1-b9e7-99eba427b266",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/download?ed=2560",
+                "headers": {
+                    "Host": "151.101.3.8"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "cdnf.ten10rocket.top",
+            "server_port": 80,
+            "uuid": "619d59be-653f-4388-a579-7732a7ee8b54",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "cdnf.ten10rocket.top"
+                }
             }
         },
         {
