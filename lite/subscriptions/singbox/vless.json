@@ -106,10 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇮🇷IR | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
@@ -117,7 +118,7 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -128,10 +129,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇮🇷IR | 🔴 | vless | @azadi_az_inja_migzare | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 0",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 1",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 6",
@@ -139,7 +141,7 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 0",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -164,6 +166,20 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @azadi_az_inja_migzare | 0",
+            "type": "vless",
+            "server": "t.nargil00.site",
+            "server_port": 20729,
+            "uuid": "9e920ecc-22aa-43a9-ebc9-3120f1f2b892",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
@@ -239,7 +255,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -396,17 +412,24 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 0",
             "type": "vless",
-            "server": "151.101.3.8",
+            "server": "151.101.242.172",
             "server_port": 80,
-            "uuid": "07af2138-82f3-44e2-8ee6-4b236468d1d8",
+            "uuid": "45f98d84-f1ab-4783-989e-e3b930913665",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/WEDBAZ",
+                "headers": {
+                    "Host": "151.101.242.172"
+                }
             }
         },
         {
