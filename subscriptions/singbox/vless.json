@@ -108,10 +108,10 @@
                 "URL-TEST",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 4"
             ]
         },
@@ -121,10 +121,10 @@
             "outbounds": [
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
-                "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
                 "🇬🇧GB | 🔴 | vless | @ShadowProxy66 | 4"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -190,11 +190,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "104.16.116.22",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "bf73e6e5-0336-40d5-995c-283de50646d2",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -206,28 +206,7 @@
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "104.16.116.22"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇾CY | 🔴 | vless | @TEHRANARGO | 8",
-            "type": "vless",
-            "server": "193.33.87.247",
-            "server_port": 8880,
-            "uuid": "d60fc3c5-9f07-4cdb-b81f-70af27936bdc",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha",
-                "headers": {
-                    "Host": "ex.sue.x10.mx"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -256,11 +235,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "104.16.116.22",
             "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "uuid": "bf73e6e5-0336-40d5-995c-283de50646d2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -271,6 +250,27 @@
             "transport": {
                 "type": "ws",
                 "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.16.116.22"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 8880,
+            "uuid": "telegram-id-ArV2ray2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/-Arfilter@Arfilter-TEL--@Arfilter-TEL--@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL-@Arfilter-TEL--@Arfilter-JOIN-@Arfilter-TEL--@Arfilter",
                 "headers": {
                     "Host": "www.speedtest.net"
                 }
