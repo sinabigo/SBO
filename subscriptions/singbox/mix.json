@@ -106,34 +106,32 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇷🇺RU | 🔴 | vless | @customv2ray | 2",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇷🇺RU | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 0",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇷🇺RU | 🔴 | vless | @customv2ray | 2",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3",
-                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1"
+                "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+                "🇷🇺RU | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -154,27 +152,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
-                "headers": {
-                    "Host": "102.177.189.29"
-                }
-            }
         },
         {
             "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
@@ -198,11 +175,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
+            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -212,9 +189,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram@ShadowProxy66\/?ed=2560",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "102.177.189.29"
                 }
             }
         },
@@ -237,20 +214,6 @@
                 "headers": {
                     "Host": "www.speedtest.net"
                 }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0",
-            "type": "vless",
-            "server": "Power.te1450.ir",
-            "server_port": 8880,
-            "uuid": "3ef4c45e-7a85-4453-9105-90367d752cb8",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
@@ -278,11 +241,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 0",
             "type": "vless",
-            "server": "172.67.128.105",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "4179c595-08ca-45cd-b555-91b6f1faeadc",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -292,9 +255,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "path": "\/Telegram@ShadowProxy66\/?ed=2560",
                 "headers": {
-                    "Host": "172.67.128.105"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -320,7 +283,28 @@
             }
         },
         {
-            "tag": "🇷🇺RU | 🔴 | vless | @customv2ray | 2",
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 2",
+            "type": "vless",
+            "server": "172.67.128.105",
+            "server_port": 80,
+            "uuid": "4179c595-08ca-45cd-b555-91b6f1faeadc",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
+                "headers": {
+                    "Host": "172.67.128.105"
+                }
+            }
+        },
+        {
+            "tag": "🇷🇺RU | 🔴 | vless | @customv2ray | 3",
             "type": "vless",
             "server": "185.148.104.245",
             "server_port": 80,
@@ -341,22 +325,22 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
             "type": "shadowsocks",
             "server": "45.87.175.178",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "4a2rfixophdjffa8KVA4Aa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 3",
+            "type": "shadowsocks",
+            "server": "series-a2-mec.varzesh360.co",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "u17T3BvpYaaiuW2c",
             "plugin": "",
             "plugin_opts": ""
         }
