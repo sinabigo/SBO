@@ -106,11 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
                 "🇮🇷IR | 🟢 | vless | @customv2ray | 5",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 6",
@@ -121,8 +122,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -134,11 +135,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
                 "🇮🇷IR | 🟢 | vless | @customv2ray | 5",
                 "🇮🇷IR | 🔴 | vless | @customv2ray | 6",
@@ -149,8 +151,8 @@
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -176,6 +178,37 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
+            "type": "vless",
+            "server": "iplocation.net",
+            "server_port": 443,
+            "uuid": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "r6.sanam.dpdns.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "r6.sanam.dpdns.org"
+                }
+            }
         },
         {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
@@ -274,7 +307,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -484,7 +517,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -505,7 +538,7 @@
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,
