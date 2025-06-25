@@ -106,26 +106,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 1"
+                "🇺🇸US | 🔴 | vless | @customv2ray | 1",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @customv2ray | 1"
+                "🇺🇸US | 🔴 | vless | @customv2ray | 1",
+                "🚩CF | 🔴 | vless | @meli_proxyy | 0"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -148,6 +150,27 @@
             "type": "dns"
         },
         {
+            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+            "type": "vless",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
+                "headers": {
+                    "Host": "102.177.189.29"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
             "type": "vless",
             "server": "102.177.176.213",
@@ -165,6 +188,27 @@
                 "path": "\/",
                 "headers": {
                     "Host": "102.177.176.213"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@ShadowProxy66\/?ed=2560",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -190,27 +234,6 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-            "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
-                "headers": {
-                    "Host": "102.177.189.29"
-                }
-            }
-        },
-        {
             "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
             "type": "vless",
             "server": "15.204.191.43",
@@ -231,37 +254,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 1",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 443,
-            "uuid": "4d91916f-a7fd-419b-8b90-640bb8d1b9f4",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "TITanTabLOmaNAHaMRaH.IR",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/YW3lDQQ7nIbnn2KV\/NTQuMTY5LjIyOS4xODg",
-                "headers": {
-                    "Host": "TITanTabLOmaNAHaMRaH.IR"
                 }
             }
         },
@@ -314,6 +306,27 @@
                 "path": "\/rkluheauth5uvnsb\/ntqumty5ljiyos4xodg=?ed=2560",
                 "headers": {
                     "Host": "hOZori.iR"
+                }
+            }
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @meli_proxyy | 0",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/TELEGRAM-YamYamProxy_YamYamProxy_YamYamProxy?ed=512",
+                "headers": {
+                    "Host": "104.17.147.22"
                 }
             }
         }
