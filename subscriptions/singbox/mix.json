@@ -106,12 +106,12 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
@@ -122,12 +122,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
                 "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🇬🇧GB | 🟢 | ss | @meli_proxyy | 2",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 1",
@@ -154,11 +154,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
+            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "server": "102.177.189.29",
+            "server_port": 8880,
+            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -168,9 +168,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/TelegramU0001F1E8U0001F1F3",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "102.177.189.29"
                 }
             }
         },
@@ -196,11 +196,11 @@
             }
         },
         {
-            "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
             "type": "vless",
-            "server": "102.177.189.29",
-            "server_port": 8880,
-            "uuid": "fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf",
+            "server": "104.16.116.22",
+            "server_port": 80,
+            "uuid": "bf73e6e5-0336-40d5-995c-283de50646d2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -210,9 +210,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/TelegramU0001F1E8U0001F1F3",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "102.177.189.29"
+                    "Host": "104.16.116.22"
                 }
             }
         },
@@ -272,11 +272,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 1",
             "type": "vless",
-            "server": "104.16.116.22",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "bf73e6e5-0336-40d5-995c-283de50646d2",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -288,7 +288,7 @@
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "104.16.116.22"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
