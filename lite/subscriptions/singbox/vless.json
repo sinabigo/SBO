@@ -109,16 +109,18 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 4",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 5",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
+                "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 6"
@@ -131,16 +133,18 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 1",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 4",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 5",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 10",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
+                "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 6"
@@ -239,7 +243,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -270,7 +274,42 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 3",
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 4",
+            "type": "vless",
+            "server": "EiV2.EiNetwork.News",
+            "server_port": 80,
+            "uuid": "052c9b60-fd9b-4d10-a65f-88f5082f69e1",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 5",
+            "type": "vless",
+            "server": "svnteam.aeza.nisvn.ir",
+            "server_port": 80,
+            "uuid": "c29ec2b7-331b-4d6e-88a1-0398d510c9da",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@SvnProBot?ed=2560",
+                "headers": {
+                    "Host": "svnteam.aeza.nisvn.ir"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
             "type": "vless",
             "server": "ir3.tunneled.site",
             "server_port": 5050,
@@ -284,7 +323,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 5",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -368,7 +407,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 10",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -389,7 +428,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
+            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,
@@ -410,7 +449,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
+            "tag": "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
