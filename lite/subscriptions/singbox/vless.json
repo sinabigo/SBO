@@ -106,21 +106,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
-                "🇮🇷IR | 🟢 | vless | @customv2ray | 5",
-                "🇮🇷IR | 🔴 | vless | @customv2ray | 6",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 5",
+                "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 6",
                 "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -131,21 +129,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 3",
-                "🇮🇷IR | 🟢 | vless | @customv2ray | 5",
-                "🇮🇷IR | 🔴 | vless | @customv2ray | 6",
-                "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 5",
+                "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
+                "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 6",
                 "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -170,37 +166,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @SiNAVM | 0",
-            "type": "vless",
-            "server": "iplocation.net",
-            "server_port": 443,
-            "uuid": "fd9a3396-e9a4-45b5-93b9-a0bed3f8b309",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "r6.sanam.dpdns.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2560",
-                "headers": {
-                    "Host": "r6.sanam.dpdns.org"
-                }
-            }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
@@ -255,7 +220,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 2",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 2",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -307,40 +272,11 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🟢 | vless | @customv2ray | 5",
+            "tag": "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
             "type": "vless",
-            "server": "Load.key98sell.com",
-            "server_port": 2025,
-            "uuid": "eba4b2d7-97fb-490d-88bd-385629e9612e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "firefox"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "NujqjcWVaMrWBst4bjL9QH2057DRrS9VQZgA9izS1GY",
-                    "short_id": "ffdb3abc"
-                }
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @customv2ray | 6",
-            "type": "vless",
-            "server": "power.digioffline.ir",
-            "server_port": 80,
-            "uuid": "ce71e070-79d7-48af-a816-3d266dae4542",
+            "server": "speedserver.panelsultraserver.com",
+            "server_port": 32990,
+            "uuid": "a804bb53-7504-4f06-96d8-ff56fb71539d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -350,7 +286,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 4",
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
             "type": "vless",
             "server": "ir3.tunneled.site",
             "server_port": 5050,
@@ -364,7 +300,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 5",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 6",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -455,7 +391,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
@@ -476,7 +412,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 13",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 14",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,
