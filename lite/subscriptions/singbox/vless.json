@@ -109,11 +109,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 3",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
-                "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
+                "🇮🇷IR | 🔴 | vless | @customv2ray | 0",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 6",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
@@ -132,11 +133,12 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 3",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
-                "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
+                "🇮🇷IR | 🔴 | vless | @customv2ray | 0",
+                "🇺🇸US | 🔴 | vless | @customv2ray | 1",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 5",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 6",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
@@ -241,7 +243,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -272,17 +274,48 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @customv2ray | 3",
+            "tag": "🇮🇷IR | 🔴 | vless | @customv2ray | 0",
             "type": "vless",
-            "server": "speedserver.panelsultraserver.com",
-            "server_port": 32990,
-            "uuid": "a804bb53-7504-4f06-96d8-ff56fb71539d",
+            "server": "meti.filtergozarnet.online",
+            "server_port": 29819,
+            "uuid": "8dd2918e-f50a-4f0b-82b4-31c0431c2d76",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @customv2ray | 1",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "3058e698-61fd-4d12-95bc-f1fe4c071713",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hOZori.iR",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/rkluheauth5uvnsb\/ntqumty5ljiyos4xodg=?ed=2560",
+                "headers": {
+                    "Host": "hOZori.iR"
+                }
             }
         },
         {
@@ -321,7 +354,7 @@
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
