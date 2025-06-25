@@ -120,7 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"52.58.55.155","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"13.36.106.226","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
-  - {"name":"🇨🇦CA | 🔴 | trojan | @ShadowProxy66 | 6","type":"trojan","server":"92.53.190.161","port":2087,"udp":false,"password":"Aimer","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"epmo.ambercc.filegear-sg.me"}
+  - {"name":"🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 6","type":"trojan","server":"92.53.190.161","port":2087,"udp":false,"password":"Aimer","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"epmo.ambercc.filegear-sg.me"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,7 +129,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @ShadowProxy66 | 6'
+      - '🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 6'
   - name: URL-TEST
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -138,7 +138,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @ShadowProxy66 | 6'
+      - '🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 6'
   - name: FALLBACK
     type: fallback
     url: http://www.gstatic.com/generate_204
@@ -146,7 +146,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
-      - '🇨🇦CA | 🔴 | trojan | @ShadowProxy66 | 6'
+      - '🇺🇸US | 🔴 | trojan | @ShadowProxy66 | 6'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
