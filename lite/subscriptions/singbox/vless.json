@@ -119,7 +119,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -143,7 +143,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -389,15 +389,22 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
             "type": "vless",
-            "server": "151.101.3.8",
+            "server": "svnteam.aeza.nisvn.ir",
             "server_port": 80,
-            "uuid": "bd8fad9b-9817-428a-9307-d0594f199fa6",
+            "uuid": "60fd9505-cbf1-403e-9053-02c556b13f6d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@SvnProBot?ed=2560",
+                "headers": {
+                    "Host": "svnteam.aeza.nisvn.ir"
+                }
             }
         },
         {
@@ -405,7 +412,7 @@
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
-            "uuid": "ef3a3138-2ff7-40c0-82fc-aa78ac1f4434",
+            "uuid": "bd8fad9b-9817-428a-9307-d0594f199fa6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -436,7 +443,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,

@@ -106,7 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
@@ -122,7 +122,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -134,7 +134,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
@@ -150,7 +150,7 @@
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 7",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+                "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🟢 | ss | @OpenSSTPVpn | 0",
@@ -178,9 +178,9 @@
             "type": "dns"
         },
         {
-            "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 18",
+            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
             "type": "trojan",
-            "server": "51.44.50.180",
+            "server": "63.177.165.127",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -202,7 +202,7 @@
         {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
             "type": "trojan",
-            "server": "13.39.0.228",
+            "server": "51.44.50.180",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -451,15 +451,22 @@
         {
             "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
             "type": "vless",
-            "server": "151.101.3.8",
+            "server": "svnteam.aeza.nisvn.ir",
             "server_port": 80,
-            "uuid": "bd8fad9b-9817-428a-9307-d0594f199fa6",
+            "uuid": "60fd9505-cbf1-403e-9053-02c556b13f6d",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/@SvnProBot?ed=2560",
+                "headers": {
+                    "Host": "svnteam.aeza.nisvn.ir"
+                }
             }
         },
         {
@@ -467,7 +474,7 @@
             "type": "vless",
             "server": "151.101.3.8",
             "server_port": 80,
-            "uuid": "ef3a3138-2ff7-40c0-82fc-aa78ac1f4434",
+            "uuid": "bd8fad9b-9817-428a-9307-d0594f199fa6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -498,7 +505,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 12",
+            "tag": "🇮🇹IT | 🔴 | vless | @meli_proxyy | 12",
             "type": "vless",
             "server": "cdnf.ten10rocket.top",
             "server_port": 80,
