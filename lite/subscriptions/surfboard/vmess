@@ -11,10 +11,11 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4 = vmess, npmjs.com, 8080, username = 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03, ws = true, tls = , vmess-aead = true, ws-path = /nasnet/cdn, ws-headers = Host:"ke7hz36ewz-4515017473.mashallahbet.com", skip-cert-verify = true, tfo = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK
-URL-TEST = url-test
-FALLBACK = fallback
+MANUAL = select,URL-TEST,FALLBACK,🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4
+URL-TEST = url-test,🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4
+FALLBACK = fallback,🇺🇸US | 🟢 | vmess | @ShadowProxy66 | 4
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
