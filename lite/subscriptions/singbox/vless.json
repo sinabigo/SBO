@@ -112,10 +112,10 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 7",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 7",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 7",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -133,10 +133,10 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 7",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
-                "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 7",
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 7",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 19",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -296,7 +296,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -331,7 +331,36 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 6",
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 7",
+            "type": "vless",
+            "server": "turboo-server.aftabz.com",
+            "server_port": 65000,
+            "uuid": "turboo-server",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "paXwzQ6qDGHFfMlpY1vX6-lZrkI2gUzP3nXg91ZrBQw",
+                    "short_id": "0efa0583a943"
+                }
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 8",
             "type": "vless",
             "server": "izafree.lalash.ir",
             "server_port": 36509,
@@ -342,27 +371,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 7",
-            "type": "vless",
-            "server": "fast.endless1service.top",
-            "server_port": 8880,
-            "uuid": "be296aaa-7a1e-4da9-9cfe-a9d9ce6b4198",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "fast.endless1service.top"
-                }
             }
         },
         {
