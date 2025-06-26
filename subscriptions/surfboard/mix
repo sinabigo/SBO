@@ -13,10 +13,11 @@ enhanced-mode-by-rule = true
 DIRECT = direct
 🇬🇧GB | 🟢 | ss | @meli_proxyy | 0 = ss, admin.c1.webramz.co, 443, encrypt-method = chacha20-ietf-poly1305, password = 1xO2cqPazqjGfCfd
 🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8 = ss, 45.87.175.178, 8080, encrypt-method = chacha20-ietf-poly1305, password = 4a2rfixophdjffa8KVA4Aa
+🇫🇷FR | 🟢 | trojan | @DirectVPN | 0 = trojan, 51.44.226.39, 22223, password = telegram-id-directvpn, udp-delay = true, skip-cert-verify = false, sni = trojan.burgerip.co.uk, ws = false
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8
+MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
+FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @meli_proxyy | 0,🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 8,🇫🇷FR | 🟢 | trojan | @DirectVPN | 0
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
