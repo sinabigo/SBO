@@ -120,7 +120,7 @@ dns:
     'RULE-SET:ir,ircidr,geoip:ir,+.ir,+.bonyan.co': ["217.218.155.155", "217.218.127.127", "https://dns.403.online/dns-query", "https://dns.shecan.ir/dns-query"]
 
 proxies:
-  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 1","type":"ss","server":"4.250.141.14","port":443,"password":"69MUii7VDwMqh7Hz","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 0","type":"ss","server":"74.177.215.110","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12","type":"ss","server":"45.87.175.178","port":8080,"password":"4a2rfixophdjffa8KVA4Aa","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
@@ -128,7 +128,7 @@ proxy-groups:
     proxies:
       - URL-TEST
       - FALLBACK
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 1'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12'
   - name: URL-TEST
     type: url-test
@@ -136,14 +136,14 @@ proxy-groups:
     interval: 60
     tolerance: 50
     proxies:
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 1'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com/
     interval: 60
     proxies:
-      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 1'
+      - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 0'
       - '🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12'
 rule-providers:
   ir: {type: http, format: text, behavior: domain, path: ./ruleset/ir.txt, url: https://github.com/chocolate4u/Iran-clash-rules/releases/latest/download/ir.txt, interval: 86400}
