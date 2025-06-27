@@ -106,17 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 7",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 8",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 9",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 10",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -128,17 +127,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 7",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 8",
-                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 9",
+                "🇺🇸US | 🔴 | vless | @vmessorg | 10",
+                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
@@ -166,11 +164,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 16",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
             "type": "vless",
-            "server": "135.148.211.208",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
+            "server": "www.visa.com",
+            "server_port": 80,
+            "uuid": "13ed4a8b-6049-4f26-8cb3-9870df4fda4c",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -178,23 +176,20 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135001195.sec22org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "www.visa.com"
                 }
             }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
             "type": "vless",
-            "server": "162.159.48.84",
-            "server_port": 443,
-            "uuid": "2457d72e-4178-4c2b-885d-a01a333dcc4f",
+            "server": "www.visa.com",
+            "server_port": 8080,
+            "uuid": "9d4f6cfb-c921-4bde-ae0a-61781848d940",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -202,21 +197,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "vilcfhsmlsnafvjgkuwqmempbhgpmoi7yasq53negfgyflapzm9brh4v0pttdvu.32vva.workers.Dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "vilcfhsmlsnafvjgkuwqmempbhgpmoi7yasq53negfgyflapzm9brh4v0pttdvu.32vva.workers.Dev"
+                    "Host": "www.visa.com"
                 }
             }
         },
@@ -273,7 +258,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 7",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 9",
             "type": "vless",
             "server": "141.101.121.55",
             "server_port": 8080,
@@ -294,7 +279,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 8",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 10",
             "type": "vless",
             "server": "104.21.113.6",
             "server_port": 80,
@@ -315,7 +300,7 @@
             }
         },
         {
-            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
@@ -385,7 +370,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "104.22.22.78",
             "server_port": 80,
@@ -402,27 +387,6 @@
                 "path": "\/Telegram@V2ray_Alpha\/?ed=2560",
                 "headers": {
                     "Host": "agolna.mahsaamini.dpdns.org"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-            "type": "vless",
-            "server": "104.17.147.22",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TELEGRAM-YamYamProxy_YamYamProxy_YamYamProxy?ed=512",
-                "headers": {
-                    "Host": "104.17.147.22"
                 }
             }
         },
