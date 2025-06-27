@@ -106,50 +106,44 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
+                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 12",
                 "🚩CF | 🔴 | vless | @vmessorg | 4",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇳🇱NL | 🔴 | vless | @vmessorg | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
                 "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
-                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
+                "🚩CF | 🔴 | vless | @TEHRANARGO | 0",
+                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
+                "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
+                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
                 "🚩CF | 🔴 | vless | @meli_proxyy | 12",
                 "🚩CF | 🔴 | vless | @vmessorg | 4",
-                "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
-                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
-                "🇳🇱NL | 🔴 | vless | @vmessorg | 0",
+                "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
                 "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
-                "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
-                "🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 0"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -170,6 +164,27 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
+            "type": "vless",
+            "server": "104.17.147.22",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/join---MTMVPN---join?ed=2560",
+                "headers": {
+                    "Host": "104.17.147.22"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | 🔴 | vless | @redfree8 | 1",
@@ -193,40 +208,9 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
             "type": "vless",
             "server": "www.speedtest.net",
-            "server_port": 2053,
-            "uuid": "704198c4-37b9-473d-a5de-0333276f2f6c",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maHsA2.cFFoRM.sIte",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/dG8nlHvMhylFIEQ3\/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=",
-                "headers": {
-                    "Host": "maHsA2.cFFoRM.sIte"
-                }
-            }
-        },
-        {
-            "tag": "🚩CF | 🔴 | vless | @DeamNet_Proxy | 0",
-            "type": "vless",
-            "server": "104.17.147.22",
             "server_port": 80,
             "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
@@ -238,9 +222,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/join---MTMVPN---join?ed=2560",
+                "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "104.17.147.22"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -276,6 +260,37 @@
             }
         },
         {
+            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 4",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 2053,
+            "uuid": "704198c4-37b9-473d-a5de-0333276f2f6c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maHsA2.cFFoRM.sIte",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/dG8nlHvMhylFIEQ3\/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=",
+                "headers": {
+                    "Host": "maHsA2.cFFoRM.sIte"
+                }
+            }
+        },
+        {
             "tag": "🇩🇪DE | 🔴 | vless | @redfree8 | 0",
             "type": "vless",
             "server": "102.177.176.213",
@@ -297,11 +312,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 4",
+            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "104.24.56.187",
             "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "uuid": "e6236ebc-7334-4bed-977f-0c20bcdfcc00",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -313,7 +328,7 @@
                 "type": "ws",
                 "path": "\/?ed=2560",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "104.24.56.187"
                 }
             }
         },
@@ -360,11 +375,11 @@
             }
         },
         {
-            "tag": "🚩CF | 🔴 | vless | @Outline_Vpn | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
             "type": "vless",
-            "server": "104.24.56.187",
+            "server": "www.speedtest.net",
             "server_port": 80,
-            "uuid": "e6236ebc-7334-4bed-977f-0c20bcdfcc00",
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -374,9 +389,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/Telegram@ShadowProxy66\/?ed=2560",
                 "headers": {
-                    "Host": "104.24.56.187"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -402,37 +417,6 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 2",
-            "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/Telegram@ShadowProxy66\/?ed=2560",
-                "headers": {
-                    "Host": "www.speedtest.net"
-                }
-            }
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
-            "type": "shadowsocks",
-            "server": "74.177.215.110",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "W74XFALLLuw6m5IA",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
             "tag": "🇫🇷FR | 🟢 | trojan | @DirectVPN | 0",
             "type": "trojan",
             "server": "15.237.236.205",
@@ -455,18 +439,14 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @vmessorg | 0",
-            "type": "vless",
-            "server": "24.144.77.41",
-            "server_port": 1003,
-            "uuid": "39baadce-3e0b-4322-8de1-797bf7f25b8a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "🇬🇧GB | 🟢 | ss | @meli_proxyy | 1",
+            "type": "shadowsocks",
+            "server": "74.177.215.110",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "W74XFALLLuw6m5IA",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇺🇸US | 🟢 | ss | @DeamNet_Proxy | 12",
@@ -477,42 +457,6 @@
             "password": "4a2rfixophdjffa8KVA4Aa",
             "plugin": "",
             "plugin_opts": ""
-        },
-        {
-            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
-            "type": "vless",
-            "server": "gb.france-learns.ir",
-            "server_port": 42536,
-            "uuid": "57d127e9-38da-494b-afeb-494de5ff1a91",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | trojan | @DirectVPN | 2",
-            "type": "trojan",
-            "server": "52.29.248.103",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 0",
@@ -529,14 +473,18 @@
             }
         },
         {
-            "tag": "🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 0",
-            "type": "shadowsocks",
-            "server": "158.255.77.34",
-            "server_port": 35390,
-            "method": "chacha20-ietf-poly1305",
-            "password": "BAdQSwzquOXD2rgRjJgTdh",
-            "plugin": "",
-            "plugin_opts": ""
+            "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 1",
+            "type": "vless",
+            "server": "gb.france-learns.ir",
+            "server_port": 42536,
+            "uuid": "57d127e9-38da-494b-afeb-494de5ff1a91",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         }
     ],
     "route": {
