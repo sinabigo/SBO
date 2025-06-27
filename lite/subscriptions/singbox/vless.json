@@ -106,13 +106,13 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 9",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 10",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 10",
@@ -127,13 +127,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 4",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 9",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 10",
-                "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+                "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 9",
                 "🇮🇷IR | 🔴 | vless | @TEHRANARGO | 10",
@@ -164,11 +164,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 16",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "www.visa.com",
-            "server_port": 80,
-            "uuid": "13ed4a8b-6049-4f26-8cb3-9870df4fda4c",
+            "server": "104.21.12.158",
+            "server_port": 443,
+            "uuid": "acff92c5-701c-41e9-b905-c1e18fdd6b77",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -176,20 +176,30 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "628b90e7-BLaCk-TrUtH-5368bb.mOSimOsTAfA5544.worKERS.DEV",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/?ed=2560",
+                "path": "\/-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |,|-- @MOSIV2-- |?ed=443 ",
                 "headers": {
-                    "Host": "www.visa.com"
+                    "Host": "628b90e7-BLaCk-TrUtH-5368bb.mOSimOsTAfA5544.worKERS.DEV"
                 }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 17",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "www.visa.com",
-            "server_port": 8080,
-            "uuid": "9d4f6cfb-c921-4bde-ae0a-61781848d940",
+            "server_port": 2082,
+            "uuid": "bf09ef80-aae7-42b7-ab37-a29cd310a9a4",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -300,7 +310,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @GozargahVPN | 0",
+            "tag": "🇮🇹IT | 🔴 | vless | @GozargahVPN | 0",
             "type": "vless",
             "server": "GozargahVPN.fastly80-3.hosting-ip.com",
             "server_port": 80,
