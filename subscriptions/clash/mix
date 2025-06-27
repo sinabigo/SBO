@@ -119,6 +119,8 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 2","type":"trojan","server":"18.159.150.95","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"5.180.45.142","port":18429,"password":"Uzm5jb6HSHQIneryDj2sgW","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -126,6 +128,8 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -133,12 +137,16 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
+      - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 2'
+      - '🇹🇷TR | 🟢 | ss | @DeamNet_Proxy | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
