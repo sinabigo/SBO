@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0"
+                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇩🇪DE | 🟢 | vless | @TEHRANARGO | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 3",
             "type": "vless",
-            "server": "5.75.197.204",
-            "server_port": 35487,
-            "uuid": "4def9b45-592c-43e5-a62b-987beffa5d33",
+            "server": "5.181.171.10",
+            "server_port": 443,
+            "uuid": "49ed01ad-3bb4-204f-b0ff-a58f658fd618",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -150,7 +150,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "tgju.org",
+                "server_name": "speed.cloudflare.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -159,8 +159,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "GGsieU5yiXWsMeO0StA4mTO2s8OLLvt0hUivZJkJG2k",
-                    "short_id": "0b886008af8942c3"
+                    "public_key": "YNGotlyAx3ELUmi4lxOUjiEDmibqf1pPUTE9o3YYT2Y",
+                    "short_id": ""
                 }
             }
         }
