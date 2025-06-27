@@ -106,14 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 5"
+                "🇮🇷IR | 🟢 | vmess | @meli_proxyy | 17"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 5"
+                "🇮🇷IR | 🟢 | vmess | @meli_proxyy | 17"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -136,11 +136,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🟢 | vmess | @ShadowProxy66 | 5",
+            "tag": "🇮🇷IR | 🟢 | vmess | @meli_proxyy | 17",
             "type": "vmess",
-            "server": "npmjs.com",
-            "server_port": 8080,
-            "uuid": "6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03",
+            "server": "188.212.97.202",
+            "server_port": 2020,
+            "uuid": "5c270eb1-e18d-4020-949d-17e18445dac5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -150,13 +150,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/nasnet\/cdn",
-                "headers": {
-                    "Host": ""
-                }
             }
         }
     ],
