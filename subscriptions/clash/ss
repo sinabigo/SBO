@@ -119,9 +119,9 @@ dns:
 
 proxies:
   - {"name":"🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0","type":"ss","server":"series-a2-mec.varzesh360.co","port":443,"password":"u17T3BvpYaaiuW2c","cipher":"chacha20-ietf-poly1305"}
+  - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @meli_proxyy | 2","type":"ss","server":"admin.c3.webramz.co","port":443,"password":"Bog0ELmMM9DSxDdQ","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1","type":"ss","server":"beesyar.org","port":8080,"password":"QCXDxuDlTTMD7jtgHUjIoj","cipher":"chacha20-ietf-poly1305"}
-  - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
   - name: MANUAL
     type: select
@@ -129,9 +129,9 @@ proxy-groups:
       - URL-TEST
       - FALLBACK
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 2'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
   - name: URL-TEST
     type: url-test
     url: http://cp.cloudflare.com
@@ -139,18 +139,18 @@ proxy-groups:
     tolerance: 50
     proxies:
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 2'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
   - name: FALLBACK
     type: fallback
     url: http://cp.cloudflare.com
     interval: 60
     proxies:
       - '🇬🇧GB | 🟢 | ss | @DeamNet_Proxy | 0'
+      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
       - '🇬🇧GB | 🟢 | ss | @meli_proxyy | 2'
       - '🇳🇱NL | 🟢 | ss | @DeamNet_Proxy | 1'
-      - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 0'
 rules:
   - IP-CIDR,127.0.0.1/32,DIRECT,no-resolve
   - IP-CIDR,198.18.0.1/16,DIRECT,no-resolve
