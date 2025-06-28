@@ -106,16 +106,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
-                "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17"
+                "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "3m",
@@ -163,35 +161,6 @@
                     "enabled": true,
                     "public_key": "paXwzQ6qDGHFfMlpY1vX6-lZrkI2gUzP3nXg91ZrBQw",
                     "short_id": "0efa0583a943"
-                }
-            }
-        },
-        {
-            "tag": "🇩🇪DE | 🟢 | vless | @meli_proxyy | 17",
-            "type": "vless",
-            "server": "94.237.87.217",
-            "server_port": 8443,
-            "uuid": "36481763-ce92-40ca-8f57-e958f46440ce",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fast.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "safari"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "rZJLzDW7cXULO8boqn5askdK6BmzgJ4m2h9FDSXwjhE",
-                    "short_id": "8e34"
                 }
             }
         }
