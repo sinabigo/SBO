@@ -106,11 +106,11 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇩🇪DE | 🔴 | vless | @vmessorg | 13",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 14",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -127,11 +127,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇩🇪DE | 🔴 | vless | @vmessorg | 13",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 14",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
@@ -164,7 +164,28 @@
             "type": "dns"
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+            "type": "vless",
+            "server": "104.21.16.1",
+            "server_port": 80,
+            "uuid": "b775ec56-b44d-473a-9e8e-99ef575d832a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "104.21.16.1"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
             "server": "172.67.187.251",
             "server_port": 8880,
@@ -185,38 +206,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "104.21.11.28",
-            "server_port": 443,
-            "uuid": "c92856da-9532-49ec-bb71-d981a623f5c9",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "freedom6.mamav81785.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/TELEGRAM-MARAMBASHI-MARAMBASHI\/",
-                "headers": {
-                    "Host": "freedom6.mamav81785.workers.dev"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 5",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
             "type": "vless",
             "server": "104.17.147.22",
             "server_port": 80,
@@ -258,7 +248,21 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+            "tag": "🇩🇪DE | 🔴 | vless | @vmessorg | 13",
+            "type": "vless",
+            "server": "91.99.205.56",
+            "server_port": 443,
+            "uuid": "153ee04c-dcc1-4ef8-a146-8fb31cec1f48",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 14",
             "type": "vless",
             "server": "104.16.0.113",
             "server_port": 80,
@@ -275,27 +279,6 @@
                 "path": "\/?ed=2560",
                 "headers": {
                     "Host": "104.16.0.113"
-                }
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 14",
-            "type": "vless",
-            "server": "pishgam.sdcards.ir",
-            "server_port": 80,
-            "uuid": "5d175721-8bdf-4cd1-81bf-2a3eb3b841e2",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/?ed=2087",
-                "headers": {
-                    "Host": "pishgam.sdcards.ir"
                 }
             }
         },

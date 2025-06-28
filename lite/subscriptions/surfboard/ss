@@ -11,12 +11,12 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1 = ss, 4.223.100.248, 48172, encrypt-method = chacha20-ietf-poly1305, password = 51yloQC8D9w1Wae7FHtI65
 🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2 = ss, series-a1.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
-🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 3 = ss, 158.255.77.34, 35390, encrypt-method = chacha20-ietf-poly1305, password = BAdQSwzquOXD2rgRjJgTdh
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 3
-URL-TEST = url-test,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 3
-FALLBACK = fallback,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇦🇪AE | 🟢 | ss | @ShadowProxy66 | 3
+MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2
+URL-TEST = url-test,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2
+FALLBACK = fallback,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL
