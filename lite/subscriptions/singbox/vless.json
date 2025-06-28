@@ -109,13 +109,13 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
-                "🇳🇱NL | 🔴 | vless | @vmessorg | 12",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 14",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -129,13 +129,13 @@
                 "🇺🇸US | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
-                "🇳🇱NL | 🔴 | vless | @vmessorg | 12",
                 "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇳🇱NL | 🔴 | vless | @vmessorg | 14",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
-                "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
                 "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -235,24 +235,31 @@
             }
         },
         {
-            "tag": "🇳🇱NL | 🔴 | vless | @vmessorg | 12",
+            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 13",
             "type": "vless",
-            "server": "24.144.77.41",
-            "server_port": 1003,
-            "uuid": "39baadce-3e0b-4322-8de1-797bf7f25b8a",
+            "server": "pishgam.sdcards.ir",
+            "server_port": 80,
+            "uuid": "5d175721-8bdf-4cd1-81bf-2a3eb3b841e2",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2087",
+                "headers": {
+                    "Host": "pishgam.sdcards.ir"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+            "tag": "🇳🇱NL | 🔴 | vless | @vmessorg | 14",
             "type": "vless",
-            "server": "164.90.133.223",
-            "server_port": 25087,
+            "server": "24.144.77.41",
+            "server_port": 1003,
             "uuid": "39baadce-3e0b-4322-8de1-797bf7f25b8a",
             "flow": "",
             "packet_encoding": "xudp",
@@ -327,25 +334,35 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "izafree.lalash.ir",
-            "server_port": 36509,
-            "uuid": "ae0cc111-7d64-4ceb-bdfe-050f4c4823ce",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "4e0a435a-65d6-4e4e-a4ed-dfa8bdd732f5",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mahsa.tas-bazi.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+            "tag": "🇮🇷IR | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "151.101.3.8",
-            "server_port": 80,
-            "uuid": "Telegram@FNET00@Am20094",
+            "server": "zone.iq.f2hub.ir",
+            "server_port": 53403,
+            "uuid": "ef3f6f19-f286-4615-ba0b-63c7f9692a30",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
