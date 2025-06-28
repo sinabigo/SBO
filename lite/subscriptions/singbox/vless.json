@@ -106,10 +106,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
@@ -127,10 +126,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
@@ -164,42 +162,11 @@
             "type": "dns"
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
-            "type": "vless",
-            "server": "172.67.154.101",
-            "server_port": 443,
-            "uuid": "5d8b1149-8f78-4154-a647-16563ec99c8a",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hello-world-empty-feather-0943.sitosa5105.workers.Dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "hello-world-empty-feather-0943.sitosa5105.workers.Dev"
-                }
-            }
-        },
-        {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
             "type": "vless",
-            "server": "172.66.44.118",
+            "server": "104.19.4.191",
             "server_port": 443,
-            "uuid": "63005378-e32e-4e23-bc6e-84812f147a6f",
+            "uuid": "d5e9297c-25fd-11ee-be56-0242ac120002",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -209,7 +176,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ConFIgmr.PaGeS.dEV",
+                "server_name": "vpn930.tutorials58695647.workers.dev",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -219,9 +186,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/VrChX4o5oasIm4In?ed=2560",
+                "path": "\/Telegram\/?ed=2560",
                 "headers": {
-                    "Host": "ConFIgmr.PaGeS.dEV"
+                    "Host": "vpn930.tutorials58695647.workers.dev"
                 }
             }
         },
@@ -247,7 +214,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,

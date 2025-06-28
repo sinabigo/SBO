@@ -120,6 +120,7 @@ dns:
 proxies:
   - {"name":"🇩🇪DE | 🟢 | trojan | @DirectVPN | 18","type":"trojan","server":"18.198.92.103","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
   - {"name":"🇫🇷FR | 🟢 | trojan | @DirectVPN | 19","type":"trojan","server":"51.44.226.39","port":22223,"udp":false,"password":"telegram-id-directvpn","skip-cert-verify":false,"network":"tcp","client-fingerprint":"chrome","sni":"trojan.burgerip.co.uk"}
+  - {"name":"🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 18","type":"ss","server":"81.19.141.45","port":443,"password":"3TnQdgm2mVJQbuSCXmR5Vc","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1","type":"ss","server":"4.223.100.248","port":48172,"password":"51yloQC8D9w1Wae7FHtI65","cipher":"chacha20-ietf-poly1305"}
   - {"name":"🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2","type":"ss","server":"series-a1.samanehha.co","port":443,"password":"W74XFALLLuw6m5IA","cipher":"chacha20-ietf-poly1305"}
 proxy-groups:
@@ -130,6 +131,7 @@ proxy-groups:
       - FALLBACK
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
+      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2'
   - name: URL-TEST
@@ -140,6 +142,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
+      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2'
   - name: FALLBACK
@@ -149,6 +152,7 @@ proxy-groups:
     proxies:
       - '🇩🇪DE | 🟢 | trojan | @DirectVPN | 18'
       - '🇫🇷FR | 🟢 | trojan | @DirectVPN | 19'
+      - '🇩🇪DE | 🟢 | ss | @DeamNet_Proxy | 18'
       - '🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1'
       - '🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2'
 rules:
