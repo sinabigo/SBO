@@ -106,6 +106,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12"
             ]
         },
@@ -113,6 +114,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
+                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
@@ -134,6 +136,35 @@
         {
             "tag": "dns-out",
             "type": "dns"
+        },
+        {
+            "tag": "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "cn.eans.top",
+            "server_port": 7008,
+            "uuid": "1bce54aa-f07a-42b8-82a4-67919595ae3f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "addons.mozilla.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs",
+                    "short_id": "806ba558"
+                }
+            }
         },
         {
             "tag": "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12",
