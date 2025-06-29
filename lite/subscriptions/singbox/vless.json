@@ -112,7 +112,7 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
@@ -135,7 +135,7 @@
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
-                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+                "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
@@ -254,6 +254,27 @@
         {
             "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
             "type": "vless",
+            "server": "vngir.venusconnection.online",
+            "server_port": 8443,
+            "uuid": "a75bdccd-fc01-49ae-9a5b-2962b8da40e2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/netherlands",
+                "headers": {
+                    "Host": "vngir.venusconnection.online"
+                }
+            }
+        },
+        {
+            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
+            "type": "vless",
             "server": "62.60.206.100",
             "server_port": 8080,
             "uuid": "902fac1b-24c6-4557-8143-8fc72e552554",
@@ -266,21 +287,7 @@
             }
         },
         {
-            "tag": "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
-            "type": "vless",
-            "server": "okatamizonlineshopetamiiz.ivy-net.ir",
-            "server_port": 2070,
-            "uuid": "8afd939e-b1f5-4548-a047-af268e9dbdbb",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
+            "tag": "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 443,
