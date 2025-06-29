@@ -106,17 +106,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -127,17 +126,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
-                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
+                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 16",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 0",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -164,33 +162,12 @@
             "type": "dns"
         },
         {
-            "tag": "🇰🇿KZ | 🔴 | vless | @DeamNet_Proxy | 18",
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "194.76.18.0",
-            "server_port": 80,
-            "uuid": "f2a72ad0-d23f-4eed-96cb-7d970b1e784d",
+            "server": "172.67.200.215",
+            "server_port": 443,
+            "uuid": "34b3cbba-e6ac-495a-9481-976a0419eab9",
             "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/vless\/",
-                "headers": {
-                    "Host": "194.76.18.0"
-                }
-            }
-        },
-        {
-            "tag": "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "cn.eans.top",
-            "server_port": 7008,
-            "uuid": "1bce54aa-f07a-42b8-82a4-67919595ae3f",
-            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -199,17 +176,19 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "addons.mozilla.org",
+                "server_name": "eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "Oj8-fhTWXtsuOkPJxRra_9gK3K_Jnxi-Ybek148Iixs",
-                    "short_id": "806ba558"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv"
                 }
             }
         },
@@ -235,7 +214,7 @@
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
+            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -379,7 +358,7 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 17",
+            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
             "type": "vless",
             "server": "91.99.159.125",
             "server_port": 443,
