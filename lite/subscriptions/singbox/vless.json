@@ -109,16 +109,16 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 7",
+                "🇨🇦CA | 🔴 | vless | @vmessorg | 13",
                 "🇩🇪DE | 🔴 | vless | @vmessorg | 14",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 6"
@@ -131,16 +131,16 @@
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 6",
-                "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
-                "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+                "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 7",
+                "🇨🇦CA | 🔴 | vless | @vmessorg | 13",
                 "🇩🇪DE | 🔴 | vless | @vmessorg | 14",
                 "🇺🇸US | 🔴 | vless | @ShadowProxy66 | 12",
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 10",
                 "🇺🇸US | 🔴 | vless | @TEHRANARGO | 11",
-                "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
-                "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
+                "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 6"
@@ -168,6 +168,37 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
+            "server": "172.66.44.100",
+            "server_port": 443,
+            "uuid": "052e510d-d892-4dc4-a686-8986a01535cd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "SprING-HaLl-14EF.WOOzY-cHAmOis2822.WorkERs.DEv",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/Telegram@MTMVPN---MTMVPN\/?ed=2560",
+                "headers": {
+                    "Host": "SprING-HaLl-14EF.WOOzY-cHAmOis2822.WorkERs.DEv"
+                }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
             "server": "172.67.207.181",
             "server_port": 80,
             "uuid": "5a4e040a-8de6-4222-bd6f-9f535b8772fd",
@@ -183,27 +214,6 @@
                 "path": "\/lrJO6NEVRGHecfbo?ed=2560",
                 "headers": {
                     "Host": "172.67.207.181"
-                }
-            }
-        },
-        {
-            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
-            "type": "vless",
-            "server": "104.18.9.215",
-            "server_port": 8080,
-            "uuid": "99678074-122c-46db-97fc-80b604c20158",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "104.18.9.215"
                 }
             }
         },
@@ -229,7 +239,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @Outline_Vpn | 7",
+            "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 7",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -250,7 +260,7 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @vmessorg | 13",
+            "tag": "🇨🇦CA | 🔴 | vless | @vmessorg | 13",
             "type": "vless",
             "server": "104.24.56.187",
             "server_port": 80,
@@ -396,11 +406,11 @@
             }
         },
         {
-            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 16",
             "type": "vless",
-            "server": "www.speedtest.net",
-            "server_port": 80,
-            "uuid": "1f5056ca-fb4c-4b51-a31e-891083588351",
+            "server": "104.18.26.90",
+            "server_port": 443,
+            "uuid": "42795c1c-acab-46f5-8c10-a86de801411b",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -408,16 +418,26 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "s3.mAIN-2.WorKeRs.Dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2--Mosiv2---Mosiv2?ed=2560",
+                "path": "\/iTCBmrOFrKpdwUWZ?ed",
                 "headers": {
-                    "Host": "www.speedtest.net"
+                    "Host": "s3.mAIN-2.WorKeRs.Dev"
                 }
             }
         },
         {
-            "tag": "🇨🇦CA | 🔴 | vless | @ArV2ray | 16",
+            "tag": "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
             "type": "vless",
             "server": "www.speedtest.net",
             "server_port": 80,
