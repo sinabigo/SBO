@@ -11,13 +11,14 @@ enhanced-mode-by-rule = true
 
 [Proxy]
 DIRECT = direct
+🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17 = ss, 64.227.144.190, 50690, encrypt-method = chacha20-ietf-poly1305, password = CEA6CczvgBW0Spg3Vib4LS
 🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1 = ss, 4.223.100.248, 48172, encrypt-method = chacha20-ietf-poly1305, password = 51yloQC8D9w1Wae7FHtI65
 🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2 = ss, series-a1.samanehha.co, 443, encrypt-method = chacha20-ietf-poly1305, password = W74XFALLLuw6m5IA
 🇬🇧GB | 🟢 | ss | @meli_proxyy | 16 = ss, admin.c3.webramz.co, 443, encrypt-method = chacha20-ietf-poly1305, password = Bog0ELmMM9DSxDdQ
 [Proxy Group]
-MANUAL = select,URL-TEST,FALLBACK,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
-URL-TEST = url-test,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
-FALLBACK = fallback,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+MANUAL = select,URL-TEST,FALLBACK,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+URL-TEST = url-test,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
+FALLBACK = fallback,🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17,🇸🇪SE | 🟢 | ss | @ShadowProxy66 | 1,🇬🇧GB | 🟢 | ss | @ShadowProxy66 | 2,🇬🇧GB | 🟢 | ss | @meli_proxyy | 16
 [Rule]
 GEOIP,IR,DIRECT
 FINAL,MANUAL

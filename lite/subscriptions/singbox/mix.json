@@ -108,7 +108,7 @@
                 "URL-TEST",
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
@@ -133,7 +133,7 @@
             "outbounds": [
                 "🇩🇪DE | 🟢 | trojan | @DirectVPN | 18",
                 "🇫🇷FR | 🟢 | trojan | @DirectVPN | 19",
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
+                "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17",
                 "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
@@ -216,35 +216,21 @@
             }
         },
         {
-            "tag": "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "8.210.29.68",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135001195.sec22org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "🇮🇳IN | 🟢 | ss | @DeamNet_Proxy | 17",
+            "type": "shadowsocks",
+            "server": "64.227.144.190",
+            "server_port": 50690,
+            "method": "chacha20-ietf-poly1305",
+            "password": "CEA6CczvgBW0Spg3Vib4LS",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "🇸🇬SG | 🟢 | vmess | @DeamNet_Proxy | 18",
             "type": "vmess",
-            "server": "84.247.149.77",
-            "server_port": 47211,
-            "uuid": "fb674260-1c21-4f99-8bd0-3d1d341c6771",
+            "server": "154.26.129.247",
+            "server_port": 57143,
+            "uuid": "28efbf36-079a-4c98-8470-d13458db6ee6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,

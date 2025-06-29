@@ -106,7 +106,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
@@ -125,7 +124,6 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
@@ -158,30 +156,6 @@
         {
             "tag": "dns-out",
             "type": "dns"
-        },
-        {
-            "tag": "🇭🇰HK | 🔴 | vless | @DeamNet_Proxy | 17",
-            "type": "vless",
-            "server": "8.210.29.68",
-            "server_port": 443,
-            "uuid": "ea286109-d20f-415e-849e-4af20ab04b65",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "147135001195.sec22org.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
         },
         {
             "tag": "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
