@@ -107,6 +107,7 @@
             "outbounds": [
                 "URL-TEST",
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
@@ -115,7 +116,7 @@
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -127,6 +128,7 @@
             "type": "urltest",
             "outbounds": [
                 "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
+                "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
                 "🇨🇦CA | 🔴 | vless | @Outline_Vpn | 5",
                 "🇺🇸US | 🔴 | vless | @Outline_Vpn | 6",
                 "🇮🇷IR | 🔴 | vless | @vmessorg | 15",
@@ -135,7 +137,7 @@
                 "❔XX | 🔴 | vless | @GozargahVPN | 0",
                 "🇷🇺RU | 🔴 | vless | @V2FETCH | 0",
                 "🇬🇧GB | 🟢 | vless | @TEHRANARGO | 12",
-                "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+                "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 16",
                 "🇺🇸US | 🔴 | vless | @ArV2ray | 17",
                 "🇬🇧GB | 🔴 | vless | @redfree8 | 5",
@@ -164,9 +166,9 @@
         {
             "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 18",
             "type": "vless",
-            "server": "172.67.200.215",
-            "server_port": 443,
-            "uuid": "34b3cbba-e6ac-495a-9481-976a0419eab9",
+            "server": "104.24.184.113",
+            "server_port": 80,
+            "uuid": "03c9f240-0bad-4f71-93f2-f5d272dada97",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -174,21 +176,32 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2560",
+                "headers": {
+                    "Host": "104.24.184.113"
                 }
+            }
+        },
+        {
+            "tag": "🇨🇦CA | 🔴 | vless | @DeamNet_Proxy | 19",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "53fa8faf-ba4b-4322-9c69-a3e5b1555049",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/ Telegram-mtmvpn---Telegram-mtmvpn---Telegram-mtmvpn\/?ed=2560",
                 "headers": {
-                    "Host": "eSEtsecuriTYLIceNse.pUDmnquf.WorKErS.dEv"
+                    "Host": "www.speedtest.net"
                 }
             }
         },
@@ -358,17 +371,24 @@
             }
         },
         {
-            "tag": "🇩🇪DE | 🔴 | vless | @meli_proxyy | 18",
+            "tag": "🇺🇸US | 🔴 | vless | @meli_proxyy | 17",
             "type": "vless",
-            "server": "91.99.159.125",
-            "server_port": 443,
-            "uuid": "2eaef053-5fd6-4def-b234-d760690355ff",
+            "server": "nwarne.fast.hosting-ip.com",
+            "server_port": 80,
+            "uuid": "8b4bb431-21bf-46c9-a4bf-4deac75613f9",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/de?ed=1048",
+                "headers": {
+                    "Host": "nwarne.fast.hosting-ip.com"
+                }
             }
         },
         {
